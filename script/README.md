@@ -1,3 +1,14 @@
+
+# Automating Script
+
+Goal of this script is to automate the scoring process of different Surveys.
+
+## Data Structure
+
+The CSV file will contain rows and columns
+
+***ROWS***: Each row composes of a different participant 
+
 ***COLUMNS***:
  - Each question(item, identified by _ix) in the questionnaire is a column
      - Example:
