@@ -2,12 +2,12 @@
 
 This repo contains:
 
-#### English
+### English
 * parent-and teachers report
     * .docx format
     * .pdf format, as published on [chexi.se](https://chexi.se/downloads)
 
-#### Spanish for Latin America (ESLA)
+### Spanish for Latin America (ESLA)
 * parent-and teachers report
     * .docx format
     * .pdf format
@@ -15,12 +15,12 @@ This repo contains:
 
     | Name | Contribution |
     | :--  | :--  |
-    | Aitana Fischer | performed draft translation |
+    | Aitana Fischer | performed the draft translation |
     | Laura Gallardo | independently edited the draft |
     | Emily Machado | back translated the translation to English |
     | Jessica Alexander | reconciled the forward and back translations |
 
 Please report any issues with the CHEXI translations by posting an issue in this GitHub repository.
 
-#### Scoring Script
+### Scoring Script
 The CHEXI is **not** included in the repository scoring script.

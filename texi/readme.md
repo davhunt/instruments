@@ -2,7 +2,7 @@
 
 This repository contains:
 
-#### English
+### English
 * the modified English self-report
     * .docx format
     * .pdf format
@@ -12,7 +12,7 @@ This repository contains:
     * .pdf format
     * redlines of the modifications made by the NDCLab to the [published version](https://chexi.se/downloads)
 
-#### Spanish for Latin America (ESLA)
+### Spanish for Latin America (ESLA)
 * self-report (based on the modified English)
     * .docx format
     * .pdf format
@@ -23,12 +23,12 @@ This repository contains:
 
     | Name | Contribution |
     | :--  | :--  |
-    | Aitana Fischer | performed draft translation |
+    | Aitana Fischer | performed the draft translation |
     | Laura Gallardo | independently edited the draft |
     | Emily Machado | back translated the translation to English |
     | Jessica Alexander | reconciled the forward and back translations |
 
-#### Spanish for Spain (ESEU)
+### Spanish for Spain (ESEU)
 * self-report (based on the modified English)
     * .docx format
     * .pdf format
@@ -39,7 +39,7 @@ This repository contains:
 
     | Name | Contribution |
     | :--  | :--  |
-    | Aitana Fischer | performed draft translation |
+    | Aitana Fischer | performed the draft translation |
     | Emily Machado | back translated the translation to English |
     | Jessica Alexander | reconciled the forward and back translations |
 
@@ -47,5 +47,5 @@ This repository contains:
 
 Please report any issues with the TEXI translations by posting an issue in this GitHub repository.
 
-#### Scoring Script
+### Scoring Script
 The TEXI is **not** included in the repository scoring script.
