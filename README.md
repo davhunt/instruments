@@ -20,8 +20,9 @@ The following software iterations are planned for development. Each version come
 
 * Scripts to handle automatic scoring of the following surveys:
   * ADEXI
-  * CHEXI
-  * TEXI
+  * AMBI
+  * RMBI
+  * AQ-10
 * Cron jobs on the labs personal HPC to handle manual run scripts on unprocessed data 
 * Generate documentation `README` for usage
 
@@ -37,7 +38,10 @@ The following software iterations are planned for development. Each version come
 * Release for pip/conda usage
 
 ## Usage
-Replace this text with a description of how a new user should install and use the tool.
+When using an instrument from this repo in an NDCLab project on REDCap:
+1. Use the PDF for submission to the FIU IRB.
+2. Import the zip to REDCap. Note that the zip file uses "_s1_r1_e1". These numerical values may need to be adjusted to meet the specific needs of your study's protocol, but no other change should be made to the variable names (as other changes will break the link with the automated scoring script). See further details on the [lab's naming conventions for REDCap surveys](https://ndclab.github.io/wiki/docs/etiquette/naming-conventions.html#redcap).
+3. Save REDCap data to the HPC in accordance with your study's IRB-approved protocol. Following release of version 0.01, the script will automatically output a copy of the data with the addition of all scoring columns.
 
 
 ## Work in Development
