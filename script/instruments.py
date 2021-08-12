@@ -51,12 +51,16 @@ class Adexi:
         start = self.sections[position]+1 #start of the section
         end = self.sections[position+1] #end of the section
         selected = self.df.columns[start:end] #selecting all the columns from this section of the dataframe
+        
         for i in selected:  #for each column
-            if len(self.df.loc[self.df[i].isnull()].index) > 0: # we want to know if the row has missing data
-                # we want to know if this row that has missing that is already in the NullRow list
-                if self.df.loc[self.df[i].isnull()].index[0] not in self.nullRow: 
-                    #if is not, we add it to the list
-                    self.nullRow.append(self.df.loc[self.df[i].isnull()].index[0])
+            if len(self.df.loc[self.df[i].isnull()].index) > 0: # we want to know the rows with missing data
+                indexes = self.df.loc[self.df[i].isnull()].index #list of rows with missing data
+                
+                # we want to know if this rows that have missing data are already in the NullRow list
+                for x , row in enumerate(indexes):
+                    if self.df.loc[self.df[i].isnull()].index[x] not in self.nullRow: 
+                        #if is not,then we add it's index to the list
+                        self.nullRow.append(row)
                     
     def possibleScoring(self, position, run):
         '''
