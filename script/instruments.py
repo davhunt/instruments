@@ -245,5 +245,5 @@ class Adexi:
                 except IndexError:
                     break;
             i+=1
-
+w
 
