@@ -2,7 +2,7 @@ import pandas as pd
 import json
 import instruments
 
-file = pd.read_csv("/Users/osman/OneDrive/Documents/expected_input.csv",index_col="participant")
+file = pd.read_csv("/Users/osman/OneDrive/Documents/expected_inputAQ10.csv",index_col="participant")
 dataframe = pd.DataFrame(file)
 
 with open('data.json','r') as infile:
@@ -13,6 +13,11 @@ for instrument in data:
         adexi = instruments.Adexi(dataframe.columns,dataframe,data,instrument)
         adexi.getSections()
         adexi.addNewDataColumns()
+    if instrument == 'aq-10':
+        print('this gets executed')
+        aq10 = instruments.AQ10(dataframe.columns,dataframe,data,instrument)
+        aq10.getSections()
+        aq10.addNewDataColumns()
 
 '''
 Stores the completed document with the calculated scores
@@ -23,4 +28,4 @@ Great documentation in https://pandas.pydata.org/docs/reference/api/pandas.DataF
 path formats allowed: Example: C:\\Users\\user\\Documents\\instrumenrs_output.csv
                                 C:/Users/user/Documents/instruments_output.csv
 '''
-dataframe.to_csv(path_or_buf="C:\\Users\\osman\\OneDrive\\Documents\\instrumenrs_output.csv" , na_rep='NaN')
+dataframe.to_csv(path_or_buf="C:\\Users\\osman\\OneDrive\\Documents\\instruments_outputAQ10.csv" , na_rep='NaN')
