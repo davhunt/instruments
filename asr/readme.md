@@ -4,4 +4,4 @@ This repo contains the PDF (with marks to indicate excluded content) and REDCap 
 
 
 ### Scoring Script
-The English self-report is included in the repository scoring script.
+The ASR is included in the repository scoring script.
