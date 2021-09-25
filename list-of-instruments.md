@@ -7,10 +7,10 @@ Below is a list of instruments contained in this repository.
 | adexi | Adult Executive Functioning Inventory | Holst and Thorell (2016) |
 | ambi | Adult Measure of Behavioral Inhibition | Gladstone and Parker (2005) |
 | aq10 | Autism Spectrum Quotient | Allison et al. (2012) |
-| ari | Affective Reactivity Index | [Stringaris et al. (2012)](file:///C:/Users/analo/Downloads/BRIEF2_20DEC2020%20(1).pdf) |
-| asr | Adult Self-Report | [Achenbach (2003)](file:///C:/Users/analo/Downloads/ASR_edited_20DEC2020.pdf) |
+| ari | Affective Reactivity Index | [Stringaris et al. (2012)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3484687/) |
+| asr | Adult Self-Report | [Achenbach (2003)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3970798/) |
 | baars4 | Barkley Adult ADHD Rating Scale-IV | Barkley (2011) |
-| brief2 | Behavior Rating Inventory of Executive Function Adult | [Gioia et al. (2015)](file:///C:/Users/analo/Downloads/BRIEF2_20DEC2020%20(2).pdf) |
+| brief2 | Behavior Rating Inventory of Executive Function Adult | [Gioia et al. (2015)] |
 | bfne | Brief Fear of Negative Evaluation-II | Carleton et al. (2007) |
 | chexi | Childhood Executive Functioning Inventory | Catale et al. (2013) |
 | covid | Covid Experiences Questionnaire | NDCLab |
