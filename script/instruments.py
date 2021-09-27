@@ -48,11 +48,16 @@ class Adexi:
         If a row has a missing value, we store the index of that row in the nullRow list.
         We do this to ignore this row for calculating the score for this section.
         """
-        start = self.sections[position]+1 #start of the section
-        end = self.sections[position+1] #end of the section
-        selected = self.df.columns[start:end] #selecting all the columns from this section of the dataframe
-        for i in selected:  #for each column
-            if len(self.df.loc[self.df[i].isnull()].index) > 0: # we want to know the rows with missing data
+        #start of the section
+        start = self.sections[position]+1 
+        #end of the section
+        end = self.sections[position+1] 
+        #selecting all the columns from this section of the dataframe
+        selected = self.df.columns[start:end] 
+        #for each column
+        for i in selected:  
+            # we want to know the rows with missing data
+            if len(self.df.loc[self.df[i].isnull()].index) > 0: 
                 indexes = self.df.loc[self.df[i].isnull()].index
                 # we want to know if this row that has missing that is already in the NullRow list
                 for x , row in enumerate(indexes):
@@ -69,11 +74,13 @@ class Adexi:
         
         Parameters
         ----------
-        position: which section are we on, this is used to determine the start and ending indexes
-        for the current section
+        position: int
+            which section are we on, this is used to determine the start and ending indexes
+            for the current section
         
-        run: this is a string holding the run of this section for example 's1_r1_e1', this value
-        is used to access the percentageComplete columns for this section
+        run: str
+            this is a string holding the run of this section for example 's1_r1_e1', this value
+            is used to access the percentageComplete columns for this section
         '''
         #to get the index of the person with missing data
         #because we need the data for the row from only that section and no other
@@ -152,9 +159,12 @@ class Adexi:
         
         Parameters
         ----------
-        score: a dataframe column that contains the data to be stored in the new column
-        name: the name of the column
-        position: the position where the column will be inserted
+        score: np.array
+            a dataframe column that contains the data to be stored in the new column
+        name: str
+            the name of the column
+        position: int
+            the position where the column will be inserted
         """
         self.df.insert(loc = self.sections[position+1]+1,
                   column = name+"_"+self.df.columns[self.sections[position+1]].split("_",1)[1].split("_comp")[0],
@@ -169,8 +179,10 @@ class Adexi:
         
         Parameters
         ----------
-        columns_arr: list of the columns to be summed
-        position: position in the sections list for this instrument
+        columns_arr: np.array
+            list of the columns to be summed
+        position: int
+            position in the sections list for this instrument
         """
         selected = self.df.columns[self.sections[position]+1:self.sections[position+1]]
         selectedCols = []
@@ -186,12 +198,18 @@ class Adexi:
         
         Parameters
         ----------
-        name: string with the name of the column to be added
-        position: the position where the column will be inserted
+        name: str
+            string with the name of the column to be added
+        position: int
+            the position where the column will be inserted
         '''
-        self.df.insert(loc = self.sections[position+1]+1,
-                  column = name+"_"+self.df.columns[self.sections[position+1]].split("_",1)[1].split("_comp")[0],
-                  value=100,
+        location = self.sections[position+1]+1
+        column = name+"_"+self.df.columns[self.sections[position+1]].split("_",1)[1].split("_comp")[0]
+        percentage = 100
+        
+        self.df.insert(loc = location,
+                  column = column,
+                  value=percentage,
                   allow_duplicates=False) 
     
     def addNewDataColumns(self):
@@ -247,6 +265,18 @@ class Adexi:
             i+=1
 
 class AQ10:
+    '''
+    Instance Variables
+      ----------
+      columns: np.array
+          the list of columns in the dataframe 
+      dataframe: pandas dataframe
+          the dataframe containing all the csv file data
+      jsonData: python dictionary
+          dictionary containing the keys and values for each instrument
+      instrument: str
+          name of the instrument
+    '''
     def __init__(self, columns, dataframe, jsonData, instrument):
         
         self.columns = columns
@@ -288,9 +318,12 @@ class AQ10:
         
         Parameters
         ----------
-        score: a dataframe column that contains the data to be stored in the new column
-        name: the name of the column
-        position: the position where the column will be inserted
+        score: np.array
+            a dataframe column that contains the data to be stored in the new column
+        name: str
+            the name of the column
+        position: int
+            the position where the column will be inserted
         """
         self.df.insert(loc = self.sections[position+1]+1,
                   column = name+"_"+self.df.columns[self.sections[position+1]].split("_",1)[1].split("_comp")[0],
@@ -305,8 +338,10 @@ class AQ10:
 
             Parameters
             ----------
-            columns_arr: list of the columns to be summed
-            position: position in the sections list for this instrument
+            columns_arr: np.array
+                list of the columns to be summed
+            position: int
+                position in the sections list for this instrument
             """
             #this holds the questions that if agreed or slightly agreed means we add 1 to the score
             agreedArr = self.jdata[self.instrument][0][list(self.jdata[self.instrument][0])[0]]
