@@ -2,7 +2,7 @@ import pandas as pd
 import json
 import instruments
 
-file = pd.read_csv("/Users/osman/OneDrive/Documents/ml_download_2021-09-27.csv",index_col="record_id")
+file = pd.read_csv("/Users/osman/OneDrive/Documents/rwe_download_2021-09-27.csv",index_col="record_id")
 dataframe = pd.DataFrame(file)
 
 with open('data.json','r') as infile:
@@ -28,4 +28,4 @@ Great documentation in https://pandas.pydata.org/docs/reference/api/pandas.DataF
 path formats allowed: Example: C:\\Users\\user\\Documents\\instrumenrs_output.csv
                                 C:/Users/user/Documents/instruments_output.csv
 '''
-dataframe.to_csv(path_or_buf="C:\\Users\\osman\\OneDrive\\Documents\\ml_download_2021-09-27_OUT.csv" , na_rep='NaN',)
+dataframe.to_csv(path_or_buf="C:\\Users\\osman\\OneDrive\\Documents\\rwe_download_2021-09-27_OUT.csv" , na_rep='NaN',)

@@ -352,7 +352,6 @@ class AQ10:
             agreedArr = self.jdata[self.instrument][0][list(self.jdata[self.instrument][0])[0]]
             #this holds the questions that if disagreed or slightly disagreed means we add 1 to the score
             disagreedArr = self.jdata[self.instrument][0][list(self.jdata[self.instrument][0])[1]]
-            
             #In this loop we go person by person calculating their score and assigning it to the total score column
             count = 0
             people = len(self.df.index)
@@ -363,13 +362,13 @@ class AQ10:
                 columns = self.df.iloc[count,self.sections[position]+1:self.sections[position+1]]
             
                 for question in agreedArr:
-                    if columns[question-1] == 0 or columns[question-1] == 1:
+                    if columns[question-1] == 1 or columns[question-1] == 2:
                         self.score+=1
                     if np.isnan(columns[question-1]) :
                         empty = True
                         break;
                 for question in disagreedArr:
-                    if columns[question-1] == 2 or columns[question-1] == 3:
+                    if columns[question-1] == 3 or columns[question-1] == 4:
                         self.score+=1
                     if np.isnan(columns[question-1]):
                         empty = True
