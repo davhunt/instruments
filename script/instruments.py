@@ -24,6 +24,7 @@ class Adexi:
         self.instrument = instrument
         self.workingMemory = jsonData[instrument][0][list(jsonData[instrument][0])[0]]
         self.inhibition = jsonData[instrument][0][list(jsonData[instrument][0])[1]]
+        self.total = jsonData[instrument][0][list(jsonData[instrument][0])[2]]
         self.columns = columns
         self.df = dataframe
         self.sections = []
@@ -144,7 +145,7 @@ class Adexi:
                 
             #If either wm or inh is false then total score cannot be calculated so we assign NaN to the total score column
             if inh == False or wm == False:
-                totalscoreColumnIndex = self.df.columns.get_loc(self.instrument+'_total-score_'+run)
+                totalscoreColumnIndex = self.df.columns.get_loc(self.total + '_' +run)
                 perCompleteIndexTotal = self.df.columns.get_loc(self.instrument+'_per-complete-total_'+ run)
                 self.df.iloc[index,totalscoreColumnIndex]= np.NAN
                 #we use the amount of values missing to determine the percentage of values present
@@ -203,8 +204,9 @@ class Adexi:
         position: int
             the position where the column will be inserted
         '''
+        run = self.df.columns[self.sections[position+1]].split("_",1)[1].split("_comp")[0]
         location = self.sections[position+1]+1
-        column = name+"_"+self.df.columns[self.sections[position+1]].split("_",1)[1].split("_comp")[0]
+        column = name + "_" + run
         percentage = 100
         
         self.df.insert(loc = location,
@@ -238,7 +240,7 @@ class Adexi:
                 #columnsArrINH holds the column number to score for the inhibition
                 columnsArrINH = self.jdata[self.instrument][0][list(self.jdata[self.instrument][0])[1]]
                 #creates the total, inhibition and working memory columns with their calculated values
-                self.addNewColumn(addition,list(self.jdata)[0]+'_total-score', i)
+                self.addNewColumn(addition,self.total, i)
                 self.addNewColumn(self.subscore(columnsArrWM,i),list(self.jdata[self.instrument][0])[0], i)
                 self.addNewColumn(self.subscore(columnsArrINH,i),list(self.jdata[self.instrument][0])[1], i)
                 
@@ -281,6 +283,7 @@ class AQ10:
         
         self.columns = columns
         self.df = dataframe
+        self.total = jsonData[instrument][0][list(jsonData[instrument][0])[2]]
         self.jdata = jsonData
         self.instrument = instrument
         self.sections = []
@@ -306,7 +309,7 @@ class AQ10:
         i = 0
         while i < len(self.sections):
             if i%2==0:
-                print(self.df[df.columns[self.sections[i]+1:self.sections[i+1]]])
+                print(self.df[self.df.columns[self.sections[i]+1:self.sections[i+1]]])
             i+=1
             
     
@@ -325,8 +328,10 @@ class AQ10:
         position: int
             the position where the column will be inserted
         """
+        # the run for example : s1_e1_r1
+        run = self.df.columns[self.sections[position+1]].split("_",1)[1].split("_comp")[0]
         self.df.insert(loc = self.sections[position+1]+1,
-                  column = name+"_"+self.df.columns[self.sections[position+1]].split("_",1)[1].split("_comp")[0],
+                  column = name + "_" + run,
                   value=np.nan,
                   allow_duplicates=False) 
     
@@ -370,10 +375,10 @@ class AQ10:
                         empty = True
                         break;
                 if not empty:
-                    scoreColumnIndex = self.df.columns.get_loc(self.instrument+'_total-score_'+ run)
+                    scoreColumnIndex = self.df.columns.get_loc(self.total + "_" + run)
                     self.df.iloc[count,scoreColumnIndex]= self.score
                 else:
-                    scoreColumnIndex = self.df.columns.get_loc(self.instrument+'_total-score_'+ run)
+                    scoreColumnIndex = self.df.columns.get_loc(self.total + "_" + run)
                     self.df.iloc[count,scoreColumnIndex]= np.nan
 #                 print('this is row ',count,'and it has empty values-',empty) Used this to check out if 
 #                 the empty variable was true and the total was nan in the dataframe
@@ -389,7 +394,7 @@ class AQ10:
                 '''need to drop cells and store them in a new variable
                 and only add the scores to the rows without missing data
                 '''
-                self.addNewColumn(self.instrument+'_total-score', i)
+                self.addNewColumn(self.total, i)
                 run = self.df.columns[self.sections[i+1]].split("_",1)[1].split("_comp")[0]
                 self.getScore(i,run)
                 try:
@@ -409,4 +414,3 @@ class AQ10:
             i+=1
                     
                     
-
