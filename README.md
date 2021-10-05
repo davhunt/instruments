@@ -14,34 +14,40 @@ Additionally, this repo holds the scoring script for all scorable instruments. F
 
 
 ## Roadmap
-The following software iterations are planned for development. Each version comes with a list of requirements. Each iteration is subject to change as the project progresses.
+The following software iterations are planned for development. Each iteration is subject to change as the project progresses.
 
 ### 0.01 
 
-* Scripts to handle automatic scoring of the following surveys:
-  * ADEXI
-  * AMBI
-  * RMBI
-  * AQ-10
-* Cron jobs on the labs personal HPC to handle manual run scripts on unprocessed data 
-* Generate documentation `README` for usage
+* Scripts to handle automatic scoring of: ADEXI, AQ-10
+* Upload of unscored instruments: CHEXI, COVID, DEMO, initStateA, postTaskA, PTTFQ
+
+### 0.02
+
+* Scripts to handle automatic scoring of: BFNE, EDS/HVS, ERQ, IUS, SCAARED, SIAS6, SSSQ
+* Upload of unscored instruments: SICS
+
+### 0.03
+
+* Scripts to handle automatic scoring of: AMBI/RMBI, IDEA, IERQ, PANAS-N/RTQ, PHQ8, PSQI
 
 ### 0.1
 
-* Configure repository for proper packaging
+* Scripts to handle automatic scoring of: ARI, BAARS4, HSPS, SPS6, SRQ, TAI, TEXI, THQ
+* Cron jobs on the lab's HPC queue to handle automatic running of scripts on unprocessed data
 * Generate comprehensive documentation on usage and functions
 * Generate comprehensive testing suite to ensure stable release
-  * Generate documentation on test-generation in `CONTRIBUTING`
 
-### 1.0 
+### Future Directions
 
+* Configure repository for proper packaging
 * Release for pip/conda usage
+
 
 ## Usage
 When using an instrument from this repo in an NDCLab project on REDCap:
 1. Use the PDF for submission to the FIU IRB.
 2. Import the zip to REDCap. Note that the zip file uses "_s1_r1_e1". These numerical values may need to be adjusted to meet the specific needs of your study's protocol, but no other change should be made to the variable names (as other changes will break the link with the automated scoring script). See further details on the [lab's naming conventions for REDCap surveys](https://ndclab.github.io/wiki/docs/etiquette/naming-conventions.html#redcap).
-3. Save REDCap data to the HPC in accordance with your study's IRB-approved protocol. Following release of version 0.01, the script will automatically output a copy of the data with the addition of all scoring columns.
+3. Save REDCap data to the HPC in accordance with your study's IRB-approved protocol. Following release of version 0.1, the script will automatically output a copy of the data with the addition of all scoring columns.
 
 
 ## Work in Development
@@ -53,6 +59,8 @@ This `main` branch contains completed releases for this project. For all work-in
 | ---  | ---  |
 | Osmany Pujol | created the original scoring script |
 | Farukh Saidmuratov | collaborated on original script |
+| Jess Alexander | management of initial releases and testing |
+| Ana Lopez-Nuñez | testing and organization of initial releases |
 
 Learn more about us [here](www.ndclab.com/people).
 
