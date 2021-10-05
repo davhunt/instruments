@@ -15,7 +15,7 @@ Below is a list of instruments contained in this repository.
 | chexi | Childhood Executive Functioning Inventory | [Catale et al. (2013)](https://pubmed.ncbi.nlm.nih.gov/23355496/) |
 | covid | Covid Experiences Questionnaire | NDCLab |
 | demo | Demographics | NDCLab |
-| eds | Everyday Discrimination Scale | [Williams et al. (1997)] (https://pubmed.ncbi.nlm.nih.gov/22013026/) |
+| eds | Everyday Discrimination Scale | [Williams et al. (1997)](https://pubmed.ncbi.nlm.nih.gov/22013026/) |
 | erq | Emotion Regulation Questionnaire | [Gross and John (2003)](https://pubmed.ncbi.nlm.nih.gov/12916575/) |
 | hsps | Highly Sensitive Person Scale | Aron (1996) |
 | hvs | Heightened Vigilance Scale | [Williams et al. (1997)](https://journals.sagepub.com/doi/10.1177/135910539700200305) |
