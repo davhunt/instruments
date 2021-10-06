@@ -26,6 +26,7 @@ This repo contains:
     | Laura Gallardo | independently edited the draft |
     | Emily Machado | back translated the translation to English |
     | Jessica Alexander | reconciled the forward and back translations |
+    | Test | reconciled the forward and back translations working memory subscore: sum of 1, 2, 5, 7, 8, 9, 11, 12, and 13 (NaN if partial response prevents calculation of subscore) |
 
 Please report any issues with the ADEXI translations by posting an issue in this GitHub repository.
 
