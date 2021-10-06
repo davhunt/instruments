@@ -26,7 +26,6 @@ This repo contains:
     | Laura Gallardo | independently edited the draft |
     | Emily Machado | back translated the translation to English |
     | Jessica Alexander | reconciled the forward and back translations |
-    | Test | reconciled the forward and back translations working memory subscore: sum of 1, 2, 5, 7, 8, 9, 11, 12, and 13 (NaN if partial response prevents calculation of subscore) |
 
 Please report any issues with the ADEXI translations by posting an issue in this GitHub repository.
 
@@ -35,7 +34,7 @@ Please report any issues with the ADEXI translations by posting an issue in this
 The English self-report is included in the repository scoring script.
 
     | Variable | Details |
-    | :--  | :--  |
+    | :---  | :---  |
     | adexi_scored-total_sX_rX_eX | total score: sum of all items (NaN if partial response prevents calculation of score) |
     | adexi_scored-inh_sX_rX_eX | inhibition subscore: sum of 3, 4, 6, 10, and 14 (NaN if partial response prevents calculation of subscore) |
     | adexi_scored-wm_sX_rX_eX | working memory subscore: sum of 1, 2, 5, 7, 8, 9, 11, 12, and 13 (NaN if partial response prevents calculation of subscore) |
