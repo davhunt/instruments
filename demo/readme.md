@@ -1,6 +1,6 @@
 ## Demographics
 
-This repo contains modifiable (.docx) and PDF versions of demographics questionnaires used by the NDCLab.
+This repo contains modifiable (.docx) and PDF versions of demographics questionnaires used by the NDCLab, along with the REDCap import .zip.
 
 ### 2021-09
 The following were added in this revision:
