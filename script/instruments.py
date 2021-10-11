@@ -283,6 +283,8 @@ class AQ10:
         
         self.columns = columns
         self.df = dataframe
+        self.agree = jsonData[instrument][0][list(jsonData[instrument][0])[0]]
+        self.disagree = jsonData[instrument][0][list(jsonData[instrument][0])[1]]
         self.total = jsonData[instrument][0][list(jsonData[instrument][0])[2]]
         self.jdata = jsonData
         self.instrument = instrument
@@ -311,6 +313,31 @@ class AQ10:
             if i%2==0:
                 print(self.df[self.df.columns[self.sections[i]+1:self.sections[i+1]]])
             i+=1
+            
+        
+    def missingData(self, position):
+        """
+        Selects a starting and ending index from the sections list,
+        and looks through each row checking if any there is a missing value.
+        If a row has a missing value, we store the index of that row in the nullRow list.
+        We do this to ignore this row for calculating the score for this section.
+        """
+        #start of the section
+        start = self.sections[position]+1 
+        #end of the section
+        end = self.sections[position+1] 
+        #selecting all the columns from this section of the dataframe
+        selected = self.df.columns[start:end] 
+        #for each column
+        for i in selected:  
+            # we want to know the rows with missing data
+            if len(self.df.loc[self.df[i].isnull()].index) > 0: 
+                indexes = self.df.loc[self.df[i].isnull()].index
+                # we want to know if this row that has missing that is already in the NullRow list
+                for x , row in enumerate(indexes):
+                    if self.df.loc[self.df[i].isnull()].index[x] not in self.nullRow: 
+                        #if is not, we add it to the list
+                        self.nullRow.append(row)
             
     
     def addNewColumn(self,name,position):
@@ -352,6 +379,7 @@ class AQ10:
             agreedArr = self.jdata[self.instrument][0][list(self.jdata[self.instrument][0])[0]]
             #this holds the questions that if disagreed or slightly disagreed means we add 1 to the score
             disagreedArr = self.jdata[self.instrument][0][list(self.jdata[self.instrument][0])[1]]
+            
             #In this loop we go person by person calculating their score and assigning it to the total score column
             count = 0
             people = len(self.df.index)
@@ -360,7 +388,6 @@ class AQ10:
                 #columns contains all the answers for the person at the count position. when count = 0 
                 #we check the answers for the first person and so on
                 columns = self.df.iloc[count,self.sections[position]+1:self.sections[position+1]]
-            
                 for question in agreedArr:
                     if columns[question-1] == 1 or columns[question-1] == 2:
                         self.score+=1
@@ -384,7 +411,106 @@ class AQ10:
                 empty = False
                 count+=1
                 self.score=0
+    def possibleScoring(self, position, run):
+        '''
+        Determines if the subscore can be calculated for each user that has missing data
+        User indexes with missing values are inside of nullRow,
+        Also determines the amount of missing values for each subscore and for the whole survey
+        if a subscore or total score cannot be calculated we insert NaN to the column
         
+        Parameters
+        ----------
+        position: int
+            which section are we on, this is used to determine the start and ending indexes
+            for the current section
+        
+        run: str
+            this is a string holding the run of this section for example 's1_r1_e1', this value
+            is used to access the percentageComplete columns for this section
+        '''
+        #to get the index of the person with missing data
+        #because we need the data for the row from only that section and no other
+        for x in self.nullRow:
+            index = 0
+            found = False
+            while not found:
+                if self.df.index[index] == x:
+                    found = True
+                else:
+                    index+=1
+            missingData = pd.to_numeric(self.df.iloc[index,self.sections[position]+1:self.sections[position+1]])
+            values = np.isnan(missingData) #returns boolean array
+
+            # identify which columns have data missing
+            count = 0
+            columnsMissing = []
+            while count<len(values):
+                if values[count]:
+                    columnsMissing.append(count+1)
+                count+=1
+
+            count = 0
+            agree = True # if true the working memory score can be calculated
+            disagree = True # if true the inhibition score can be calculated
+            amountMissingAgree = 0 
+            amountMissingDisagree = 0
+            for missing in columnsMissing:
+                
+                #check if there are values missing for working memory and the amount of values missing
+                while count<len(self.agree):
+                    if missing == self.agree[count]:
+                        agree = False
+                        amountMissingAgree+=1
+                    count+=1
+                count = 0
+                
+                #check if there are values missing for inhibition and the amount missing
+                while count<len(self.disagree):
+                    if missing == self.disagree[count]:
+                        amountMissingDisagree += 1
+                        disagree = False
+                    count+=1
+                count = 0
+            
+            #If wm is false then working memory cannot be calculated so we assign NaN to the WK column
+            if agree == False:
+                perCompleteIndexAgree = self.df.columns.get_loc(self.instrument+'_per-complete-agreed_'+ run)
+                #we use the amount of values missing to determine the percentage of values present
+                self.df.iloc[index,perCompleteIndexAgree] = (4-amountMissingAgree)/4*100
+                
+            #If wm is false then working memory cannot be calculated so we assign NaN to the WK column
+            if disagree == False:
+                perCompleteIndexDisagree = self.df.columns.get_loc(self.instrument+'_per-complete-disagreed_'+ run)
+                #we use the amount of values missing to determine the percentage of values present
+                self.df.iloc[index,perCompleteIndexDisagree] = (6-amountMissingDisagree)/6*100
+                
+            #If either wm or inh is false then total score cannot be calculated so we assign NaN to the total score column
+            perCompleteIndexTotal = self.df.columns.get_loc(self.instrument+'_per-complete-total_'+ run)
+            #we use the amount of values missing to determine the percentage of values present
+            self.df.iloc[index,perCompleteIndexTotal] = (10-(amountMissingDisagree+amountMissingAgree))/10*100
+                
+    def percentageComplete(self, name , position):
+        '''
+        This method creates a column for each subscore and the total scoring and
+        gives them a starting value of 100% completion
+        This value is then updated in the possibleScoring method according to values missing for the subscores
+        
+        Parameters
+        ----------
+        name: str
+            string with the name of the column to be added
+        position: int
+            the position where the column will be inserted
+        '''
+        run = self.df.columns[self.sections[position+1]].split("_",1)[1].split("_comp")[0]
+        location = self.sections[position+1]+1
+        column = name + "_" + run
+        percentage = 100
+        
+        self.df.insert(loc = location,
+                  column = column,
+                  value=percentage,
+                  allow_duplicates=False) 
     def addNewDataColumns(self):
         i = 0
         count = 1
@@ -393,16 +519,24 @@ class AQ10:
                 '''need to drop cells and store them in a new variable
                 and only add the scores to the rows without missing data
                 '''
+                self.missingData(i)
+                #creates the percentage complete columns
+                self.percentageComplete(self.instrument+'_per-complete-total',i)
+                self.percentageComplete(self.instrument+'_per-complete-agreed',i)
+                self.percentageComplete(self.instrument+'_per-complete-disagreed',i)
+                
                 self.addNewColumn(self.total, i)
                 run = self.df.columns[self.sections[i+1]].split("_",1)[1].split("_comp")[0]
                 self.getScore(i,run)
+                self.possibleScoring(i,run)
                 try:
+                    self.nullRow = []
                     #for each section of the adexi we add 1 column and we need to account for this translation for
                     #the indexing of the next section
                     # its only the total score column
-                    self.sections[i+2]+=(1*count) #we update the indexing value from the start of the section(which is the _timestamp index)
+                    self.sections[i+2]+=(4*count) #we update the indexing value from the start of the section(which is the _timestamp index)
                                                   #and
-                    self.sections[i+3]+=(1*count) #we update the indexing value from the end of the section (which is the _complete index)
+                    self.sections[i+3]+=(4*count) #we update the indexing value from the end of the section (which is the _complete index)
                     #count starts at 0 because at the start we dont need to account for any translation 
                     #since no columns have been inserted
                     #and for every section we increment count since the amount of new columns per section increases by 1
@@ -411,5 +545,7 @@ class AQ10:
                 except IndexError:
                     break;
             i+=1
+                    
+                    
                     
                     
