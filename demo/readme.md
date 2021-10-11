@@ -9,7 +9,9 @@ The following were added in this revision:
 - history of communication disorders
 
 **Modified variables:** demo_hand (added Other option)
+
 **Deleted variables:** demo_dob
+
 **Added variables:** demo_mob, demo_yob, demo_otherhand, demo_eng, demo_langs, demo_langhis, demo_otherhis, demo_ageen, demo_ageen, demo_profen, demo_familiar, demo_neuro, demo_neurodis, demo_commdis_kid, demo_commdis_teen, demo_commdis_ad, demo_diagchil, demo_diagchilnow, demo_diagteen, demo_diagteennow, demo_diagad, demo_diagadnow
 
 
