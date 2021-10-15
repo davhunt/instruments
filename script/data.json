@@ -8,5 +8,7 @@
         "aq-10_agreed":[1,7,8,10],
         "aq-10_disagreed": [2,3,4,5,6,9],
         "aq-10_scored-total" : "aq-10_scored-total"
-    }]
+    }],
+    "input": "/Users/osman/OneDrive/Documents/Instruments/rwe_download_2021-10-04b.csv",
+    "output":"/Users/osman/OneDrive/Documents/Instruments/rwe_download_2021-10-04b_OUT_Test2.csv"
 }
