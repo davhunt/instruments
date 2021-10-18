@@ -2,6 +2,18 @@ import pandas as pd
 import numpy as np
 
 class Adexi:
+    """
+    Instance Variables
+    ----------
+    columns:    list
+                stores the list of columns, used for finding survey question ranges
+    df: pd.dataframe
+        stores the dataframe
+    sections:   list
+                stores each section from timestamp to complete
+    nullRow:    list    
+                 stores the rows that contain empty values for a section
+    """
     def __init__(self, columns, dataframe, jsonData, instrument):
         """
         Parameters
@@ -9,17 +21,6 @@ class Adexi:
         columns: list that contains the names of all the columns,
         dataframe: a pandas dataframe object that contains all the csv file info,
         jsonData: a python dictionary that contains information about each instrument
-    
-        Attributes
-        ----------
-        columns:    list
-                    stores the list of columns, used for finding survey question ranges
-        df: pd.dataframe
-            stores the dataframe
-        sections:   list
-                    stores each section from timestamp to complete
-        nullRow:    list    
-                    stores the rows that contain empty values for a section
         """
         self.instrument = instrument
         self.workingMemory = jsonData[instrument][0][list(jsonData[instrument][0])[0]]
