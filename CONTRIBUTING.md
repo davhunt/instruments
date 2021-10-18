@@ -44,7 +44,7 @@ To add an additional instrument:
 2. Create a new directory with the instrument's short name.
 3. Upload the published PDF(s) and a REDCap import .zip that follows the lab's [naming conventions](https://ndclab.github.io/wiki/docs/etiquette/naming-conventions.html#redcap).
 4. Add the instrument to the json file with the numerical values for subscale scoring.
-5. Add a section to the .ipynb file indicating the appropriate scoring mechanisms for total scores and subscale scores.
+5. Add the new instrument script to the instruments package located inside of the script folder.
 
 ## Workflow
 Workflow for both internal and external lab members is outlined on the [NDCLab contributing wiki page](https://ndclab.github.io/wiki/docs/contributing.html). 
