@@ -129,7 +129,7 @@ class Adexi:
             #If wm is false then working memory cannot be calculated so we assign NaN to the WK column
             if wm == False:
                 wmColumnIndex = self.df.columns.get_loc(list(self.jdata['adexi'][0])[0]+'_'+ run)
-                perCompleteIndexWM = self.df.columns.get_loc(self.instrument+'_per-complete-wm_'+ run)
+                perCompleteIndexWM = self.df.columns.get_loc(self.instrument+'_perc-wm_'+ run)
                 self.df.iloc[index,wmColumnIndex]= np.NAN
                 #we use the amount of values missing to determine the percentage of values present
                 self.df.iloc[index,perCompleteIndexWM] = (9-amountMissingWM)/9*100
@@ -137,7 +137,7 @@ class Adexi:
             #If wm is false then working memory cannot be calculated so we assign NaN to the WK column
             if inh == False:
                 inhColumnIndex = self.df.columns.get_loc(list(self.jdata['adexi'][0])[1]+'_'+ run)
-                perCompleteIndexINH = self.df.columns.get_loc(self.instrument+'_per-complete-inh_'+ run)
+                perCompleteIndexINH = self.df.columns.get_loc(self.instrument+'_perc-inh_'+ run)
                 self.df.iloc[index,inhColumnIndex]= np.NAN
                 #we use the amount of values missing to determine the percentage of values present
                 self.df.iloc[index,perCompleteIndexINH] = (5-amountMissingINH)/5*100
@@ -145,7 +145,7 @@ class Adexi:
             #If either wm or inh is false then total score cannot be calculated so we assign NaN to the total score column
             if inh == False or wm == False:
                 totalscoreColumnIndex = self.df.columns.get_loc(self.total + '_' +run)
-                perCompleteIndexTotal = self.df.columns.get_loc(self.instrument+'_per-complete-total_'+ run)
+                perCompleteIndexTotal = self.df.columns.get_loc(self.instrument+'_perc-total_'+ run)
                 self.df.iloc[index,totalscoreColumnIndex]= np.NAN
                 #we use the amount of values missing to determine the percentage of values present
                 self.df.iloc[index,perCompleteIndexTotal] = (14-(amountMissingINH+amountMissingWM))/14*100
@@ -229,9 +229,9 @@ class Adexi:
                 #calculates the addtion of all the columns
                 addition = pd.to_numeric(self.df.iloc[:, self.sections[i]+1:self.sections[i+1]].sum(axis=1))
                 #creates the percentage complete columns
-                self.percentageComplete(self.instrument+'_per-complete-total',i)
-                self.percentageComplete(self.instrument+'_per-complete-wm',i)
-                self.percentageComplete(self.instrument+'_per-complete-inh',i)
+                self.percentageComplete(self.instrument+'_perc-total',i)
+                self.percentageComplete(self.instrument+'_perc-wm',i)
+                self.percentageComplete(self.instrument+'_perc-inh',i)
 
                 
                 #columnsArrWM holds the column number to score for the working memory

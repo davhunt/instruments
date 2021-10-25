@@ -208,18 +208,18 @@ class AQ10:
             
             #If wm is false then working memory cannot be calculated so we assign NaN to the WK column
             if agree == False:
-                perCompleteIndexAgree = self.df.columns.get_loc(self.instrument+'_per-complete-agreed_'+ run)
+                perCompleteIndexAgree = self.df.columns.get_loc(self.instrument+'_perc-agreed_'+ run)
                 #we use the amount of values missing to determine the percentage of values present
                 self.df.iloc[index,perCompleteIndexAgree] = (4-amountMissingAgree)/4*100
                 
             #If wm is false then working memory cannot be calculated so we assign NaN to the WK column
             if disagree == False:
-                perCompleteIndexDisagree = self.df.columns.get_loc(self.instrument+'_per-complete-disagreed_'+ run)
+                perCompleteIndexDisagree = self.df.columns.get_loc(self.instrument+'_perc-disagreed_'+ run)
                 #we use the amount of values missing to determine the percentage of values present
                 self.df.iloc[index,perCompleteIndexDisagree] = (6-amountMissingDisagree)/6*100
                 
             #If either wm or inh is false then total score cannot be calculated so we assign NaN to the total score column
-            perCompleteIndexTotal = self.df.columns.get_loc(self.instrument+'_per-complete-total_'+ run)
+            perCompleteIndexTotal = self.df.columns.get_loc(self.instrument+'_perc-total_'+ run)
             #we use the amount of values missing to determine the percentage of values present
             self.df.iloc[index,perCompleteIndexTotal] = (10-(amountMissingDisagree+amountMissingAgree))/10*100
                 
@@ -255,9 +255,9 @@ class AQ10:
                 '''
                 self.missingData(i)
                 #creates the percentage complete columns
-                self.percentageComplete(self.instrument+'_per-complete-total',i)
-                self.percentageComplete(self.instrument+'_per-complete-agreed',i)
-                self.percentageComplete(self.instrument+'_per-complete-disagreed',i)
+                self.percentageComplete(self.instrument+'_perc-total',i)
+                self.percentageComplete(self.instrument+'_perc-agreed',i)
+                self.percentageComplete(self.instrument+'_perc-disagreed',i)
                 
                 self.addNewColumn(self.total, i)
                 run = self.df.columns[self.sections[i+1]].split("_",1)[1].split("_comp")[0]
