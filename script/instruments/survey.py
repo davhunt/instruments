@@ -21,11 +21,19 @@ class Survey:
     
     Public Methods
     ----------
-    filter(data, name)
+    filter(self.data, self.name)
             Function to filter out irrelevant survey data. Modifies data in place.
-    perc_complete(self.data, self.range, self.subscores)
+
+    perc_complete(self.data, range)
+            Function to get percentage of complete questions for selected range on data. 
+            Returns float.
+    perc_complete_total(self.data)
             Function to get percentage of complete questions for selected range and subscores. 
-            Returns dict() object.
+            Returns float.
+    perc_complete_subscores(self.data, self.subscores)
+            Function to get percentage of complete questions for selected range and subscores. 
+            Returns dict() object of subscores to perc floats.
+
     score(self.data, self.range, self.threshold):
             General scoring function. 
     score_total(self.data, self.threshold)
@@ -33,10 +41,11 @@ class Survey:
     score_subscores(self.data, self.subscores):
             Function to score all available subcores. Returns dict() object where each key is 
             a subscore name and each value is the subscore.
+
     get_data()
             Returns dataframe of all total scores and subscores.
     """
-    def __init__(self, data, name, threshold, subscores, range=None):
+    def __init__(self, data, name, threshold, subscores=None, range=None):
         self.data = data
         self.name = name
         self.range = range
@@ -47,10 +56,7 @@ class Survey:
         self.filter()
         
     def filter(self):
-        self.data = self.data.filter(regex=rf"(record_id|{self.name}_)")
+        self.data = self.data.filter(regex=rf"{self.name}_")
     
-    def perc_complete(self):
-
-
-
-    
+    def perc_complete(self, range):
+        pass 
