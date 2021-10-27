@@ -29,9 +29,7 @@
             "type": "sum"
         }
     },
-    "sias6": {
-        "scored-total" : {
-            "type": "sum"
-        }
-    }
+    "sias6": {}, 
+    "sias7": {},
+    "sias8": {}
 }
