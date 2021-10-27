@@ -1,15 +1,17 @@
 import pandas as pd
 import scripts.instruments.ScoreType as ScoreType
 
+
 class Subscore:
-    """Base survey tools class that contain methods for scoring surveys.
+    """Base survey tools class that contain methods for scoring surveys according to parameters.
+    If all params are empty, scores total sum as default. 
 
     Instance Variables
     ----------
-    name:   str
-            String representing subscore name.
+    name:   str 
+            String representing subscore name. By default is named "total"
     type:   "sum" | "avg"
-            String that represents calculation type
+            String that represents calculation type. By default is "sum". 
     threshold:  float | None 
                 Float that represents threshold to score row. None by default, which indicates no threshold 
                 required.
@@ -59,7 +61,8 @@ class Subscore:
     TIME_LABEL = "timestamp"
     COMP_LABEL = "complete"
 
-    def __init__(self, name, type, threshold=None, select=None, reverse_select=None, conditional=None):
+    def __init__(self, name="total", type=ScoreType.sum.value, threshold=None, select=None, 
+                 reverse_select=None, conditional=None):
         self.name = name
         self.type = type
         self.threshold = threshold
