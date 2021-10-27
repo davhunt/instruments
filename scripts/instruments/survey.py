@@ -1,7 +1,8 @@
-from script.instruments.survey import Subscore
+from scripts.instruments.subscore import Subscore
 
 import pandas as pd
 import numpy as np
+
 
 class Survey:
     """Class that utilizes Subscore class to score all available subscores
@@ -13,18 +14,30 @@ class Survey:
             String that contains the survey name
     data:   pandas.Dataframe()
             Dataframe that contains csv survey data
-    subscores:  dict()
-                Dictionary object containing all subscores
+    subscores:  dict() | None
+                Dictionary object containing all subscores and the parameters they go to.
+                If no subscores have been specified, scores total sum automatically. 
+
+                Ex: 
+                {"subscore1": {
+                        "select": [1, 2, 5],
+                        "type": "sum"
+                },
+                "subscore2": {
+                        "select": [3, 4, 6, 10, 14],
+                        "type": "avg"
+                }}
     
     Private Methods
     ----------
     _filter(self):
-            Private method to filter out non-survey data, called in init. 
+            Filter out non-survey data based on self.name, called in init. 
 
     Public Methods
     ----------
     score_write(self, filename):
-            Function to score all subscores and write to filename.
+            Function to iterate and score over all subscores, create dataframe,
+            and write to filename.
     """
     def __init__(self, name, data, subscores=None):
         self.name = name
@@ -44,4 +57,12 @@ class Survey:
         return data
     
     def score_write(self, filename):
-        pass
+        if self.subscores is None:
+            # If no subscores, score total as default
+            default = Subscore()
+            scored_data = default.get_data(self.data)
+            # Write out to filename and return
+            scored_data.to_csv(filename)
+            return 
+        for sub in self.subscores:
+            pass
