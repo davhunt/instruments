@@ -6,9 +6,11 @@ class Subscore:
 
     Instance Variables
     ----------
+    name:   str
+            String representing subscore name.
     type:   "sum" | "avg"
             String that represents calculation type
-    threshold:  float 
+    threshold:  float | None 
                 Float that represents threshold to score row. None by default, which indicates no threshold 
                 required.
     select: list() | None
@@ -25,15 +27,16 @@ class Subscore:
     Private Methods
     ----------
     _perc_column(self):
-            Function to return name of percentage complete columns.
+            Function to return string name of percentage complete columns.
     _scored_column(self):
-            Function to return name of scored columns.
+            Function to return string name of scored columns.
 
     _remove_meta(self, data):
             Function to remove metadata columns timestamp & complete. Returns modified dataframe.
 
     _select_questions(self, data):
-            Function to select subset of questions on passed data based on self.select
+            Function to select subset of questions on passed data based on self.select.
+            Returns modified dataframe. 
     _reverse_score(self, data):
             To be implemented
     _score_conditional(self, data):
@@ -48,7 +51,7 @@ class Subscore:
             Function to get percentage of complete questions for selected questions on passed row. 
             Returns float.
     score(self, data):
-            Function to get score according to type. Returns dataframe of indices and column of floats. 
+            Function to get score and percenatage complete. Returns dataframe of indices and column of floats. 
 
     get_data(self, data):
             Function to get score, percentage complete and append to dataframe. Modifies dataframe in place. 
@@ -85,14 +88,13 @@ class Subscore:
         # If there is no selection, return unmodified series
         if self.select is None:
             return data
-        # TODO: CHANGE TO DATA 
         select_column = set()
         for num in self.select: 
             # For each selected question, find the corresponding column name
-            select_column.add(row.filter(regex=rf"_i{num}_").index[0])
-        filt_row = row.filter(items=list(select_column))
+            select_column.add(data.filter(regex=rf"_i{num}_").columns)
+        select_data = data.filter(items=list(select_column))
 
-        return filt_row 
+        return select_data 
     
     def _score_type(self, row):
         # TODO: Implement conditional and reverse scoring
@@ -105,9 +107,6 @@ class Subscore:
     def perc_complete(self, row):
         # Get total questions: all questions if no selection, else length of selection
         total_quest = row.shape[0] if self.select is None else len(self.select)
-
-        # Filter row based on selected questions
-        row = self._select_questions(row)
         # Get total answered questions 
         answered = row.count()
         # Calculate percentage and assign to index in new dataframe
@@ -135,7 +134,7 @@ class Subscore:
     
     def get_data(self, data):
         # Calculate score
-        total_df = self.score(data)
+        score_data = self.score(data)
 
         # Append to passed data and return
-        return data.join(total_df)
+        return data.join(score_data)
