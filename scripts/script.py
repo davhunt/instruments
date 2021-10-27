@@ -2,7 +2,7 @@ import pandas as pd
 import json
 from instruments import adexi , aq10
 
-with open('data.json','r') as infile:
+with open('script/data.json','r') as infile:
     data = json.load(infile)
 
 file = pd.read_csv(data["input"],index_col="record_id")
