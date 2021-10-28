@@ -1,5 +1,5 @@
 import pandas as pd
-from scripts.instruments.score_type import ScoreType
+from instruments.score_type import ScoreType
 
 
 class Subscore:
@@ -135,7 +135,7 @@ class Subscore:
 
         return score
     
-    def get_data(self, data):
+    def join_data(self, data):
         # Calculate score
         score_data = self.score(data)
 
