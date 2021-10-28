@@ -8,4 +8,4 @@ ehthumbs.db
 Thumbs.db
 
 # Metadata
-*/__pycache__/*
+__pycache__/
