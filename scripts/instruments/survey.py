@@ -33,7 +33,7 @@ class Survey:
     ----------
     score(self):
             Function to iterate and score over all subscores, and generate dataframe containing 
-            all subscores. Modifies original data in place, and returns modified dataframe. 
+            all subscores. Returns modified dataframe. 
     score_write(self, filename):
             Function to call score() and write subsequent csv to filename.
             Modifies original data in place, and returns modified dataframe. 
@@ -44,30 +44,31 @@ class Survey:
         self.subscores = subscores
 
         # Once data is initialized, filter out irrelevant data
-        self._filter(self.data, self.name)
+        self.data = self._filter(self.data.copy(), self.name)
     
     def _filter(self, data, name):
         # keep only the relevant survey data
-        data = data.filter(regex=rf"{name}_")
+        data = data.filter(regex=rf"{name}")
 
         # Drop columns with incomplete values in timestamp
         timestamp_col = data.filter(regex=rf"_{Subscore.TIME_LABEL}").columns
         data.dropna(subset=timestamp_col, inplace=True)
         return data
 
-    def score_subscores(self):
-        default = Subscore()
-        scored_total_data = default.join_data(self.data)
+    def score(self):
         # If no subscores, return default total
         if not len(self.subscores):
+            default = Subscore()
+            scored_total_data = default.join_data(self.data)
             return scored_total_data
         # Otherwise, iterate through subscores and score on data
+        subscored_data = self.data
         for subscore, params in self.subscores.items():
             sub_obj = Subscore(name=subscore, **params)
-            subscored_data = sub_obj.join_data(self.data)
+            subscored_data = sub_obj.join_data(subscored_data)
         return subscored_data
     
     def score_write(self, filename):     
-        complete_scored_data = self.score_subscores()
+        complete_scored_data = self.score()
         complete_scored_data.to_csv(filename)
         return complete_scored_data
