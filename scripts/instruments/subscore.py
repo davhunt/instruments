@@ -91,11 +91,12 @@ class Subscore:
         # If there is no selection, return unmodified series
         if self.select is None:
             return data
-        select_column = set()
+        select_columns = []
         for num in self.select: 
             # For each selected question, find the corresponding column name
-            select_column.add(data.filter(regex=rf"_i{num}_").columns)
-        select_data = data.filter(items=list(select_column))
+            select_columns += list(data.filter(regex=rf"_i{num}_").columns)
+        # Filter out all data except for selected columns
+        select_data = data.filter(items=select_columns)
 
         return select_data 
     
