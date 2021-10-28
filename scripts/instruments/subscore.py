@@ -1,5 +1,5 @@
 import pandas as pd
-import scripts.instruments.ScoreType as ScoreType
+from scripts.instruments.score_type import ScoreType
 
 
 class Subscore:
@@ -10,11 +10,11 @@ class Subscore:
     ----------
     name:   str 
             String representing subscore name. By default is named "total"
-    type:   "sum" | "avg"
-            String that represents calculation type. By default is "sum". 
-    threshold:  float | None 
-                Float that represents threshold to score row. None by default, which indicates no threshold 
-                required.
+    type:   String
+            String scoretype that represents a ScoreType value.
+    threshold:  float 
+                Float that represents threshold to score row. 100 by default, which indicates all 
+                questions must be answered.
     select: list() | None
             List containing questions to calculate. By default is None, which indicates all available questions.
     reverse_select: list() | None
@@ -51,7 +51,7 @@ class Subscore:
     ----------
     perc_complete(self, row):
             Function to get percentage of complete questions for selected questions on passed row. 
-            Returns float.
+            Returns float representing percentage.
     score(self, data):
             Function to get score and percenatage complete. Returns dataframe of indices and column of floats. 
 
@@ -61,7 +61,7 @@ class Subscore:
     TIME_LABEL = "timestamp"
     COMP_LABEL = "complete"
 
-    def __init__(self, name="total", type=ScoreType.sum.value, threshold=None, select=None, 
+    def __init__(self, name="total", type="sum", threshold=100, select=None, 
                  reverse_select=None, conditional=None):
         self.name = name
         self.type = type
@@ -105,7 +105,7 @@ class Subscore:
             return
         if not (self.conditional is None):
             return
-        return row.mean() if self.type == ScoreType.avg.value else row.sum()
+        return row.mean() if ScoreType[self.type] == ScoreType.avg else row.sum()
     
     def perc_complete(self, row):
         # Get total questions: all questions if no selection, else length of selection
@@ -124,14 +124,14 @@ class Subscore:
         surv_data = self._select_questions(surv_data)
 
         # Create a dataframe of percentage complete for each index
-        score = pd.DataFrame(index=surv_data.index, columns=[self._perc_column, self._scored_column])
+        score = pd.DataFrame(index=surv_data.index, columns=[self._perc_column(), self._scored_column()])
 
         for index, row in surv_data.iterrows():
             # Calculate percentage complete of row and assign to colu,n
             percentage = self.perc_complete(row)
-            score[index][self._perc_column] = percentage
+            score.loc[index, self._perc_column()] = percentage
             # Calculate score and assign to column if percentage complete is past threshold
-            score[index][self._scored_column] = self._score_type(row) if percentage >= self.threshold else -1
+            score.loc[index, self._scored_column()] = self._score_type(row) if percentage >= self.threshold else -1
 
         return score
     
