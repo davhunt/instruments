@@ -1,12 +1,9 @@
 from scripts.instruments.subscore import Subscore
 
-import pandas as pd
-import numpy as np
-
 
 class Survey:
-    """Class that utilizes Subscore class to score all available subscores
-    one survey
+    """Class that utilizes Subscore class to score all available subscores.
+    By default if the subscores are empty, simply scores total score and returns.
 
     Instance Variables
     ----------
@@ -14,9 +11,8 @@ class Survey:
             String that contains the survey name
     data:   pandas.Dataframe()
             Dataframe that contains csv survey data
-    subscores:  dict() | None
+    subscores:  dict() 
                 Dictionary object containing all subscores and the parameters they go to.
-                If no subscores have been specified, scores total sum automatically. 
 
                 Ex: 
                 {"subscore1": {
@@ -36,10 +32,10 @@ class Survey:
     Public Methods
     ----------
     score_write(self, filename):
-            Function to iterate and score over all subscores, create dataframe,
-            and write to filename.
+            Function to iterate and score over all subscores, and write csv containing all subscores to filename.
+            Modifies original data in place, and returns modified dataframe. 
     """
-    def __init__(self, name, data, subscores=None):
+    def __init__(self, name, data, subscores):
         self.name = name
         self.data = data
         self.subscores = subscores
@@ -57,12 +53,14 @@ class Survey:
         return data
     
     def score_write(self, filename):
-        if self.subscores is None:
-            # If no subscores, score total as default
-            default = Subscore()
-            scored_data = default.get_data(self.data)
+        default = Subscore()
+        scored_total_data = default.get_data(self.data)
+        # If no subscores, return default total
+        if not len(self.subscores):
             # Write out to filename and return
-            scored_data.to_csv(filename)
-            return 
-        for sub in self.subscores:
-            pass
+            scored_total_data.to_csv(filename)
+            return scored_total_data
+        for subscore, params in self.subscores.items():
+            sub_obj = Subscore(name=subscore, **params)
+            subscored_data = sub_obj.get_data(self.data)
+        return subscored_data
