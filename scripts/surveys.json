@@ -1,5 +1,5 @@
 {
-    "input": "rwe_download_2021-10-04.csv", 
+    "input": "data/inputs/rwe_download_2021-10-04.csv", 
     "surveys": {
         "adexi": {
             "wm": {
@@ -9,9 +9,12 @@
             "inh": {
                 "select": [3, 4, 6, 10, 14],
                 "type": "sum"
+            }, 
+            "total": {
+                "type": "sum"
             }
         },
-        "aq-10": {
+        "aq10": {
             "agreed": {
                 "select": [1, 7, 8, 10],
                 "type": "sum"
@@ -19,8 +22,32 @@
             "disagreed": {
                 "select": [2, 3, 4, 5, 6, 9],
                 "type": "sum"
+            },
+            "total": {
+                "type": "sum"
             }
         },
-        "sias6": {}
+        "sias6": {},
+        "scaared": {
+            "paso": {
+                "select": [1, 2, 6, 9, 11, 12, 15, 17, 18, 19, 22, 25, 28, 32, 36, 38, 40],
+                "type": "sum"
+            },
+            "ga": {
+                "select": [5, 7, 8, 14, 21, 23, 24, 29, 31, 35, 37, 39, 44],
+                "type": "sum"
+            }, 
+            "sep": {
+                "select": [4, 13, 16, 20, 26, 30, 33],
+                "type": "sum"
+            },
+            "soc": {
+                "select": [3, 10, 27, 34, 41, 42, 43],
+                "type": "sum"
+            },
+            "total": {
+                "type": "sum"
+            }
+        }
     }
 }
