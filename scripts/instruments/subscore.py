@@ -25,7 +25,8 @@ class Subscore:
                     By default is none, which indicates no conditional questions. 
 
                     Ex: { 1: [3, 4] } -> If question 1 is answered in the positive, score questions 3 & 4
-    
+    custom_score:   str | None
+                    A string representing a custom scoring. None indicates that no custom score is used.
 
     Private Methods
     ----------
