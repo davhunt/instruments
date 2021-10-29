@@ -26,4 +26,4 @@ surveys_wsub = surveys["surveys"]
 # Iterate through survey names and generate data
 for name, subscores in surveys_wsub.items():
     survey_obj = Survey(name, data, subscores)
-    handle = survey_obj.score_write("data/outputs/" + name + "test.csv")
+    handle = survey_obj.score_write("data/outputs/" + name + ".csv")
