@@ -1,33 +1,28 @@
 ## ADEXI
 
-This repo contains:
+This repo contains modifiable (.docx) and PDF versions of the ADEXI.
 
-### English
-* self-report
-    * .docx format
-    * .pdf format, as published on [chexi.se](https://chexi.se/downloads)
-    * REDCap import .zip and survey PDF
-* other-report
-    * .docx format
-    * .pdf format, as published on [chexi.se](https://chexi.se/downloads)
+For the English self-report, it also includes the REDCap import .zip and survey PDF.
 
-### Spanish for Latin America (ESLA)
-* self-report
-    * .docx format
-    * .pdf format
-* other-report
-    * .docx format
-    * .pdf format
-* a .csv file providing transparency on the translation process used to accomplish the translation of the English ADEXI into Spanish for Latin America, which was performed by members of the NDCLab in 2021:
+In addition, this repo houses the translation of both the self-report and other-report into Spanish for Latin America; this translation was performed by members of the NDCLab in 2021.  Included is a .csv file providing transparency on the translation process.
 
-    | Name | Contribution |
-    | :--  | :--  |
-    | Aitana Fischer | performed the draft translation |
-    | Laura Gallardo | independently edited the draft |
-    | Emily Machado | back translated the translation to English |
-    | Jessica Alexander | reconciled the forward and back translations |
+| Name | Contribution |
+| :--  | :--  |
+| Aitana Fischer | performed the draft translation |
+| Laura Gallardo | independently edited the draft |
+| Emily Machado | back translated the translation to English |
+| Jessica Alexander | reconciled the forward and back translations |
 
 Please report any issues with the ADEXI translations by posting an issue in this GitHub repository.
+
+
+### adexi_b
+At the request of the original author, the word "sometimes" was removed from several items.  The NDCLab updated our own copy of the instrument as we were responsible for updating the Spanish translation.  Details of which items were changed is available in the .csv file detailing the Spanish translation (in this subfolder) .
+
+
+### adexi_a
+This is the original version of the ADEXI used by the NDCLab, draw directly from the then-current version available from [the author](https://chexi.se/).
+
 
 
 ### Scoring Script
