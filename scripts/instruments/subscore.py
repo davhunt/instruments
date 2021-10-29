@@ -110,7 +110,8 @@ class Subscore:
         if not (self.conditional is None):
             return
         if not (self.custom_score is None):
-            return
+            self.custom_score = self.custom_score.replace("select", "row")
+            return eval(self.custom_score)
         return row.mean() if ScoreType[self.score_type] == ScoreType.avg else row.sum()
     
     def perc_complete(self, row):
