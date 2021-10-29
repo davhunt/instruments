@@ -1,6 +1,6 @@
 ## AQ-10
 
-This repo contains the PDF and REDCap import .zip for the AQ-10 questionnaire.
+This repo contains the main PDF, REDCap import .zip, and REDCap survey PDF for the AQ-10 questionnaire.
 
 
 ### Scoring Script

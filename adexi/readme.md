@@ -6,7 +6,7 @@ This repo contains:
 * self-report
     * .docx format
     * .pdf format, as published on [chexi.se](https://chexi.se/downloads)
-    * REDCap import .zip
+    * REDCap import .zip and survey PDF
 * other-report
     * .docx format
     * .pdf format, as published on [chexi.se](https://chexi.se/downloads)
