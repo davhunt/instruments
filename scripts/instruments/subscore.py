@@ -10,10 +10,10 @@ class Subscore:
     ----------
     name:   str 
             String representing subscore name. By default is named "total"
-    type:   String
-            String scoretype that represents a ScoreType value.
+    score_type: String
+                String scoretype that represents a ScoreType value. "Sum" by default. 
     threshold:  float 
-                Float that represents threshold to score row. 100 by default, which indicates all 
+                Float that represents threshold to score row. 1.0 by default, which indicates all 
                 questions must be answered.
     select: list() | None
             List containing questions to calculate. By default is None, which indicates all available questions.
@@ -25,6 +25,7 @@ class Subscore:
                     By default is none, which indicates no conditional questions. 
 
                     Ex: { 1: [3, 4] } -> If question 1 is answered in the positive, score questions 3 & 4
+    
 
     Private Methods
     ----------
@@ -61,14 +62,15 @@ class Subscore:
     TIME_LABEL = "timestamp"
     COMP_LABEL = "complete"
 
-    def __init__(self, name="total", type="sum", threshold=100, select=None, 
-                 reverse_select=None, conditional=None):
+    def __init__(self, name="total", score_type="sum", threshold=1.0, select=None, 
+                 reverse_select=None, conditional=None, custom_score=None):
         self.name = name
-        self.type = type
+        self.score_type = score_type
         self.threshold = threshold
         self.select = select
         self.reverse_select = reverse_select
         self.conditional=conditional
+        self.custom_score=custom_score
     
     def _perc_column(self):
         return "perc_" + self.name + "_complete"
@@ -88,9 +90,10 @@ class Subscore:
         return handle
     
     def _select_questions(self, data):
-        # If there is no selection, return unmodified series
+        # If there is no selection, return data with all questions
         if self.select is None:
-            return data
+            return data.filter(items=list(data.filter(regex=rf"_i._").columns))
+
         select_columns = []
         for num in self.select: 
             # For each selected question, find the corresponding column name
@@ -106,7 +109,9 @@ class Subscore:
             return
         if not (self.conditional is None):
             return
-        return row.mean() if ScoreType[self.type] == ScoreType.avg else row.sum()
+        if not (self.custom_score is None):
+            return
+        return row.mean() if ScoreType[self.score_type] == ScoreType.avg else row.sum()
     
     def perc_complete(self, row):
         # Get total questions: all questions if no selection, else length of selection
@@ -114,7 +119,7 @@ class Subscore:
         # Get total answered questions 
         answered = row.count()
         # Calculate percentage and assign to index in new dataframe
-        perc_complete = (answered / total_quest) * 100
+        perc_complete = (answered / total_quest)
 
         return perc_complete
 
