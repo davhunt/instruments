@@ -93,7 +93,7 @@
             },
             "prorat": {
                 "select": [1, 2, 3, 4, 5, 6],
-                "custom_score": "(sum(1:6) * 6) / 5",
+                "custom_score": "(select.sum() * 6) / 5",
                 "threshold": 0.83
             }
         }
