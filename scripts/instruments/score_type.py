@@ -6,3 +6,6 @@ class ScoreType(Enum):
     """
     sum = "sum"
     avg = "avg"
+    med = "med"
+    min = "min"
+    max = "max"
