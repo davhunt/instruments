@@ -20,7 +20,7 @@ class Subscore:
     reverse_select: list() | None
                     List containing questions which are scored via reverse score. By default is None,
                     which indicates no reverse scored questions.
-    conditional:    dict() | None
+    conditional:    dict() | ConditionScore | None
                     Dictionary object containing anticedent, answer, and consequent keys.
                     By default is none, which indicates no conditional questions. 
 
@@ -99,6 +99,7 @@ class Subscore:
 
     def _select_questions(self, data):
         # If there is no selection, return data with all questions
+        # TODO: DRY!
         if self.select is None:
             return data.filter(items=list(data.filter(regex=rf"_i._").columns))
 
@@ -113,7 +114,7 @@ class Subscore:
 
     def _score_type(self, row):
         # TODO: Implement conditional and reverse scoring
-        # TODO: Remove these conditionals in favor for OOP principles
+        # TODO: Remove these conditionals in favor for DRY principles
         if not (self.reverse_select is None):
             return
         if not (self.conditional is None):
