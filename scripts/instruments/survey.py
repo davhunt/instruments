@@ -71,13 +71,13 @@ class Survey:
     def score(self):
         # If no subscores, return default total
         if not len(self.subscores):
-            default = Subscore()
+            default = Subscore(name=self.name)
             scored_total_data = default.join_data(self.data)
             return scored_total_data
         # Otherwise, iterate through subscores and score on data
         subscored_data = self.data
         for subscore, params in self.subscores.items():
-            sub_obj = Subscore(name=subscore, **params)
+            sub_obj = Subscore(name=self.name, sub_name=subscore, **params)
             subscored_data = sub_obj.join_data(subscored_data)
         return subscored_data
     
