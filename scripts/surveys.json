@@ -1,5 +1,5 @@
 {
-    "input": "data/inputs/rwe_download_2021-10-04.csv", 
+    "input": "data/inputs/rwe_download_2021-11-01.csv", 
     "surveys": {
         "adexi": {
             "wm": {
@@ -98,4 +98,4 @@
             }
         }
     }
-}
+} 
