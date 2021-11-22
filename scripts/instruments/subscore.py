@@ -95,10 +95,10 @@ class Subscore:
         self.custom_score = custom_score
 
     def _perc_column(self, label):
-        return self.name + "_" + self.sub_name + "_" + label + "_perc_complete"
+        return self.name + "_perc_" + self.sub_name + "_" + label
 
     def _scored_column(self, label):
-        return self.name + "_" + self.sub_name + "_" + label + "_scored"
+        return self.name + "_scored_" + self.sub_name + "_" + label
 
     def _remove_meta(self, data):
         # Create deep copy to prevent modification in place
@@ -191,6 +191,7 @@ class Subscore:
     def join_data(self, data):
         # Calculate score
         score_data = self.score(data)
+        print(score_data.head())
 
-        # Append to passed data and return
-        return data.join(score_data)
+        # Return columns of calculated score
+        return score_data
