@@ -57,7 +57,7 @@ class Survey:
 
     def _load_data(self):
         file = pd.read_csv(self.file_name, index_col="record_id")
-        return pd.DataFrame(file)
+        return file
     
     def _filter(self, data, name):
         # keep only the relevant survey data
@@ -72,16 +72,24 @@ class Survey:
         # If no subscores, return default total
         if not len(self.subscores):
             default = Subscore(name=self.name)
-            scored_total_data = default.join_data(self.data)
+            scored_total_data = default.gen_data(self.data)
             return scored_total_data
         # Otherwise, iterate through subscores and score on data
-        subscored_data = self.data
+        all_scores = pd.DataFrame()
         for subscore, params in self.subscores.items():
             sub_obj = Subscore(name=self.name, sub_name=subscore, **params)
-            subscored_data = sub_obj.join_data(subscored_data)
-        return subscored_data
+            single_score = sub_obj.gen_data(self.data)
+            all_scores = pd.concat([all_scores, single_score], axis=1)
+        return all_scores
     
-    def score_write(self, filename):     
+    def score_write(self, filename):  
+        # Generate all subscore data   
         complete_scored_data = self.score()
-        complete_scored_data.to_csv(filename)
-        return complete_scored_data
+
+        # Get original file
+        original_data = self._load_data()
+        # Join on index
+        output_data = original_data.join(complete_scored_data)
+        # Write out data and return
+        output_data.to_csv(filename)
+        return output_data
