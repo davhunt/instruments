@@ -77,8 +77,8 @@ class Subscore:
     score(self, data):
             Function to get score and percenatage complete. Returns dataframe of indices and column of floats. 
 
-    get_data(self, data):
-            Function to get score, percentage complete and append to dataframe. Modifies dataframe in place. 
+    gen_data(self, data):
+            Function to get score, percentage complete as dataframe for subscore.
     """
     TIME_LABEL = "timestamp"
     COMP_LABEL = "complete"
@@ -188,10 +188,9 @@ class Subscore:
 
         return score
 
-    def join_data(self, data):
+    def gen_data(self, data):
         # Calculate score
         score_data = self.score(data)
-        print(score_data.head())
 
         # Return columns of calculated score
         return score_data
