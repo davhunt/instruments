@@ -24,4 +24,5 @@ for name, subscores in surveys_wsub.items():
     survey_obj = Survey(name, file_name, subscores)
     handle = survey_obj.score()
     all_surveys = pd.concat([all_surveys, handle], axis=1)
+all_surveys.fillna(value="N/A", inplace=True)
 all_surveys.to_csv(out_path + "/output.csv")
