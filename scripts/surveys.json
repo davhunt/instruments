@@ -1,102 +1,29 @@
 {
-    "input": "data/inputs/input-to-test_2021-11-12.csv", 
-    "output": "data/outputs",
-    "surveys": {
-        "adexi": {
-            "wm": {
-                "select": [1, 2, 5, 7, 8, 9, 11, 12, 13],
-                "score_type": "sum"
-            },
-            "inh": {
-                "select": [3, 4, 6, 10, 14],
-                "score_type": "sum"
-            }, 
-            "total": {
-                "score_type": "sum"
-            }
+    "adexi": {
+        "wm": {
+            "questions": [1, 2, 5, 7, 8, 9, 11, 12, 13],
+            "score_type": "sum"
         },
-        "aq10": {
-            "agreed": {
-                "select": [1, 7, 8, 10],
-                "score_type": "sum"
-            }, 
-            "disagreed": {
-                "select": [2, 3, 4, 5, 6, 9],
-                "score_type": "sum"
-            },
-            "total": {}
-        },
-        "sias6": {},
-        "scaared": {
-            "paso": {
-                "select": [1, 2, 6, 9, 11, 12, 15, 17, 18, 19, 22, 25, 28, 32, 36, 38, 40],
-                "score_type": "sum"
-            },
-            "ga": {
-                "select": [5, 7, 8, 14, 21, 23, 24, 29, 31, 35, 37, 39, 44],
-                "score_type": "sum"
-            }, 
-            "sep": {
-                "select": [4, 13, 16, 20, 26, 30, 33],
-                "score_type": "sum"
-            },
-            "soc": {
-                "select": [3, 10, 27, 34, 41, 42, 43],
-                "score_type": "sum"
-            },
-            "total": {
-                "score_type": "sum"
-            }
-        },
-        "bfne": {},
-        "idea": {
-            "idex": {
-                "select": [12, 23, 24, 25, 26, 27, 28],
-                "score_type": "avg",
-                "threshold": 0.8
-            },
-            "poss": {
-                "select": [1, 2, 4, 16, 21],
-                "score_type": "avg",
-                "threshold": 0.8
-            },
-            "neg" : {
-                "select": [3, 6, 8, 9, 11, 17, 20],
-                "score_type": "avg",
-                "threshold": 0.8
-            },
-            "other" : {
-                "select": [13, 14, 18],
-                "score_type": "avg",
-                "threshold": 0.8
-            },
-            "self": {
-                "select": [5, 7, 10, 15, 19, 22],
-                "score_type": "avg",
-                "threshold": 0.8
-            }, 
-            "btwn": {
-                "select": [29, 30, 31],
-                "score_type": "avg",
-                "threshold": 0.8
-            }
-        },
-        "ari": {
-            "raw": {
-                "select": [1, 2, 3, 4, 5, 6],
-                "score_type": "sum",
-                "threshold": 1.0
-            },
-            "avg": {
-                "select": [1, 2, 3, 4, 5, 6],
-                "score_type": "avg",
-                "threshold": 1.0
-            },
-            "prorat": {
-                "select": [1, 2, 3, 4, 5, 6],
-                "custom_score": "(select.sum() * 6) / 5",
-                "threshold": 0.83
-            }
+        "inh": {
+            "questions": [3, 4, 6, 10, 14], 
+            "score_type": "sum"
+        }, 
+        "total": {
+            "score_type": "sum"
         }
-    }
+    },
+    "aq10": {
+        "agreed": {
+            "selection": [1, 7, 8, 10],
+            "criteria": [1, 2],
+            "score_type": "count"
+        }, 
+        "disagreed": {
+            "questions": [2, 3, 4, 5, 6, 9],
+            "criteria": [3, 4],
+            "score_type": "count"
+        },
+        "total": {}
+    },
+    "sias6": {}
 } 
