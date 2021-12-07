@@ -14,7 +14,7 @@
     },
     "aq10": {
         "agreed": {
-            "selection": [1, 7, 8, 10],
+            "questions": [1, 7, 8, 10],
             "criteria": [1, 2],
             "score_type": "count"
         }, 
@@ -22,8 +22,7 @@
             "questions": [2, 3, 4, 5, 6, 9],
             "criteria": [3, 4],
             "score_type": "count"
-        },
-        "total": {}
+        }
     },
     "sias6": {}
 } 
