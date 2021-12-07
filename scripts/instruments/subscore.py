@@ -15,24 +15,16 @@ class Subscore:
             String representing survey name.
     sub_name:   str
                 String representing subscore name
-    score_type: String
+    score_type: String | custom_score()
                 String scoretype that represents a ScoreType value. "Sum" by default. 
     threshold:  float 
                 Float that represents threshold to score row. 1.0 by default, which indicates all 
                 questions must be answered.
-    select: list() | None
-            List containing questions to calculate. By default is None, which indicates all available questions.
-    reverse_select: dict() | RevQuestion | None
-                    List containing questions which are scored via reverse score. By default is None,
-                    which indicates no reverse scored questions.
-
-                    Ex: 
-                    {
-                        select: [1, 2, 3]
-                        max_score: 5
-                    }
-    conditional:    dict() | ConditionScore | None
-                    Dictionary object containing anticedent, answer, and consequent keys.
+    questions:  list() | None
+                By default is None, which indicates all available questions.
+    conditional:    condition_score() | None
+                    TO BE IMPLEMENTED
+                    Object containing anticedent, answer, and consequent keys.
                     By default is none, which indicates no conditional questions. 
 
                     Ex: 
@@ -42,8 +34,8 @@ class Subscore:
                         "conseq": [other_subscore]
                      } -> 
                      "If question 1 is answered as 5, score questions 3 & 4"
-    custom_score:   str | None
-                    A string representing a custom scoring. None indicates that no custom score is used.
+    criteria:   list() | None  
+                list of valid answers. None if any answer is valid
 
     Private Methods
     ----------
@@ -56,7 +48,7 @@ class Subscore:
             Function to remove metadata columns timestamp & complete. Returns modified dataframe.
 
     _select_questions(self, data):
-            Function to select subset of questions on passed data based on self.select.
+            Function to select subset of questions on passed data based on self.select_questions.
             Returns modified dataframe. 
     _get_unique(self, row):
             Function to get unique sessions, rows, and events.
@@ -83,16 +75,15 @@ class Subscore:
     TIME_LABEL = "timestamp"
     COMP_LABEL = "complete"
 
-    def __init__(self, name, sub_name="total", score_type="sum", threshold=1.0, select=None,
-                 reverse_select=None, conditional=None, custom_score=None):
+    def __init__(self, name, sub_name="total", score_type="sum", threshold=1.0,
+                 questions=None, conditional=None, criteria=None):
         self.name = name
         self.sub_name = sub_name
         self.score_type = score_type
         self.threshold = threshold
-        self.select = select
-        self.reverse_select = reverse_select
+        self.questions = questions
         self.conditional = conditional
-        self.custom_score = custom_score
+        self.criteria = criteria
 
     def _perc_column(self, label):
         return self.name + "_perc_" + self.sub_name + "_" + label
@@ -114,12 +105,11 @@ class Subscore:
 
     def _select_questions(self, data):
         # If there is no selection, return data with all questions
-        # TODO: DRY!
-        if self.select is None:
+        if self.questions is None:
             return data.filter(items=list(data.filter(regex=rf"_i[0-9]+_").columns))
 
         select_columns = []
-        for num in self.select:
+        for num in self.questions:
             # For each selected question, find the corresponding column name
             select_columns += list(data.filter(regex=rf"_i{num}_").columns)
         # Filter out all data except for selected columns
@@ -132,24 +122,24 @@ class Subscore:
         ind_names = list(data.columns)
         # Filter unique sessions, runs, and events
         unique_vals = set(
-            [re.sub(rf"{self.name}_i[0-9]+_", "", ind) for ind in ind_names])
+            [re.sub(rf"{self.name}_?[a-z]?_i[0-9]+_", "", ind) for ind in ind_names])
         return unique_vals
 
     def _score_type(self, row):
-        # TODO: Implement conditional and reverse scoring
-        # TODO: Remove these conditionals in favor for DRY principles
-        if not (self.reverse_select is None):
-            return
-        if not (self.conditional is None):
-            return
-        if not (self.custom_score is None):
-            self.custom_score = self.custom_score.replace("select", "row")
-            return eval(self.custom_score)
-        return row.mean() if ScoreType[self.score_type] == ScoreType.avg else row.sum()
+        # filter series according to criteria, if applicable
+        if self.criteria is not None:   
+            row.where(row.isin(self.criteria), inplace=True)
+
+        if ScoreType[self.score_type] == ScoreType.avg:
+            return row.mean()  
+        elif ScoreType[self.score_type] == ScoreType.sum:
+            return row.sum()
+        elif ScoreType[self.score_type] == ScoreType.count:
+            return row.count()
 
     def perc_complete(self, row):
         # Get total questions: all questions if no selection, else length of selection
-        total_quest = row.shape[0] if self.select is None else len(self.select)
+        total_quest = row.shape[0] if self.questions is None else len(self.questions)
         # Get total answered questions
         answered = row.count()
 
