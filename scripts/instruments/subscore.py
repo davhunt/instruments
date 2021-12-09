@@ -51,7 +51,7 @@ class Subscore:
             Function to select subset of questions on passed data based on self.select_questions.
             Returns modified dataframe. 
     _get_unique(self, row):
-            Function to get unique sessions, rows, and events.
+            Function to get unique sessions, rows, and events, sorted in mentioned order.
             Returns list of labels.
     _reverse_score(self, data):
             To be implemented
@@ -146,7 +146,7 @@ class Subscore:
         perc_complete = (answered / total_quest)
         return perc_complete
 
-    def score(self, data):
+    def gen_data(self, data):
         # Filter out metadata
         surv_data = self._remove_meta(data)
         # Filter based on selected questions
@@ -177,10 +177,3 @@ class Subscore:
                     row_set) if percentage >= self.threshold else np.NaN
 
         return score
-
-    def gen_data(self, data):
-        # Calculate score
-        score_data = self.score(data)
-
-        # Return columns of calculated score
-        return score_data
