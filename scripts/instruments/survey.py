@@ -46,6 +46,10 @@ class Survey:
             Function to call score() and write subsequent csv to filename.
             Modifies original data in place, and returns modified dataframe. 
     """
+    SES_POS = 3
+    RUN_POS = 4
+    EVENT_POS = 5
+
     def __init__(self, name, file_name, subscores):
         self.name = name
         self.file_name = file_name
@@ -70,16 +74,28 @@ class Survey:
         return data
 
     def score(self):
+        # Extract delimeter from subscore
+        delim = Subscore.DELIMITER
+
         # If no subscores, return default total
         if not len(self.subscores):
             default = Subscore(name=self.name)
             scored_total_data = default.gen_data(self.data)
             return scored_total_data
+
         # Otherwise, iterate through subscores and score on data
         all_scores = pd.DataFrame()
         for subscore, params in self.subscores.items():
             sub_obj = Subscore(name=self.name, sub_name=subscore, **params)
             single_score = sub_obj.gen_data(self.data)
             all_scores = pd.concat([all_scores, single_score], axis=1)
+
+        all_scores = all_scores.reindex(
+            sorted(all_scores.columns, key=lambda x: \
+                (int(x.split(delim)[self.SES_POS][1]),\
+                int(x.split(delim)[self.RUN_POS][1]),\
+                int(x.split(delim)[self.EVENT_POS][1]))\
+        ), axis=1)
+
         return all_scores
 
