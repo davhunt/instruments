@@ -1,6 +1,7 @@
 from instruments.subscore import Subscore
 
 import pandas as pd
+import regex as re
 
 
 class Survey:
@@ -34,6 +35,7 @@ class Survey:
     ----------
     _filter(self):
             Filter out non-survey data based on self.name, called in init.
+            Also get real survey name if it includes versioning.
     _load_data(self):
             Use self.file_name to init pandas dataframe and returns.
 
@@ -46,9 +48,9 @@ class Survey:
             Function to call score() and write subsequent csv to filename.
             Modifies original data in place, and returns modified dataframe. 
     """
-    SES_POS = 3
-    RUN_POS = 4
-    EVENT_POS = 5
+    SES_POS = -3
+    RUN_POS = -2
+    EVENT_POS = -1
 
     def __init__(self, name, file_name, subscores):
         self.name = name
@@ -57,22 +59,26 @@ class Survey:
 
         # Init and filter data
         self.data = self._load_data()
-        self.data = self._filter(self.data.copy(), self.name)
+        self._filter()
 
     def _load_data(self):
         # load filename into dataframe
         file = pd.read_csv(self.file_name, index_col="record_id")
         return file
-    
-    def _filter(self, data, name):
+        
+    def _filter(self):
         # keep only survey data containing survey name
-        data = data.filter(regex=rf"{name}")
+        self.data = self.data.filter(regex=rf"^{self.name}")
 
         # Drop columns with incomplete values in timestamp
-        timestamp_col = data.filter(regex=rf"_{Subscore.TIME_LABEL}").columns
-        data.dropna(subset=timestamp_col, inplace=True)
-        return data
-
+        timestamp_col = self.data.filter(regex=rf"_{Subscore.TIME_LABEL}").columns
+        self.data.dropna(subset=timestamp_col, inplace=True)
+        
+        # extract name with potential version using timestamp
+        surv_vers = re.findall(rf"^({self.name}_[A-Za-z])_", timestamp_col[0])
+        if len(surv_vers):
+            self.name = surv_vers[0]
+        
     def score(self):
         # Extract delimeter from subscore
         delim = Subscore.DELIMITER
