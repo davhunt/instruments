@@ -56,11 +56,12 @@ class Survey:
         self.data = self._filter(self.data.copy(), self.name)
 
     def _load_data(self):
+        # load filename into dataframe
         file = pd.read_csv(self.file_name, index_col="record_id")
         return file
     
     def _filter(self, data, name):
-        # keep only the relevant survey data
+        # keep only survey data containing survey name
         data = data.filter(regex=rf"{name}")
 
         # Drop columns with incomplete values in timestamp
@@ -81,15 +82,4 @@ class Survey:
             single_score = sub_obj.gen_data(self.data)
             all_scores = pd.concat([all_scores, single_score], axis=1)
         return all_scores
-    
-    def score_write(self, filename):  
-        # Generate all subscore data   
-        complete_scored_data = self.score()
 
-        # Get original file
-        original_data = self._load_data()
-        # Join on index
-        output_data = original_data.join(complete_scored_data)
-        # Write out data and return
-        output_data.to_csv(filename)
-        return output_data
