@@ -90,6 +90,7 @@ class Survey:
             single_score = sub_obj.gen_data(self.data)
             all_scores = pd.concat([all_scores, single_score], axis=1)
 
+        # Sort according to session, run, and event, in that order
         all_scores = all_scores.reindex(
             sorted(all_scores.columns, key=lambda x: \
                 (int(x.split(delim)[self.SES_POS][1]),\
