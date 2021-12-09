@@ -139,6 +139,7 @@ class Subscore:
         if self.criteria is not None:   
             row.where(row.isin(self.criteria), inplace=True)
 
+        # Score according score_type
         if ScoreType[self.score_type] == ScoreType.avg:
             return row.mean()  
         elif ScoreType[self.score_type] == ScoreType.sum:
