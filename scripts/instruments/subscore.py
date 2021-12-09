@@ -74,6 +74,7 @@ class Subscore:
     """
     TIME_LABEL = "timestamp"
     COMP_LABEL = "complete"
+    DELIMITER = "_"
 
     def __init__(self, name, sub_name="total", score_type="sum", threshold=1.0,
                  questions=None, conditional=None, criteria=None):
@@ -86,10 +87,12 @@ class Subscore:
         self.criteria = criteria
 
     def _perc_column(self, label):
-        return self.name + "_perc_" + self.sub_name + "_" + label
+        return self.name + self.DELIMITER + "perc" + self.DELIMITER + \
+            self.sub_name + self.DELIMITER + label
 
     def _scored_column(self, label):
-        return self.name + "_scored_" + self.sub_name + "_" + label
+        return self.name + self.DELIMITER + "scored" + self.DELIMITER \
+             + self.sub_name + self.DELIMITER + label
 
     def _remove_meta(self, data):
         # Create deep copy to prevent modification in place
@@ -97,7 +100,7 @@ class Subscore:
 
         # Get column names that contain metadata labels
         metadata_col = handle.filter(
-            regex=rf"_{self.TIME_LABEL}|_{self.COMP_LABEL}").columns
+            regex=rf"{self.DELIMITER}{self.TIME_LABEL}|{self.DELIMITER}{self.COMP_LABEL}").columns
         # Drop the above column names
         handle = handle.drop(metadata_col, axis=1)
 
@@ -106,12 +109,16 @@ class Subscore:
     def _select_questions(self, data):
         # If there is no selection, return data with all questions
         if self.questions is None:
-            return data.filter(items=list(data.filter(regex=rf"_i[0-9]+_").columns))
+            return data.filter(items=list(
+                data.filter(regex=rf"{self.DELIMITER}i[0-9]+{self.DELIMITER}").columns
+            ))
 
         select_columns = []
         for num in self.questions:
             # For each selected question, find the corresponding column name
-            select_columns += list(data.filter(regex=rf"_i{num}_").columns)
+            select_columns += list(
+                data.filter(regex=rf"{self.DELIMITER}i{num}{self.DELIMITER}").columns
+            )
         # Filter out all data except for selected columns
         select_data = data.filter(items=select_columns)
 
@@ -121,8 +128,10 @@ class Subscore:
         # Get column names
         ind_names = list(data.columns)
         # Filter unique sessions, runs, and events
-        unique_vals = set(
-            [re.sub(rf"{self.name}_?[a-z]?_i[0-9]+_", "", ind) for ind in ind_names])
+        unique_vals = set([re.sub(
+            rf"{self.name}[{self.DELIMITER}a-z]*{self.DELIMITER}i[0-9]+{self.DELIMITER}", "", ind) \
+                for ind in ind_names
+        ])
         return unique_vals
 
     def _score_type(self, row):
@@ -167,7 +176,7 @@ class Subscore:
             for unique in unique_vals:
                 # Create copy to prevent modification in place
                 row_set = row.copy()
-                row_set = row_set.filter(regex=rf"_{unique}")
+                row_set = row_set.filter(regex=rf"{self.DELIMITER}{unique}")
 
                 # Calculate percentage complete of row and assign to column
                 percentage = self.perc_complete(row_set)
