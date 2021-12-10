@@ -50,7 +50,7 @@ class Subscore:
     _select_questions(self, data):
             Function to select subset of questions on passed data based on self.select_questions.
             Returns modified dataframe. 
-    _get_unique(self, row):
+    _get_unique_sre(self, row):
             Function to get unique sessions, rows, and events, sorted in mentioned order.
             Returns list of labels.
     _reverse_score(self, data):
@@ -124,14 +124,13 @@ class Subscore:
 
         return select_data
 
-    def _get_unique(self, data):
+    def _get_unique_sre(self, data):
+        # init regex to get unique sessions, events, and runs
+        sre_reg = rf"s[0-9]+_r[0-9]+_e[0-9]+"
         # Get column names
         ind_names = list(data.columns)
         # Filter unique sessions, runs, and events
-        unique_vals = set([re.sub(
-            rf"{self.name}[{self.DELIMITER}a-z]*{self.DELIMITER}i[0-9]+{self.DELIMITER}", "", ind) \
-                for ind in ind_names
-        ])
+        unique_vals = set([re.search(sre_reg, ind).group(0) for ind in ind_names])
         return unique_vals
 
     def _score_type(self, row):
@@ -163,7 +162,7 @@ class Subscore:
         surv_data = self._select_questions(surv_data)
 
         # Create a column for each unique session, row, and event
-        unique_vals = self._get_unique(surv_data)
+        unique_vals = self._get_unique_sre(surv_data)
         unique_cols = []
         for val in unique_vals:
             unique_cols.append(self._perc_column(val))
@@ -177,7 +176,7 @@ class Subscore:
             for unique in unique_vals:
                 # Create copy to prevent modification in place
                 row_set = row.copy()
-                row_set = row_set.filter(regex=rf"{self.DELIMITER}{unique}")
+                row_set = row_set.filter(regex=rf"{self.name}.+{self.DELIMITER}{unique}")
 
                 # Calculate percentage complete of row and assign to column
                 percentage = self.perc_complete(row_set)
