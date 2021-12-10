@@ -60,11 +60,12 @@ class Survey:
         self.file_name = file_name
         self.subscores = subscores
 
-        # Init and filter data
+        # init and filter data
         self.data = self._load_data()
         self._filter()
 
-        # Extract versions from survey name
+        # extract versions from survey name
+        self.versions = []
         self._extract_versions()
 
     def _load_data(self):
@@ -75,23 +76,31 @@ class Survey:
     def _filter(self):
         # keep only survey data containing survey name
         self.data = self.data.filter(regex=rf"^{self.name}")
+        # quit processing if survey data is not available 
+        if(self.data.empty):
+            raise RuntimeError("Data does not contain %s survey data."%(self.name))
 
-        # Drop columns with incomplete values in timestamp
+        # Drop rows with incomplete values in timestamp
         timestamp_col = self.data.filter(regex=rf"_{Subscore.TIME_LABEL}").columns
         self.data.dropna(subset=timestamp_col, inplace=True)
+        if(self.data.empty):
+            raise RuntimeError("Survey %s does not contain any values."%(self.name))
     
     def _extract_versions(self):
-        # Init default version
-        self.versions = [""]
+        # init regex
+        ver_reg = rf"^{self.name}_[A-Za-z]"
 
-        # Get timestamp column
+        # get timestamp column of all versions
         timestamp_col = self.data.filter(regex=rf"_{Subscore.TIME_LABEL}").columns
         # extract potential versions using timestamp
-        surv_vers = re.findall(rf"^{self.name}(_[A-Za-z])_", timestamp_col[0])
+        surv_vers = [re.search(ver_reg, ver).group(0) for ver in timestamp_col]
+
+        # if survey versions extracted, assign to instance var
         if len(surv_vers):
             self.versions = surv_vers
-        # Append each version to survey name
-        self.versions = [self.name + v for v in self.versions]
+            return
+        # Ptherwise assign default name
+        self.versions = [self.name]
         
     def score(self):
         # Extract delimeter from subscore
@@ -106,19 +115,19 @@ class Survey:
         # Otherwise, iterate through subscores and score on data
         all_scores = pd.DataFrame()
         for subscore, params in self.subscores.items():
-            # iterate through versions
+            # Create subscore for each version of survey found
             for ver_name in self.versions:
                 sub_obj = Subscore(name=ver_name, sub_name=subscore, **params)
                 single_score = sub_obj.gen_data(self.data)
                 all_scores = pd.concat([all_scores, single_score], axis=1)
 
-        # Sort according to session, run, and event, in that order
-        all_scores = all_scores.reindex(
-            sorted(all_scores.columns, key=lambda x: \
-                (int(x.split(delim)[self.SES_POS][1]),\
-                int(x.split(delim)[self.RUN_POS][1]),\
-                int(x.split(delim)[self.EVENT_POS][1]))\
-        ), axis=1)
+            # Sort according to session, run, and event, in that order
+            all_scores = all_scores.reindex(
+                sorted(all_scores.columns, key=lambda x: \
+                    (int(x.split(delim)[self.SES_POS][1]),\
+                    int(x.split(delim)[self.RUN_POS][1]),\
+                    int(x.split(delim)[self.EVENT_POS][1]))\
+            ), axis=1)
 
         return all_scores
 
