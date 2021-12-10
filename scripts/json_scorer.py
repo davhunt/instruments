@@ -21,8 +21,13 @@ with open('scripts\surveys.json','r') as infile:
 # Iterate through survey names and generate data
 all_surveys = pd.read_csv(input, index_col="record_id")
 for name, subscores in surveys.items():
-    survey_obj = Survey(name, input, subscores)
-    handle = survey_obj.score()
-    all_surveys = pd.concat([all_surveys, handle], axis=1)
+    # Try to score, continue if fails
+    try:
+        survey_obj = Survey(name, input, subscores)
+        handle = survey_obj.score()
+        all_surveys = pd.concat([all_surveys, handle], axis=1)
+    except RuntimeError:
+        continue
+    
 all_surveys.fillna(value="N/A", inplace=True)
 all_surveys.to_csv(out_path + "/output.csv")
