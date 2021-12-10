@@ -88,16 +88,20 @@ class Survey:
     
     def _extract_versions(self):
         # init regex
-        ver_reg = rf"^{self.name}_[A-Za-z]"
+        ver_reg = rf"{self.name}_[A-Za-z]_"
 
         # get timestamp column of all versions
         timestamp_col = self.data.filter(regex=rf"_{Subscore.TIME_LABEL}").columns
         # extract potential versions using timestamp
-        surv_vers = [re.search(ver_reg, ver).group(0) for ver in timestamp_col]
+        surv_vers = []
+        for ver in timestamp_col:
+            res = re.search(ver_reg, ver)
+            if res is not None:
+                surv_vers.append(res.group(0)[:-1])
 
         # if survey versions extracted, assign to instance var
         if len(surv_vers):
-            self.versions = surv_vers
+            self.versions = list(set(surv_vers))
             return
         # Ptherwise assign default name
         self.versions = [self.name]
