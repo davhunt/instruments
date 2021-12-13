@@ -51,9 +51,12 @@ class Survey:
             Function to call score() and write subsequent csv to filename.
             Modifies original data in place, and returns modified dataframe. 
     """
+    VER_POS = 1
     SES_POS = -3
     RUN_POS = -2
     EVENT_POS = -1
+
+    DELIM = Subscore.DELIMITER
 
     def __init__(self, name, file_name, subscores):
         self.name = name
@@ -64,8 +67,8 @@ class Survey:
         self.data = self._load_data()
         self._filter()
 
-        # extract versions from survey name
-        self.versions = []
+        # init default versions and extract potential versions
+        self.versions = [self.name]
         self._extract_versions()
 
     def _load_data(self):
@@ -102,14 +105,8 @@ class Survey:
         # if survey versions extracted, assign to instance var
         if len(surv_vers):
             self.versions = list(set(surv_vers))
-            return
-        # Ptherwise assign default name
-        self.versions = [self.name]
         
     def score(self):
-        # Extract delimeter from subscore
-        delim = Subscore.DELIMITER
-
         # If no subscores, return default total
         if not len(self.subscores):
             default = Subscore(name=self.name)
@@ -119,19 +116,24 @@ class Survey:
         # Otherwise, iterate through subscores and score on data
         all_scores = pd.DataFrame()
         for subscore, params in self.subscores.items():
-            # Create subscore for each version of survey found
-            for ver_name in self.versions:
-                sub_obj = Subscore(name=ver_name, sub_name=subscore, **params)
+            # Score each subscore w/passed params, consider each version as a seperate survey
+            for ver_surv in self.versions:  
+                sub_obj = Subscore(name=ver_surv, sub_name=subscore, **params)
                 single_score = sub_obj.gen_data(self.data)
                 all_scores = pd.concat([all_scores, single_score], axis=1)
 
             # Sort according to session, run, and event, in that order
             all_scores = all_scores.reindex(
                 sorted(all_scores.columns, key=lambda x: \
-                    (int(x.split(delim)[self.SES_POS][1]),\
-                    int(x.split(delim)[self.RUN_POS][1]),\
-                    int(x.split(delim)[self.EVENT_POS][1]))\
+                    (int(x.split(self.DELIM)[self.SES_POS][1]),\
+                    int(x.split(self.DELIM)[self.RUN_POS][1]),\
+                    int(x.split(self.DELIM)[self.EVENT_POS][1]))\
             ), axis=1)
+        
+        # if multiple versions exist, sort according to version
+        if len(self.versions) > 2:  
+            all_scores = all_scores.reindex(sorted(all_scores.columns, key=lambda x: \
+                (x.split(self.DELIM)[self.VER_POS][1])), axis=1)
 
         return all_scores
 
