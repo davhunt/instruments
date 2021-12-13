@@ -91,7 +91,7 @@ class Subscore:
             self.sub_name + self.DELIMITER + label
 
     def _scored_column(self, label):
-        return self.name + self.DELIMITER + "scored" + self.DELIMITER \
+        return self.name + self.DELIMITER + "scrd" + self.DELIMITER \
              + self.sub_name + self.DELIMITER + label
 
     def _remove_meta(self, data):
