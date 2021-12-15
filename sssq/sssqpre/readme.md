@@ -7,7 +7,7 @@ No variables were modified in this version, but the matrix header described belo
 
 
 ### sssqpre_a
-This is the original version used by the NDCLab.  It contains an error in the second matrix, which reads "at the moment," but should read "during the past ten minutes."
+This is the original version used by the NDCLab. It contains an error in the second matrix, which reads "at the moment," but should read "during the past ten minutes."
 
 
 ### Scoring Script
