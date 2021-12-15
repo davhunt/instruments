@@ -1,6 +1,6 @@
 ## PTTFQ
 
-This repo contains modifiable (.docx) and PDF versions of the generic post-task thoughts and feelings questionnaire used by the NDCLab, along with the REDCap import .zip.
+This repo contains modifiable (.docx) and PDF versions of the generic post-task thoughts and feelings questionnaire used by the NDCLab, along with the REDCap import .zip and survey PDF.
 
 
 ### Scoring Script
