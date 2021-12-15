@@ -17,7 +17,7 @@ Please report any issues with the ADEXI translations by posting an issue in this
 
 
 ### adexi_b
-At the request of the original author, the word "sometimes" was removed from several items.  The NDCLab updated our own copy of the instrument as we were responsible for updating the Spanish translation.  Details of which items were changed is available in the .csv file detailing the Spanish translation (in this subfolder) .
+At the request of the original author, the word "sometimes" was removed from several items.  The NDCLab updated our own copy of the instrument as we were responsible for updating the Spanish translation. Details of which items were changed is available in the .csv file detailing the Spanish translation (in this subfolder) .
 
 
 ### adexi_a
