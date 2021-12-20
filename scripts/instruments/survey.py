@@ -68,7 +68,7 @@ class Survey:
         self._filter()
 
         # init default versions and extract potential versions
-        self.versions = [self.name]
+        self.versions = []
         self._extract_versions()
 
     def _load_data(self):
@@ -91,35 +91,32 @@ class Survey:
     
     def _extract_versions(self):
         # init regex
-        ver_reg = rf"{self.name}_[A-Za-z]_"
+        surv_reg = rf"{self.name}"
+        ver_reg = rf"{self.name}_[a-z]_"
 
         # get timestamp column of all versions
         timestamp_col = self.data.filter(regex=rf"_{Subscore.TIME_LABEL}").columns
         # extract potential versions using timestamp
-        surv_vers = []
         for ver in timestamp_col:
-            res = re.search(ver_reg, ver)
-            if res is not None:
-                surv_vers.append(res.group(0)[:-1])
+            surv_res = re.search(surv_reg, ver)
+            ver_res = re.search(ver_reg, ver)
+            if ver_res is not None:
+                self.versions.append(ver_res.group(0)[:-1])
+            elif surv_res is not None:
+                self.versions.append(surv_res.group(0))
 
         # if survey versions extracted, assign to instance var
-        if len(surv_vers):
-            self.versions = list(set(surv_vers))
+        if len(self.versions):
+            self.versions = list(set(self.versions))
         
     def score(self):
-        # If no subscores, return default total
-        if not len(self.subscores):
-            default = Subscore(name=self.name)
-            scored_total_data = default.gen_data(self.data)
-            return scored_total_data
-
-        # Otherwise, iterate through subscores and score on data
+        # Iterate through subscores and score on data
         all_scores = pd.DataFrame()
         for subscore, params in self.subscores.items():
             # Score each subscore w/passed params, consider each version as a seperate survey
             for ver_surv in self.versions:  
                 sub_obj = Subscore(name=ver_surv, sub_name=subscore, **params)
-                single_score = sub_obj.gen_data(self.data)
+                single_score = sub_obj.gen_data(self.data, all_scores)
                 all_scores = pd.concat([all_scores, single_score], axis=1)
 
             # Sort according to session, run, and event, in that order
