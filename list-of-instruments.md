@@ -10,6 +10,7 @@ Below is a list of instruments contained in this repository.
 | ari | Affective Reactivity Index | [Stringaris et al. (2012)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3484687/) |
 | asr | Adult Self-Report | Achenbach (2003) |
 | baars4 | Barkley Adult ADHD Rating Scale-IV | Barkley (2011) |
+| bmis | Brief Mood Introspection Scale | [Mayer and Gaschke (1988)](https://pubmed.ncbi.nlm.nih.gov/3418484/) |
 | brief2 | Behavior Rating Inventory of Executive Function Adult | Gioia et al. (2015) |
 | bfne | Brief Fear of Negative Evaluation-II | [Carleton et al. (2007)](https://psycnet.apa.org/record/2007-01810-010) |
 | chexi | Childhood Executive Functioning Inventory | [Catale et al. (2013)](https://pubmed.ncbi.nlm.nih.gov/23355496/) |
