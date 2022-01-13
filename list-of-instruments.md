@@ -27,7 +27,7 @@ Below is a list of instruments contained in this repository.
 | panas | Positive and Negative Affect Schedule | [Watson et al. (1988)](https://pubmed.ncbi.nlm.nih.gov/3397865/) |
 | phq8 | Patient Health Questionnaire | Kroenke et al. (2009) |
 | postTaskA | Post-Task Questionnaire | NDCLab |
-| psqi | Pittsburgh Sleep Quality Index | [Buysse et al. (1989)](https://pubmed.ncbi.nlm.nih.gov/2748771/) |
+| psqi | Pittsburgh Sleep Quality Index | full: [Buysse et al. (1989)](https://pubmed.ncbi.nlm.nih.gov/2748771/); short: [Sancho-Domingo et al. (2021)](https://pubmed.ncbi.nlm.nih.gov/33119375/) |
 | pttfq | Post-Task Thoughts and Feelings Questionnaire | NDCLab |
 | rmbi | Retrospective Measure of Behavioral Inhibition | [Gladstone and Parker (2005)](https://pubmed.ncbi.nlm.nih.gov/15922458/) |
 | rtq | Repetitive Thinking Questionnaire | [McEvoy et al. (2010)](https://www.sciencedirect.com/science/article/pii/S0887618510000551) |
