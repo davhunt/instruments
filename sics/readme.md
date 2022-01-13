@@ -1,5 +1,5 @@
 ## SICS
-This repo contains the PDF and REDCap import .zip for the SICS questionnaire.
+This repo contains the main PDF, REDCap import .zip, and REDCap survey PDF for the SICS questionnaire.
 
 
 ### Scoring Script
