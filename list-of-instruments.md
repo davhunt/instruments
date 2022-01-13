@@ -10,10 +10,9 @@ Below is a list of instruments contained in this repository.
 | ari | Affective Reactivity Index | [Stringaris et al. (2012)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3484687/) |
 | asr | Adult Self-Report | Achenbach (2003) |
 | baars4 | Barkley Adult ADHD Rating Scale-IV | Barkley (2011) |
-| bmis | Brief Mood Introspection Scale | [Mayer and Gaschke (1988)](https://pubmed.ncbi.nlm.nih.gov/3418484/) |
-| brief2 | Behavior Rating Inventory of Executive Function Adult | Gioia et al. (2015) |
 | bfne | Brief Fear of Negative Evaluation-II | [Carleton et al. (2007)](https://psycnet.apa.org/record/2007-01810-010) |
 | bmis | Brief Mood Introspection Scale | [Mayer and Gaschke (1998)](https://pubmed.ncbi.nlm.nih.gov/3418484) |
+| briefA | Behavior Rating Inventory of Executive Function Adult | Gioia et al. (2015) |
 | chexi | Childhood Executive Functioning Inventory | [Catale et al. (2013)](https://pubmed.ncbi.nlm.nih.gov/23355496/) |
 | covid | Covid Experiences Questionnaire | NDCLab |
 | demo | Demographics | NDCLab |
@@ -23,19 +22,21 @@ Below is a list of instruments contained in this repository.
 | hvs | Heightened Vigilance Scale | [Williams et al. (1997)](https://journals.sagepub.com/doi/10.1177/135910539700200305) |
 | idea | Inventory of the Dimensions of Emerging Adulthood | [Reifman et al. (2007)](https://jyd.pitt.edu/ojs/jyd/article/view/359) |
 | ierq | Interpersonal Emotion Regulation Questionnaire | [Hofmann et al. (2016)](https://link.springer.com/article/10.1007/s10608-016-9756-2) |
-| initStateA | Pre-Task Questionnaire | NDCLab |
+| initState | Pre-Task Questionnaires | NDCLab |
+| iri | Interpersonal Reactivity Index | [Davis (1980)](https://www.researchgate.net/publication/34891073_A_Multidimensional_Approach_to_Individual_Differences_in_Empathy) |
 | ius | Intolerance of Uncertainty Scale | [Carleton et al. (2007)](https://pubmed.ncbi.nlm.nih.gov/16647833/) |
 | panas | Positive and Negative Affect Schedule | [Watson et al. (1988)](https://pubmed.ncbi.nlm.nih.gov/3397865/) |
 | phq8 | Patient Health Questionnaire | Kroenke et al. (2009) |
-| postTaskA | Post-Task Questionnaire | NDCLab |
+| postTask | Post-Task Questionnaires | NDCLab |
+| ppie | Pre- and Post-Interaction Evaluation | NDCLab |
 | psqi | Pittsburgh Sleep Quality Index | full: [Buysse et al. (1989)](https://pubmed.ncbi.nlm.nih.gov/2748771/); short: [Sancho-Domingo et al. (2021)](https://pubmed.ncbi.nlm.nih.gov/33119375/) |
 | pttfq | Post-Task Thoughts and Feelings Questionnaire | NDCLab |
 | rmbi | Retrospective Measure of Behavioral Inhibition | [Gladstone and Parker (2005)](https://pubmed.ncbi.nlm.nih.gov/15922458/) |
 | rtq | Repetitive Thinking Questionnaire | [McEvoy et al. (2010)](https://www.sciencedirect.com/science/article/pii/S0887618510000551) |
+| sas2 | Screen for Adult Anxiety Related Disorders | [Smith et al. (2006)](https://psycnet.apa.org/record/2006-22413-004) |
 | scaared | Screen for Adult Anxiety Related Disorders | [Angulo et al. (2017)](https://www.sciencedirect.com/science/article/pii/S0165178116314196) |
-| sias6 | Social Interaction Anxiety Scale | [Peter et al. (2011)](https://pubmed.ncbi.nlm.nih.gov/21744971/) |
+| sias6sps6 | Social Interaction Anxiety Scale and Social Phobia Scale | [Peter et al. (2011)](https://pubmed.ncbi.nlm.nih.gov/21744971/) |
 | sics | Social Interaction and Communication Skills Checklist | (unconfirmed) |
-| sps6 | Social Phobia Scale | [Peter et al. (2011)](https://pubmed.ncbi.nlm.nih.gov/21744971/) |
 | srq | Social Reward Questionnaire | [Foulkes et al. (2014)](https://pubmed.ncbi.nlm.nih.gov/24653711/) |
 | sssq | Short Stress State Questionnaire | [Helton and Näsall (2015)](https://psycnet.apa.org/record/2014-09900-001) |
 | stai5 | State-Trait Anxiety Inventory, Short Version | [Zsido et al. (2020)](https://pubmed.ncbi.nlm.nih.gov/32563747/) |
