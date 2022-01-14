@@ -1,9 +1,8 @@
-from numpy.lib.function_base import _parse_gufunc_signature
 import pandas as pd
 import numpy as np
 import re
 
-from instruments.score_type import ScoreType
+from score_type import ScoreType
 
 
 class Subscore:

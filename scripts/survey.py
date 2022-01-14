@@ -1,4 +1,4 @@
-from instruments.subscore import Subscore
+from subscore import Subscore
 
 import pandas as pd
 import regex as re
