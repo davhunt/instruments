@@ -5,9 +5,9 @@ This repo contains modifiable (.docx) and PDF versions of generic pre-task quest
 ### initStateA
 Five questions relating to the participant's current levels of sleep, sickness, caffeine, and hunger.
 
-###initStateB
+### initStateB
 Contains all the questions of initStateA, plus several questions about current levels of anxiety and a prediction of how many errors the participant expects to make during the task.
 
 
 ### Scoring Script
-The initStateA questionnaire is **not** included in the repository scoring script.
+The initState questionnaires are **not** included in the repository scoring script.
