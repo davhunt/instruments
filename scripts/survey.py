@@ -6,19 +6,18 @@ import regex as re
 
 class Survey:
     """Class that utilizes Subscore class to score all available subscores.
-    By default if the subscores are empty, simply scores total score and returns.
 
     Instance Variables
     ----------
     name:   str | None
             String that contains the survey name.
     versions:   list | None
-                List that contains survey versions if listed
+                List that contains survey versions if listed. Initialized in _extract_versions(). 
     file_name:  str
-                Filename that contains csv survey data
+                Filename that contains csv survey data.
     data:    pd.Dataframe
-             Pandas dataframe that contains csv data. Created from private method _load_data()
-    subscores:  dict() | list() | None
+             Pandas dataframe that contains csv data. Created from private method _load_data().
+    subscores:  dict() | None
                 Dictionary object containing all subscores and the parameters they go to.
 
                 Ex: 
@@ -31,7 +30,7 @@ class Survey:
                         "type": "avg"
                 }}
 
-                Or list of subscore objects. Alternatively, None if no subscores available.
+                Alternatively, None if no subscores available.
     
     Private Methods
     ----------
@@ -47,16 +46,13 @@ class Survey:
     score(self):
             Function to iterate and score over all subscores, and generate dataframe containing 
             all subscores. Returns modified dataframe. 
-    score_write(self, filename):
-            Function to call score() and write subsequent csv to filename.
-            Modifies original data in place, and returns modified dataframe. 
     """
     VER_POS = 1
     SES_POS = -3
     RUN_POS = -2
     EVENT_POS = -1
 
-    DELIM = Subscore.DELIMITER
+    DELIM = Subscore.DELIM
 
     def __init__(self, name, file_name, subscores):
         self.name = name
@@ -83,7 +79,7 @@ class Survey:
         if(self.data.empty):
             raise RuntimeError("Data does not contain %s survey data."%(self.name))
 
-        # Drop rows with incomplete values in timestamp
+        # Drop rows with incomplete values in timestamp (indicating no data)
         timestamp_col = self.data.filter(regex=rf"_{Subscore.TIME_LABEL}").columns
         self.data.dropna(subset=timestamp_col, inplace=True)
         if(self.data.empty):
