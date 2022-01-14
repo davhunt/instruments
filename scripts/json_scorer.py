@@ -1,5 +1,8 @@
 import json
 from instruments.survey import Survey
+import pandas as pd
+
+import sys
 
 """
 Code to load in JSON file and score outlined surveys.
@@ -8,15 +11,23 @@ Simply run and get output!
 Output will be labeled "data/outputs/<survey_name>_data.csv"
 """
 
-# Open and save data to dataframe
-with open('scripts/surveys.json','r') as infile:
+input = "data\inputs\input-to-test_2021-12-10.csv" # sys.argv[1] # "data\inputs\input-to-test_2021-12-10.csv"
+out_path = "data\outputs" # sys.argv[2] # "data\outputs"
+
+# Open and save survey data
+with open('scripts\surveys.json','r') as infile:
     surveys = json.load(infile)
 
-# Get file name and survey data
-file_name = surveys["input"]
-surveys_wsub = surveys["surveys"]
-
 # Iterate through survey names and generate data
-for name, subscores in surveys_wsub.items():
-    survey_obj = Survey(name, file_name, subscores)
-    handle = survey_obj.score_write("data/outputs/" + name + ".csv")
+all_surveys = pd.read_csv(input, index_col="record_id")
+for name, subscores in surveys.items():
+    # Try to score, continue if fails
+    try:
+        survey_obj = Survey(name, input, subscores)
+        handle = survey_obj.score()
+        all_surveys = pd.concat([all_surveys, handle], axis=1)
+    except RuntimeError:
+        continue
+    
+all_surveys.fillna(value="N/A", inplace=True)
+all_surveys.to_csv(out_path + "/output.csv")

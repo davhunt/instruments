@@ -9,3 +9,4 @@ class ScoreType(Enum):
     med = "med"
     min = "min"
     max = "max"
+    count = "count"

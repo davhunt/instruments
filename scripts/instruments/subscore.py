@@ -1,3 +1,4 @@
+from numpy.lib.function_base import _parse_gufunc_signature
 import pandas as pd
 import numpy as np
 import re
@@ -15,24 +16,20 @@ class Subscore:
             String representing survey name.
     sub_name:   str
                 String representing subscore name
-    score_type: String
-                String scoretype that represents a ScoreType value. "Sum" by default. 
+    score_type: String | custom_score()
+                String scoretype that represents a ScoreType value. "Sum" by default.
+    prev_data:  pd.DataFrame() | None
+                Pandas dataframe containing previously generated data
     threshold:  float 
                 Float that represents threshold to score row. 1.0 by default, which indicates all 
                 questions must be answered.
-    select: list() | None
-            List containing questions to calculate. By default is None, which indicates all available questions.
-    reverse_select: dict() | RevQuestion | None
-                    List containing questions which are scored via reverse score. By default is None,
-                    which indicates no reverse scored questions.
-
-                    Ex: 
-                    {
-                        select: [1, 2, 3]
-                        max_score: 5
-                    }
-    conditional:    dict() | ConditionScore | None
-                    Dictionary object containing anticedent, answer, and consequent keys.
+    questions:  list()
+                Which questions to select
+    products:   list() | None
+                List of products to score from "prev_data". "prev_data" must be included to score
+    conditional:    condition_score() | None
+                    TO BE IMPLEMENTED
+                    Object containing anticedent, answer, and consequent keys.
                     By default is none, which indicates no conditional questions. 
 
                     Ex: 
@@ -42,9 +39,9 @@ class Subscore:
                         "conseq": [other_subscore]
                      } -> 
                      "If question 1 is answered as 5, score questions 3 & 4"
-    custom_score:   str | None
-                    A string representing a custom scoring. None indicates that no custom score is used.
-
+    criteria:   list() | None  
+                list of valid answers. None if any answer is valid
+    
     Private Methods
     ----------
     _perc_column(self):
@@ -56,10 +53,10 @@ class Subscore:
             Function to remove metadata columns timestamp & complete. Returns modified dataframe.
 
     _select_questions(self, data):
-            Function to select subset of questions on passed data based on self.select.
+            Function to select subset of questions on passed data based on self.select_questions.
             Returns modified dataframe. 
-    _get_unique(self, row):
-            Function to get unique sessions, rows, and events.
+    _get_unique_sre(self, row):
+            Function to get unique sessions, rows, and events, sorted in mentioned order.
             Returns list of labels.
     _reverse_score(self, data):
             To be implemented
@@ -77,28 +74,35 @@ class Subscore:
     score(self, data):
             Function to get score and percenatage complete. Returns dataframe of indices and column of floats. 
 
-    get_data(self, data):
-            Function to get score, percentage complete and append to dataframe. Modifies dataframe in place. 
+    gen_data(self, data, prev_products=None):
+            Function to get score, percentage complete as dataframe for subscore. Optionally 
+            include previous subscores.
     """
+    SCORED = "scrd"
+    PERCENT = "perc"
+
     TIME_LABEL = "timestamp"
     COMP_LABEL = "complete"
+    DELIMITER = "_"
 
-    def __init__(self, name, sub_name="total", score_type="sum", threshold=1.0, select=None,
-                 reverse_select=None, conditional=None, custom_score=None):
+    def __init__(self, name, sub_name="total", score_type="sum", threshold=1.0, questions=None,
+                 products=None, conditional=None, criteria=None):
         self.name = name
         self.sub_name = sub_name
         self.score_type = score_type
         self.threshold = threshold
-        self.select = select
-        self.reverse_select = reverse_select
+        self.questions = questions
+        self.products = products
         self.conditional = conditional
-        self.custom_score = custom_score
-
+        self.criteria = criteria
+        
     def _perc_column(self, label):
-        return self.name + "_" + self.sub_name + "_" + label + "_perc_complete"
+        return self.name + self.DELIMITER + self.PERCENT + self.DELIMITER + \
+            self.sub_name + self.DELIMITER + label
 
     def _scored_column(self, label):
-        return self.name + "_" + self.sub_name + "_" + label + "_scored"
+        return self.name + self.DELIMITER + self.SCORED + self.DELIMITER \
+             + self.sub_name + self.DELIMITER + label
 
     def _remove_meta(self, data):
         # Create deep copy to prevent modification in place
@@ -106,7 +110,7 @@ class Subscore:
 
         # Get column names that contain metadata labels
         metadata_col = handle.filter(
-            regex=rf"_{self.TIME_LABEL}|_{self.COMP_LABEL}").columns
+            regex=rf"{self.DELIMITER}{self.TIME_LABEL}|{self.DELIMITER}{self.COMP_LABEL}").columns
         # Drop the above column names
         handle = handle.drop(metadata_col, axis=1)
 
@@ -114,56 +118,83 @@ class Subscore:
 
     def _select_questions(self, data):
         # If there is no selection, return data with all questions
-        # TODO: DRY!
-        if self.select is None:
-            return data.filter(items=list(data.filter(regex=rf"_i[0-9]+_").columns))
+        if self.questions is None:
+            return data
 
         select_columns = []
-        for num in self.select:
+        for num in self.questions:
             # For each selected question, find the corresponding column name
-            select_columns += list(data.filter(regex=rf"_i{num}_").columns)
+            select_columns += list(
+                data.filter(regex=rf"{self.DELIMITER}i{num}{self.DELIMITER}").columns
+            )
+        # Filter out all data except for selected columns
+        select_data = data.filter(items=select_columns)
+
+        return select_data
+    
+    def _select_products(self, data):
+        # If there is no selection, return regular data
+        if self.products is None:
+            return data
+
+        select_columns = []
+        for name in self.products:
+            # For each selected question, find the corresponding column name
+            select_columns += list(
+                data.filter(regex=rf"{self.SCORED}{self.DELIMITER}{name}").columns
+            )
         # Filter out all data except for selected columns
         select_data = data.filter(items=select_columns)
 
         return select_data
 
-    def _get_unique(self, data):
+    def _get_unique_sre(self, data):
+        # init regex to get unique sessions, events, and runs
+        sre_reg = rf"s[0-9]+_r[0-9]+_e[0-9]+"
         # Get column names
         ind_names = list(data.columns)
         # Filter unique sessions, runs, and events
-        unique_vals = set(
-            [re.sub(rf"{self.name}_i[0-9]+_", "", ind) for ind in ind_names])
+        unique_vals = set([re.search(sre_reg, ind).group(0) for ind in ind_names])
         return unique_vals
 
     def _score_type(self, row):
-        # TODO: Implement conditional and reverse scoring
-        # TODO: Remove these conditionals in favor for DRY principles
-        if not (self.reverse_select is None):
-            return
-        if not (self.conditional is None):
-            return
-        if not (self.custom_score is None):
-            self.custom_score = self.custom_score.replace("select", "row")
-            return eval(self.custom_score)
-        return row.mean() if ScoreType[self.score_type] == ScoreType.avg else row.sum()
+        # filter series according to criteria, if applicable
+        if self.criteria is not None:   
+            row.where(row.isin(self.criteria), inplace=True)
+
+        # Score according score_type
+        if ScoreType[self.score_type] == ScoreType.avg:
+            return row.mean()  
+        elif ScoreType[self.score_type] == ScoreType.sum:
+            return row.sum()
+        elif ScoreType[self.score_type] == ScoreType.count:
+            return row.count()
 
     def perc_complete(self, row):
         # Get total questions: all questions if no selection, else length of selection
-        total_quest = row.shape[0] if self.select is None else len(self.select)
+        total_quest = row.shape[0] if self.questions is None else len(self.questions)
         # Get total answered questions
         answered = row.count()
 
         perc_complete = (answered / total_quest)
         return perc_complete
 
-    def score(self, data):
+    def gen_data(self, data, prev_products=None):
+        # Append previous products optionally
+        if (prev_products is not None) and not (prev_products.empty):
+            data = pd.concat([data, prev_products], axis=1)
+
         # Filter out metadata
         surv_data = self._remove_meta(data)
         # Filter based on selected questions
         surv_data = self._select_questions(surv_data)
 
+        # select product columns if available
+        if (prev_products is not None) and not (prev_products.empty):
+            surv_data = self._select_products(surv_data)
+
         # Create a column for each unique session, row, and event
-        unique_vals = self._get_unique(surv_data)
+        unique_vals = self._get_unique_sre(surv_data)
         unique_cols = []
         for val in unique_vals:
             unique_cols.append(self._perc_column(val))
@@ -177,7 +208,7 @@ class Subscore:
             for unique in unique_vals:
                 # Create copy to prevent modification in place
                 row_set = row.copy()
-                row_set = row_set.filter(regex=rf"_{unique}")
+                row_set = row_set.filter(regex=rf"{self.name}.+{self.DELIMITER}{unique}")
 
                 # Calculate percentage complete of row and assign to column
                 percentage = self.perc_complete(row_set)
@@ -187,10 +218,3 @@ class Subscore:
                     row_set) if percentage >= self.threshold else np.NaN
 
         return score
-
-    def join_data(self, data):
-        # Calculate score
-        score_data = self.score(data)
-
-        # Append to passed data and return
-        return data.join(score_data)
