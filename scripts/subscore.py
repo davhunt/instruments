@@ -22,7 +22,7 @@ class Subscore:
     threshold:  float 
                 Float that represents threshold to score row. 1.0 by default, which indicates all 
                 questions must be answered.
-    questions:  list()
+    questions:  list() | None
                 Which questions to select
     products:   list() | None
                 List of products to score from "prev_data". "prev_data" must be included to score
@@ -119,6 +119,9 @@ class Subscore:
         # If there is no selection, return data with all questions
         if self.questions is None:
             return data
+        # if list is empty return empty dataframe
+        if self.questions == []:
+            return pd.DataFrame()
 
         select_columns = []
         for num in self.questions:
@@ -171,7 +174,7 @@ class Subscore:
 
     def perc_complete(self, row):
         # Get total questions: all questions if no selection, else length of selection
-        total_quest = row.shape[0] if self.questions is None else len(self.questions)
+        total_quest = row.shape[0]
         # Get total answered questions
         answered = row.count()
 
@@ -179,10 +182,6 @@ class Subscore:
         return perc_complete
 
     def gen_data(self, data, prev_products=None):
-        # Append previous products optionally
-        if (prev_products is not None) and not (prev_products.empty):
-            data = pd.concat([data, prev_products], axis=1)
-
         # Filter out metadata
         surv_data = self._remove_meta(data)
         # Filter based on selected questions
@@ -190,7 +189,8 @@ class Subscore:
 
         # select product columns if available
         if (prev_products is not None) and not (prev_products.empty):
-            surv_data = self._select_products(surv_data)
+            append_prod = self._select_products(prev_products)
+            surv_data = pd.concat([surv_data, append_prod], axis=1)
 
         # Create a column for each unique session, row, and event
         unique_vals = self._get_unique_sre(surv_data)
