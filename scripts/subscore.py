@@ -207,6 +207,8 @@ class Subscore:
             for unique in unique_vals:
                 # Create copy to prevent modification in place
                 row_set = row.copy()
+                # Filter row according to unique s_r_e
+                row_set = row_set.filter(regex=rf"{unique}")
 
                 # Calculate percentage complete of row and assign to column
                 percentage = self.perc_complete(row_set)
