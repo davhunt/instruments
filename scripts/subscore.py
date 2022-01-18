@@ -188,7 +188,7 @@ class Subscore:
         surv_data = self._select_questions(surv_data)
 
         # select product columns if available
-        if (prev_products is not None) and not (prev_products.empty):
+        if (self.products is not None):
             append_prod = self._select_products(prev_products)
             surv_data = pd.concat([surv_data, append_prod], axis=1)
 
