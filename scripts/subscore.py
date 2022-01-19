@@ -1,9 +1,8 @@
-from numpy.lib.function_base import _parse_gufunc_signature
 import pandas as pd
 import numpy as np
 import re
 
-from instruments.score_type import ScoreType
+from score_type import ScoreType
 
 
 class Subscore:
@@ -23,7 +22,7 @@ class Subscore:
     threshold:  float 
                 Float that represents threshold to score row. 1.0 by default, which indicates all 
                 questions must be answered.
-    questions:  list()
+    questions:  list() | None
                 Which questions to select
     products:   list() | None
                 List of products to score from "prev_data". "prev_data" must be included to score
@@ -83,7 +82,7 @@ class Subscore:
 
     TIME_LABEL = "timestamp"
     COMP_LABEL = "complete"
-    DELIMITER = "_"
+    DELIM = "_"
 
     def __init__(self, name, sub_name="total", score_type="sum", threshold=1.0, questions=None,
                  products=None, conditional=None, criteria=None):
@@ -97,12 +96,12 @@ class Subscore:
         self.criteria = criteria
         
     def _perc_column(self, label):
-        return self.name + self.DELIMITER + self.PERCENT + self.DELIMITER + \
-            self.sub_name + self.DELIMITER + label
+        return self.name + self.DELIM + self.PERCENT + self.DELIM + \
+            self.sub_name + self.DELIM + label
 
     def _scored_column(self, label):
-        return self.name + self.DELIMITER + self.SCORED + self.DELIMITER \
-             + self.sub_name + self.DELIMITER + label
+        return self.name + self.DELIM + self.SCORED + self.DELIM \
+             + self.sub_name + self.DELIM + label
 
     def _remove_meta(self, data):
         # Create deep copy to prevent modification in place
@@ -110,7 +109,7 @@ class Subscore:
 
         # Get column names that contain metadata labels
         metadata_col = handle.filter(
-            regex=rf"{self.DELIMITER}{self.TIME_LABEL}|{self.DELIMITER}{self.COMP_LABEL}").columns
+            regex=rf"{self.DELIM}{self.TIME_LABEL}|{self.DELIM}{self.COMP_LABEL}").columns
         # Drop the above column names
         handle = handle.drop(metadata_col, axis=1)
 
@@ -120,12 +119,15 @@ class Subscore:
         # If there is no selection, return data with all questions
         if self.questions is None:
             return data
+        # if list is empty return empty dataframe
+        if self.questions == []:
+            return pd.DataFrame()
 
         select_columns = []
         for num in self.questions:
             # For each selected question, find the corresponding column name
             select_columns += list(
-                data.filter(regex=rf"{self.DELIMITER}i{num}{self.DELIMITER}").columns
+                data.filter(regex=rf"{self.name}{self.DELIM}i{num}{self.DELIM}").columns
             )
         # Filter out all data except for selected columns
         select_data = data.filter(items=select_columns)
@@ -141,7 +143,7 @@ class Subscore:
         for name in self.products:
             # For each selected question, find the corresponding column name
             select_columns += list(
-                data.filter(regex=rf"{self.SCORED}{self.DELIMITER}{name}").columns
+                data.filter(regex=rf"{self.SCORED}{self.DELIM}{name}").columns
             )
         # Filter out all data except for selected columns
         select_data = data.filter(items=select_columns)
@@ -172,7 +174,7 @@ class Subscore:
 
     def perc_complete(self, row):
         # Get total questions: all questions if no selection, else length of selection
-        total_quest = row.shape[0] if self.questions is None else len(self.questions)
+        total_quest = row.shape[0]
         # Get total answered questions
         answered = row.count()
 
@@ -180,18 +182,15 @@ class Subscore:
         return perc_complete
 
     def gen_data(self, data, prev_products=None):
-        # Append previous products optionally
-        if (prev_products is not None) and not (prev_products.empty):
-            data = pd.concat([data, prev_products], axis=1)
-
         # Filter out metadata
         surv_data = self._remove_meta(data)
         # Filter based on selected questions
         surv_data = self._select_questions(surv_data)
 
         # select product columns if available
-        if (prev_products is not None) and not (prev_products.empty):
-            surv_data = self._select_products(surv_data)
+        if (self.products is not None):
+            append_prod = self._select_products(prev_products)
+            surv_data = pd.concat([surv_data, append_prod], axis=1)
 
         # Create a column for each unique session, row, and event
         unique_vals = self._get_unique_sre(surv_data)
@@ -208,7 +207,8 @@ class Subscore:
             for unique in unique_vals:
                 # Create copy to prevent modification in place
                 row_set = row.copy()
-                row_set = row_set.filter(regex=rf"{self.name}.+{self.DELIMITER}{unique}")
+                # Filter row according to unique s_r_e
+                row_set = row_set.filter(regex=rf"{unique}")
 
                 # Calculate percentage complete of row and assign to column
                 percentage = self.perc_complete(row_set)

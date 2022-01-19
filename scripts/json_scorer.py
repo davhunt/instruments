@@ -1,5 +1,5 @@
 import json
-from instruments.survey import Survey
+from survey import Survey
 import pandas as pd
 
 import sys
