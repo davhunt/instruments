@@ -1,4 +1,5 @@
 ## ADEXI
+### Adult Executive Functioning Inventory
 
 This repo contains modifiable (.docx) and PDF versions of the ADEXI.
 
@@ -16,17 +17,17 @@ In addition, this repo houses the translation of both the self-report and other-
 Please report any issues with the ADEXI translations by posting an issue in this GitHub repository.
 
 
-### adexi_b
+#### adexi_b
 At the request of the original author, the word "sometimes" was removed from several items.  The NDCLab updated our own copy of the instrument as we were responsible for updating the Spanish translation. Details of which items were changed is available in the .csv file detailing the Spanish translation (in this subfolder) .
 
 
-### adexi_a
-This is the original version of the ADEXI used by the NDCLab, draw directly from the then-current version available from [the author](https://chexi.se/).
+#### adexi_a
+This is the original version of the ADEXI used by the NDCLab, draw directly from the then-current version available from [the author](https://chexi.se/).  This version is now deprecated.
 
 
 
-### Scoring Script
-The English self-report is included in the repository scoring script.
+#### Scoring Script
+The English self-report of the ADEXI is included in the repository scoring script.
 
 | Variable | Details |
 | :--  | :--  |

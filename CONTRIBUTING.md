@@ -17,18 +17,17 @@ Please see the roadmap available on the [README.md](https://github.com/NDCLab/te
 ```yml
 instruments
 ├── adexi
-    ├── english
-    ├── spanish_latAm
+├── ambi
 ├── aq10
-├── chexi
-    ├── english
-    ├── spanish_latAm
-├── covid
-├── demo
-├── initStateA
-├── postTaskA
-├── pttfq
-├── script
+├── ...
+├── scripts
+    ├── __init__.py
+    ├── json_scorer.py
+    ├── score_type.py
+    ├── subscore.py
+    ├── survey.py
+    ├── surveys.json
+├── contributing.md
 ├── list-of-instruments.md
 ```
 
@@ -42,9 +41,9 @@ A step-by-step guide to getting started also included in the following [video](h
 To add an additional instrument:
 1. Follow the lab's [GitHub etiquette](https://ndclab.github.io/wiki/docs/etiquette/github-etiquette.html) to create a new branch off `dev` (`dev-NewInstrumentName`).
 2. Create a new directory with the instrument's short name.
-3. Upload the published PDF(s) and a REDCap import .zip that follows the lab's [naming conventions](https://ndclab.github.io/wiki/docs/etiquette/naming-conventions.html#redcap).
-4. Add the instrument to the json file with the numerical values for subscale scoring.
-5. Add the new instrument script to the instruments package located inside of the script folder.
+3. Upload the published PDF, REDCap PDF, and a REDCap import .zip that follows the lab's [naming conventions](https://ndclab.github.io/wiki/docs/etiquette/naming-conventions.html#redcap).
+4. Add the instrument to the json file with the appropriate parameters as described in subscore.py for subscale scoring.
+5. Add the instrument, alphabeticaly, into the `list-of-instruments.md` with a link to the appropriate citation.
 
 ## Workflow
 Workflow for both internal and external lab members is outlined on the [NDCLab contributing wiki page](https://ndclab.github.io/wiki/docs/contributing.html). 
