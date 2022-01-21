@@ -142,9 +142,9 @@ class Subscore:
         return select_data
     
     def _select_products(self, data):
-        # If there is no selection, return regular data
+        # If there is no selection, return empty data
         if self.products is None:
-            return data
+            return pd.DataFrame()
 
         select_columns = []
         for name in self.products:
