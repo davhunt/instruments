@@ -142,7 +142,7 @@ class Subscore:
         return select_data
     
     def _select_products(self, data):
-        # If there is no selection, return empty data
+        # If there is no selection, return empty dataframe
         if self.products is None:
             return pd.DataFrame()
 
