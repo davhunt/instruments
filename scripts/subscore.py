@@ -26,7 +26,7 @@ class Subscore:
                 Which questions to select for scoring.
     rev_questions:  list() | None
                     Which questions to select for reverse scoring.
-    max:    int
+    max:    int | None
             Maximum possible value of survey answer. Must be included to guarantee correct
             reverse scoring.
     products:   list() | None
@@ -90,7 +90,7 @@ class Subscore:
     DELIM = "_"
 
     def __init__(self, name, sub_name="total", score_type="sum", threshold=1.0, questions=None,
-                 rev_questions=None, max=0, products=None, conditional=None, criteria=None):
+                 rev_questions=None, max=None, products=None, conditional=None, criteria=None):
         self.name = name
         self.sub_name = sub_name
         self.score_type = score_type
@@ -167,7 +167,25 @@ class Subscore:
         return unique_vals
     
     def _reverse_score(self, data):
-        return "hoopla"
+        # If there are no reverse questions specified, return data
+        if self.rev_questions is None:
+            return data
+        if self.max is None:
+            return data
+
+        handle = data.copy()
+        select_columns = []
+        for num in self.rev_questions:
+            # For each selected reverse question, find the corresponding column name
+            select_columns += list(
+                handle.filter(regex=rf"{self.name}{self.DELIM}i{num}{self.DELIM}").columns
+            )
+        
+        # reverse each questions score according to max
+        for rev_q in select_columns:
+            handle[rev_q] = handle[rev_q].map(lambda s: self.max - int(s))
+        
+        return handle
 
     def _score_type(self, row):
         # filter series according to criteria, if applicable
@@ -202,7 +220,7 @@ class Subscore:
         surv_data = pd.concat([surv_data, append_prod], axis=1)
         
         # Apply reverse scoring if specified
-        surv_data = self
+        surv_data = self._reverse_score(surv_data)
 
         # Create a column for each unique session, row, and event
         unique_vals = self._get_unique_sre(surv_data)
