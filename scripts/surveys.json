@@ -29,5 +29,35 @@
             "products": ["agreed", "disagreed"],
             "score_type": "sum"
         }
+    },
+    "ambi": {
+        "inh": {
+            "questions": [5, 8, 1, 11, 2, 3, 10], 
+            "rev_questions": [],
+            "max": 2,
+            "score_type": "sum"
+        },
+        "non": {
+            "questions": [9, 4, 6], 
+            "rev_questions": [9, 4, 6],
+            "max": 2,
+            "score_type": "sum"
+        },
+        "low": {
+            "questions": [12, 14, 15], 
+            "rev_questions": [15],
+            "max": 2,
+            "score_type": "sum"
+        },
+        "risk": {
+            "questions": [13, 7, 16], 
+            "rev_questions": [13],
+            "max": 2,
+            "score_type": "sum"
+        },
+        "total": {
+            "products": ["inh", "non", "low", "risk"],
+            "type": "sum"
+        }
     }
 } 

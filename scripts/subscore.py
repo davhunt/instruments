@@ -23,7 +23,12 @@ class Subscore:
                 Float that represents threshold to score row. 1.0 by default, which indicates all 
                 questions must be answered.
     questions:  list() | None
-                Which questions to select
+                Which questions to select for scoring.
+    rev_questions:  list() | None
+                    Which questions to select for reverse scoring.
+    max:    int
+            Maximum possible value of survey answer. Must be included to guarantee correct
+            reverse scoring.
     products:   list() | None
                 List of products to score from "prev_data". "prev_data" must be included to score
     conditional:    condition_score() | None
@@ -85,12 +90,14 @@ class Subscore:
     DELIM = "_"
 
     def __init__(self, name, sub_name="total", score_type="sum", threshold=1.0, questions=None,
-                 products=None, conditional=None, criteria=None):
+                 rev_questions=None, max=0, products=None, conditional=None, criteria=None):
         self.name = name
         self.sub_name = sub_name
         self.score_type = score_type
         self.threshold = threshold
         self.questions = questions
+        self.rev_questions = rev_questions
+        self.max = max
         self.products = products
         self.conditional = conditional
         self.criteria = criteria
@@ -158,6 +165,9 @@ class Subscore:
         # Filter unique sessions, runs, and events
         unique_vals = set([re.search(sre_reg, ind).group(0) for ind in ind_names])
         return unique_vals
+    
+    def _reverse_score(self, data):
+        return "hoopla"
 
     def _score_type(self, row):
         # filter series according to criteria, if applicable
@@ -187,10 +197,12 @@ class Subscore:
         # Filter based on selected questions
         surv_data = self._select_questions(surv_data)
 
-        # select product columns if available
-        if (self.products is not None):
-            append_prod = self._select_products(prev_products)
-            surv_data = pd.concat([surv_data, append_prod], axis=1)
+        # Select product columns if available
+        append_prod = self._select_products(prev_products)
+        surv_data = pd.concat([surv_data, append_prod], axis=1)
+        
+        # Apply reverse scoring if specified
+        surv_data = self
 
         # Create a column for each unique session, row, and event
         unique_vals = self._get_unique_sre(surv_data)
