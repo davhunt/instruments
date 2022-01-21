@@ -103,12 +103,12 @@ class Subscore:
         self.criteria = criteria
         
     def _perc_column(self, label):
-        return self.name + self.DELIM + self.PERCENT + self.DELIM + \
-            self.sub_name + self.DELIM + label
+        return self.name + self.DELIM + self.PERCENT + self.sub_name.capitalize() \
+            + self.DELIM + label
 
     def _scored_column(self, label):
-        return self.name + self.DELIM + self.SCORED + self.DELIM \
-             + self.sub_name + self.DELIM + label
+        return self.name + self.DELIM + self.SCORED + self.sub_name.capitalize() \
+            + self.DELIM + label
 
     def _remove_meta(self, data):
         # Create deep copy to prevent modification in place
@@ -148,9 +148,10 @@ class Subscore:
 
         select_columns = []
         for name in self.products:
+            prop_name = name.capitalize()
             # For each selected question, find the corresponding column name
             select_columns += list(
-                data.filter(regex=rf"{self.SCORED}{self.DELIM}{name}").columns
+                data.filter(regex=rf"{self.SCORED}{prop_name}").columns
             )
         # Filter out all data except for selected columns
         select_data = data.filter(items=select_columns)
