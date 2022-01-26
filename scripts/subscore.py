@@ -31,18 +31,6 @@ class Subscore:
             reverse scoring.
     products:   list() | None
                 List of products to score from "prev_data". "prev_data" must be included to score
-    conditional:    condition_score() | None
-                    TO BE IMPLEMENTED
-                    Object containing anticedent, answer, and consequent keys.
-                    By default is none, which indicates no conditional questions. 
-
-                    Ex: 
-                    { 
-                        "ante": [perc_complete]
-                        "answer": [< 1.0]
-                        "conseq": [other_subscore]
-                     } -> 
-                     "If question 1 is answered as 5, score questions 3 & 4"
     criteria:   list() | None  
                 list of valid answers. None if any answer is valid
     
