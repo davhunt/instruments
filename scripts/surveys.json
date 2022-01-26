@@ -1,0 +1,33 @@
+{
+    "adexi": {
+        "wm": {
+            "questions": [1, 2, 5, 7, 8, 9, 11, 12, 13],
+            "score_type": "sum"
+        },
+        "inh": {
+            "questions": [3, 4, 6, 10, 14], 
+            "score_type": "sum"
+        }, 
+        "total": {
+            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], 
+            "score_type": "sum"
+        }
+    },
+    "aq10": {
+        "agreed": {
+            "questions": [1, 7, 8, 10],
+            "criteria": [1, 2],
+            "score_type": "count"
+        }, 
+        "disagreed": {
+            "questions": [2, 3, 4, 5, 6, 9],
+            "criteria": [3, 4],
+            "score_type": "count"
+        },
+        "total": {
+            "questions": [],
+            "products": ["agreed", "disagreed"],
+            "score_type": "sum"
+        }
+    }
+} 
