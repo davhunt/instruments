@@ -63,9 +63,9 @@ class Subscore:
             Function to get unique sessions, rows, and events, sorted in mentioned order.
             Returns list of labels.
     _reverse_score(self, data):
-            To be implemented
+            Function to score reverse score questions using rev_questions and max params.
     _score_conditional(self, data):
-            To be implemented
+            Function to score conditionally using conditional.
     _score_type(self, row):
             Function to score row based on type, conditional, and reverse scoring.
             Scores mean if self.type is "avg". Scores sum otherwise. 
@@ -192,6 +192,11 @@ class Subscore:
         # filter series according to criteria, if applicable
         if self.criteria is not None:   
             row.where(row.isin(self.criteria), inplace=True)
+
+        # attempt to parse custom score
+        if self.score_type not in ScoreType._member_names_:
+            row = row.fillna(0)
+            return eval(self.score_type)
 
         # Score according score_type
         if ScoreType[self.score_type] == ScoreType.avg:
