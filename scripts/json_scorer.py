@@ -1,6 +1,6 @@
 import json
 from survey import Survey
-from cond_scores import Ari
+from cond_surveys import Ari
 import pandas as pd
 
 import sys
