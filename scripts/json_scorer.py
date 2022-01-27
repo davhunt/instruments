@@ -53,6 +53,6 @@ ari_surveys = pd.read_csv("data\\inputs\\test_mult_ver.csv", index_col="record_i
 ari_obj = Ari("ari", "data\\inputs\\test_mult_ver.csv", subscores)
 
 handle = ari_obj.score()
-all_surveys = pd.concat([all_surveys, handle], axis=1)
+ari_surveys = pd.concat([ari_surveys, handle], axis=1)
 
-all_surveys.to_csv(out_path + "/ari_output.csv")
+ari_surveys.to_csv(out_path + "/ari_output.csv")
