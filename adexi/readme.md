@@ -31,9 +31,9 @@ The English self-report of the ADEXI is included in the repository scoring scrip
 
 | Variable | Details |
 | :--  | :--  |
-| adexi_scrd_total_sX_rX_eX | total score: sum of all items (NaN if partial response prevents calculation of score) |
-| adexi_scrd_inh_sX_rX_eX | inhibition subscore: sum of 3, 4, 6, 10, and 14 (NaN if partial response prevents calculation of subscore) |
-| adexi_scrd_wm_sX_rX_eX | working memory subscore: sum of 1, 2, 5, 7, 8, 9, 11, 12, and 13 (NaN if partial response prevents calculation of subscore) |
-| adexi_perc_total_sX_rX_eX | percentage of response for all items |
-| adexi_perc_inh_sX_rX_eX | percentage of response for inhibition subscore |
-| adexi_perc_wm_sX_rX_eX | percentage of response for working memory subscore |
+| adexi_scrdTotal_sX_rX_eX | total score: sum of all items (NaN if partial response prevents calculation of score) |
+| adexi_scrdInh_sX_rX_eX | inhibition subscore: sum of 3, 4, 6, 10, and 14 (NaN if partial response prevents calculation of subscore) |
+| adexi_scrdWm_sX_rX_eX | working memory subscore: sum of 1, 2, 5, 7, 8, 9, 11, 12, and 13 (NaN if partial response prevents calculation of subscore) |
+| adexi_percTotal_sX_rX_eX | percentage of response for all items |
+| adexi_percInh_sX_rX_eX | percentage of response for inhibition subscore |
+| adexi_percWm_sX_rX_eX | percentage of response for working memory subscore |
