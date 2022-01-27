@@ -13,6 +13,8 @@ class Subscore:
     ----------
     name:   str 
             String representing survey name.
+    questions:  list() | none
+                Which questions to select for scoring.
     sub_name:   str
                 String representing subscore name
     score_type: String | custom_score()
@@ -23,8 +25,6 @@ class Subscore:
                 Float that represents threshold to score row. 1.0 by default, which indicates all 
                 questions must be answered. Can be a list to represent a threshold range.
                 Ex: [0.82, 1], Greater than 0.83, less than 1
-    questions:  list() | None
-                Which questions to select for scoring.
     rev_questions:  list() | None
                     Which questions to select for reverse scoring.
     max:    int | None
@@ -80,7 +80,7 @@ class Subscore:
     COMP_LABEL = "complete"
     DELIM = "_"
 
-    def __init__(self, name, sub_name="total", score_type="sum", threshold=1.0, questions=None,
+    def __init__(self, name, questions=None, sub_name="total", score_type="sum", threshold=1.0,
                  rev_questions=None, max=None, products=None, conditional=None, criteria=None):
         self.name = name
         self.sub_name = sub_name
