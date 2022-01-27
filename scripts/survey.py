@@ -103,7 +103,7 @@ class Survey:
                 if ver_res.group(0)[:-1] not in self.versions:
                     self.versions.append(ver_res.group(0)[:-1])
             elif surv_res is not None:
-                if surv_res.group(0)[:-1] not in self.versions:
+                if surv_res.group(0) not in self.versions:
                     self.versions.append(surv_res.group(0))
                     
     def _remove_meta(self):
