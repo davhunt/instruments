@@ -105,6 +105,8 @@ class Survey:
             elif surv_res is not None:
                 if surv_res.group(0) not in self.versions:
                     self.versions.append(surv_res.group(0))
+        self.versions.sort()
+        
                     
     def _remove_meta(self):
         metadata_col = self.data.filter(regex=rf"{self.DELIM}{Subscore.TIME_LABEL}|{self.DELIM}{Subscore.COMP_LABEL}").columns
