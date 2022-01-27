@@ -11,8 +11,8 @@ Simply run and get output!
 Output will be labeled "data/outputs/<survey_name>_data.csv"
 """
 
-input = "data\inputs\input-ari_2022-01-27.csv" # sys.argv[1] # "data\inputs\input-to-test_2021-12-10.csv"
-out_path = "data\outputs" # sys.argv[2] # "data\outputs"
+input = sys.argv[1] # "data\inputs\input-to-test_2021-12-10.csv"
+out_path = sys.argv[2] # "data\outstpu"
 
 # Open and save survey data
 with open('scripts\surveys.json','r') as infile:
