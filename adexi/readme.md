@@ -27,7 +27,7 @@ This is the original version of the ADEXI used by the NDCLab, draw directly from
 
 
 #### Scoring Script
-The English self-report of the ADEXI is included in the repository scoring script.
+The English self-report of the ADEXI is included in the repository scoring script. Threshold for scoring is 100%.
 
 | Variable | Details |
 | :--  | :--  |
