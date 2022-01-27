@@ -19,9 +19,10 @@ class Subscore:
                 String scoretype that represents a ScoreType value. "Sum" by default.
     prev_data:  pd.DataFrame() | None
                 Pandas dataframe containing previously generated data
-    threshold:  float 
+    threshold:  float | list()
                 Float that represents threshold to score row. 1.0 by default, which indicates all 
-                questions must be answered.
+                questions must be answered. Can be a list to represent a threshold range.
+                Ex: [0.82, 1], Greater than 0.83, less than 1
     questions:  list() | None
                 Which questions to select for scoring.
     rev_questions:  list() | None
@@ -57,6 +58,8 @@ class Subscore:
     _score_type(self, row):
             Function to score row based on type, conditional, and reverse scoring.
             Scores mean if self.type is "avg". Scores sum otherwise. 
+    _valid_thresh(self, perc):
+            Function to check if percentage of row complete is valid using self.threshold
 
     Public Methods
     ----------
@@ -193,6 +196,13 @@ class Subscore:
             return row.sum()
         elif ScoreType[self.score_type] == ScoreType.count:
             return row.count()
+    
+    def _valid_thresh(self, perc):
+        if isinstance(self.threshold, (int, float)):
+            return perc >= self.threshold
+        if isinstance(self.threshold, list):
+            return perc >= self.threshold[0] and perc <= self.threshold[1]
+        return False
 
     def perc_complete(self, row):
         # Get total questions: all questions if no selection, else length of selection
@@ -235,10 +245,10 @@ class Subscore:
                 row_set = row_set.filter(regex=rf"{unique}")
 
                 # Calculate percentage complete of row and assign to column
-                percentage = self.perc_complete(row_set)
-                score.loc[index, self._perc_column(unique)] = percentage
+                perc = self.perc_complete(row_set)
+                score.loc[index, self._perc_column(unique)] = perc
                 # Calculate score and assign to column if percentage complete is past threshold
                 score.loc[index, self._scored_column(unique)] = self._score_type(
-                    row_set) if percentage >= self.threshold else np.NaN
+                    row_set) if self._valid_thresh(perc) else np.NaN
 
         return score
