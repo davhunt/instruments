@@ -34,21 +34,7 @@ all_surveys.fillna(value="N/A", inplace=True)
 all_surveys.to_csv(out_path + "/output.csv")
 
 # Conditional scoring is a trickier beast and must be dealt with manually
-subscores = {
-    "raw": {
-        "questions": [1, 2, 3, 4, 5, 6],
-        "score_type": "sum"
-    },
-    "avg": {
-        "questions": [1, 2, 3, 4, 5, 6],
-        "score_type": "avg"
-    },
-    "prorat": {
-        "questions": [1, 2, 3, 4, 5, 6],
-        "score_type": "round(sum(row) * 6 / 5)",
-        "threshold": 0.83
-    }
-}
+subscores = surveys["ari"]
 ari_surveys = pd.read_csv("data\\inputs\\test_mult_ver.csv", index_col="record_id")
 ari_obj = Ari("ari", "data\\inputs\\test_mult_ver.csv", subscores)
 
