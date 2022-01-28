@@ -116,18 +116,20 @@ class Survey:
         # Iterate through versions then subscores and score on data
         all_scores = pd.DataFrame()
         for ver_surv in self.versions:
+            ver_scores = pd.DataFrame()
             for subscore, params in self.subscores.items():
                 sub_obj = Subscore(name=ver_surv, sub_name=subscore, **params)
                 single_score = sub_obj.gen_data(self.data.filter(regex=rf"{ver_surv}_[a-z][0-9]"), all_scores)
-                all_scores = pd.concat([all_scores, single_score], axis=1)
+                ver_scores = pd.concat([ver_scores, single_score], axis=1)
 
             # Sort according to session, run, and event, in that order
-            all_scores = all_scores.reindex(
-                sorted(all_scores.columns, key=lambda x: \
+            ver_scores = ver_scores.reindex(
+                sorted(ver_scores.columns, key=lambda x: \
                     (int(x.split(self.DELIM)[self.SES_POS][1]),\
                     int(x.split(self.DELIM)[self.RUN_POS][1]),\
                     int(x.split(self.DELIM)[self.EVENT_POS][1]))\
             ), axis=1)
+            all_scores = pd.concat([all_scores, ver_scores], axis=1)
         
         return all_scores
 
