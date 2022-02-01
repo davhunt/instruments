@@ -5,35 +5,43 @@ import pandas as pd
 import sys
 
 
-def json_score(name=None):
+def json_score(input_path, survey_dat, output_path=None):
     """
     Code to load in JSON file and score outlined surveys.
-    Simply run and get output! 
 
-    Output will be labeled "data/outputs/<survey_name>_data.csv"
+    Parameters
+    ----------
+    input_path: str
+                String pointing to input data
+    survey_dat: str | dict
+                Dictionary or path to json containing survey names and parameters
+    output_path:    str | None
+                    string pointing to output path and name. None if data should not be written out
     """
 
-    input = "data\inputs\input-to-test_2022-01-21.csv" # sys.argv[1] # "data\inputs\input-to-test_2021-12-10.csv"
-    out_path = "data\outputs" # sys.argv[2] # "data\outputs"
-
     # Open and save survey data
-    with open('scripts\surveys.json','r') as infile:
-        surveys = json.load(infile)
+    if (isinstance(survey_dat, str)):
+        with open(survey_dat,'r') as infile:
+            surveys = json.load(infile)
 
     # Iterate through survey names and generate data
-    all_surveys = pd.read_csv(input, index_col="record_id")
+    all_surveys = pd.read_csv(input_path, index_col="record_id")
     for name, subscores in surveys.items():
         # Try to score, continue if fails
         try:
-            survey_obj = Survey(name, input, subscores)
+            survey_obj = Survey(name, input_path, subscores)
             handle = survey_obj.score()
             all_surveys = pd.concat([all_surveys, handle], axis=1)
         except RuntimeError:
             continue
     all_surveys.fillna(value="N/A", inplace=True)
-    if name is not None:  
-        all_surveys.to_csv(out_path + "/" + name)
+    if output_path is not None:  
+        all_surveys.to_csv(output_path)
     return all_surveys
 
 if __name__ == "__main__":
-    json_score(name="output.csv")
+    input = "scripts\\tests\\test_data\simple_data.csv" # sys.argv[1]
+    json_data = "scripts\surveys.json"  # sys.argv[2]
+    out_path = "data\outputs\output.csv" # sys.argv[3]
+
+    json_score(input, json_data, out_path)
