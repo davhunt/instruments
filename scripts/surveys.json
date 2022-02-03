@@ -50,7 +50,7 @@
         },
         "risk": {
             "questions": [13, 7, 16], 
-            "rev_questions": [13],
+            "rev_questions": [13, 16],
             "max": 2,
             "score_type": "sum"
         },
