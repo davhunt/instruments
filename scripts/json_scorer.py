@@ -18,15 +18,14 @@ def json_score(input_path, survey_dat, output_path=None):
     output_path:    str | None
                     string pointing to output path and name. None if data should not be written out
     """
-
     # Open and save survey data
     if (isinstance(survey_dat, str)):
         with open(survey_dat,'r') as infile:
-            surveys = json.load(infile)
+            survey_dat = json.load(infile)
 
     # Iterate through survey names and generate data
     all_surveys = pd.read_csv(input_path, index_col="record_id")
-    for name, subscores in surveys.items():
+    for name, subscores in survey_dat.items():
         # Try to score, continue if fails
         try:
             survey_obj = Survey(name, input_path, subscores)
@@ -40,8 +39,8 @@ def json_score(input_path, survey_dat, output_path=None):
     return all_surveys
 
 if __name__ == "__main__":
-    input = "scripts\\tests\\test_data\simple_data.csv" # sys.argv[1]
-    json_data = "scripts\surveys.json"  # sys.argv[2]
-    out_path = "data\outputs\output.csv" # sys.argv[3]
+    input = "test_data\simple_data.csv" # sys.argv[1]
+    json_data = "surveys.json"  # sys.argv[2]
+    out_path = "..\data\outputs\output.csv" # sys.argv[3]
 
     json_score(input, json_data, out_path)
