@@ -16,4 +16,4 @@ The BFNE questionnaire is included in the repository scoring script. Threshold f
 | Variable | Details |
 | :--  | :--  |
 | bfne_scrdTotal_sX_rX_eX | total score: sum of all items (NaN if partial response prevents calculation of score) |
-| bfne_percTotal_sX_rX_eX | percentage of response for all items |
+| bfne_percTotal_sX_rX_eX | percentage of response for all items (NaN if all items are blank) |
