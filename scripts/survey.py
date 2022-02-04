@@ -119,7 +119,7 @@ class Survey:
             ver_scores = pd.DataFrame()
             for subscore, params in self.subscores.items():
                 sub_obj = Subscore(name=ver_surv, sub_name=subscore, **params)
-                single_score = sub_obj.gen_data(self.data.filter(regex=rf"{ver_surv}_[a-z][0-9]"), all_scores)
+                single_score = sub_obj.gen_data(self.data.filter(regex=rf"{ver_surv}_[a-z][0-9]"), ver_scores)
                 ver_scores = pd.concat([ver_scores, single_score], axis=1)
 
             # Sort according to session, run, and event, in that order
