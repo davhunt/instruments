@@ -157,6 +157,8 @@ class Subscore:
             return row.mean()  
         elif ScoreType[self.score_type] == ScoreType.sum:
             return row.sum()
+        elif ScoreType[self.score_type] == ScoreType.diff:
+            return row.diff()
         elif ScoreType[self.score_type] == ScoreType.count:
             return row.count()
 
@@ -177,7 +179,6 @@ class Subscore:
         append_prod = self._select_products(prev_products)
         data = pd.concat([data, append_prod], axis=1)
         
-
         # Create a column for each unique session, row, and event
         unique_vals = self._get_unique_sre(data)
         unique_cols = []
