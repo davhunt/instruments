@@ -123,9 +123,9 @@ class Subscore:
         return select_data
     
     def _select_products(self, data):
-        # If there is no selection, return regular data
+        # If there is no selection, return empty dataframe
         if self.products is None:
-            return data
+            return pd.DataFrame()
 
         select_columns = []
         for name in self.products:
@@ -173,10 +173,10 @@ class Subscore:
         # Filter based on selected questions
         data = self._select_questions(data)
 
-        # select product columns if available
-        if (self.products is not None):
-            append_prod = self._select_products(prev_products)
-            data = pd.concat([data, append_prod], axis=1)
+        # Select product columns if available
+        append_prod = self._select_products(prev_products)
+        data = pd.concat([data, append_prod], axis=1)
+        
 
         # Create a column for each unique session, row, and event
         unique_vals = self._get_unique_sre(data)
