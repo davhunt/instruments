@@ -84,6 +84,7 @@ class Survey:
 
         # Drop rows with incomplete values in timestamp (indicating no data)
         timestamp_col = self.data.filter(regex=rf"_{Subscore.TIME_LABEL}").columns
+        # TODO: Replace with a flat loop that only drops if ALL columns are NaN
         self.data.dropna(subset=timestamp_col, inplace=True)
         if(self.data.empty):
             raise RuntimeError("Survey %s does not contain any values."%(self.name))
@@ -119,7 +120,10 @@ class Survey:
             ver_scores = pd.DataFrame()
             for subscore, params in self.subscores.items():
                 sub_obj = Subscore(name=ver_surv, sub_name=subscore, **params)
-                single_score = sub_obj.gen_data(self.data.filter(regex=rf"{ver_surv}_[a-z][0-9]"), ver_scores)
+                if all_scores.empty:
+                    single_score = sub_obj.gen_data(self.data.filter(regex=rf"{ver_surv}_[a-z][0-9]"), ver_scores)
+                else:
+                    single_score = sub_obj.gen_data(self.data.filter(regex=rf"{ver_surv}_[a-z][0-9]"), all_scores)
                 ver_scores = pd.concat([ver_scores, single_score], axis=1)
 
             # Sort according to session, run, and event, in that order
