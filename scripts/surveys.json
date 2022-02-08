@@ -30,6 +30,57 @@
             "score_type": "sum"
         }
     },
+    "ambi": {
+        "inh": {
+            "questions": [5, 8, 1, 11, 2, 3, 10], 
+            "max": 2,
+            "score_type": "sum"
+        },
+        "non": {
+            "questions": [9, 4, 6], 
+            "rev_questions": [9, 4, 6],
+            "max": 2,
+            "score_type": "sum"
+        },
+        "low": {
+            "questions": [12, 14, 15], 
+            "rev_questions": [15],
+            "max": 2,
+            "score_type": "sum"
+        },
+        "risk": {
+            "questions": [13, 7, 16], 
+            "rev_questions": [13, 16],
+            "max": 2,
+            "score_type": "sum"
+        },
+        "total": {
+            "questions": [],
+            "products": ["inh", "non", "low", "risk"],
+            "score_type": "sum"
+        }
+    },
+    "ari": {
+        "raw": {
+            "questions": [1, 2, 3, 4, 5, 6],
+            "score_type": "sum"
+        },
+        "avg": {
+            "questions": [1, 2, 3, 4, 5, 6],
+            "score_type": "avg"
+        },
+        "prorat": {
+            "questions": [1, 2, 3, 4, 5, 6],
+            "score_type": "round(sum(row) * 6 / 5)",
+            "threshold": [0.82, 0.99]
+        }
+    },
+    "bfne": {
+        "total": {
+            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], 
+            "score_type": "sum"
+        }
+    },
     "erq": {
         "CogRea": {
             "questions": [1, 3, 5, 7, 8, 10],
@@ -40,12 +91,6 @@
             "questions": [2, 4, 6, 9],
             "score_type": "avg",
             "threshold": 0.8
-        }
-    },
-    "bfne": {
-        "total": {
-            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], 
-            "score_type": "sum"
         }
     },
     "sias6": {
