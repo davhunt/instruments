@@ -84,15 +84,14 @@ class Survey:
 
         # Drop rows with incomplete values in timestamp (indicating no data)
         timestamp_col = self.data.filter(regex=rf"_{Subscore.TIME_LABEL}").columns
-        # TODO: Replace with a flat loop that only drops if ALL columns are NaN
-        self.data.dropna(subset=timestamp_col, inplace=True)
+        self.data.dropna(subset=timestamp_col, how='all', inplace=True)
         if(self.data.empty):
             raise RuntimeError("Survey %s does not contain any values."%(self.name))
     
     def _extract_versions(self):
         # init regex
         surv_reg = rf"{self.name}"
-        ver_reg = rf"{self.name}_[a-z]_"
+        ver_reg = rf"{self.name}_[a-z]*_"
 
         # get timestamp column of all versions
         timestamp_col = self.data.filter(regex=rf"_{Subscore.TIME_LABEL}").columns
