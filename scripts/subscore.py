@@ -101,18 +101,6 @@ class Subscore:
         return self.name + self.DELIM + self.SCORED + self.sub_name.capitalize() \
             + self.DELIM + label
 
-    def _remove_meta(self, data):
-        # Create deep copy to prevent modification in place
-        handle = data.copy()
-
-        # Get column names that contain metadata labels
-        metadata_col = handle.filter(
-            regex=rf"{self.DELIM}{self.TIME_LABEL}|{self.DELIM}{self.COMP_LABEL}").columns
-        # Drop the above column names
-        handle = handle.drop(metadata_col, axis=1)
-
-        return handle
-
     def _select_questions(self, data):
         # If there is no selection, return data with all questions
         if self.questions is None:
@@ -214,29 +202,26 @@ class Subscore:
         return perc_complete
 
     def gen_data(self, data, prev_products=None):
-        # Filter out metadata
-        surv_data = self._remove_meta(data)
         # Filter based on selected questions
-        surv_data = self._select_questions(surv_data)
+        data = self._select_questions(data)
 
         # Select product columns if available
         append_prod = self._select_products(prev_products)
-        surv_data = pd.concat([surv_data, append_prod], axis=1)
         
-        # Apply reverse scoring if specified
-        surv_data = self._reverse_score(surv_data)
+        data = self._reverse_score(data)
+        data = pd.concat([data, append_prod], axis=1)
 
         # Create a column for each unique session, row, and event
-        unique_vals = self._get_unique_sre(surv_data)
+        unique_vals = self._get_unique_sre(data)
         unique_cols = []
         for val in unique_vals:
             unique_cols.append(self._perc_column(val))
             unique_cols.append(self._scored_column(val))
 
         # Create a dataframe of percentage complete and scored column name
-        score = pd.DataFrame(index=surv_data.index, columns=unique_cols)
+        score = pd.DataFrame(index=data.index, columns=unique_cols)
 
-        for index, row in surv_data.iterrows():
+        for index, row in data.iterrows():
             # Calculate score for every unique group of metadata found
             for unique in unique_vals:
                 # Create copy to prevent modification in place
