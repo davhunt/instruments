@@ -5,11 +5,11 @@
             "score_type": "sum"
         },
         "inh": {
-            "questions": [3, 4, 6, 10, 14], 
+            "questions": [3, 4, 6, 10, 14],
             "score_type": "sum"
-        }, 
+        },
         "total": {
-            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], 
+            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
             "score_type": "sum"
         }
     },
@@ -18,7 +18,7 @@
             "questions": [1, 7, 8, 10],
             "criteria": [1, 2],
             "score_type": "count"
-        }, 
+        },
         "disagreed": {
             "questions": [2, 3, 4, 5, 6, 9],
             "criteria": [3, 4],
@@ -30,9 +30,66 @@
             "score_type": "sum"
         }
     },
+    "baars4": {
+        "AdhdSM": {
+            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "AdhdCT": {
+            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
+            "criteria": [3, 4],
+            "score_type": "count",
+            "threshold": 1.0
+        },
+        "InatSM": {
+            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "InatCT": {
+            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+            "criteria": [3, 4],
+            "score_type": "count",
+            "threshold": 1.0
+        },
+        "HypSM": {
+            "questions": [10, 11, 12, 13, 14],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "HypCT": {
+            "questions": [10, 11, 12, 13, 14],
+            "criteria": [3, 4],
+            "score_type": "count",
+            "threshold": 1.0
+        },
+        "ImpSM": {
+            "questions": [15, 16, 17, 18],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "ImpCT": {
+            "questions": [15, 16, 17, 18],
+            "criteria": [3, 4],
+            "score_type": "count",
+            "threshold": 1.0
+        },
+        "SctSM": {
+            "questions": [19, 20, 21, 22, 23, 24, 25, 26, 27],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "SctCT": {
+            "questions": [19, 20, 21, 22, 23, 24, 25, 26, 27],
+            "criteria": [3, 4],
+            "score_type": "count",
+            "threshold": 1.0
+        },
+    },
     "bfne": {
         "total": {
-            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], 
+            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
             "score_type": "sum"
-    }        
-} 
+    }
+}
