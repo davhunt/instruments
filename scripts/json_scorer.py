@@ -8,7 +8,6 @@ import sys
 def json_score(input_path, survey_dat, output_path=None):
     """
     Code to load in JSON file and score outlined surveys.
-
     Parameters
     ----------
     input_path: str
@@ -37,7 +36,7 @@ def json_score(input_path, survey_dat, output_path=None):
     if output_path is not None:  
         all_surveys.to_csv(output_path)
     return all_surveys
-
+    
 if __name__ == "__main__":
     input =  "data\inputs\input-sssq_2022-02-08.csv"
     json_data = "scripts/surveys.json"
