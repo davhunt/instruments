@@ -19,10 +19,10 @@ The combined AMBI and RMBI questionnaire is included in the repository scoring s
 | ambirmbi_percLowA_sX_rX_eX | percentage of response for ambi low sociability subscore |
 | ambirmbi_percRiskA_sX_rX_eX | percentage of response for ambi risk avoidance subscore |
 | ambirmbi_scrdRMBI_sX_rX_eX | rmbi total score: sum of all items after items indicated below have been reverse scored (NaN if partial response prevents calculation of score) |
-| ambirmbi_scrdNonR_sX_rX_eX | rmbi non-approach subscore: sum of 2, 4*, 5*, 9, 11*, and 15* (NaN if partial response prevents calculation of subscore) |
-| ambirmbi_scrdInhR_sX_rX_eX | rmbi fearful inhibition subscore: sum of 1, 6, 10, 16, and 18 (NaN if partial response prevents calculation of subscore) |
-| ambirmbi_scrdRiskR_sX_rX_eX | rmbi risk avoidance subscore:7*, 8, and 13* (NaN if partial response prevents calculation of subscore) |
-| ambirmbi_scrdShyR_sX_rX_eX | rmbi shyness & sensitivity subscore: sum of 3, 12, 14, and 17 (NaN if partial response prevents calculation of subscore) |
+| ambirmbi_scrdNonR_sX_rX_eX | rmbi non-approach subscore: sum of 18, 20*, 21*, 25, 27*, and 31* (NaN if partial response prevents calculation of subscore) |
+| ambirmbi_scrdInhR_sX_rX_eX | rmbi fearful inhibition subscore: sum of 17, 22, 26, 32, and 34 (NaN if partial response prevents calculation of subscore) |
+| ambirmbi_scrdRiskR_sX_rX_eX | rmbi risk avoidance subscore: 23*, 24, and 29* (NaN if partial response prevents calculation of subscore) |
+| ambirmbi_scrdShyR_sX_rX_eX | rmbi shyness & sensitivity subscore: sum of 19, 28, 30, and 33 (NaN if partial response prevents calculation of subscore) |
 | ambirmbi_percRMBI_sX_rX_eX | percentage of response for all rmbi items |
 | ambirmbi_percNonR_sX_rX_eX | percentage of response for rmbi non-approach subscore |
 | ambirmbi_percInhR_sX_rX_eX | percentage of response for rmbi fearful inhibition subscore |
