@@ -182,6 +182,8 @@ class Subscore:
             return row.mean()  
         elif ScoreType[self.score_type] == ScoreType.sum:
             return row.sum()
+        elif ScoreType[self.score_type] == ScoreType.diff:
+            return row.diff()
         elif ScoreType[self.score_type] == ScoreType.count:
             return row.count()
     

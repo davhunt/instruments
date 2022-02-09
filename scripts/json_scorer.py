@@ -38,8 +38,8 @@ def json_score(input_path, survey_dat, output_path=None):
     return all_surveys
     
 if __name__ == "__main__":
-    input =  "scripts\\test_data\cond_data_mult.csv" # sys.argv[1]
-    json_data = "scripts\surveys.json"  # sys.argv[2]
-    out_path = "data\outputs\output.csv" # sys.argv[3]
+    input =  "data\inputs\input-sssq_2022-02-08.csv"
+    json_data = "scripts/surveys.json"
+    out_path = "data/outputs/outputs.csv"
 
     json_score(input, json_data, out_path)

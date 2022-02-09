@@ -150,5 +150,5 @@ def reverse_data_single(id_col):
                      24,"N/A"]
     }
     solution_df = pd.DataFrame(data=solutions, index=id_col)
-    reverse_dat = "test_data/cond_data.csv"
+    reverse_dat = "test_data/reverse_data.csv"
     return reverse_surv, reverse_dat, solution_df

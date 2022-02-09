@@ -218,5 +218,39 @@
             "score_type": "sum",
             "threshold": 1.0
         }
+    },
+    "sssqpre": {
+        "Eng": {
+            "questions": [2, 5, 11, 12, 13, 17, 21, 22],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Dis": {
+            "questions": [1, 3, 4, 6, 7, 8, 9, 10],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Wry": {
+            "questions": [14, 15, 16, 18, 19, 20, 23, 24],
+            "score_type": "avg",
+            "threshold": 0.8
+        }
+    },
+    "sssqpost": {
+        "Eng": {
+            "questions": [2, 5, 11, 12, 13, 17, 21, 22],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Dis": {
+            "questions": [1, 3, 4, 6, 7, 8, 9, 10],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Wry": {
+            "questions": [14, 15, 16, 18, 19, 20, 23, 24],
+            "score_type": "avg",
+            "threshold": 0.8
+        }
     }
 }
