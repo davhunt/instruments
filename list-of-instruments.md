@@ -35,8 +35,9 @@ Below is a list of instruments contained in this repository.
 | rtq | Repetitive Thinking Questionnaire | [McEvoy et al. (2010)](https://www.sciencedirect.com/science/article/pii/S0887618510000551) |
 | sas2 | Screen for Adult Anxiety Related Disorders | [Smith et al. (2006)](https://psycnet.apa.org/record/2006-22413-004) |
 | scaared | Screen for Adult Anxiety Related Disorders | [Angulo et al. (2017)](https://www.sciencedirect.com/science/article/pii/S0165178116314196) |
-| sias6sps6 | Social Interaction Anxiety Scale and Social Phobia Scale | [Peters et al. (2012)](https://pubmed.ncbi.nlm.nih.gov/21744971/) |
+| sias6 | Social Interaction Anxiety Scale | [Peters et al. (2012)](https://pubmed.ncbi.nlm.nih.gov/21744971/) |
 | sics | Social Interaction and Communication Skills Checklist | (unconfirmed) |
+| sps6 | Social Phobia Scale | [Peters et al. (2012)](https://pubmed.ncbi.nlm.nih.gov/21744971/) |
 | srq | Social Reward Questionnaire | [Foulkes et al. (2014)](https://pubmed.ncbi.nlm.nih.gov/24653711/) |
 | sssq | Short Stress State Questionnaire | [Helton and Näsall (2015)](https://psycnet.apa.org/record/2014-09900-001) |
 | stai5 | State-Trait Anxiety Inventory, Short Version | [Zsido et al. (2020)](https://pubmed.ncbi.nlm.nih.gov/32563747/) |

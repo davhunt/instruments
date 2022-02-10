@@ -1,4 +1,4 @@
-## SIAS6 and SPS6
+## SIAS6+SPS6
 
 
 This repo contains the main PDF, REDCap import .zip, and REDCap survey PDF for the combined SIAS6 and SPS6 questionnaire.
