@@ -30,4 +30,4 @@ The combined AMBI and RMBI questionnaire is included in the repository scoring s
 | ambirmbi_percShyR_sX_rX_eX | percentage of response for rmbi shyness & sensitivity subscore (NaN if all items are blank) |
 
 
-> Gladstone, G., & Parker, G. (2005). Measuring a behaviorally inhibited temperament style: development and initial validation of new self-report measures. Psychiatry research, 135(2), 133–143. [[link]](https://pubmed.ncbi.nlm.nih.gov/15922458/)
+> Gladstone, G., & Parker, G. (2005). Measuring a behaviorally inhibited temperament style: development and initial validation of new self-report measures. Psychiatry Research, 135(2), 133–143. [[link]](https://pubmed.ncbi.nlm.nih.gov/15922458/)
