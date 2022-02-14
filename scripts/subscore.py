@@ -127,7 +127,7 @@ class Subscore:
 
         select_columns = []
         for name in self.products:
-            prop_name = name.capitalize()
+            prop_name = name[0].capitalize() + name[1:]
             # For each selected question, find the corresponding column name
             select_columns += list(
                 data.filter(regex=rf"{self.SCORED}{prop_name}").columns
