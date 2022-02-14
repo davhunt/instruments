@@ -163,7 +163,7 @@ class Subscore:
         
         # reverse each questions score according to max
         for rev_q in select_columns:
-            handle[rev_q] = handle[rev_q].map(lambda s: self.max - int(s))
+            handle[rev_q] = handle[rev_q].map(lambda s: self.max - int(s) if not pd.isna(s) else s)
         
         return handle
 
