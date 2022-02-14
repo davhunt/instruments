@@ -87,63 +87,57 @@
             "threshold": 1.0
         }
     },
-    "ambi": {
-        "inh": {
-            "questions": [5, 8, 1, 11, 2, 3, 10],
+    "ambirmbi": {
+        "inhA": {
+            "questions": [1, 2, 3, 5, 8, 10, 11],
+            "score_type": "sum"
+        },
+        "nonA": {
+            "questions": [4, 6, 9],
+            "rev_questions": [4, 6, 9],
             "max": 2,
             "score_type": "sum"
         },
-        "non": {
-            "questions": [9, 4, 6],
-            "rev_questions": [9, 4, 6],
-            "max": 2,
-            "score_type": "sum"
-        },
-        "low": {
+        "lowA": {
             "questions": [12, 14, 15],
             "rev_questions": [15],
             "max": 2,
             "score_type": "sum"
         },
-        "risk": {
-            "questions": [13, 7, 16],
+        "riskA": {
+            "questions": [7, 13, 16],
             "rev_questions": [13, 16],
             "max": 2,
             "score_type": "sum"
         },
-        "total": {
+        "AMBI": {
             "questions": [],
-            "products": ["inh", "non", "low", "risk"],
+            "products": ["inhA", "nonA", "lowA", "riskA"],
             "score_type": "sum"
-        }
-    },
-    "rmbi": {
-        "inh": {
-            "questions": [1, 6, 10, 16, 18],
+        },
+        "inhR": {
+            "questions": [17, 22, 26, 32, 34],
+            "score_type": "sum"
+        },
+        "nonR": {
+            "questions": [18, 20, 21, 25, 27, 31],
+            "rev_questions": [20, 21, 27, 31],
             "max": 2,
             "score_type": "sum"
         },
-        "non": {
-            "questions": [2, 4, 5, 9, 11, 15],
-            "rev_questions": [4, 5, 11, 15],
+        "shyR": {
+            "questions": [19, 28, 30, 33],
+            "score_type": "sum"
+        },
+        "riskR": {
+            "questions": [23, 24, 29],
+            "rev_questions": [23, 29],
             "max": 2,
             "score_type": "sum"
         },
-        "shy": {
-            "questions": [3, 12, 14, 17],
-            "rev_questions": [15],
-            "max": 2,
-            "score_type": "sum"
-        },
-        "risk": {
-            "questions": [7, 8, 13],
-            "rev_questions": [7, 13],
-            "max": 2,
-            "score_type": "sum"
-        },
-        "total": {
+        "RMBI": {
             "questions": [],
-            "products": ["inh", "non", "low", "risk"],
+            "products": ["inhR", "nonR", "shyR", "riskR"],
             "score_type": "sum"
         }
     },
@@ -180,14 +174,12 @@
             "threshold": 0.8
         }
     },
-    "sias6": {
-         "total": {
+    "sias6sps6": {
+         "SIAS": {
             "questions": [1, 2, 3, 4, 5, 6],
             "score_type": "sum"
-        }
-    },
-    "sps6": {
-         "total": {
+        },
+        "SPS": {
             "questions": [7, 8, 9, 10, 11, 12],
             "score_type": "sum"
         }
