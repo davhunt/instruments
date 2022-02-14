@@ -94,11 +94,11 @@ class Subscore:
         self.criteria = criteria
         
     def _perc_column(self, label):
-        return self.name + self.DELIM + self.PERCENT + self.sub_name.capitalize() \
+        return self.name + self.DELIM + self.PERCENT + self.sub_name[0].capitalize() + self.sub_name[1:] \
             + self.DELIM + label
 
     def _scored_column(self, label):
-        return self.name + self.DELIM + self.SCORED + self.sub_name.capitalize() \
+        return self.name + self.DELIM + self.SCORED + self.sub_name[0].capitalize() + self.sub_name[1:] \
             + self.DELIM + label
 
     def _select_questions(self, data):
