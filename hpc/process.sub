@@ -17,11 +17,10 @@ input_file="/home/data/NDClab/datasets/social-context-dataset/sourcedata/raw/one
 output_file="~/Downloads/outputs.csv"
 
 # paths to static code and data
-sing_image="/home/data/NDClab/tools/instruments/containers/singularity/inst-container.simg"
-json_scorer="/home/data/NDClab/tools/instruments/scripts/json_scorer.py"
-survey_data="/home/data/NDClab/tools/instruments/scripts/surveys.json"
+sing_image="containers/singularity/inst-container.simg"
+json_scorer="scripts/json_scorer.py"
+survey_data="scripts/surveys.json"
 
-cd scripts
 # use singularity image to run script
 singularity exec --bind /home/data/NDClab/datasets/social-context-dataset/sourcedata,/home/data/NDClab/tools/instruments \
     $sing_image \
