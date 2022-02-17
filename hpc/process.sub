@@ -12,13 +12,22 @@
 # load singularity module
 module load singularity-3.5.3
 
+# edit variables here to change inputs and outputs
+input_file="/home/data/NDClab/datasets/social-context-dataset/sourcedata/raw/one-a/redcap/2021DECIndividualDif_DATA_2022-01-24_1419.csv"
+output_file="~/Downloads/outputs.csv"
+
+# paths to static code and data
+sing_image="/home/data/NDClab/tools/instruments/containers/singularity/inst-container.simg"
+json_scorer="/home/data/NDClab/tools/instruments/scripts/json_scorer.py"
+survey_data="/home/data/NDClab/tools/instruments/scripts/surveys.json"
+
 cd scripts
 # use singularity image to run script
-singularity exec --bind /home/data/NDClab/datasets/social-context-dataset/sourcedata \
-    /home/data/NDClab/tools/instruments/containers/singularity/inst-container.simg python3 \
-    json_scorer.py \
-    surveys.json \
-    /home/data/NDClab/datasets/social-context-dataset/sourcedata/raw/one-a/redcap/2021DECIndividualDif_DATA_2022-01-24_1419.csv \
-    /home/data/NDClab/tools/instruments
+singularity exec --bind /home/data/NDClab/datasets/social-context-dataset/sourcedata,/home/data/NDClab/tools/instruments \
+    $sing_image \
+    python3 $json_scorer \
+    $input_file \
+    $survey_data \
+    $output_file
 
 
