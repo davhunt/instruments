@@ -59,7 +59,7 @@ This `main` branch contains completed releases for this project. For all work-in
 | Farukh Saidmuratov, Brandon Lopez, Osmany Pujol | collaborated on original script |
 | Jess Alexander, Ana Lopez-Nuñez  | testing and organization of initial releases |
 
-Learn more about us [here](www.ndclab.com/people).
+Learn more about us [here](https://www.ndclab.com/people).
 
 ## Contributing
 If you are interested in contributing, please read our [CONTRIBUTING.md](CONTRIBUTING.md) file.
