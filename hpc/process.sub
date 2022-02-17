@@ -1,0 +1,24 @@
+#!/bin/bash
+#SBATCH --qos medium
+#SBATCH --account iacc_gbuzzell
+#SBATCH --partition 6g-per-core
+
+
+#SBATCH --nodes=1                # node count
+#SBATCH --ntasks=1               # total number of tasks across all nodes
+#SBATCH --cpus-per-task=1        # CPUS to use when using data parallelization
+#SBATCH --time=05:00:00          # total run time limit (HH:MM:SS)
+
+# load singularity module
+module load singularity-3.5.3
+
+cd scripts
+# use singularity image to run script
+singularity exec --bind /home/data/NDClab/datasets/social-context-dataset/sourcedata \
+    /home/data/NDClab/tools/instruments/containers/singularity/inst-container.simg python3 \
+    json_scorer.py \
+    surveys.json \
+    /home/data/NDClab/datasets/social-context-dataset/sourcedata/raw/one-a/redcap/2021DECIndividualDif_DATA_2022-01-24_1419.csv \
+    /home/data/NDClab/tools/instruments
+
+
