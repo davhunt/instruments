@@ -94,11 +94,11 @@ class Subscore:
         self.criteria = criteria
         
     def _perc_column(self, label):
-        return self.name + self.DELIM + self.PERCENT + self.sub_name.capitalize() \
+        return self.name + self.DELIM + self.PERCENT + self.sub_name[0].capitalize() + self.sub_name[1:] \
             + self.DELIM + label
 
     def _scored_column(self, label):
-        return self.name + self.DELIM + self.SCORED + self.sub_name.capitalize() \
+        return self.name + self.DELIM + self.SCORED + self.sub_name[0].capitalize() + self.sub_name[1:] \
             + self.DELIM + label
 
     def _select_questions(self, data):
@@ -127,7 +127,7 @@ class Subscore:
 
         select_columns = []
         for name in self.products:
-            prop_name = name.capitalize()
+            prop_name = name[0].capitalize() + name[1:]
             # For each selected question, find the corresponding column name
             select_columns += list(
                 data.filter(regex=rf"{self.SCORED}{prop_name}").columns
@@ -163,7 +163,7 @@ class Subscore:
         
         # reverse each questions score according to max
         for rev_q in select_columns:
-            handle[rev_q] = handle[rev_q].map(lambda s: self.max - int(s))
+            handle[rev_q] = handle[rev_q].map(lambda s: self.max - int(s) if not pd.isna(s) else s)
         
         return handle
 
