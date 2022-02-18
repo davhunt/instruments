@@ -12,143 +12,154 @@ def id_col():
 
 
 @pytest.fixture
-def adexi_surv():
-    simple_surv = {
-        "adexi": {
+def test_data():
+    data = "test_data/test_data.csv"
+
+
+
+@pytest.fixture
+def general_surv():
+    general_surv = {
+        "survey": {
             "sub1": {
-                "questions": [1, 2, 5, 7, 8, 9, 11, 12, 13],
-                "score_type": "sum"
+                "questions": [1, 2, 3, 4],
+                "score_type": "avg",
+                "threshold": [0.01, 0.99],
+                "rev_questions": [1, 2],
+                "max": 4,
+                "products": ["non-exist"], 
+                "criteria": [1, 2]
             },
             "sub2": {
-                "questions": [3, 4, 6, 10, 14], 
-                "score_type": "sum"
+                "questions": [1, 2, 3, 4],
+                "score_type": "avg",
+                "threshold": [0.01, 0.99],
+                "rev_questions": [1, 2],
+                "max": 4,
+                "criteria": [1, 2]
+            },
+            "sub3": {
+                "questions": [1, 2, 3, 4],
+                "score_type": "avg",
+                "threshold": [0.01, 0.99],
+                "rev_questions": [1, 2],
+                "max": 4,
+                "products": ["sub2"],
+                "criteria": [1, 2]
+            },
+            "sub4": {
+                "questions": [1, 2, 3, 4],
+                "score_type": "avg",
+                "threshold": [0.01, 0.99],
+                "rev_questions": [1, 2],
+                "products": ["sub2", "sub3"],
+                "criteria": [1, 2]
+            },
+            "sub5": {
+                "questions": [1, 2, 3, 4],
+                "score_type": "avg",
+                "threshold": 0.8,
+                "rev_questions": [1, 2],
+                "max": 4,
+                "products": ["sub2", "sub3"],
+                "criteria": [1, 2]
+            },
+            "sub6": {
+                "questions": [1, 2, 3, 4],
+                "score_type": "avg",
+                "threshold": 0.8,
+                "rev_questions": [1, 2],
+                "products": ["sub2", "sub3"],
+                "criteria": [1, 2]
+            },
+            "sub7": {
+                "questions": [1, 2, 3, 4],
+                "score_type": "round(sum(row) * 6 / 5)",
+                "threshold": [0.01, 0.99],
+                "rev_questions": [1, 2],
+                "max": 4,
+                "products": ["sub2", "sub3"],
+                "criteria": [1, 2]
+            },
+            "sub8": {
+                "questions": [1, 2, 3, 4],
+                "score_type": "round(sum(row) * 6 / 5)",
+                "threshold": [0.01, 0.99],
+                "rev_questions": [1, 2],
+                "products": ["sub2", "sub3"],
+                "criteria": [1, 2]
+            },
+            "sub9": {
+                "questions": [1, 2, 3, 4],
+                "score_type": "round(sum(row) * 6 / 5)",
+                "threshold": 0.8,
+                "rev_questions": [1, 2],
+                "max": 4,
+                "products": ["sub2", "sub3"],
+                "criteria": [1, 2]
+            },
+            "sub10": {
+                "questions": [1, 2, 3, 4],
+                "score_type": "round(sum(row) * 6 / 5)",
+                "threshold": 0.8,
+                "rev_questions": [1, 2],
+                "products": ["sub2", "sub3"],
+                "criteria": [1, 2]
+            },
+        }
+    }
+    return general_surv
+
+
+@pytest.fixture
+def empty_surv(test_data):
+    empty_surv = {
+        "survey": {
+        }
+    }
+    return empty_surv, test_data
+
+
+@pytest.fixture
+def nonexist_surv(test_data):
+    not_survey = {
+        "not_survey": {
+        }
+    }
+    return not_survey, test_data
+
+
+@pytest.fixture
+def empty_params(test_data):
+    empty_params = {
+        "survey": {
+            "sub_empty": {
             }
         }
     }
-    return simple_surv
+    return empty_params, test_data
 
 
 @pytest.fixture
-def aq10_surv():
-    cond_surv = {
-        "aq10": {
-            "sub1": {
-                "questions": [1, 7, 8, 10],
-                "criteria": [1, 2],
-                "score_type": "count"
-            }, 
-            "sub2": {
-                "questions": [2, 3, 4, 5, 6, 9],
-                "criteria": [3, 4],
-                "score_type": "count"
-            },
-            "total": {
-                "questions": [],
-                "products": ["sub1", "sub2"],
-                "score_type": "sum"
-            }
-        }
-    }
-    return cond_surv
-
-
-@pytest.fixture
-def conditional_data_single(aq10_surv, id_col):
+def general_survey_key(general_surv, id_col, test_data):
     solutions = {
-        "aq10_scrdSub1_s1_r1_e1": 
-                        ["N/A",1,"N/A",1,"N/A",2,1,4,"N/A",1,"N/A",1,"N/A","N/A",3,"N/A","N/A",2,"N/A",2,"N/A",
-                         "N/A",3,"N/A","N/A",1,"N/A",1,"N/A","N/A","N/A",2,1,0,"N/A","N/A",1,2,0,"N/A"],
-        "aq10_scrdSub2_s1_r1_e1": 
-                    ["N/A",0,"N/A",3,"N/A",1,0,2,"N/A",4,"N/A",1,"N/A","N/A",2,"N/A","N/A",3,"N/A",1,"N/A","N/A",0,
-                     "N/A","N/A",0,"N/A",4,"N/A","N/A","N/A",4,2,1,"N/A","N/A",2,1,3,"N/A"],
-        "aq10_scrdTotal_s1_r1_e1":
-                    ["N/A",1,"N/A",4,"N/A",3,1,6,"N/A",5,"N/A",2,"N/A","N/A",5,"N/A","N/A",5,"N/A",3,"N/A","N/A",
-                     3,"N/A","N/A",1,"N/A",5,"N/A","N/A","N/A",6,3,1,"N/A","N/A",3,3,3,"N/A"]
-    }
-    solution_df = pd.DataFrame(data=solutions, index=id_col)
-    cond_dat = "test_data/cond_data.csv"
-    return aq10_surv, cond_dat, solution_df
-
-
-@pytest.fixture
-def conditional_data_multiple(aq10_surv, conditional_data_single):
-    _, _, solution_df = conditional_data_single
-    solution_df["aq10_scrdSub1_s1_r2_e1"] = ["N/A",1,"N/A","N/A","N/A",2,1,4,"N/A",1,"N/A",1,"N/A","N/A","N/A",
-                                              "N/A","N/A",2,"N/A",2,"N/A","N/A",3,"N/A","N/A",1,"N/A",1,"N/A",
-                                              "N/A","N/A",2,1,0,"N/A","N/A",1,2,0,"N/A"]
-    solution_df["aq10_scrdSub2_s1_r2_e1"] = ["N/A",0,"N/A",3,"N/A",1,"N/A","N/A","N/A",4,"N/A","N/A","N/A","N/A",2,
-                                              "N/A","N/A",3,"N/A","N/A","N/A","N/A",0,"N/A","N/A",0,"N/A",4,"N/A",
-                                              "N/A","N/A",4,2,1,"N/A","N/A",2,1,3,"N/A"]
-    solution_df["aq10_scrdTotal_s1_r2_e1"] = ["N/A",1,"N/A","N/A","N/A",3,"N/A","N/A","N/A",5,"N/A","N/A","N/A",
-                                               "N/A","N/A","N/A","N/A",5,"N/A","N/A","N/A","N/A",3,"N/A","N/A",1,
-                                               "N/A",5,"N/A","N/A","N/A",6,3,1,"N/A","N/A",3,3,3,"N/A"]
-    simple_dat_mult = "test_data/cond_data_mult.csv"
-    return aq10_surv, simple_dat_mult, solution_df
-
-
-@pytest.fixture
-def simple_data_single(adexi_surv, id_col):
-    simple_dat = "test_data/simple_data.csv"
-    solutions = {
-        "adexi_scrdSub1_s1_r1_e1": 
+        "survey_scrdSub1_s1_r1_e1": 
                         ["N/A", 22, "N/A", 23, "N/A", 18, 11, 26, "N/A", 22, "N/A", 18, "N/A", "N/A", 26, "N/A",
                         "N/A", 26, "N/A", 26, "N/A", "N/A", 9, "N/A", "N/A", 17, "N/A", 33, "N/A", "N/A", 
                         "N/A", 23, 21, 23, "N/A", "N/A", 22, 27, 35, "N/A"],
-        "adexi_scrdSub2_s1_r1_e1": 
+        "survey_scrdSub1_s1_r2_e1": 
+                        ["N/A", 22, "N/A", 23, "N/A", 18, 11, 26, "N/A", 22, "N/A", 18, "N/A", "N/A", 26, "N/A",
+                        "N/A", 26, "N/A", 26, "N/A", "N/A", 9, "N/A", "N/A", 17, "N/A", 33, "N/A", "N/A", 
+                        "N/A", 23, 21, 23, "N/A", "N/A", 22, 27, 35, "N/A"],
+        "survey_scrdSub2_s1_r1_e1": 
                     ["N/A", 14, "N/A", 15, "N/A", 20, 10, 14, "N/A", 10, "N/A", 12, "N/A", "N/A", 20, "N/A", "N/A", 
                      17, "N/A", 16, "N/A", "N/A", 6, "N/A", "N/A", 11, "N/A", 14, "N/A", "N/A", "N/A", 19, 12,
-                     9, "N/A", "N/A", 12, 15, 24, "N/A"]
+                     9, "N/A", "N/A", 12, 15, 24, "N/A"],
+        "survey_scrdSub2_s1_r2_e1": 
+                    ["N/A", 14, "N/A", 15, "N/A", 20, 10, 14, "N/A", 10, "N/A", 12, "N/A", "N/A", 20, "N/A", "N/A", 
+                     17, "N/A", 16, "N/A", "N/A", 6, "N/A", "N/A", 11, "N/A", 14, "N/A", "N/A", "N/A", 19, 12,
+                     9, "N/A", "N/A", 12, 15, 24, "N/A"],
     }
     solution_df = pd.DataFrame(data=solutions, index=id_col)
-    return adexi_surv, simple_dat, solution_df
+    return general_surv, test_data, solution_df
 
-
-@pytest.fixture
-def simple_data_multiple(adexi_surv, simple_data_single):
-    _, _, solution_df = simple_data_single
-    solution_df["adexi_b_scrdSub1_s1_r2_e1"] = ["N/A","N/A","N/A",23,"N/A","N/A","N/A",26,"N/A","N/A","N/A",18,
-                                                 "N/A","N/A",26,"N/A","N/A",26,"N/A",26,"N/A","N/A",9,"N/A","N/A",
-                                                 17,"N/A",33,"N/A","N/A","N/A",23,21,23,"N/A","N/A",22,27,35,"N/A"]
-    solution_df["adexi_b_scrdSub2_s1_r2_e1"] = ["N/A","N/A","N/A",15,"N/A",20,10,"N/A","N/A","N/A","N/A",12,"N/A",
-                                                 "N/A",20,"N/A","N/A",17,"N/A",16,"N/A","N/A",6,"N/A","N/A",11,"N/A",
-                                                 14,"N/A","N/A","N/A",19,12,9,"N/A","N/A",12,15,24,"N/A"]
-    simple_dat_mult = "test_data/simple_data_mult.csv"
-    return adexi_surv, simple_dat_mult, solution_df
-
-
-@pytest.fixture
-def reverse_data_single(id_col):
-    reverse_surv = {
-        "ambi": {
-            "sub1": {
-                "questions": [9, 4, 6], 
-                "rev_questions": [9, 4, 6],
-                "max": 2,
-                "score_type": "sum"
-            },
-            "sub2": {
-                "questions": [12, 14, 15], 
-                "rev_questions": [15],
-                "max": 2,
-                "score_type": "sum"
-            },
-            "total": {
-                "questions": [],
-                "products": ["sub1", "sub2"],
-                "score_type": "sum"
-            }
-        }
-    }
-    solutions = {
-        "adexi_b_scrdSub1_s1_r1_e1": 
-                        ["N/A", 22, "N/A", 23, "N/A", 18, 11, 26, "N/A", 22, "N/A", 18, "N/A", "N/A", 26, "N/A",
-                        "N/A", 26, "N/A", 26, "N/A", "N/A", 9, "N/A", "N/A", 17, "N/A", 33, "N/A", "N/A", 
-                        "N/A", 23, 21, 23, "N/A", "N/A", 22, 27, 35, "N/A"],
-        "adexi_b_scrdSub2_s1_r1_e1": 
-                    ["N/A","N/A","N/A",15,"N/A",20,10,"N/A","N/A","N/A","N/A",12,"N/A","N/A",20,"N/A","N/A",17,
-                     "N/A",16,"N/A","N/A",6,"N/A","N/A",11,"N/A",14,"N/A","N/A","N/A",19,12,9,"N/A","N/A",12,15,
-                     24,"N/A"]
-    }
-    solution_df = pd.DataFrame(data=solutions, index=id_col)
-    reverse_dat = "test_data/reverse_data.csv"
-    return reverse_surv, reverse_dat, solution_df
