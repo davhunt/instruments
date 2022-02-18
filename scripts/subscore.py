@@ -155,7 +155,7 @@ class Subscore:
         if self.rev_questions is None:
             return data
         if self.max is None:
-            return data
+            raise RuntimeError("Max param not included in %s. Cannot reliably reverse score."%(self.name))
 
         handle = data.copy()
         select_columns = []
