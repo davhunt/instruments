@@ -135,6 +135,10 @@ class Subscore:
         # Filter out all data except for selected columns
         select_data = data.filter(items=select_columns)
 
+        # detect if products are empty, ie subscore doesn't exist or not generated yet
+        if select_data.empty:
+            raise RuntimeError("No products available for %s. Skipping."%(self.sub_name))
+
         return select_data
 
     def _get_unique_sre(self, data):
