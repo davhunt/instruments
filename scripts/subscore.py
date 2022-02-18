@@ -186,6 +186,12 @@ class Subscore:
             return row.diff()
         elif ScoreType[self.score_type] == ScoreType.count:
             return row.count()
+        elif ScoreType[self.score_type] == ScoreType.med:
+            return row.med()
+        elif ScoreType[self.score_type] == ScoreType.min:
+            return row.min()
+        elif ScoreType[self.score_type] == ScoreType.max:
+            return row.max()
     
     def _valid_thresh(self, perc):
         if isinstance(self.threshold, (int, float)):
