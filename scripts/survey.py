@@ -78,7 +78,7 @@ class Survey:
         
     def _filter(self):
         if len(self.subscores) == 0:
-            raise RuntimeError("Subscores for %s is empty. Skipping."%(self.name))
+            raise TypeError("Subscores for %s is empty. Skipping."%(self.name))
         # keep only survey data containing survey name
         self.data = self.data.filter(regex=rf"^{self.name}")
         # quit processing if survey data is not available 
@@ -122,8 +122,7 @@ class Survey:
             ver_scores = pd.DataFrame()
             for subscore, params in self.subscores.items():
                 if len(params) == 0:
-                    print("No parameters for %s. Skipping."%(subscore))
-                    continue
+                    raise TypeError("No parameters for %s. Skipping."%(subscore))
                 try:
                     sub_obj = Subscore(name=ver_surv, sub_name=subscore, **params)
                     single_score = sub_obj.gen_data(self.data.filter(regex=rf"{ver_surv}_[a-z][0-9]"), ver_scores)
