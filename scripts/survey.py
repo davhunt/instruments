@@ -121,6 +121,9 @@ class Survey:
         for ver_surv in self.versions:
             ver_scores = pd.DataFrame()
             for subscore, params in self.subscores.items():
+                if len(params) == 0:
+                    raise RuntimeError("No parameters for %s. Skipping."%(subscore))
+    
                 sub_obj = Subscore(name=ver_surv, sub_name=subscore, **params)
                 single_score = sub_obj.gen_data(self.data.filter(regex=rf"{ver_surv}_[a-z][0-9]"), ver_scores)
                 ver_scores = pd.concat([ver_scores, single_score], axis=1)
