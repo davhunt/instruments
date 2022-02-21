@@ -1,4 +1,5 @@
 ## AMBI+RMBI
+### Adult Measure of Behavioral Inhibition | Retrospective Measure of Behavioral Inhibition
 
 This repo contains the main PDF, REDCap import .zip, and REDCap survey PDF for the combined AMBI and RMBI questionnaire.
 

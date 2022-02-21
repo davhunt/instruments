@@ -1,4 +1,5 @@
 ## BFNE
+### Brief Fear of Negative Evaluation-II
 
 This repo contains the main PDF, REDCap import .zip, and REDCap survey PDF for the BFNE questionnaire.
 
@@ -17,3 +18,5 @@ The BFNE questionnaire is included in the repository scoring script. Threshold f
 | :--  | :--  |
 | bfne_scrdTotal_sX_rX_eX | total score: sum of all items (NaN if partial response prevents calculation of score) |
 | bfne_percTotal_sX_rX_eX | percentage of response for all items (NaN if all items are blank) |
+
+> Carleton, R. N., Collimore, K. C., & Asmundson, G. J. G. (2007). Social anxiety and fear of negative evaluation: Construct validity of the BFNE-II. Journal of Anxiety Disorders, 21(1), 131–141. [[link]](https://psycnet.apa.org/record/2007-01810-010)

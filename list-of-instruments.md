@@ -9,7 +9,7 @@ Below is a list of instruments contained in this repository.
 | aq10 | Autism Spectrum Quotient | [Allison et al. (2012)](https://pubmed.ncbi.nlm.nih.gov/22265366/) |
 | ari | Affective Reactivity Index | [Stringaris et al. (2012)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3484687/) |
 | asr | Adult Self-Report | Achenbach (2003) |
-| baars4 | Barkley Adult ADHD Rating Scale-IV | Barkley (2011) |
+| baars4 | Barkley Adult ADHD Rating Scale-IV | ]Barkley (2011)](https://www.guilford.com/books/Barkley-Adult-ADHD-Rating-Scale-IV-BAARS-IV/Russell-Barkley/9781609182038) |
 | bfne | Brief Fear of Negative Evaluation-II | [Carleton et al. (2007)](https://psycnet.apa.org/record/2007-01810-010) |
 | bmis | Brief Mood Introspection Scale | [Mayer and Gaschke (1998)](https://pubmed.ncbi.nlm.nih.gov/3418484) |
 | briefA | Behavior Rating Inventory of Executive Function Adult | Gioia et al. (2015) |
@@ -34,7 +34,7 @@ Below is a list of instruments contained in this repository.
 | rmbi | Retrospective Measure of Behavioral Inhibition | [Gladstone and Parker (2005)](https://pubmed.ncbi.nlm.nih.gov/15922458/) |
 | rtq | Repetitive Thinking Questionnaire | [McEvoy et al. (2010)](https://www.sciencedirect.com/science/article/pii/S0887618510000551) |
 | sas2 | Screen for Adult Anxiety Related Disorders | [Smith et al. (2006)](https://psycnet.apa.org/record/2006-22413-004) |
-| scaared | Screen for Adult Anxiety Related Disorders | [Angulo et al. (2017)](https://www.sciencedirect.com/science/article/pii/S0165178116314196) |
+| scaared | Screen for Adult Anxiety Related Disorders | [Angulo et al. (2017)](https://pubmed.ncbi.nlm.nih.gov/28359032/) |
 | sias6 | Social Interaction Anxiety Scale | [Peters et al. (2012)](https://pubmed.ncbi.nlm.nih.gov/21744971/) |
 | sics | Social Interaction and Communication Skills Checklist | (unconfirmed) |
 | sps6 | Social Phobia Scale | [Peters et al. (2012)](https://pubmed.ncbi.nlm.nih.gov/21744971/) |

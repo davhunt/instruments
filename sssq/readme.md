@@ -1,4 +1,5 @@
 ## SSSQ
+### Short Stress State Questionnaire
 
 This repo contains subfolders for the SSSQ pre-task and post-task questionnaires, which are used together.
 
@@ -20,3 +21,5 @@ The SSSQ questionnaire (including pre- and post-) is included in the repository 
 | sssqpost_percEng_sX_rX_eX | percentage of response for engagement subscore for post-task (NaN if all items are blank) |
 | sssqpost_percDis_sX_rX_eX | percentage of response for distress subscore for post-task (NaN if all items are blank) |
 | sssqpost_percWry_sX_rX_eX | percentage of response for worry subscore for post-task (NaN if all items are blank) |
+
+> Helton, W. S., & Näswall, K. (2015). Short Stress State Questionnaire: Factor structure and state change assessment. European Journal of Psychological Assessment, 31(1), 20–30. [[link]](https://psycnet.apa.org/record/2014-09900-001)
