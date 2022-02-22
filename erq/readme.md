@@ -13,4 +13,4 @@ The ERQ questionnaire is included in the repository scoring script. Threshold fo
 | erq_percCogRea_sX_rX_eX | percentage of responses for cognitive reappraisal subscore (NaN if all items are blank) |
 | erq_percExpSup_sX_rX_eX | percentage of responses for expressive suppression subscore (NaN if all items are blank) |
 
-> Gross, J. J., & John, O. P. (2003). Individual differences in two emotion regulation processes: implications for affect, relationships, and well-being. Journal of personality and social psychology, 85(2), 348–362. [[link]](https://pubmed.ncbi.nlm.nih.gov/12916575/)
+> Gross, J. J., & John, O. P. (2003). Individual differences in two emotion regulation processes: implications for affect, relationships, and well-being. Journal of Personality and Social Psychology, 85(2), 348–362. [[link]](https://pubmed.ncbi.nlm.nih.gov/12916575/)

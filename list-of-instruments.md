@@ -8,11 +8,11 @@ Below is a list of instruments contained in this repository.
 | ambi | Adult Measure of Behavioral Inhibition | [Gladstone and Parker (2005)](https://pubmed.ncbi.nlm.nih.gov/15922458/) |
 | aq10 | Autism Spectrum Quotient | [Allison et al. (2012)](https://pubmed.ncbi.nlm.nih.gov/22265366/) |
 | ari | Affective Reactivity Index | [Stringaris et al. (2012)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3484687/) |
-| asr | Adult Self-Report | Achenbach (2003) |
+| asr | Adult Self-Report | [Achenbach and Rescorla (2003)](https://link.springer.com/referenceworkentry/10.1007/978-0-387-79948-3_1529) |
 | baars4 | Barkley Adult ADHD Rating Scale-IV | ]Barkley (2011)](https://www.guilford.com/books/Barkley-Adult-ADHD-Rating-Scale-IV-BAARS-IV/Russell-Barkley/9781609182038) |
 | bfne | Brief Fear of Negative Evaluation-II | [Carleton et al. (2007)](https://psycnet.apa.org/record/2007-01810-010) |
 | bmis | Brief Mood Introspection Scale | [Mayer and Gaschke (1998)](https://pubmed.ncbi.nlm.nih.gov/3418484) |
-| briefA | Behavior Rating Inventory of Executive Function Adult | Gioia et al. (2015) |
+| briefA | Behavior Rating Inventory of Executive Function Adult | [Roth et al. (2005)](https://www.parinc.com/Products/Pkey/25) |
 | chexi | Childhood Executive Functioning Inventory | [Catale et al. (2013)](https://pubmed.ncbi.nlm.nih.gov/23355496/) |
 | covid | Covid Experiences Questionnaire | NDCLab |
 | demo | Demographics | NDCLab |

@@ -22,4 +22,4 @@ The combined SIAS6 and SPS6 questionnaire is included in the repository scoring 
 | sias6sps6_percSPS_sX_rX_eX | percentage of response for spss6 total score (NaN if all items are blank) |
 
 
-> Peters, L., Sunderland, M., Andrews, G., Rapee, R. M., & Mattick, R. P. (2012). Development of a short form Social Interaction Anxiety (SIAS) and Social Phobia Scale (SPS) using nonparametric item response theory: the SIAS-6 and the SPS-6. Psychological assessment, 24(1), 66–76. [[link]](https://pubmed.ncbi.nlm.nih.gov/21744971/)
+> Peters, L., Sunderland, M., Andrews, G., Rapee, R. M., & Mattick, R. P. (2012). Development of a short form Social Interaction Anxiety (SIAS) and Social Phobia Scale (SPS) using nonparametric item response theory: the SIAS-6 and the SPS-6. Psychological Assessment, 24(1), 66–76. [[link]](https://pubmed.ncbi.nlm.nih.gov/21744971/)

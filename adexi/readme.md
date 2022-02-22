@@ -37,4 +37,4 @@ The English self-report of the ADEXI is included in the repository scoring scrip
 | adexi_percInh_sX_rX_eX | percentage of response for inhibition subscore (NaN if all items are blank) |
 | adexi_percWm_sX_rX_eX | percentage of response for working memory subscore (NaN if all items are blank) |
 
-> Holst, Y., & Thorell, L. B. (2018). Adult executive functioning inventory (ADEXI): Validity, reliability, and relations to ADHD. International journal of methods in psychiatric research, 27(1), e1567. [[link]](https://pubmed.ncbi.nlm.nih.gov/28497641/)
+> Holst, Y., & Thorell, L. B. (2018). Adult Executive Functioning Inventory (ADEXI): Validity, reliability, and relations to ADHD. International Journal of Methods in Psychiatric Research, 27(1), e1567. [[link]](https://pubmed.ncbi.nlm.nih.gov/28497641/)
