@@ -3,7 +3,7 @@
 This repo contains the main PDF, REDCap import .zip, and REDCap survey PDF for the AQ-10 questionnaire.
 
 
-#### Scoring Script
+### Scoring Script
 The AQ-10 is included in the repository scoring script. Threshold for scoring is 100%.
 
 | Variable | Details |

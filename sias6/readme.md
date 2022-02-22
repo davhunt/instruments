@@ -7,7 +7,7 @@ This repo contains the main PDF, REDCap import .zip, and REDCap survey PDF for t
 ### sias6sps6_b
 The survey instructions were modified for online use, changing "circle a number" to "select the option."
 
-### sias6sps6_a
+### sias6sps6(_a)
 This is the original version used by the NDCLab. It is now deprecated.
 
 

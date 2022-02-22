@@ -16,16 +16,16 @@ In addition, this repo houses the translation of both the self-report and other-
 Please report any issues with the ADEXI translations by posting an issue in this GitHub repository.
 
 
-#### adexi_b
+### adexi_b
 At the request of the original author, the word "sometimes" was removed from several items.  The NDCLab updated our own copy of the instrument as we were responsible for updating the Spanish translation. Details of which items were changed is available in the .csv file detailing the Spanish translation (in this subfolder) .
 
 
-#### adexi_a
+### adexi(_a)
 This is the original version of the ADEXI used by the NDCLab, draw directly from the then-current version available from [the author](https://chexi.se/).  This version is now deprecated.
 
 
 
-#### Scoring Script
+### Scoring Script
 The English self-report of the ADEXI is included in the repository scoring script. Threshold for scoring is 100%.
 
 | Variable | Details |
