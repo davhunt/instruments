@@ -1,5 +1,4 @@
-## BAARS4
-### Barkley Adult ADHD Rating Scale-IV
+## BAARS4 (Barkley Adult ADHD Rating Scale-IV)
 
 This repo contains the main PDF, REDCap import .zip, and REDCap survey PDF for the BAARS4 questionnaire.
 

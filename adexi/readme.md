@@ -1,5 +1,4 @@
-## ADEXI
-### Adult Executive Functioning Inventory
+## ADEXI (Adult Executive Functioning Inventory)
 
 This repo contains modifiable (.docx) and PDF versions of the ADEXI.
 

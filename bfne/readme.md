@@ -1,5 +1,4 @@
-## BFNE
-### Brief Fear of Negative Evaluation-II
+## BFNE (Brief Fear of Negative Evaluation-II)
 
 This repo contains the main PDF, REDCap import .zip, and REDCap survey PDF for the BFNE questionnaire.
 

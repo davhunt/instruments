@@ -1,5 +1,4 @@
-## SIAS6+SPS6
-### Social Interaction Anxiety Scale | Social Phobia Scale
+## SIAS6+SPS6 (Social Interaction Anxiety Scale | Social Phobia Scale)
 
 
 This repo contains the main PDF, REDCap import .zip, and REDCap survey PDF for the combined SIAS6 and SPS6 questionnaire.

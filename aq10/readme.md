@@ -1,5 +1,4 @@
-## AQ-10
-### Autism Spectrum Quotient
+## AQ-10 (Autism Spectrum Quotient)
 
 This repo contains the main PDF, REDCap import .zip, and REDCap survey PDF for the AQ-10 questionnaire.
 

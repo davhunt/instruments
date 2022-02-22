@@ -1,5 +1,4 @@
-## SSSQ
-### Short Stress State Questionnaire
+## SSSQ (Short Stress State Questionnaire)
 
 This repo contains subfolders for the SSSQ pre-task and post-task questionnaires, which are used together.
 

@@ -1,5 +1,4 @@
-## SCAARED
-### Screen for Adult Anxiety Related Disorders
+## SCAARED (Screen for Adult Anxiety Related Disorders)
 
 This repo contains the main PDF, REDCap import .zip, and REDCap survey PDF for the SCAARED questionnaire.
 

@@ -1,5 +1,4 @@
-## ERQ
-### Emotion Regulation Questionnaire
+## ERQ (Emotion Regulation Questionnaire)
 
 This repo contains the main PDF, REDCap import .zip, and REDCap survey PDF for the ERQ questionnaire.
 

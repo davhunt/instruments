@@ -1,5 +1,4 @@
-## ARI
-### Affective Reactivity Index
+## ARI (Affective Reactivity Index)
 
 This repo contains the main PDF, REDCap import .zip, and REDCap survey PDF for the ARI questionnaire.
 

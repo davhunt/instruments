@@ -25,11 +25,12 @@ The following software iterations are planned for development. Each iteration is
 ### 0.02
 
 * Addition to the scoring script of: AMBIRMBI, ARI, BAARS4, BFNE, ERQ, SCAARED, SIAS6SPS6, SSSQ.
+* Addition of unscored surveys: initStateB, postTaskB, postTaskC
 * Initial wiki documentation.
 
 ### 0.03
 
-* TBD
+* Addition to the scoring script of: BMIS, IERQ, IUS, PHQ8, SRQ.
 
 ### 0.1
 
