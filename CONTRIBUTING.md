@@ -38,12 +38,7 @@ To ensure reproducibility of results and software, a default docker file is incl
 A step-by-step guide to getting started also included in the following [video](https://www.youtube.com/watch?v=oO8n3y23b6M). 
 
 ## Adding Instruments
-To add an additional instrument:
-1. Follow the lab's [GitHub etiquette](https://ndclab.github.io/wiki/docs/etiquette/github-etiquette.html) to create a new branch off `dev` (`dev-NewInstrumentName`).
-2. Create a new directory with the instrument's short name.
-3. Upload the published PDF, REDCap PDF, and a REDCap import .zip that follows the lab's [naming conventions](https://ndclab.github.io/wiki/docs/etiquette/naming-conventions.html#redcap).
-4. Add the instrument to the json file with the appropriate parameters as described in subscore.py for subscale scoring.
-5. Add the instrument, alphabeticaly, into the `list-of-instruments.md` with a link to the appropriate citation.
+Instructions for adding an additional instrument to this repository are available on the associated [wiki page](https://ndclab.github.io/wiki/docs/technical-docs/instruments.html).
 
 ## Workflow
 Workflow for both internal and external lab members is outlined on the [NDCLab contributing wiki page](https://ndclab.github.io/wiki/docs/contributing.html). 
