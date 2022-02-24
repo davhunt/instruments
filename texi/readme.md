@@ -1,4 +1,4 @@
-## TEXI
+## TEXI (Teenage Executive Functioning Inventory)
 
 This repository contains:
 
@@ -49,3 +49,5 @@ Please report any issues with the TEXI translations by posting an issue in this 
 
 ### Scoring Script
 The TEXI is **not** included in the repository scoring script.
+
+> Thorell, L. B., Lazarević, N., Milovanović, I., & Bugarski Ignjatović, V. (2020). Psychometric properties of the Teenage Executive Functioning Inventory (TEXI): A freely available questionnaire for assessing deficits in working memory and inhibition among adolescents. Child Neuropsychology: A Journal on Normal and Abnormal Development in Childhood and Adolescence, 26(6), 857–864. [[link]](https://pubmed.ncbi.nlm.nih.gov/32090688/)

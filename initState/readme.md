@@ -1,4 +1,4 @@
-## initState (Pre-Task)
+## initState (Initial State (Pre-Task) Questionnaire)
 
 This repo contains modifiable (.docx) and PDF versions of generic pre-task questionnaires used by the NDCLab, along with the associated REDCap import .zip and survey PDF.
 

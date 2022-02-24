@@ -66,6 +66,9 @@ class Survey:
         # init default versions and extract potential versions
         self.versions = []
         self._extract_versions()
+        
+        # remove metadata
+        self._remove_meta()
 
     def _load_data(self):
         # load filename into dataframe
@@ -81,14 +84,14 @@ class Survey:
 
         # Drop rows with incomplete values in timestamp (indicating no data)
         timestamp_col = self.data.filter(regex=rf"_{Subscore.TIME_LABEL}").columns
-        self.data.dropna(subset=timestamp_col, inplace=True)
+        self.data.dropna(subset=timestamp_col, how='all', inplace=True)
         if(self.data.empty):
             raise RuntimeError("Survey %s does not contain any values."%(self.name))
     
     def _extract_versions(self):
         # init regex
         surv_reg = rf"{self.name}"
-        ver_reg = rf"{self.name}_[a-z]_"
+        ver_reg = rf"{self.name}_[a-z]*_"
 
         # get timestamp column of all versions
         timestamp_col = self.data.filter(regex=rf"_{Subscore.TIME_LABEL}").columns
@@ -97,36 +100,36 @@ class Survey:
             surv_res = re.search(surv_reg, ver)
             ver_res = re.search(ver_reg, ver)
             if ver_res is not None:
-                self.versions.append(ver_res.group(0)[:-1])
+                if ver_res.group(0)[:-1] not in self.versions:
+                    self.versions.append(ver_res.group(0)[:-1])
             elif surv_res is not None:
-                self.versions.append(surv_res.group(0))
-
-        # if survey versions extracted, assign to instance var
-        if len(self.versions):
-            self.versions = list(set(self.versions))
+                if surv_res.group(0) not in self.versions:
+                    self.versions.append(surv_res.group(0))
+        self.versions.sort()
+        
+                    
+    def _remove_meta(self):
+        metadata_col = self.data.filter(regex=rf"{self.DELIM}{Subscore.TIME_LABEL}|{self.DELIM}{Subscore.COMP_LABEL}").columns
+        self.data = self.data.drop(metadata_col, axis=1)
         
     def score(self):
-        # Iterate through subscores and score on data
+        # Iterate through versions then subscores and score on data
         all_scores = pd.DataFrame()
-        for subscore, params in self.subscores.items():
-            # Score each subscore w/passed params, consider each version as a seperate survey
-            for ver_surv in self.versions:  
+        for ver_surv in self.versions:
+            ver_scores = pd.DataFrame()
+            for subscore, params in self.subscores.items():
                 sub_obj = Subscore(name=ver_surv, sub_name=subscore, **params)
-                single_score = sub_obj.gen_data(self.data, all_scores)
-                all_scores = pd.concat([all_scores, single_score], axis=1)
+                single_score = sub_obj.gen_data(self.data.filter(regex=rf"{ver_surv}_[a-z][0-9]"), ver_scores)
+                ver_scores = pd.concat([ver_scores, single_score], axis=1)
 
             # Sort according to session, run, and event, in that order
-            all_scores = all_scores.reindex(
-                sorted(all_scores.columns, key=lambda x: \
+            ver_scores = ver_scores.reindex(
+                sorted(ver_scores.columns, key=lambda x: \
                     (int(x.split(self.DELIM)[self.SES_POS][1]),\
                     int(x.split(self.DELIM)[self.RUN_POS][1]),\
                     int(x.split(self.DELIM)[self.EVENT_POS][1]))\
             ), axis=1)
+            all_scores = pd.concat([all_scores, ver_scores], axis=1)
         
-        # if multiple versions exist, sort according to version
-        if len(self.versions) > 2:  
-            all_scores = all_scores.reindex(sorted(all_scores.columns, key=lambda x: \
-                (x.split(self.DELIM)[self.VER_POS][1])), axis=1)
-
         return all_scores
 
