@@ -59,6 +59,7 @@ This `main` branch contains completed releases for this project. For all work-in
 | ---  | ---  |
 | Farukh Saidmuratov, Brandon Lopez, Osmany Pujol | collaborated on original script |
 | Jess Alexander, Ana Lopez-Nuñez  | testing and organization of initial releases |
+| George A. Buzzell  | guidance and resources |
 
 Learn more about us [here](https://www.ndclab.com/people).
 
