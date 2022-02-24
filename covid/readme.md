@@ -12,7 +12,7 @@ This revision is a truncation of the original questionnaire.  Most questions wer
 **Deleted variables:** i7-i14, i18-i20, i22-i24
 
 
-### covid_a
+### covid(_a)
 This is the original questionnaire used by the NDCLab.  It covers a broad range of questions relating to experiences during, or otherwise associated with, the COVID-19 pandemic.  It is now deprecated.
 
 
