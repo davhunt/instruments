@@ -35,9 +35,10 @@ class Survey:
     Private Methods
     ----------
     _filter(self):
-            Filter out non-survey data based on self.name, called in init.
+            Firstly checks if subscores exist. Filter out non-survey data based on self.name, 
+            called in init.
     _extract_versions(self):
-            Extracts survey versions if available.
+            Extracts survey versions if available, called in init.
     _load_data(self):
             Use self.file_name to init pandas dataframe and returns.
 
@@ -76,17 +77,19 @@ class Survey:
         return file
         
     def _filter(self):
+        if len(self.subscores) == 0:
+            raise TypeError("Subscores for %s is empty. Skipping."%(self.name))
         # keep only survey data containing survey name
         self.data = self.data.filter(regex=rf"^{self.name}")
         # quit processing if survey data is not available 
         if(self.data.empty):
-            raise RuntimeError("Data does not contain %s survey data."%(self.name))
+            raise RuntimeError("Data does not contain %s survey data. Skipping."%(self.name))
 
         # Drop rows with incomplete values in timestamp (indicating no data)
         timestamp_col = self.data.filter(regex=rf"_{Subscore.TIME_LABEL}").columns
         self.data.dropna(subset=timestamp_col, how='all', inplace=True)
         if(self.data.empty):
-            raise RuntimeError("Survey %s does not contain any values."%(self.name))
+            raise RuntimeError("Survey %s does not contain any values. Skipping."%(self.name))
     
     def _extract_versions(self):
         # init regex
@@ -118,9 +121,14 @@ class Survey:
         for ver_surv in self.versions:
             ver_scores = pd.DataFrame()
             for subscore, params in self.subscores.items():
-                sub_obj = Subscore(name=ver_surv, sub_name=subscore, **params)
-                single_score = sub_obj.gen_data(self.data.filter(regex=rf"{ver_surv}_[a-z][0-9]"), ver_scores)
-                ver_scores = pd.concat([ver_scores, single_score], axis=1)
+                if len(params) == 0:
+                    raise TypeError("No parameters for %s. Skipping."%(subscore))
+                try:
+                    sub_obj = Subscore(name=ver_surv, sub_name=subscore, **params)
+                    single_score = sub_obj.gen_data(self.data.filter(regex=rf"{ver_surv}_[a-z][0-9]"), ver_scores)
+                    ver_scores = pd.concat([ver_scores, single_score], axis=1)
+                except RuntimeError:
+                    continue
 
             # Sort according to session, run, and event, in that order
             ver_scores = ver_scores.reindex(

@@ -135,6 +135,10 @@ class Subscore:
         # Filter out all data except for selected columns
         select_data = data.filter(items=select_columns)
 
+        # detect if products are empty, ie subscore doesn't exist or not generated yet
+        if select_data.empty:
+            raise RuntimeError("No products available for %s. Skipping."%(self.sub_name))
+
         return select_data
 
     def _get_unique_sre(self, data):
@@ -151,7 +155,7 @@ class Subscore:
         if self.rev_questions is None:
             return data
         if self.max is None:
-            return data
+            raise RuntimeError("Max param not included in %s. Cannot reliably reverse score."%(self.name))
 
         handle = data.copy()
         select_columns = []
@@ -186,6 +190,12 @@ class Subscore:
             return row.diff()
         elif ScoreType[self.score_type] == ScoreType.count:
             return row.count()
+        elif ScoreType[self.score_type] == ScoreType.med:
+            return row.med()
+        elif ScoreType[self.score_type] == ScoreType.min:
+            return row.min()
+        elif ScoreType[self.score_type] == ScoreType.max:
+            return row.max()
     
     def _valid_thresh(self, perc):
         if isinstance(self.threshold, (int, float)):
