@@ -4,7 +4,7 @@ This repo contains the main PDF, REDCap import .zip, and REDCap survey PDF for t
 
 
 ### Scoring Script
-The PHQ-8 is included in the repository scoring script. Threshold for scoring `scrdRaw` and `scrdAvg` is 100%. 
+The PHQ-8 is included in the repository scoring script. Threshold for scoring is 100%. 
 
 | Variable | Details |
 | :--  | :--  |
