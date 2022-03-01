@@ -175,10 +175,10 @@
         }
     },
     "phq8": {
-        "Total": {
+        "total": {
             "questions": [],
-            "score_type": "sum",
-        },
+            "score_type": "sum"
+        }
     },
     "sias6sps6": {
          "SIAS": {
