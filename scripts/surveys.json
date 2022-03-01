@@ -176,7 +176,7 @@
     },
     "phq8": {
         "total": {
-            "questions": [],
+            "questions": null,
             "score_type": "sum"
         }
     },
