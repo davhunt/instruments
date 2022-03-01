@@ -26,7 +26,7 @@ Below is a list of instruments contained in this repository.
 | iri | Interpersonal Reactivity Index | [Davis (1980)](https://www.researchgate.net/publication/34891073_A_Multidimensional_Approach_to_Individual_Differences_in_Empathy) |
 | ius | Intolerance of Uncertainty Scale | [Carleton et al. (2007)](https://pubmed.ncbi.nlm.nih.gov/16647833/) |
 | panas | Positive and Negative Affect Schedule | [Watson et al. (1988)](https://pubmed.ncbi.nlm.nih.gov/3397865/) |
-| phq8 | Patient Health Questionnaire | Kroenke et al. (2009) |
+| phq8 | Patient Health Questionnaire | [Kroenke et al. (2009)](https://pubmed.ncbi.nlm.nih.gov/18752852/) |
 | postTask | Post-Task Questionnaires | NDCLab |
 | ppie | Pre- and Post-Interaction Evaluation | NDCLab |
 | psqi | Pittsburgh Sleep Quality Index | full: [Buysse et al. (1989)](https://pubmed.ncbi.nlm.nih.gov/2748771/); short: [Sancho-Domingo et al. (2021)](https://pubmed.ncbi.nlm.nih.gov/33119375/) |
