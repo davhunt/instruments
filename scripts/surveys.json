@@ -184,6 +184,12 @@
             "score_type": "sum"
         }
     },
+    "phq8": {
+        "total": {
+            "questions": null,
+            "score_type": "sum"
+        }
+    },
     "sias6sps6": {
          "SIAS": {
             "questions": [1, 2, 3, 4, 5, 6],
