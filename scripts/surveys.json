@@ -86,5 +86,27 @@
             "score_type": "sum",
             "threshold": 1.0
         }
+    },
+    "hsps": {
+        "total": {
+            "questions": null,
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Eoe": {
+            "questions": [3, 4, 13, 14, 16, 17, 20, 21, 23, 24, 26, 27],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Aes": {
+            "questions": [2, 8, 10, 12, 15, 22, 5],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Lst": {
+            "questions": [6, 7, 9, 18, 19, 25],
+            "score_type": "avg",
+            "threshold": 0.8
+        }
     }     
 }
