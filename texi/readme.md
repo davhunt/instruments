@@ -20,6 +20,13 @@ This is the original version of the ADEXI used by the NDCLab, draw directly from
 
 
 ### Scoring Script
-The TEXI is **not** included in the repository scoring script.
+The English self-report of the modified TEXI is included in the repository scoring script. Threshold for scoring is 80%.
+
+| Variable | Details |
+| :--  | :--  |
+| texi_scrdInh_sX_rX_eX | inhibition subscore: average of 3, 4, 6, 10, 14, 15, 16, 17, 18, 19, and 20 (NaN if partial response prevents calculation of subscore) |
+| texi_scrdWm_sX_rX_eX | working memory subscore: average of , 2, 5, 7, 8, 9, 11, 12, and 13 (NaN if partial response prevents calculation of subscore) |
+| texi_percInh_sX_rX_eX | percentage of response for inhibition subscore (NaN if all items are blank) |
+| texi_percWm_sX_rX_eX | percentage of response for working memory subscore (NaN if all items are blank) |
 
 > Thorell, L. B., Lazarević, N., Milovanović, I., & Bugarski Ignjatović, V. (2020). Psychometric properties of the Teenage Executive Functioning Inventory (TEXI): A freely available questionnaire for assessing deficits in working memory and inhibition among adolescents. Child Neuropsychology: A Journal on Normal and Abnormal Development in Childhood and Adolescence, 26(6), 857–864. [[link]](https://pubmed.ncbi.nlm.nih.gov/32090688/)
