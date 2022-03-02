@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#SBATCH --nodes=1                # node count
+#SBATCH --ntasks=1               # total number of tasks across all nodes
+#SBATCH --cpus-per-task=1        # CPUS to use when using data parallelization
+#SBATCH --time=05:00:00          # total run time limit (HH:MM:SS)
+
+# load singularity module
+module load singularity-3.5.3
+
+# paths to static code and data
+sing_image="../containers/singularity/inst-container.simg"
+
+# use singularity image to run script
+cd scripts
+singularity exec --bind /home/data/NDClab/tools/instruments $sing_image pytest test.py

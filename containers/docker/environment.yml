@@ -1,4 +1,4 @@
-name: instruments
+name: inst
 channels:
 - conda-forge
 dependencies:
