@@ -47,5 +47,22 @@
             "questions": [7, 8, 9, 10, 11, 12], 
             "score_type": "sum"
         }
+    }, 
+    "ius": {
+        "total": {
+            "questions": null,
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "pas": {
+            "questions": [1, 2, 4, 5, 8, 9, 11],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "ias": {
+            "questions": [3, 6, 7, 10, 12],
+            "score_type": "sum",
+            "threshold": 1.0
+        }
     }     
 }
