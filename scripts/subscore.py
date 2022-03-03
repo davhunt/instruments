@@ -81,14 +81,14 @@ class Subscore:
     DELIM = "_"
 
     def __init__(self, name, questions=None, sub_name="total", score_type="sum", threshold=1.0,
-                 rev_questions=None, max=None, products=None, conditional=None, criteria=None):
+                 rev_questions=None, answers=None, products=None, conditional=None, criteria=None):
         self.name = name
         self.sub_name = sub_name
         self.score_type = score_type
         self.threshold = threshold
         self.questions = questions
         self.rev_questions = rev_questions
-        self.max = max
+        self.answers = answers
         self.products = products
         self.conditional = conditional
         self.criteria = criteria
