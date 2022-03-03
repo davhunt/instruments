@@ -2,15 +2,18 @@
     "adexi": {
         "wm": {
             "questions": [1, 2, 5, 7, 8, 9, 11, 12, 13],
-            "score_type": "sum"
+            "score_type": "avg",
+            "threshold": 0.8
         },
         "inh": {
             "questions": [3, 4, 6, 10, 14],
-            "score_type": "sum"
+            "score_type": "avg",
+            "threshold": 0.8
         },
         "total": {
             "questions": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
-            "score_type": "sum"
+            "score_type": "avg",
+            "threshold": 0.8
         }
     },
     "ambirmbi": {
@@ -221,7 +224,7 @@
             "score_type": "avg",
             "threshold": 0.8
         }
-    }, 
+    },
     "ierq": {
         "enh": {
             "questions": [3, 6, 8, 13, 18],
@@ -243,7 +246,7 @@
             "score_type": "sum",
             "threshold": 1.0
         }
-    },    
+    },
     "ius": {
         "total": {
             "questions": null,

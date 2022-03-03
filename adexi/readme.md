@@ -26,13 +26,13 @@ This is the original version of the ADEXI used by the NDCLab, draw directly from
 
 
 ### Scoring Script
-The English self-report of the ADEXI is included in the repository scoring script. Threshold for scoring is 100%.
+The English self-report of the ADEXI is included in the repository scoring script. Threshold for scoring is 80%.
 
 | Variable | Details |
 | :--  | :--  |
-| adexi_scrdTotal_sX_rX_eX | total score: sum of all items (NaN if partial response prevents calculation of score) |
-| adexi_scrdInh_sX_rX_eX | inhibition subscore: sum of 3, 4, 6, 10, and 14 (NaN if partial response prevents calculation of subscore) |
-| adexi_scrdWm_sX_rX_eX | working memory subscore: sum of 1, 2, 5, 7, 8, 9, 11, 12, and 13 (NaN if partial response prevents calculation of subscore) |
+| adexi_scrdTotal_sX_rX_eX | total score: average of all items (NaN if partial response prevents calculation of score) |
+| adexi_scrdInh_sX_rX_eX | inhibition subscore: average of 3, 4, 6, 10, and 14 (NaN if partial response prevents calculation of subscore) |
+| adexi_scrdWm_sX_rX_eX | working memory subscore: average of 1, 2, 5, 7, 8, 9, 11, 12, and 13 (NaN if partial response prevents calculation of subscore) |
 | adexi_percTotal_sX_rX_eX | percentage of response for all items (NaN if all items are blank) |
 | adexi_percInh_sX_rX_eX | percentage of response for inhibition subscore (NaN if all items are blank) |
 | adexi_percWm_sX_rX_eX | percentage of response for working memory subscore (NaN if all items are blank) |
