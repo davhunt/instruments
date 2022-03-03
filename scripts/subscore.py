@@ -157,8 +157,8 @@ class Subscore:
         if self.answers is None:
             raise RuntimeError("Answers param not included in %s. Cannot reliably reverse score."%(self.name))
             
-        reverse_questions = self.answers.copy()
-        reverse_questions.reverse()
+        reversed_answers = self.answers.copy()
+        reversed_answers.reverse()
         handle = data.copy()
         select_columns = []
         for num in self.rev_questions:
