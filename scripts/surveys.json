@@ -286,5 +286,15 @@
             "score_type": "avg",
             "threshold": 0.8
         }
+    },
+    "stai5": {
+        "S": {
+            "questions": [1, 2, 3, 4, 5],
+            "score_type": "sum"
+        },
+        "T": {
+            "questions": [6, 7, 8, 9, 10],
+            "score_type": "sum"
+        }
     }
 }
