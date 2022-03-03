@@ -164,25 +164,25 @@
     },
     "bmis": {
         "Val": {
-            "questions": [1, 2, 5, 6, 11, 13, 14, 16],
+            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
             "rev_questions": [3, 4, 7, 8, 9, 10, 12, 15],
             "max": 4,
             "score_type": "sum"
         },
         "Aro": {
-            "questions": [1, 3, 5, 7, 8, 11, 12, 14, 15, 16],
+            "questions": [1, 3, 4, 5, 7, 8, 11, 12, 13, 14, 15, 16],
             "rev_questions": [4, 13],
             "max": 4,
             "score_type": "sum"
         },
         "Tird": {
-            "questions": [1, 5, 11, 14, 16],
+            "questions": [1, 4, 5, 9, 11, 14, 16],
             "rev_questions": [4, 9],
             "max": 4,
             "score_type": "sum"
         },
         "Rlx": {
-            "questions": [3, 7, 8, 12, 15],
+            "questions": [3, 7, 8, 12, 13, 15],
             "rev_questions": [13],
             "max": 4,
             "score_type": "sum"
@@ -198,6 +198,55 @@
             "questions": [2, 4, 6, 9],
             "score_type": "avg",
             "threshold": 0.8
+        }
+    },
+    "ierq": {
+        "enh": {
+            "questions": [3, 6, 8, 13, 18],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "per": {
+            "questions": [2, 7, 10, 14, 17],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "soo": {
+            "questions": [4, 9, 12, 16, 19],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "mod": {
+            "questions": [1, 5, 11, 15, 20],
+            "score_type": "sum",
+            "threshold": 1.0
+        }
+    },    
+    "ius": {
+        "total": {
+            "questions": null,
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "pas": {
+            "questions": [1, 2, 4, 5, 8, 9, 11],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "ias": {
+            "questions": [3, 6, 7, 10, 12],
+            "score_type": "sum",
+            "threshold": 1.0
+        }
+    },
+    "panasnow": {
+        "PA": {
+            "questions": [1, 3, 5, 9, 10, 12, 14, 16, 17, 19],
+            "score_type": "sum"
+        },
+        "NA": {
+            "questions": [2, 4, 6, 7, 8, 11, 13, 15, 18, 20],
+            "score_type": "sum"
         }
     },
     "phq8": {
@@ -276,44 +325,15 @@
             "score_type": "avg",
             "threshold": 0.8
         }
-    }, 
-    "ius": {
-        "total": {
-            "questions": null,
-            "score_type": "sum",
-            "threshold": 1.0
-        },
-        "pas": {
-            "questions": [1, 2, 4, 5, 8, 9, 11],
-            "score_type": "sum",
-            "threshold": 1.0
-        },
-        "ias": {
-            "questions": [3, 6, 7, 10, 12],
-            "score_type": "sum",
-            "threshold": 1.0
-        }
     },
-    "ierq": {
-        "enh": {
-            "questions": [3, 6, 8, 13, 18],
-            "score_type": "sum",
-            "threshold": 1.0
+    "stai5": {
+        "S": {
+            "questions": [1, 2, 3, 4, 5],
+            "score_type": "sum"
         },
-        "per": {
-            "questions": [2, 7, 10, 14, 17],
-            "score_type": "sum",
-            "threshold": 1.0
-        },
-        "soo": {
-            "questions": [4, 9, 12, 16, 19],
-            "score_type": "sum",
-            "threshold": 1.0
-        },
-        "mod": {
-            "questions": [1, 5, 11, 15, 20],
-            "score_type": "sum",
-            "threshold": 1.0
+        "T": {
+            "questions": [6, 7, 8, 9, 10],
+            "score_type": "sum"
         }
-    }     
+    }
 }
