@@ -27,8 +27,8 @@ class Subscore:
                 Ex: [0.82, 1], Greater than 0.83, less than 1
     rev_questions:  list() | None
                     Which questions to select for reverse scoring.
-    max:    int | None
-            Maximum possible value of survey answer. Must be included to guarantee correct
+    answers:    int | list()
+            List of all possible answers. Must be included to guarantee correct
             reverse scoring.
     products:   list() | None
                 List of products to score from "prev_data". "prev_data" must be included to score
@@ -52,7 +52,7 @@ class Subscore:
             Function to get unique sessions, rows, and events, sorted in mentioned order.
             Returns list of labels.
     _reverse_score(self, data):
-            Function to score reverse score questions using rev_questions and max params.
+            Function to score reverse score questions using rev_questions and answers params.
     _score_conditional(self, data):
             Function to score conditionally using conditional.
     _score_type(self, row):
@@ -154,9 +154,11 @@ class Subscore:
         # If there are no reverse questions specified, return data
         if self.rev_questions is None:
             return data
-        if self.max is None:
-            raise RuntimeError("Max param not included in %s. Cannot reliably reverse score."%(self.name))
-
+        if self.answers is None:
+            raise RuntimeError("Answers param not included in %s. Cannot reliably reverse score."%(self.name))
+            
+        reverse_questions = self.answers.copy()
+        reverse_questions.reverse()
         handle = data.copy()
         select_columns = []
         for num in self.rev_questions:
@@ -167,7 +169,7 @@ class Subscore:
 
         # reverse each questions score according to max
         for rev_q in select_columns:
-            handle[rev_q] = handle[rev_q].map(lambda s: self.max - int(s) if not pd.isna(s) else s)
+            handle[rev_q] = handle[rev_q].map(lambda s: reversed_answers[self.answers.index(s)] if not pd.isna(s) else s)
 
         return handle
 
