@@ -24,19 +24,19 @@
         "nonA": {
             "questions": [4, 6, 9],
             "rev_questions": [4, 6, 9],
-            "max": 2,
+            "answers": [0, 1, 2],
             "score_type": "sum"
         },
         "lowA": {
             "questions": [12, 14, 15],
             "rev_questions": [15],
-            "max": 2,
+            "answers": [0, 1, 2],
             "score_type": "sum"
         },
         "riskA": {
             "questions": [7, 13, 16],
             "rev_questions": [13, 16],
-            "max": 2,
+            "answers": [0, 1, 2],
             "score_type": "sum"
         },
         "AMBI": {
@@ -51,7 +51,7 @@
         "nonR": {
             "questions": [18, 20, 21, 25, 27, 31],
             "rev_questions": [20, 21, 27, 31],
-            "max": 2,
+            "answers": [0, 1, 2],
             "score_type": "sum"
         },
         "shyR": {
@@ -61,7 +61,7 @@
         "riskR": {
             "questions": [23, 24, 29],
             "rev_questions": [23, 29],
-            "max": 2,
+            "answers": [0, 1, 2],
             "score_type": "sum"
         },
         "RMBI": {
@@ -169,25 +169,25 @@
         "Val": {
             "questions": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
             "rev_questions": [3, 4, 7, 8, 9, 10, 12, 15],
-            "max": 4,
+            "answers": [1, 2, 3, 4],
             "score_type": "sum"
         },
         "Aro": {
             "questions": [1, 3, 4, 5, 7, 8, 11, 12, 13, 14, 15, 16],
             "rev_questions": [4, 13],
-            "max": 4,
+            "answers": [1, 2, 3, 4],
             "score_type": "sum"
         },
         "Tird": {
             "questions": [1, 4, 5, 9, 11, 14, 16],
             "rev_questions": [4, 9],
-            "max": 4,
+            "answers": [1, 2, 3, 4],
             "score_type": "sum"
         },
         "Rlx": {
             "questions": [3, 7, 8, 12, 13, 15],
             "rev_questions": [13],
-            "max": 4,
+            "answers": [1, 2, 3, 4],
             "score_type": "sum"
         }
     },
