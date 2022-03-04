@@ -21,19 +21,19 @@
         "nonA": {
             "questions": [4, 6, 9],
             "rev_questions": [4, 6, 9],
-            "max": 2,
+            "answers": [0, 1, 2],
             "score_type": "sum"
         },
         "lowA": {
             "questions": [12, 14, 15],
             "rev_questions": [15],
-            "max": 2,
+            "answers": [0, 1, 2],
             "score_type": "sum"
         },
         "riskA": {
             "questions": [7, 13, 16],
             "rev_questions": [13, 16],
-            "max": 2,
+            "answers": [0, 1, 2],
             "score_type": "sum"
         },
         "AMBI": {
@@ -48,7 +48,7 @@
         "nonR": {
             "questions": [18, 20, 21, 25, 27, 31],
             "rev_questions": [20, 21, 27, 31],
-            "max": 2,
+            "answers": [0, 1, 2],
             "score_type": "sum"
         },
         "shyR": {
@@ -58,7 +58,7 @@
         "riskR": {
             "questions": [23, 24, 29],
             "rev_questions": [23, 29],
-            "max": 2,
+            "answers": [0, 1, 2],
             "score_type": "sum"
         },
         "RMBI": {
