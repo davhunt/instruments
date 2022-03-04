@@ -317,6 +317,38 @@
             "threshold": 1.0
         }
     },
+    "srq": {
+        "adm": {
+            "questions": [1, 7, 11, 18],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "neg": {            
+            "questions": [3, 5, 8, 14, 17],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "pass": {
+            "questions": [12, 21, 23],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "pro": {
+            "questions": [2, 6, 16, 19,22],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "sex": {
+            "questions": [9, 13, 20],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "soc": {
+            "questions": [4, 10, 15],
+            "score_type": "avg",
+            "threshold": 0.8
+        }
+    },
     "sssqpre": {
         "Eng": {
             "questions": [2, 5, 11, 12, 13, 17, 21, 22],
