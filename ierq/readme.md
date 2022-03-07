@@ -10,7 +10,7 @@ The IERQ questionnaire is included in the repository scoring script. Threshold f
 | :--  | :--  |
 | ierq_scrdEnh_sX_rX_eX | enhancing positive affect subscore: sum of 3, 6, 8, 13, and 18 (NaN if partial response prevents calculation of subscore) |
 | ierq_scrdPer_sX_rX_eX | perspective taking subscore: sum of 2, 7, 10, 14, and 17 (NaN if partial response prevents calculation of subscore) |
-| ierq_scrdSoo_sX_rX_eX | soothing subscore: sum of 14, 9, 12, 16, and 19 (NaN if partial response prevents calculation of subscore) |
+| ierq_scrdSoo_sX_rX_eX | soothing subscore: sum of 4, 9, 12, 16, and 19 (NaN if partial response prevents calculation of subscore) |
 | ierq_scrdMod_sX_rX_eX | social modeling subscore: sum of 1, 5, 11, 15, and 20 (NaN if partial response prevents calculation of subscore) |
 | ierq_percEnh_sX_rX_eX | percentage of responses for enhancing positive affect subscore (NaN if all items are blank) |
 | ierq_percPer_sX_rX_eX | percentage of responses for perspective taking subscore (NaN if all items are blank) |
