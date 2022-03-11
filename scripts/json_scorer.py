@@ -7,7 +7,8 @@ import sys
 
 def json_score(input_path, survey_dat, output_path=None):
     """
-    Code to load in JSON file and score outlined surveys.
+    Code to load in JSON file and score outlined surveys. Returns scored data joined with data.
+    Writes to output_path if specified
     Parameters
     ----------
     input_path: str
