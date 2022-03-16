@@ -461,7 +461,6 @@
             "questions": [7, 14, 22, 29, 44, 45],
             "score_type": "sum",
             "threshold": 1.0
-
         }
     }
 }
