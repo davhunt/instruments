@@ -225,6 +225,38 @@
             "threshold": 0.8
         }
     },
+    "idea": {
+        "idex": {
+            "questions": [12, 23, 24, 25, 26, 27, 28],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "poss": {
+            "questions": [1, 2, 4, 16, 21],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "neg": {
+            "questions": [3, 6, 8, 9, 11, 17, 20],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "other": {
+            "questions": [13, 14, 18],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "self": {
+            "questions": [5, 7, 10, 15, 19, 22],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "btwn": {
+            "questions": [29, 30, 31],
+            "score_type": "avg",
+            "threshold": 0.8
+        }
+    },
     "ierq": {
         "enh": {
             "questions": [3, 6, 8, 13, 18],
