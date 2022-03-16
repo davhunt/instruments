@@ -312,6 +312,28 @@
             "score_type": "sum"
         }
     },
+    "sas2": {
+        "total": {
+            "questions": null,
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "Som": {
+            "questions": [2, 6, 10, 12, 14],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "Wry": {
+            "questions": [3, 5, 8, 9, 11],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "Dis": {
+            "questions": [1, 4, 7, 13, 15],
+            "score_type": "sum",
+            "threshold": 1.0
+        }
+    },
     "sias6sps6": {
          "SIAS": {
             "questions": [1, 2, 3, 4, 5, 6],
