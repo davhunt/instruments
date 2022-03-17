@@ -19,7 +19,7 @@ Below is a list of instruments contained in this repository.
 | eds | Everyday Discrimination Scale | [Williams et al. (1997)](https://pubmed.ncbi.nlm.nih.gov/22013026/) |
 | erq | Emotion Regulation Questionnaire | [Gross and John (2003)](https://pubmed.ncbi.nlm.nih.gov/12916575/) |
 | hsps | Highly Sensitive Person Scale | Aron (1996) |
-| hvs | Heightened Vigilance Scale | [Williams et al. (1997)](https://journals.sagepub.com/doi/10.1177/135910539700200305) |
+| hvs | Heightened Vigilance Scale | [Williams et al. (1997)](https://pubmed.ncbi.nlm.nih.gov/22013026/) |
 | idea | Inventory of the Dimensions of Emerging Adulthood | [Reifman et al. (2007)](https://jyd.pitt.edu/ojs/jyd/article/view/359) |
 | ierq | Interpersonal Emotion Regulation Questionnaire | [Hofmann et al. (2016)](https://link.springer.com/article/10.1007/s10608-016-9756-2) |
 | initState | Pre-Task Questionnaires | NDCLab |

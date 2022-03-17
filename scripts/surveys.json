@@ -191,6 +191,30 @@
             "score_type": "sum"
         }
     },
+    "edshvs": {
+        "EdsEver": {
+            "questions": [1, 2, 3, 4, 5],
+            "criteria": [1, 2, 3, 4, 5],
+            "score_type": "count"
+        },
+        "EdsFreq": {
+            "questions": [1, 2, 3, 4, 5],
+            "score_type": "sum"
+        },
+        "EdsChron": {
+            "questions": [1, 2, 3, 4, 5, 6],
+            "score_type": "row.replace({1: 0.5, 2: 3, 3: 36, 4: 104, 5: 260}).sum()"
+        },
+        "HvsEver": {
+            "questions": [8, 9, 10, 11, 12, 13],
+            "criteria": [1, 2, 3, 4],
+            "score_type": "count"
+        },
+        "HvsFreq": {
+            "questions": [8, 9, 10, 11, 12, 13],
+            "score_type": "sum"
+        }
+    },
     "erq": {
         "CogRea": {
             "questions": [1, 3, 5, 7, 8, 10],
@@ -377,7 +401,7 @@
             "score_type": "avg",
             "threshold": 0.8
         },
-        "neg": {            
+        "neg": {
             "questions": [3, 5, 8, 14, 17],
             "score_type": "avg",
             "threshold": 0.8
