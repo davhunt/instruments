@@ -474,7 +474,6 @@
             "score_type": "avg",
             "threshold": 0.8
         }
-
     },
     "stai5": {
         "S": {
@@ -521,6 +520,18 @@
             "questions": [7, 14, 22, 29, 44, 45],
             "score_type": "sum",
             "threshold": 1.0
+        }
+    },
+    "texi": {
+        "wm": {
+            "questions": [1, 2, 5, 7, 8, 9, 11, 12, 13],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "inh": {
+            "questions": [3, 4, 6, 10, 14, 15, 16, 17, 18, 19, 20],
+            "score_type": "avg",
+            "threshold": 0.8
         }
     }
 }
