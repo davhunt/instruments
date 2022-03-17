@@ -213,7 +213,7 @@
         "HvsFreq": {
             "questions": [8, 9, 10, 11, 12, 13],
             "score_type": "sum"
-        },
+        }
     },
     "erq": {
         "CogRea": {
