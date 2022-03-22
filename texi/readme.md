@@ -2,12 +2,12 @@
 
 This repository contains modifiable (.docx) and PDF versions of the TEXI, including both the self-report and other-report, in English, as well as translations into Spanish for Latin America (ESLA) and Spanish for Spain (ESEU). These translations were performed by members of the NDCLab in 2021; a .csv file providing transparency on the translation process is included for each translation.
 
-    | Name | Contribution |
-    | :--  | :--  |
-    | Aitana Fischer | performed the draft translation (ESLA, ESEU) |
-    | Laura Gallardo | independently edited the draft (ESLA) |
-    | Emily Machado | back translated the translation to English (ESLA, ESEU) |
-    | Jessica Alexander | reconciled the forward and back translations (ESLA, ESEU) |
+| Name | Contribution |
+| :--  | :--  |
+| Aitana Fischer | performed the draft translation (ESLA, ESEU) |
+| Laura Gallardo | independently edited the draft (ESLA) |
+| Emily Machado | back translated the translation to English (ESLA, ESEU) |
+| Jessica Alexander | reconciled the forward and back translations (ESLA, ESEU) |
 
 Please report any issues with the TEXI translations by posting an issue in this GitHub repository.
 
