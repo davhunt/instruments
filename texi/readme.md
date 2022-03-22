@@ -25,7 +25,7 @@ The English self-report of the modified TEXI is included in the repository scori
 | Variable | Details |
 | :--  | :--  |
 | texi_scrdInh_sX_rX_eX | inhibition subscore: average of 3, 4, 6, 10, 14, 15, 16, 17, 18, 19, and 20 (NaN if partial response prevents calculation of subscore) |
-| texi_scrdWm_sX_rX_eX | working memory subscore: average of , 2, 5, 7, 8, 9, 11, 12, and 13 (NaN if partial response prevents calculation of subscore) |
+| texi_scrdWm_sX_rX_eX | working memory subscore: average of 1, 2, 5, 7, 8, 9, 11, 12, and 13 (NaN if partial response prevents calculation of subscore) |
 | texi_percInh_sX_rX_eX | percentage of response for inhibition subscore (NaN if all items are blank) |
 | texi_percWm_sX_rX_eX | percentage of response for working memory subscore (NaN if all items are blank) |
 
