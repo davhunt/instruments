@@ -356,6 +356,13 @@
             "score_type": "sum"
         }
     },
+    "pints": {
+        "total": {
+            "questions": [1, 2, 3, 4, 5],
+            "score_type": "avg",
+            "threshold": 0.6
+        }
+    },
     "rvq": {
         "total": {
             "questions": [1, 2, 3, 4, 5, 6, 7],

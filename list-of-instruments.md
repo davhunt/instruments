@@ -27,6 +27,7 @@ Below is a list of instruments contained in this repository.
 | ius | Intolerance of Uncertainty Scale | [Carleton et al. (2007)](https://pubmed.ncbi.nlm.nih.gov/16647833/) |
 | panas | Positive and Negative Affect Schedule | [Watson et al. (1988)](https://pubmed.ncbi.nlm.nih.gov/3397865/) |
 | phq8 | Patient Health Questionnaire | [Kroenke et al. (2009)](https://pubmed.ncbi.nlm.nih.gov/18752852/) |
+| pints | Persistent and Intrusive Negative Thoughts Scale | [Magson et al. (2019)](https://psycnet.apa.org/fulltext/2019-41000-001) |
 | postTask | Post-Task Questionnaires | NDCLab |
 | ppie | Pre- and Post-Interaction Evaluation | NDCLab |
 | psqi | Pittsburgh Sleep Quality Index | full: [Buysse et al. (1989)](https://pubmed.ncbi.nlm.nih.gov/2748771/); short: [Sancho-Domingo et al. (2021)](https://pubmed.ncbi.nlm.nih.gov/33119375/) |
