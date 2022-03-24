@@ -17,6 +17,7 @@ Below is a list of instruments contained in this repository.
 | covid | COVID Impacts Questionnaire | [Conway et al. (2020)](https://doi.org/10.31234/osf.io/z2x9a) |
 | demo | Demographics | NDCLab |
 | eds | Everyday Discrimination Scale | [Williams et al. (1997)](https://pubmed.ncbi.nlm.nih.gov/22013026/) |
+| epepq15 | Extended Post-Event Processing Questionnaire, 15-Item | [Wong (2015)](https://pubmed.ncbi.nlm.nih.gov/24841332/) |
 | erq | Emotion Regulation Questionnaire | [Gross and John (2003)](https://pubmed.ncbi.nlm.nih.gov/12916575/) |
 | hsps | Highly Sensitive Person Scale | Aron (1996) |
 | hvs | Heightened Vigilance Scale | [Williams et al. (1997)](https://pubmed.ncbi.nlm.nih.gov/22013026/) |
