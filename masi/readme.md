@@ -1,6 +1,6 @@
 ## MASI (Multidimensional Acculturative Stress Inventory)
 
-This repo contains the main PDF, REDCap import .zip, and REDCap survey PDF for the MASI questionnaire.
+This repo contains the main PDF, REDCap import .zip, and REDCap survey PDF for the MASI questionnaire.  This questionnaire only pertains to participants who identify as being multicultural; therefore, only participants who have selected a non-White ethnic/racial identification in the demographics survey should be presented with this questionnaire.
 
 
 ### Scoring Script
