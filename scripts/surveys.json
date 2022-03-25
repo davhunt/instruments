@@ -202,8 +202,8 @@
             "score_type": "sum"
         },
         "EdsChron": {
-            "questions": [1, 2, 3, 4, 5, 6],
-            "score_type": "row.replace({1: 0.5, 2: 3, 3: 36, 4: 104, 5: 260}).sum()"
+            "questions": [1, 2, 3, 4, 5],
+            "score_type": "row.replace({0: 0, 1: 0.5, 2: 3, 3: 36, 4: 104, 5: 260}).sum()"
         },
         "HvsEver": {
             "questions": [8, 9, 10, 11, 12, 13],
