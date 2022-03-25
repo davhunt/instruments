@@ -6,7 +6,7 @@ This repo contains the main PDF, REDCap import .zip, and REDCap survey PDF for t
 The REDCap survey was modified to ensure proper scoring thresholding was possible.  This entailed making all questions required and changing the single "Check if it applies to you" radio button to two (Yes/No) radio button options.  Survey instructions were also modified for online use, changing "place a checkmark on the line next to the number of the statement" to "choose 'Yes' next to the statement."
 
 ### tai(_a)
-This is the original version used by the NDCLab.  The original instructions were modified to provide clarity within the REDCap platform with "If you incorrectly marked an item, click "Reset" for the corresponding item." This version is now deprecated.
+This is the original version used by the NDCLab and **cannot be scored using the scoring script**.  The original instructions were modified to provide clarity within the REDCap platform with "If you incorrectly marked an item, click "Reset" for the corresponding item." This version is now deprecated.
 
 
 ### Scoring Script
