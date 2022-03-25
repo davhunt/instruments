@@ -26,6 +26,7 @@ Below is a list of instruments contained in this repository.
 | initState | Pre-Task Questionnaires | NDCLab |
 | iri | Interpersonal Reactivity Index | [Davis (1980)](https://www.researchgate.net/publication/34891073_A_Multidimensional_Approach_to_Individual_Differences_in_Empathy) |
 | ius | Intolerance of Uncertainty Scale | [Carleton et al. (2007)](https://pubmed.ncbi.nlm.nih.gov/16647833/) |
+| masi | Multidimensional Acculturative Stress Inventory | [Rodriguez et al. (2002)](https://pubmed.ncbi.nlm.nih.gov/12501570/), [Castillo et al. (2015)](https://pubmed.ncbi.nlm.nih.gov/25730163/) |
 | panas | Positive and Negative Affect Schedule | [Watson et al. (1988)](https://pubmed.ncbi.nlm.nih.gov/3397865/) |
 | phq8 | Patient Health Questionnaire | [Kroenke et al. (2009)](https://pubmed.ncbi.nlm.nih.gov/18752852/) |
 | pints | Persistent and Intrusive Negative Thoughts Scale | [Magson et al. (2019)](https://psycnet.apa.org/fulltext/2019-41000-001) |
