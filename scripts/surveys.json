@@ -191,6 +191,25 @@
             "score_type": "sum"
         }
     },
+    "bpsqi":{
+        "Slp": {
+            "questions":[2],
+            "score_type": "row.str.replace(':', '.').apply(lambda x: float(x)).mask(lambda x: x <= 15.59, other = 0).mask(lambda x: (x >= 16) & (x <= 30.59), other = 1).mask(lambda x: (x >= 31) & (x <= 60.59), other = 2).mask(lambda x: x >= 61, other = 3).apply(lambda x: int(x)).sum()"
+        },
+        "Sd" :{
+            "questions":[4],
+            "score_type": "row.mask(lambda x: x < 5, other = 3).mask(lambda x: (x >= 5) & (x < 6), other = 2).mask(lambda x: (x >= 6) & (x < 7), other = 1).mask(lambda x: x >= 7, other = 0).apply(lambda x: int(x)).sum()"
+        },
+        "Hse":{
+            "questions":[1, 2, 4],
+            "score_type": "pd.Series((row.values[2] * 100) / (24 - float(row.values[0].replace(':', '.')) + float(row.values[1].replace(':', '.')))).mask(lambda x: x < 65, other = 3).mask(lambda x: (x >= 65) & (x < 75), other = 2).mask(lambda x: (x >= 75) & (x < 85), other = 1).mask(lambda x: x >= 85, other = 0).apply(lambda x: int(x)).sum()"
+        },
+        "total":{
+            "questions":[5, 6],
+            "products": ["Slp", "Sd", "Hse"],
+            "score_type": "sum"
+        }
+    },
     "edshvs": {
         "EdsEver": {
             "questions": [1, 2, 3, 4, 5],
