@@ -194,7 +194,7 @@
     "bpsqi":{
         "Slp": {
             "questions":[2],
-            "score_type": "row.str.replace(':', '.').apply(lambda x: float(x)).mask(lambda x: x <= 15.59, other = 0).mask(lambda x: (x >= 16) & (x <= 30.59), other = 1).mask(lambda x: (x >= 31) & (x <= 60.59), other = 2).mask(lambda x: x >= 61, other = 3).apply(lambda x: int(x)).sum()"
+            "score_type": "row.str.replace(':', '.').apply(lambda x: float(x)).mask(lambda x: x < 16, other = 0).mask(lambda x: (x >= 16) & (x < 31), other = 1).mask(lambda x: (x >= 31) & (x < 61), other = 2).mask(lambda x: x >= 61, other = 3).apply(lambda x: int(x)).sum()"
         },
         "Sd" :{
             "questions":[4],
