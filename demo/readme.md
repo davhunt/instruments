@@ -2,6 +2,11 @@
 
 This repo contains modifiable (.docx) and PDF versions of demographics questionnaires used by the NDCLab, along with the REDCap import .zip and survey PDF.
 
+### demo_c
+This version reduces the number of questions in demo_b.  No questions were modified or added.
+
+**Deleted variables:** pronouns, otherpron, location, otherloc, student, major, employment, children, kidages, religion, sleep, exercise, diet, caffeine, chronic, conditions
+
 ### demo_b
 The following were added in this revision:
 - language history
