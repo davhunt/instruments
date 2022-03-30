@@ -1,4 +1,4 @@
-## (B)PSQI
+## (B)PSQI ((Brief) Pittsburgh Sleep Quality Index)
 
 This repo contains the main PDF, REDCap import .zip, and REDCap survey PDF for the full PSQI questionnaire and the shorter BPSQI.
 
@@ -16,3 +16,9 @@ The BPSQI questionnaire is included in the repository scoring script. Threshold 
 | bpsqi_percSld_sX_rX_eX | percentage of response for sleep latency subscore (NA if all items are blank) |
 | bpsqi_percSd_sX_rX_eX | percentage of response for sleep duration subscore (NA if all items are blank) |
 | bpsqi_percHse_sX_rX_eX | percentage of response for habitual sleep efficiency subscore (NA if all items are blank) |
+
+Citation for BPSQI:
+> Buysse, D. J., Reynolds, C. F., 3rd, Monk, T. H., Berman, S. R., & Kupfer, D. J. (1989). The Pittsburgh Sleep Quality Index: a new instrument for psychiatric practice and research. Psychiatry Research, 28(2), 193–213. [[link]](https://pubmed.ncbi.nlm.nih.gov/2748771/)
+
+Citation for full PSQI:
+> Sancho-Domingo, C., Carballo, J. L., Coloma-Carmona, A., & Buysse, D. J. (2021). Brief version of the Pittsburgh Sleep Quality Index (B-PSQI) and measurement invariance across gender and age in a population-based sample. Psychological Assessment, 33(2), 111–121. [[link]](https://pubmed.ncbi.nlm.nih.gov/33119375/)
