@@ -19,7 +19,7 @@ Below is a list of instruments contained in this repository.
 | eds | Everyday Discrimination Scale | [Williams et al. (1997)](https://pubmed.ncbi.nlm.nih.gov/22013026/) |
 | erq | Emotion Regulation Questionnaire | [Gross and John (2003)](https://pubmed.ncbi.nlm.nih.gov/12916575/) |
 | hsps | Highly Sensitive Person Scale | Aron (1996) |
-| hvs | Heightened Vigilance Scale | [Williams et al. (1997)](https://journals.sagepub.com/doi/10.1177/135910539700200305) |
+| hvs | Heightened Vigilance Scale | [Williams et al. (1997)](https://pubmed.ncbi.nlm.nih.gov/22013026/) |
 | idea | Inventory of the Dimensions of Emerging Adulthood | [Reifman et al. (2007)](https://jyd.pitt.edu/ojs/jyd/article/view/359) |
 | ierq | Interpersonal Emotion Regulation Questionnaire | [Hofmann et al. (2016)](https://link.springer.com/article/10.1007/s10608-016-9756-2) |
 | initState | Pre-Task Questionnaires | NDCLab |
@@ -32,8 +32,8 @@ Below is a list of instruments contained in this repository.
 | psqi | Pittsburgh Sleep Quality Index | full: [Buysse et al. (1989)](https://pubmed.ncbi.nlm.nih.gov/2748771/); short: [Sancho-Domingo et al. (2021)](https://pubmed.ncbi.nlm.nih.gov/33119375/) |
 | pttfq | Post-Task Thoughts and Feelings Questionnaire | NDCLab |
 | rmbi | Retrospective Measure of Behavioral Inhibition | [Gladstone and Parker (2005)](https://pubmed.ncbi.nlm.nih.gov/15922458/) |
-| rtq | Repetitive Thinking Questionnaire | [McEvoy et al. (2010)](https://www.sciencedirect.com/science/article/pii/S0887618510000551) |
-| sas2 | Screen for Adult Anxiety Related Disorders | [Smith et al. (2006)](https://psycnet.apa.org/record/2006-22413-004) |
+| rtq | Repetitive Thinking Questionnaire | [McEvoy et al. (2010)](https://pubmed.ncbi.nlm.nih.gov/20409676/) |
+| sas2 | Sport Anxiety Scale-2 | [Smith et al. (2006)](https://psycnet.apa.org/record/2006-22413-004) |
 | scaared | Screen for Adult Anxiety Related Disorders | [Angulo et al. (2017)](https://pubmed.ncbi.nlm.nih.gov/28359032/) |
 | sias6 | Social Interaction Anxiety Scale | [Peters et al. (2012)](https://pubmed.ncbi.nlm.nih.gov/21744971/) |
 | sics | Social Interaction and Communication Skills Checklist | (unconfirmed) |
