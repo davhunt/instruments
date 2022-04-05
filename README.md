@@ -32,6 +32,10 @@ The following software iterations are planned for development. Each iteration is
 
 * Addition to the scoring script of: BMIS, IERQ, IUS, PHQ8, SRQ.
 
+### 0.04
+
+* Addition to the scoring script of: BPSQI, EDSHVS, IDEA, PANASRTQ, SAS2, TEXI.
+
 ### 0.1
 
 * TBD

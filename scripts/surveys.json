@@ -92,10 +92,6 @@
             "questions": [1, 2, 3, 4, 5, 6],
             "score_type": "sum"
         },
-        "avg": {
-            "questions": [1, 2, 3, 4, 5, 6],
-            "score_type": "avg"
-        },
         "prorat": {
             "questions": [1, 2, 3, 4, 5, 6],
             "score_type": "round(sum(row) * 6 / 5)",
@@ -191,6 +187,24 @@
             "score_type": "sum"
         }
     },
+    "bpsqi":{
+        "Slp": {
+            "questions":[3],
+            "score_type": "row.mask(lambda x: x < 16, other = 0).mask(lambda x: (x >= 16) & (x < 31), other = 1).mask(lambda x: (x >= 31) & (x < 61), other = 2).mask(lambda x: x >= 61, other = 3).apply(lambda x: int(x)).sum()"
+        },
+        "Sd" :{
+            "questions":[4],
+            "score_type": "row.mask(lambda x: x < 5, other = 3).mask(lambda x: (x >= 5) & (x < 6), other = 2).mask(lambda x: (x >= 6) & (x < 7), other = 1).mask(lambda x: x >= 7, other = 0).apply(lambda x: int(x)).sum()"
+        },
+        "Hse":{
+            "questions":[1, 2, 4],
+            "score_type": "pd.Series((row.values[2] * 100) / (24 - float(row.values[0].replace(':', '.')) + float(row.values[1].replace(':', '.')))).mask(lambda x: x < 65, other = 3).mask(lambda x: (x >= 65) & (x < 75), other = 2).mask(lambda x: (x >= 75) & (x < 85), other = 1).mask(lambda x: x >= 85, other = 0).apply(lambda x: int(x)).sum()"
+        },
+        "total":{
+            "questions":[5, 6],
+            "products": ["Slp", "Sd", "Hse"],
+        }
+    },
     "covid": {
         "total": {
             "questions": [1, 2, 3, 4, 5, 6],
@@ -208,8 +222,8 @@
             "score_type": "sum"
         },
         "EdsChron": {
-            "questions": [1, 2, 3, 4, 5, 6],
-            "score_type": "row.replace({1: 0.5, 2: 3, 3: 36, 4: 104, 5: 260}).sum()"
+            "questions": [1, 2, 3, 4, 5],
+            "score_type": "row.replace({0: 0, 1: 0.5, 2: 3, 3: 36, 4: 104, 5: 260}).sum()"
         },
         "HvsEver": {
             "questions": [8, 9, 10, 11, 12, 13],
@@ -382,7 +396,7 @@
     },
     "panasrtq": {
         "Panas": {
-            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 8, 10],
+            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
             "score_type": "sum"
         },
         "RtqArt": {

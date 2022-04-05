@@ -37,7 +37,7 @@ Below is a list of instruments contained in this repository.
 | rmbi | Retrospective Measure of Behavioral Inhibition | [Gladstone and Parker (2005)](https://pubmed.ncbi.nlm.nih.gov/15922458/) |
 | rtq | Repetitive Thinking Questionnaire | [McEvoy et al. (2010)](https://pubmed.ncbi.nlm.nih.gov/20409676/) |
 | rvq | Relational Victimization Questionnaire | [Dempsey and Storch (2008)](https://psycnet.apa.org/record/2008-03763-004) |
-| sas2 | Screen for Adult Anxiety Related Disorders | [Smith et al. (2006)](https://psycnet.apa.org/record/2006-22413-004) |
+| sas2 | Sport Anxiety Scale-2 | [Smith et al. (2006)](https://psycnet.apa.org/record/2006-22413-004) |
 | scaared | Screen for Adult Anxiety Related Disorders | [Angulo et al. (2017)](https://pubmed.ncbi.nlm.nih.gov/28359032/) |
 | sias6 | Social Interaction Anxiety Scale | [Peters et al. (2012)](https://pubmed.ncbi.nlm.nih.gov/21744971/) |
 | sics | Social Interaction and Communication Skills Checklist | (unconfirmed) |
