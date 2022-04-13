@@ -1,0 +1,12 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+ari_i1,"ARI, question 1",Am easily annoyed by others.,s1_r1_e1,Likert,"0, 1, 2","0, Not true | 1, Somewhat true | 2, Certainly true",NA,1,NA,direct-redcap
+ari_i2,"ARI, question 2",Often lose my temper.,s1_r1_e1,Likert,"0, 1, 2","0, Not true | 1, Somewhat true | 2, Certainly true",NA,1,NA,direct-redcap
+ari_i3,"ARI, question 3",Stay angry for a long time.,s1_r1_e1,Likert,"0, 1, 2","0, Not true | 1, Somewhat true | 2, Certainly true",NA,1,NA,direct-redcap
+ari_i4,"ARI, question 4",Am angry most of the time.,s1_r1_e1,Likert,"0, 1, 2","0, Not true | 1, Somewhat true | 2, Certainly true",NA,1,NA,direct-redcap
+ari_i5,"ARI, question 5",Get angry frequently.,s1_r1_e1,Likert,"0, 1, 2","0, Not true | 1, Somewhat true | 2, Certainly true",NA,1,NA,direct-redcap
+ari_i6,"ARI, question 6",Lose temper easily.,s1_r1_e1,Likert,"0, 1, 2","0, Not true | 1, Somewhat true | 2, Certainly true",NA,1,NA,direct-redcap
+ari_i7,"ARI, question 7",Overall irritability causes me problems.,s1_r1_e1,Likert,"0, 1, 2","0, Not true | 1, Somewhat true | 2, Certainly true",NA,1,NA,direct-redcap
+ari_scrdRaw,ARI raw score,sum of ari items 1-6 (NA if ari_percRaw < 1),s1_r1_e1,Integer,"[0,12]",NA,NA,1,NA,code-instruments
+ari_scrdProrat,ARI prorated score,"sum of ari items 1-6, multiplied by 6 and divided by 5, then rounded to the nearest whole number (only calculated if ari_percRaw is > 0.83 and less than 1.0, otherwise NA)",s1_r1_e1,Integer,"[0,2]",NA,NA,1,NA,code-instruments
+ari_percRaw,ARI raw score percentage response,percentage of response for ari items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
+ari_percProrat,ARI prorated score percentage response,percentage of response for ari items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
