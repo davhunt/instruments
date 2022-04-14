@@ -36,6 +36,12 @@ The following software iterations are planned for development. Each iteration is
 
 * Addition to the scoring script of: BPSQI, EDSHVS, IDEA, PANASRTQ, SAS2, TEXI.
 
+### 0.05
+
+* Addition to the scoring script of: COVID, EPEPQ15, MASI, PINTS, RVQ, TAI.
+* Addition of unscored surveys: demo_c, postTaskD, thq_b.
+* Addition of initial data dictionaries.
+
 ### 0.1
 
 * TBD
