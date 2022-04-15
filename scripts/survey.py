@@ -63,8 +63,6 @@ class Survey:
         self.versions = []
         self._extract_versions()
         
-        # remove metadata
-        self._remove_meta()
 
     def _load_data(self):
         # load filename into dataframe
@@ -106,23 +104,24 @@ class Survey:
         self.versions.sort()
         
                     
-    def _remove_meta(self):
-        metadata_col = self.data.filter(regex=rf"{self.DELIM}{Subscore.TIME_LABEL}|{self.DELIM}{Subscore.COMP_LABEL}").columns
-        self.data = self.data.drop(metadata_col, axis=1)
-    
+    def _remove_meta(self, data):
+        metadata_col = data.filter(regex=rf"{self.DELIM}{Subscore.TIME_LABEL}|{self.DELIM}{Subscore.COMP_LABEL}").columns
+        return data.drop(metadata_col, axis=1)
+
     def _extract_sre_list(self, data):
         # init regex
         sre_reg = rf"s[0-9]+_r[0-9]+_e[0-9]+"
-        # get timestamp columns of the version featured in data
+        # get timestamp columns of the version feautured in data
         timestamp_col = data.filter(regex=rf"_{Subscore.TIME_LABEL}").columns
         # init list of extracted unique sre that will be returned
         sre_list = []
-        # extract unsorted unique sre_list using timestamp columns
+        # extract unsorted sre_list using timestamp columns
         for col in timestamp_col:
             sre_res = re.search(sre_reg, col)
             if sre_res is not None:
                 if sre_res.group(0) not in sre_list:
                     sre_list.append(sre_res.group(0))
+        
         # sort the sre_list
         # keep in mind that when sorting by session, run, and event there is some priority associated to each
         # priority in descending order: s, r, e
@@ -132,22 +131,22 @@ class Survey:
         sre_dict_list = []
         for sre in sre_list:
             sre_dict = {
-                "sre" : sre,
+                "sre": sre,
                 "s" : int(re.search(s_reg, sre).group(0)[1:]),
                 "r" : int(re.search(r_reg, sre).group(0)[1:]),
                 "e" : int(re.search(e_reg, sre).group(0)[1:])
             }
             sre_dict_list.append(sre_dict)
-       sre_dict_list.sort(key=lambda x: x["e"])
-       sre_dict_list.sort(key=lambda x: x["r"])
-       sre_dict_list.sort(key=lambda x: x["s"])
-       sre_list = []
-       for sre_dict in sre_dict_list:
+        sre_dict_list.sort(key=lambda x: x["e"])
+        sre_dict_list.sort(key=lambda x: x["r"])
+        sre_dict_list.sort(key=lambda x: x["s"])
+        sre_list = []
+        for sre_dict in sre_dict_list:
             sre_list.append(sre_dict["sre"])
-       return sre_list
-        
+        return sre_list
+
     def score(self):
-        # Iterate through versions then sre then subscores and score on data
+        # Iterate through versions then sre then score on data
         all_scores = pd.DataFrame()
         for ver_surv in self.versions:
             # starting off with an empty dataframe for each version (so that future versions can't refer to past versions)
@@ -162,7 +161,7 @@ class Survey:
             for sre in sre_list:
                 for subscore, params in self.subscores.items():
                     if len(params) == 0:
-                        raise TypeError("No parameters for %s. Skipping."%(subscore))
+                        raise TypeError("No paramaters for %s. Skipping."%(subscore))
                     try:
                         sub_obj = Subscore(name=ver_surv, sub_name=subscore, **params)
                         if sub_obj.products == None:
@@ -173,12 +172,11 @@ class Survey:
                             if sub_obj.hide != None:
                                 if sub_obj.hide == True:
                                     for product in sub_obj.products:
-                                        product = product[0].capitalize() + product[1:]
+                                        product = product[0].capitalize() +product[1:]
                                         product_col = ver_scores.filter(regex=rf"{product}").columns
-                                        ver_scores = ver_scores = ver_scores.drop(product_col, axis=1)
+                                        ver_scores = ver_scores.drop(product_col, axis=1)
                             ver_scores = pd.concat([ver_scores, single_score], axis=1)
                     except RuntimeError:
                         continue
             all_scores = pd.concat([all_scores, ver_scores], axis=1)
-                                        
         return all_scores
