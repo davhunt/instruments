@@ -41,6 +41,7 @@
         },
         "AMBI": {
             "questions": [],
+            "hide": true,
             "products": ["inhA", "nonA", "lowA", "riskA"],
             "score_type": "sum"
         },
@@ -66,6 +67,7 @@
         },
         "RMBI": {
             "questions": [],
+            "hide": true,
             "products": ["inhR", "nonR", "shyR", "riskR"],
             "score_type": "sum"
         }
