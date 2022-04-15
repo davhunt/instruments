@@ -191,6 +191,7 @@ class Subscore:
             return row.max()
 
     def _valid_thresh(self, perc):
+        perc = Subscore.frac_to_perc(perc)
         if isinstance(self.threshold, (int, float)):
             return perc >= self.threshold
         if isinstance(self.threshold, list):
@@ -203,15 +204,30 @@ class Subscore:
         # Get total answered questions
         answered = row.count()
 
-        perc_complete = (answered / total_quest)
+        perc_complete = rf"{answered}/{total_quest}"
         return perc_complete
 
     def perc_complete_for_products(self, row):
-        total_percentage_across_products = row.sum()
-        # Get total answered questions
-        number_of_products = len(self.products)
-        perc_complete_for_products = (total_percentage_across_products / number_of_products)
-        return perc_complete_for_products
+        num_sum = 0
+        denom_sum = 0
+        for index, value in row.items():
+            numer_denom = value.split("/")
+            num_sum += int(numer_denom[0])
+            denom_sum += int(numer_denom[1])
+        perc_complete = rf"{num_sum}/{denom_sum}"
+        return perc_complete
+
+    def perc_for_Q_and_P(self, percQ, percP):
+        percQ_list = percQ.split("/")
+        percP_list = percP.split("/")
+        numer = int(percQ_list[0]) + int(percP_list[0])
+        denom = int(percQ_list[1]) + int(percP_list[1])
+        perc_complete = rf"{numer}/{denom}"
+        return perc_complete
+
+    def frac_to_perc(perc):
+        numer_denom = perc.split("/")
+        return int(numer_denom[0]) / int(numer_denom[1])
 
     def gen_data(self, ver_surv, sre, data):
         # Filter based on selected questions
@@ -261,7 +277,7 @@ class Subscore:
             if num_of_questions != 0:
                 perc_for_questions = self.perc_complete(perc_row_set[:num_of_questions])
                 perc_for_products = self.perc_complete_for_products(perc_row_set[num_of_questions:])
-                perc = perc_for_questions + perc_for_products
+                perc = self.perc_for_Q_and_P(perc_for_questions, perc_for_products)
             else:
                 perc = self.perc_complete_for_products(perc_row_set)
 
