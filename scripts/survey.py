@@ -179,4 +179,7 @@ class Survey:
                     except RuntimeError:
                         continue
             all_scores = pd.concat([all_scores, ver_scores], axis=1)
+        perc_cols = all_scores.filter(regex=rf"{Subscore.PERCENT}").columns
+        for perc_col in perc_cols:
+            all_scores[perc_col] = all_scores[perc_col].apply(lambda x: Subscore.frac_to_perc(x))
         return all_scores
