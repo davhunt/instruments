@@ -48,11 +48,6 @@ class Survey:
             Function to iterate and score over all subscores, and generate dataframe containing 
             all subscores. Returns modified dataframe. 
     """
-    VER_POS = 1
-    SES_POS = -3
-    RUN_POS = -2
-    EVENT_POS = -1
-
     DELIM = Subscore.DELIM
 
     def __init__(self, name, file_name, subscores):
@@ -114,30 +109,76 @@ class Survey:
     def _remove_meta(self):
         metadata_col = self.data.filter(regex=rf"{self.DELIM}{Subscore.TIME_LABEL}|{self.DELIM}{Subscore.COMP_LABEL}").columns
         self.data = self.data.drop(metadata_col, axis=1)
+    
+    def _extract_sre_list(self, data):
+        # init regex
+        sre_reg = rf"s[0-9]+_r[0-9]+_e[0-9]+"
+        # get timestamp columns of the version featured in data
+        timestamp_col = data.filter(regex=rf"_{Subscore.TIME_LABEL}").columns
+        # init list of extracted unique sre that will be returned
+        sre_list = []
+        # extract unsorted unique sre_list using timestamp columns
+        for col in timestamp_col:
+            sre_res = re.search(sre_reg, col)
+            if sre_res is not None:
+                if sre_res.group(0) not in sre_list:
+                    sre_list.append(sre_res.group(0))
+        # sort the sre_list
+        # keep in mind that when sorting by session, run, and event there is some priority associated to each
+        # priority in descending order: s, r, e
+        s_reg = rf"s[0-9]+"
+        r_reg = rf"r[0-9]+"
+        e_reg = rf"e[0-9]+"
+        sre_dict_list = []
+        for sre in sre_list:
+            sre_dict = {
+                "sre" : sre,
+                "s" : int(re.search(s_reg, sre).group(0)[1:]),
+                "r" : int(re.search(r_reg, sre).group(0)[1:]),
+                "e" : int(re.search(e_reg, sre).group(0)[1:])
+            }
+            sre_dict_list.append(sre_dict)
+       sre_dict_list.sort(key=lambda x: x["e"])
+       sre_dict_list.sort(key=lambda x: x["r"])
+       sre_dict_list.sort(key=lambda x: x["s"])
+       sre_list = []
+       for sre_dict in sre_dict_list:
+            sre_list.append(sre_dict["sre"])
+       return sre_list
         
     def score(self):
-        # Iterate through versions then subscores and score on data
+        # Iterate through versions then sre then subscores and score on data
         all_scores = pd.DataFrame()
         for ver_surv in self.versions:
+            # starting off with an empty dataframe for each version (so that future versions can't refer to past versions)
             ver_scores = pd.DataFrame()
-            for subscore, params in self.subscores.items():
-                if len(params) == 0:
-                    raise TypeError("No parameters for %s. Skipping."%(subscore))
-                try:
-                    sub_obj = Subscore(name=ver_surv, sub_name=subscore, **params)
-                    single_score = sub_obj.gen_data(self.data.filter(regex=rf"{ver_surv}_[a-z][0-9]"), ver_scores)
-                    ver_scores = pd.concat([ver_scores, single_score], axis=1)
-                except RuntimeError:
-                    continue
-
-            # Sort according to session, run, and event, in that order
-            ver_scores = ver_scores.reindex(
-                sorted(ver_scores.columns, key=lambda x: \
-                    (int(x.split(self.DELIM)[self.SES_POS][1]),\
-                    int(x.split(self.DELIM)[self.RUN_POS][1]),\
-                    int(x.split(self.DELIM)[self.EVENT_POS][1]))\
-            ), axis=1)
+            # filter data to only include columns pertaining to the current version
+            ver_surv_data = self.data.filter(regex=rf"{ver_surv}_[a-z][0-9]")
+            # extract each unique sre from filtered data into a list so that we can loop through each
+            # the unique sre list extracted is sorted
+            sre_list = self._extract_sre_list(ver_surv_data)
+            # remove metadata
+            ver_surv_data = self._remove_meta(ver_surv_data)
+            for sre in sre_list:
+                for subscore, params in self.subscores.items():
+                    if len(params) == 0:
+                        raise TypeError("No parameters for %s. Skipping."%(subscore))
+                    try:
+                        sub_obj = Subscore(name=ver_surv, sub_name=subscore, **params)
+                        if sub_obj.products == None:
+                            single_score = sub_obj.gen_data(ver_surv, sre, ver_surv_data.filter(regex=rf"{sre}$"))
+                            ver_scores = pd.concat([ver_scores, single_score], axis=1)
+                        else:
+                            single_score = sub_obj.gen_data_for_products(ver_surv, sre, ver_surv_data.filter(regex=rf"{sre}$"), ver_scores)
+                            if sub_obj.hide != None:
+                                if sub_obj.hide == True:
+                                    for product in sub_obj.products:
+                                        product = product[0].capitalize() + product[1:]
+                                        product_col = ver_scores.filter(regex=rf"{product}").columns
+                                        ver_scores = ver_scores = ver_scores.drop(product_col, axis=1)
+                            ver_scores = pd.concat([ver_scores, single_score], axis=1)
+                    except RuntimeError:
+                        continue
             all_scores = pd.concat([all_scores, ver_scores], axis=1)
-        
+                                        
         return all_scores
-
