@@ -81,7 +81,7 @@ class Subscore:
     DELIM = "_"
 
     def __init__(self, name, questions=None, sub_name="total", score_type="sum", threshold=1.0,
-                 rev_questions=None, answers=None, products=None, conditional=None, criteria=None):
+                 rev_questions=None, answers=None, products=None, conditional=None, criteria=None, hide=None):
         self.name = name
         self.sub_name = sub_name
         self.score_type = score_type
@@ -92,6 +92,7 @@ class Subscore:
         self.products = products
         self.conditional = conditional
         self.criteria = criteria
+        self.hide = hide
 
     def _perc_column(self, label):
         return self.name + self.DELIM + self.PERCENT + self.sub_name[0].capitalize() + self.sub_name[1:] \
@@ -141,15 +142,6 @@ class Subscore:
 
         return select_data
 
-    def _get_unique_sre(self, data):
-        # init regex to get unique sessions, events, and runs
-        sre_reg = rf"s[0-9]+_r[0-9]+_e[0-9]+"
-        # Get column names
-        ind_names = list(data.columns)
-        # Filter unique sessions, runs, and events
-        unique_vals = set([re.search(sre_reg, ind).group(0) for ind in ind_names])
-        return unique_vals
-
     def _reverse_score(self, data):
         # If there are no reverse questions specified, return data
         if self.rev_questions is None:
@@ -166,7 +158,6 @@ class Subscore:
             select_columns += list(
                 handle.filter(regex=rf"{self.name}{self.DELIM}i{num}{self.DELIM}").columns
             )
-
         # reverse each questions score according to max
         for rev_q in select_columns:
             handle[rev_q] = handle[rev_q].map(lambda s: reversed_answers[self.answers.index(s)] if not pd.isna(s) else s)
@@ -215,39 +206,67 @@ class Subscore:
         perc_complete = (answered / total_quest)
         return perc_complete
 
-    def gen_data(self, data, prev_products=None):
+    def perc_complete_for_products(self, row):
+        total_percentage_across_products = row.sum()
+        # Get total answered questions
+        number_of_products = len(self.products)
+        perc_complete_for_products = (total_percentage_across_products / number_of_products)
+        return perc_complete_for_products
+
+    def gen_data(self, ver_surv, sre, data):
         # Filter based on selected questions
         data = self._select_questions(data)
-
-        # Select product columns if available
-        append_prod = self._select_products(prev_products)
-
         data = self._reverse_score(data)
-        data = pd.concat([data, append_prod], axis=1)
-
-        # Create a column for each unique session, row, and event
-        unique_vals = self._get_unique_sre(data)
         unique_cols = []
-        for val in unique_vals:
-            unique_cols.append(self._perc_column(val))
-            unique_cols.append(self._scored_column(val))
-
+        unique_cols.append(self._perc_column(sre))
+        unique_cols.append(self._scored_column(sre))
         # Create a dataframe of percentage complete and scored column name
         score = pd.DataFrame(index=data.index, columns=unique_cols)
 
         for index, row in data.iterrows():
-            # Calculate score for every unique group of metadata found
-            for unique in unique_vals:
-                # Create copy to prevent modification in place
-                row_set = row.copy()
-                # Filter row according to unique s_r_e
-                row_set = row_set.filter(regex=rf"{unique}")
+            # Create copy to prevent modification in place
+            row_set = row.copy()
+            # Calculate percentage complete of row and assign to column
+            perc = self.perc_complete(row_set)
+            score.loc[index, self._perc_column(sre)] = perc
+            # Calculate score and assign column if percentage complete is past threshold
+            score.loc[index, self._scored_column(sre)] = self._score_type(
+                row_set) if self._valid_thresh(perc) else np.NaN
+        return score
 
-                # Calculate percentage complete of row and assign to column
-                perc = self.perc_complete(row_set)
-                score.loc[index, self._perc_column(unique)] = perc
-                # Calculate score and assign to column if percentage complete is past threshold
-                score.loc[index, self._scored_column(unique)] = self._score_type(
-                    row_set) if self._valid_thresh(perc) else np.NaN
+    def gen_data_for_products(self, ver_surv, sre, data, prev_products):
+        # Filter data based on selected questions
+        data = self._select_questions(data)
+        data = self._reverse_score(data)
+        num_of_questions = len(self.questions)
+        combined_data = data
 
+        # Filter prev_products based on contents of products
+        for product in self.products:
+            product = product[0].capitalize() + product[1:]
+            combined_data = pd.concat([combined_data, prev_products.filter(regex=rf"{product}")], axis=1)
+
+        unique_cols = []
+        unique_cols.append(self._perc_column(sre))
+        unique_cols.append(self._scored_column(sre))
+        # Create a dataframe of percentage complete and scored column name
+        score = pd.DataFrame(index=combined_data.index, columns=unique_cols)
+
+        for index, row in combined_data.iterrows():
+            # Create copy to prevent modification in place
+            row_set = row.copy()
+            perc_row_set = row_set.filter(regex=rf"{self.PERCENT}")
+            # Calculate percentage complete of row and assign to column
+            perc = 0
+            if num_of_questions != 0:
+                perc_for_questions = self.perc_complete(perc_row_set[:num_of_questions])
+                perc_for_products = self.perc_complete_for_products(perc_row_set[num_of_questions:])
+                perc = perc_for_questions + perc_for_products
+            else:
+                perc = self.perc_complete_for_products(perc_row_set)
+
+            score.loc[index, self._perc_column(sre)] = perc
+            # Calculate score and assign column if percentage complete is past threshold
+            score.loc[index, self._scored_column(sre)] = self._score_type(
+                row_set.filter(regex=rf"{self.SCORED}")) if self._valid_thresh(perc) else np.NaN
         return score
