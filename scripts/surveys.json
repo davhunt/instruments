@@ -83,7 +83,7 @@
         },
         "total": {
             "questions": [],
-            "hide" : True,
+            "hide" : true,
             "products": ["agreed", "disagreed"],
             "score_type": "sum"
         }
