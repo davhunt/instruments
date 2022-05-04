@@ -30,7 +30,7 @@ def score_tracker(output_data, scrd_columns, tracker):
                 val = file_df.loc[id, key]
                 if val >= 10:
                     continue
-                tracker_df.loc[id, key] = 11 if isinstance(val, str) else 19
+                tracker_df.loc[id, key] = 11 if val != "NA" else 19
             except Exception as e_msg:
                 tracker_df.loc[id, key] = 0
 
