@@ -45,6 +45,7 @@ Below is a list of instruments contained in this repository.
 | srq | Social Reward Questionnaire | [Foulkes et al. (2014)](https://pubmed.ncbi.nlm.nih.gov/24653711/) |
 | sssq | Short Stress State Questionnaire | [Helton and Näsall (2015)](https://psycnet.apa.org/record/2014-09900-001) |
 | stai5 | State-Trait Anxiety Inventory, Short Version | [Zsido et al. (2020)](https://pubmed.ncbi.nlm.nih.gov/32563747/) |
+| stop | 'STOP' screen for in-person sessions | NDCLab |
 | tai | Test Anxiety Inventory | Spielberger et al. (1980) |
 | texi | Teenage Executive Functioning Inventory | [Thorell et al. (2020)](https://pubmed.ncbi.nlm.nih.gov/32090688/) |
 | thq | Trauma History Questionnaire | [Hooper et al. (2011)](https://psycnet.apa.org/record/2011-10871-005) |
