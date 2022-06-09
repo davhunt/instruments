@@ -42,6 +42,13 @@ The following software iterations are planned for development. Each iteration is
 * Addition of unscored surveys: demo_c, postTaskD, thq_b.
 * Addition of initial data dictionaries.
 
+### 0.06
+
+* Modification of NA value to "NA" (previously "N/A").
+* Support for double digit event numbers and double letter instrument versioning
+* Modification of perc calculations for instruments with products to provide transparent percentage across all questions (not across products)
+* Addition of flag to "hide" certain scores from the output (e.g., the interim products for AQ10).
+
 ### 0.1
 
 * TBD
