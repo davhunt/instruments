@@ -17,6 +17,7 @@ Below is a list of instruments contained in this repository.
 | covid | COVID Impacts Questionnaire | [Conway et al. (2020)](https://doi.org/10.31234/osf.io/z2x9a) |
 | demo | Demographics | NDCLab |
 | eds | Everyday Discrimination Scale | [Williams et al. (1997)](https://pubmed.ncbi.nlm.nih.gov/22013026/) |
+| eis | Ethnic Identity Scale | [Douglass and Umaña-Taylor (2015)](https://psycnet.apa.org/record/2015-06974-003) |
 | epepq15 | Extended Post-Event Processing Questionnaire, 15-Item | [Wong (2015)](https://pubmed.ncbi.nlm.nih.gov/24841332/) |
 | erq | Emotion Regulation Questionnaire | [Gross and John (2003)](https://pubmed.ncbi.nlm.nih.gov/12916575/) |
 | hsps | Highly Sensitive Person Scale | Aron (1996) |
@@ -26,8 +27,10 @@ Below is a list of instruments contained in this repository.
 | initState | Pre-Task Questionnaires | NDCLab |
 | iri | Interpersonal Reactivity Index | [Davis (1980)](https://www.researchgate.net/publication/34891073_A_Multidimensional_Approach_to_Individual_Differences_in_Empathy) |
 | ius | Intolerance of Uncertainty Scale | [Carleton et al. (2007)](https://pubmed.ncbi.nlm.nih.gov/16647833/) |
+| lsas | Liebowitz Social Anxiety Scale | [Masia-Warner et al. (2003)](https://pubmed.ncbi.nlm.nih.gov/12960707/) |
 | masi | Multidimensional Acculturative Stress Inventory | [Rodriguez et al. (2002)](https://pubmed.ncbi.nlm.nih.gov/12501570/), [Castillo et al. (2015)](https://pubmed.ncbi.nlm.nih.gov/25730163/) |
 | panas | Positive and Negative Affect Schedule | [Watson et al. (1988)](https://pubmed.ncbi.nlm.nih.gov/3397865/) |
+| pds | Pubertal Development Scale | [Carskadon and Acebo (1993)](https://pubmed.ncbi.nlm.nih.gov/8323929/) |
 | phq8 | Patient Health Questionnaire | [Kroenke et al. (2009)](https://pubmed.ncbi.nlm.nih.gov/18752852/) |
 | pints | Persistent and Intrusive Negative Thoughts Scale | [Magson et al. (2019)](https://psycnet.apa.org/fulltext/2019-41000-001) |
 | postTask | Post-Task Questionnaires | NDCLab |
@@ -41,6 +44,7 @@ Below is a list of instruments contained in this repository.
 | scaared | Screen for Adult Anxiety Related Disorders | [Angulo et al. (2017)](https://pubmed.ncbi.nlm.nih.gov/28359032/) |
 | sias6 | Social Interaction Anxiety Scale | [Peters et al. (2012)](https://pubmed.ncbi.nlm.nih.gov/21744971/) |
 | sics | Social Interaction and Communication Skills Checklist | (unconfirmed) |
+| spai | Social Phobia and Anxiety Inventory | [Beidel et al. (1995)](https://psycnet.apa.org/record/1995-27642-001) |
 | sps6 | Social Phobia Scale | [Peters et al. (2012)](https://pubmed.ncbi.nlm.nih.gov/21744971/) |
 | srq | Social Reward Questionnaire | [Foulkes et al. (2014)](https://pubmed.ncbi.nlm.nih.gov/24653711/) |
 | sssq | Short Stress State Questionnaire | [Helton and Näsall (2015)](https://psycnet.apa.org/record/2014-09900-001) |
