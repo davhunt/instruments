@@ -3,6 +3,7 @@ from survey import Survey
 import pandas as pd
 
 import sys
+import os
 
 
 def json_score(input_path, survey_dat, output_path=None):
@@ -16,7 +17,7 @@ def json_score(input_path, survey_dat, output_path=None):
     survey_dat: str | dict
                 Dictionary or path to json containing survey names and parameters
     output_path:    str | None
-                    string pointing to output path and name. None if data should not be written out
+                    string pointing to output path. None if data should not be written out
     """
     # Open and save survey data
     if (isinstance(survey_dat, str)):
@@ -34,8 +35,11 @@ def json_score(input_path, survey_dat, output_path=None):
         except RuntimeError:
             continue
     all_surveys.fillna(value="NA", inplace=True)
-    if output_path is not None:  
-        all_surveys.to_csv(output_path)
+    if output_path is not None: 
+        # clean up input path for appending by removing path and removing extension
+        handle = os.path.basename(input_path)
+        handle = os.path.splitext(handle)[0]
+        all_surveys.to_csv(os.path.join(output_path, input_path, "_preprocessed.csv"))
     return all_surveys
     
 if __name__ == "__main__":
