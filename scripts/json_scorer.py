@@ -38,7 +38,10 @@ def json_score(input_path, survey_dat, output_path=None):
     if output_path is not None: 
         # clean up input path for appending by removing path and removing extension
         handle = os.path.basename(input_path)
-        all_surveys.to_csv(os.path.join(output_path, handle.replace("DATA", "SCRD")))
+        newfile = os.path.join(output_path, handle.replace("DATA", "SCRD"))
+        all_surveys.to_csv(newfile)
+        # print out file name, used in conjunction with bash
+        print(newfile)
     return all_surveys
     
 if __name__ == "__main__":

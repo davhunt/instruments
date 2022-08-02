@@ -72,8 +72,10 @@ class Survey:
     def _filter(self):
         if len(self.subscores) == 0:
             raise TypeError("Subscores for %s is empty. Skipping."%(self.name))
+            
         # keep only survey data containing survey name
         self.data = self.data.filter(regex=rf"^{self.name}")
+
         # quit processing if survey data is not available 
         if(self.data.empty):
             raise RuntimeError("Data does not contain %s survey data. Skipping."%(self.name))
