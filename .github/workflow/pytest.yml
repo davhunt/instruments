@@ -1,0 +1,19 @@
+name: Pytest
+on:
+  push:
+    branches:
+      - main
+      - dev
+  pull_request:
+    branches:
+      - main
+      - dev
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: ndclab/instruments_container:flute-0.1.0
+    steps:
+      - name: Activate pipe and run pytest
+        run: conda activate pipe 
+        run: sudo pytest 
