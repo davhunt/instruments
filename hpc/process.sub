@@ -1,9 +1,4 @@
 #!/bin/bash
-#SBATCH --qos medium
-#SBATCH --account iacc_gbuzzell
-#SBATCH --partition 6g-per-core
-
-
 #SBATCH --nodes=1                # node count
 #SBATCH --ntasks=1               # total number of tasks across all nodes
 #SBATCH --cpus-per-task=1        # CPUS to use when using data parallelization
@@ -13,8 +8,8 @@
 module load singularity-3.5.3
 
 # edit variables here to change inputs and outputs\
-project="readAloud-valence-dataset"
-input_file="/home/data/NDClab/datasets/$project/sourcedata/raw/redcap/AnInvestigationIntoC_DATA_2022-02-16_1101.csv"
+project="social-flanker-eeg-dataset"
+input_file="/home/data/NDClab/datasets/$project/sourcedata/raw/redcap/202203v0socialflanke_DATA_2022-08-08_1118.csv"
 output_file="~/Downloads/outputs.csv"
 
 # paths to static code and data
