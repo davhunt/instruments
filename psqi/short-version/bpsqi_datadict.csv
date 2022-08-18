@@ -1,0 +1,15 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+bpsqi_i1,"BPSQI, question 1","During the past month, when have you usually gone to bed at night?",s1_r1_e1,Time,"[0:00,23:59]",hh:mm,NA,1,NA,direct-redcap
+bpsqi_i2,"BPSQI, question 2","During the past month, when have you usually gotten up in the morning?",s1_r1_e1,Time,"[0:00,23:59]",hh:mm,NA,1,NA,direct-redcap
+bpsqi_i3,"BPSQI, question 3","During the past month, how long (in minutes) has it usually taken you to fall asleep each night? ",s1_r1_e1,Real,"[0,1000]",minutes,NA,1,NA,direct-redcap
+bpsqi_i4,"BPSQI, question 4","During the past month, how many hours of actual sleep did you get at night? (This may be different than the number of hours you spend in bed.) ",s1_r1_e1,Real,"[0,24]",hours,NA,1,NA,direct-redcap
+bpsqi_i5,"BPSQI, question 5","During the past month, how often have you had trouble sleeping because you wake up in the middle of the night or early morning? ",s1_r1_e1,Integer,"0, 1, 2, 3","0, Not during the past month | 1, Less than once a week | 2, Once or twice a week | 3, Three or more times a week",NA,1,NA,direct-redcap
+bpsqi_i6,"BPSQI, question 6","During the past month, how would you rate your sleep quality overall? ",s1_r1_e1,Integer,"0, 1, 2, 3","0, Very good | 1, Fairly good | 2, Fairly bad | 3, Very bad",NA,1,NA,direct-redcap
+bpsqi_scrdTotal,BPSQI total score,"sum of bpsqi_scrdSlp, bpsqi_scrdSd, bpsqi_scrdHse, bpsqi item 5, and bpsqi item 6 (NA if bpsqi_percTotal < 1)",s1_r1_e1,Integer,"[0,15]",NA,NA,1,NA,code-instruments
+bpsqi_scrdSlp,BPSQI sleep latency score,"weighted response to bpsqi item 3 (x<16≡0, 16<=x<31≡1, 31<=x<61≡2, x>=61≡3) (NA if bpsqi_percSlp < 1)",s1_r1_e1,Integer,"0, 1, 2, 3",NA,NA,1,NA,code-instruments
+bpsqi_scrdSd,BPSQI sleep duration score,"weighted response to bpsqi item 4 (x<5≡3, 5<=x<6≡2, 6<=x<7≡1, x>=7≡0) (NA if bpsqi_percSd < 1)",s1_r1_e1,Integer,"0, 1, 2, 3",NA,NA,1,NA,code-instruments
+bpsqi_scrdHse,BPSQI habitual sleep efficiency score,"weighted response result of [(100 * item 4 (in hours))/(item 2 - item 1)] (x<65≡3, 65<=x<75≡2, 75<=x85≡1, x>=85≡0) (NA if bpsqi_percHse < 1)",s1_r1_e1,Integer,"0, 1, 2, 3",NA,NA,1,NA,code-instruments
+bpsqi_percTotal,BPSQI total percentage response,percentage of response for all bpsqi items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
+bpsqi_percSlp,BPSQI sleep latency percentage response,percentage of response for bpsqi item 3 (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
+bpsqi_percSd,BPSQI sleep duration percentage response,percentage of response for bpsqi item 4 (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
+bpsqi_percHse,BPSQI habitual sleep efficiency percentage response,"percentage of response for bpsqi items 1, 2, and 4 (NA if all items are blank)",s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments

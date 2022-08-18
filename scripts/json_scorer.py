@@ -3,6 +3,7 @@ from survey import Survey
 import pandas as pd
 
 import sys
+import os
 
 
 def score_tracker(output_data, scrd_columns, tracker):
@@ -50,7 +51,7 @@ def json_score(input_path, survey_dat, output_path=None, tracker=None):
     survey_dat: str | dict
                 Dictionary or path to json containing survey names and parameters
     output_path:    str | None
-                    string pointing to output path and name. None if data should not be written out
+                    string pointing to output path. None if data should not be written out
     """
     # Open and save survey data
     if (isinstance(survey_dat, str)):
