@@ -82,11 +82,11 @@ def json_score(input_path, survey_dat, output_path=None, tracker=None):
     return all_surveys
     
 if __name__ == "__main__":
-    input =  sys.argv[1]
+    if len(sys.argv) == 5:
+        tracker = sys.argv[4]
+
+    input_file =  sys.argv[1]
     json_data = sys.argv[2]
     out_path = sys.argv[3]
 
-    # specify optional tracker to read over scored data and update specified data tracker
-    tracker = sys.argv[4]
-
-    json_score(input, json_data, out_path, tracker)
+    json_score(input_file, json_data, out_path, tracker)
