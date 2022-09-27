@@ -67,7 +67,7 @@ def json_score(input_path, survey_dat, output_path=None, tracker=None):
             survey_obj = Survey(name, input_path, subscores)
             handle = survey_obj.score()
             # collect all columns from handle that contains "scrd"
-            scrd_columns += [col for col in list(data.columns) if "scrd" in col]
+            scrd_columns += [col for col in list(handle.columns) if "scrd" in col]
             all_surveys = pd.concat([all_surveys, handle], axis=1)
         except RuntimeError:
             continue
