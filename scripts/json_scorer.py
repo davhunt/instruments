@@ -82,11 +82,11 @@ def json_score(input_path, survey_dat, output_path=None, tracker=None):
     return all_surveys
     
 if __name__ == "__main__":
-    if len(sys.argv) == 5:
-        tracker = sys.argv[4]
-
     input_file =  sys.argv[1]
     json_data = sys.argv[2]
     out_path = sys.argv[3]
-
+    if len(sys.argv) == 5:
+        tracker = sys.argv[4]
+    else:
+        tracker = None
     json_score(input_file, json_data, out_path, tracker)
