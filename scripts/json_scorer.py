@@ -74,7 +74,8 @@ def json_score(input_path, survey_dat, output_path=None, tracker=None):
     all_surveys.fillna(value="NA", inplace=True)
 
     if output_path is not None:  
-        all_surveys.to_csv(output_path)
+        handle = os.path.basename(input_path)
+        all_surveys.to_csv(os.path.join(output_path, handle.replace("DATA", "SCRD")))
 
     if tracker is not None:
         score_tracker(all_surveys, scrd_columns, tracker)
