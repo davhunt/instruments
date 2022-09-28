@@ -1,17 +1,18 @@
 ## postTask (Post-Task Questionnaires)
 
-This repo contains modifiable (.docx) and PDF versions of generic post-task questionnaires used by the NDCLab, along with the associated REDCap import .zip and survey PDF.
+These are generic post-task, self-report questionnaires used by the NDCLab. They are currently only available in English.
 
-### postTaskA
+### Versions
+##### postTaskA
 Questions about the participant's experience, especially geared toward computer tasks with a focus on accuracy and speed.
 
-### postTaskB
+##### postTaskB
 Questions about the participant's experience, specific to the putt-putt-dataset golf-putting task.
 
-### postTaskC
+##### postTaskC
 Questions about the participant's experience, generic to any task.
 
-### postTaskD
+##### postTaskD
 Questions about the participant's experience, generic to any task.
 
 

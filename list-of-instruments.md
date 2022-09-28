@@ -5,6 +5,7 @@ Below is a list of instruments contained in this repository.
 | Acronym | Name | Reference |
 | :-- | :-- | :-- |
 | adexi | Adult Executive Functioning Inventory | [Holst and Thorell (2016)](https://pubmed.ncbi.nlm.nih.gov/28497641/) |
+| adis | Anxiety Disorders Interview Schedule | Silverman and Albano (1996) |
 | ambi | Adult Measure of Behavioral Inhibition | [Gladstone and Parker (2005)](https://pubmed.ncbi.nlm.nih.gov/15922458/) |
 | aq10 | Autism Spectrum Quotient | [Allison et al. (2012)](https://pubmed.ncbi.nlm.nih.gov/22265366/) |
 | ari | Affective Reactivity Index | [Stringaris et al. (2012)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3484687/) |
@@ -13,8 +14,10 @@ Below is a list of instruments contained in this repository.
 | bfne | Brief Fear of Negative Evaluation-II | [Carleton et al. (2007)](https://psycnet.apa.org/record/2007-01810-010) |
 | bmis | Brief Mood Introspection Scale | [Mayer and Gaschke (1998)](https://pubmed.ncbi.nlm.nih.gov/3418484) |
 | briefA | Behavior Rating Inventory of Executive Function Adult | [Roth et al. (2005)](https://www.parinc.com/Products/Pkey/25) |
+| cdi2 | Child Dpression Inventory II | [Kovacs (2014)](https://pubmed.ncbi.nlm.nih.gov/23355496/) |) |
 | chexi | Childhood Executive Functioning Inventory | [Catale et al. (2013)](https://pubmed.ncbi.nlm.nih.gov/23355496/) |
 | covid | COVID Impacts Questionnaire | [Conway et al. (2020)](https://doi.org/10.31234/osf.io/z2x9a) |
+| csisb | Classification of Suicidal Ideation and Suicidal Behavior | [Hamilton et al. (2011)](https://pubmed.ncbi.nlm.nih.gov/21749974/) |
 | demo | Demographics | NDCLab |
 | eds | Everyday Discrimination Scale | [Williams et al. (1997)](https://pubmed.ncbi.nlm.nih.gov/22013026/) |
 | eis | Ethnic Identity Scale | [Douglass and Umaña-Taylor (2015)](https://psycnet.apa.org/record/2015-06974-003) |
@@ -24,8 +27,8 @@ Below is a list of instruments contained in this repository.
 | hvs | Heightened Vigilance Scale | [Williams et al. (1997)](https://pubmed.ncbi.nlm.nih.gov/22013026/) |
 | idea | Inventory of the Dimensions of Emerging Adulthood | [Reifman et al. (2007)](https://jyd.pitt.edu/ojs/jyd/article/view/359) |
 | ierq | Interpersonal Emotion Regulation Questionnaire | [Hofmann et al. (2016)](https://link.springer.com/article/10.1007/s10608-016-9756-2) |
+| info-health | Information and Health Form | NDCLab |
 | initState | Pre-Task Questionnaires | NDCLab |
-| iri | Interpersonal Reactivity Index | [Davis (1980)](https://www.researchgate.net/publication/34891073_A_Multidimensional_Approach_to_Individual_Differences_in_Empathy) |
 | ius | Intolerance of Uncertainty Scale | [Carleton et al. (2007)](https://pubmed.ncbi.nlm.nih.gov/16647833/) |
 | lsas | Liebowitz Social Anxiety Scale | [Masia-Warner et al. (2003)](https://pubmed.ncbi.nlm.nih.gov/12960707/) |
 | masi | Multidimensional Acculturative Stress Inventory | [Rodriguez et al. (2002)](https://pubmed.ncbi.nlm.nih.gov/12501570/), [Castillo et al. (2015)](https://pubmed.ncbi.nlm.nih.gov/25730163/) |
@@ -38,10 +41,12 @@ Below is a list of instruments contained in this repository.
 | psqi | Pittsburgh Sleep Quality Index | full: [Buysse et al. (1989)](https://pubmed.ncbi.nlm.nih.gov/2748771/); short: [Sancho-Domingo et al. (2021)](https://pubmed.ncbi.nlm.nih.gov/33119375/) |
 | pttfq | Post-Task Thoughts and Feelings Questionnaire | NDCLab |
 | rmbi | Retrospective Measure of Behavioral Inhibition | [Gladstone and Parker (2005)](https://pubmed.ncbi.nlm.nih.gov/15922458/) |
+| rpeq | Revised Peer Experiences Questionnaires | [Prinstein et al. (2001)](https://pubmed.ncbi.nlm.nih.gov/11708236/) |
 | rtq | Repetitive Thinking Questionnaire | [McEvoy et al. (2010)](https://pubmed.ncbi.nlm.nih.gov/20409676/) |
 | rvq | Relational Victimization Questionnaire | [Dempsey and Storch (2008)](https://psycnet.apa.org/record/2008-03763-004) |
 | sas2 | Sport Anxiety Scale-2 | [Smith et al. (2006)](https://psycnet.apa.org/record/2006-22413-004) |
 | scaared | Screen for Adult Anxiety Related Disorders | [Angulo et al. (2017)](https://pubmed.ncbi.nlm.nih.gov/28359032/) |
+| scared | Screen for Child Anxiety Related Disorders | [Birmaher et al. (1999)](https://pubmed.ncbi.nlm.nih.gov/10517055/) |
 | sias6 | Social Interaction Anxiety Scale | [Peters et al. (2012)](https://pubmed.ncbi.nlm.nih.gov/21744971/) |
 | sics | Social Interaction and Communication Skills Checklist | (unconfirmed) |
 | spai | Social Phobia and Anxiety Inventory | [Beidel et al. (1995)](https://psycnet.apa.org/record/1995-27642-001) |

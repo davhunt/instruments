@@ -1,17 +1,28 @@
 ## LSAS (Liebowitz Social Anxiety Scale)
 
-This repo contains two versions of the LSAS:
-- child/adolescent self-report
-- parent version (in English and Spanish for Latin America (_ES))
-
-For each version, the repo includes a .pdf or .docx file, as well as the REDCap import .zip and survey PDF.
-
-Both versions are built into a single data dictionary, as they are often presented concurrently to an adolescent participant and their parent/guardian.
+### Versions
+The LSAS questionnaires are currently on the original release.
+| Audience | Language |
+| :--  | :--  |
+| child self report | English  |
+| parent report | English; Spanish US/LatAM |
 
 
 ### Scoring Script
-Both versions of the LSAS are included in the repository scoring script. The English and Spanish versions of the parent form are scored identically.  Threshold for scoring is 100%.
+The child self report and parental reports of the LSAS are included in the repository scoring script. Threshold for scoring is 100%.
+
+
+### Translations
+The Spanish US/LatAm version of the parental report was translated by members of the [FIU CAPP program](https://capp.fiu.edu/).
 
 
 ### References
-> Masia-Warner, C., Storch, E. A., Pincus, D. B., Klein, R. G., Heimberg, R. G., & Liebowitz, M. R. (2003). The Liebowitz social anxiety scale for children and adolescents: an initial psychometric investigation. Journal of the American Academy of Child and Adolescent Psychiatry, 42(9), 1076–1084. [[link]](https://pubmed.ncbi.nlm.nih.gov/12960707/)
+> Masia-Warner, C., Storch, E. A., Pincus, D. B., Klein, R. G., Heimberg, R. G., & Liebowitz, M. R. (2003). The Liebowitz social anxiety scale for children and adolescents: an initial psychometric investigation. Journal of the American Academy of Child and Adolescent Psychiatry, 42(9), 1076-1084. [[link]](https://pubmed.ncbi.nlm.nih.gov/12960707/)
+
+For the scoring mechanism:
+> Schmits, E., Heeren, A., & Quertemont, E. (2014). The self-report version of the LSAS-CA: Psychometric properties of the French version in a non-clinical adolescent sample. Psychologica Belgica, 54(2), 181-198. [[link]](https://psycnet.apa.org/record/2014-21432-001)
+
+
+
+
+

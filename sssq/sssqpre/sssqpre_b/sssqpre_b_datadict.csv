@@ -1,0 +1,31 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+sssqpre_b_i1,"SSSQPRE (version b), question 1: currently feeling",Dissatisfied,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpre_b_i2,"SSSQPRE (version b), question 2: currently feeling",Alert,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpre_b_i3,"SSSQPRE (version b), question 3: currently feeling",Depressed,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpre_b_i4,"SSSQPRE (version b), question 4: currently feeling",Sad,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpre_b_i5,"SSSQPRE (version b), question 5: currently feeling",Active,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpre_b_i6,"SSSQPRE (version b), question 6: currently feeling",Impatient,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpre_b_i7,"SSSQPRE (version b), question 7: currently feeling",Annoyed,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpre_b_i8,"SSSQPRE (version b), question 8: currently feeling",Angry,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpre_b_i9,"SSSQPRE (version b), question 9: currently feeling",Irritated,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpre_b_i10,"SSSQPRE (version b), question 10: currently feeling",Grouchy,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpre_b_i11,"SSSQPRE (version b), question 11: recent thoughts",I am committed to attaining my performance goals.,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpre_b_i12,"SSSQPRE (version b), question 12: recent thoughts",I want to succeed on the task.,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpre_b_i13,"SSSQPRE (version b), question 13: recent thoughts",I am motivated to do the task.,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpre_b_i14,"SSSQPRE (version b), question 14: recent thoughts",I am trying to figure myself out.,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpre_b_i15,"SSSQPRE (version b), question 15: recent thoughts",I am reflecting about myself.,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpre_b_i16,"SSSQPRE (version b), question 16: recent thoughts",I am daydreaming about myself.,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpre_b_i17,"SSSQPRE (version b), question 17: recent thoughts",I feel confident about my abilities.,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpre_b_i18,"SSSQPRE (version b), question 18: recent thoughts",I feel self-conscious.,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpre_b_i19,"SSSQPRE (version b), question 19: recent thoughts",I am worried about what other people think of me.,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpre_b_i20,"SSSQPRE (version b), question 20: recent thoughts",I am concerned about the impression I was making.,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpre_b_i21,"SSSQPRE (version b), question 21: recent thoughts",I will perform proficiently on the task.,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpre_b_i22,"SSSQPRE (version b), question 22: recent thoughts","Generally, I feel in control of things.",s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpre_b_i23,"SSSQPRE (version b), question 23: recent thoughts",I thought about how others have done on the task.,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpre_b_i24,"SSSQPRE (version b), question 24: recent thoughts",I thought about how I would feel if I were told how I would perform.,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpre_b_scrdEng,SSSQPRE (version b) engagement subscore,"average of all sssqpre_b items 2, 5, 11, 12, 13, 17, 21, and 22 (NA if sssqpre_b_percEng < 0.8)",s1_r1_e1,Real,"[1,5]",NA,NA,1,NA,code-instruments
+sssqpre_b_scrdDis,SSSQPRE (version b) distress subscore,"average of all sssqpre_b items 1, 3, 4, 6, 7, 8, 9, and 10 (NA if sssqpre_b_percDis < 0.8)",s1_r1_e1,Real,"[1,5]",NA,NA,1,NA,code-instruments
+sssqpre_b_scrdWry,SSSQPRE (version b) worry subscore,"average of all sssqpre_b items 14, 15, 16, 18, 19, 20, 23, and 24 (NA if sssqpre_b_percWry < 0.8)",s1_r1_e1,Real,"[1,5]",NA,NA,1,NA,code-instruments
+sssqpre_b_percEng,SSSQPRE (version b) engagement percentage complete,percentage of response for sssqpre_b engagement items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
+sssqpre_b_percDis,SSSQPRE (version b) distress percentage complete,percentage of response for sssqpre_b distress items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
+sssqpre_b_percWry,SSSQPRE (version b) worry percentage complete,percentage of response for sssqpre_b worry items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments

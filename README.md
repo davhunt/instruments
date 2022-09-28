@@ -6,10 +6,12 @@ A home for all surveys, questionnaires, and inventories used by the NDCLab, with
 
 ## Background & Design
 Each instrument used by the lab exists in the repo as a folder, containing (as applicable):
-* the published instrument (in English and any other languages used for lab research)
+* the published instrument
 * a REDCap import .zip for the instrument
 * a PDF of the instrument exported from REDCap, showing survey title and header information
-* any translations completed by the NDCLab
+* any translations completed by the NDCLab or borrowed from elsewhere
+* a data dictionary, with details of all items and scores produced
+* an accompanying readme file with additional details
 
 Additionally, this repo holds the scoring script for all scorable instruments. For more information on development and planning, consult [CONTRIBUTING.md](https://github.com/NDCLab/instruments/blob/main/CONTRIBUTING.md).
 
