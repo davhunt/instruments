@@ -1,0 +1,24 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+sas_2_i1,"SAS2, question 1",It is hard to concentrate on the game,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not At All | 2, A Little Bit | 3, Pretty Much | 4, Very Much",NA,1,NA,direct-redcap
+sas_2_i2,"SAS2, question 2",My body feels tense,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not At All | 2, A Little Bit | 3, Pretty Much | 4, Very Much",NA,1,NA,direct-redcap
+sas_2_i3,"SAS2, question 3",I worry that I will not play well,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not At All | 2, A Little Bit | 3, Pretty Much | 4, Very Much",NA,1,NA,direct-redcap
+sas_2_i4,"SAS2, question 4",It is hard for me to focus on what I am supposed to do,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not At All | 2, A Little Bit | 3, Pretty Much | 4, Very Much",NA,1,NA,direct-redcap
+sas_2_i5,"SAS2, question 5",I worry that I will let others down,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not At All | 2, A Little Bit | 3, Pretty Much | 4, Very Much",NA,1,NA,direct-redcap
+sas_2_i6,"SAS2, question 6",I feel tense in my stomach,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not At All | 2, A Little Bit | 3, Pretty Much | 4, Very Much",NA,1,NA,direct-redcap
+sas_2_i7,"SAS2, question 7",I lose focus on the game,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not At All | 2, A Little Bit | 3, Pretty Much | 4, Very Much",NA,1,NA,direct-redcap
+sas_2_i8,"SAS2, question 8",I worry that I will not play my best,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not At All | 2, A Little Bit | 3, Pretty Much | 4, Very Much",NA,1,NA,direct-redcap
+sas_2_i9,"SAS2, question 9",I worry that I will play badly,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not At All | 2, A Little Bit | 3, Pretty Much | 4, Very Much",NA,1,NA,direct-redcap
+sas_2_i10,"SAS2, question 10",My muscles feel shaky,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not At All | 2, A Little Bit | 3, Pretty Much | 4, Very Much",NA,1,NA,direct-redcap
+sas_2_i11,"SAS2, question 11",I worry that I will mess up during the game,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not At All | 2, A Little Bit | 3, Pretty Much | 4, Very Much",NA,1,NA,direct-redcap
+sas_2_i12,"SAS2, question 12",My stomach feels upset,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not At All | 2, A Little Bit | 3, Pretty Much | 4, Very Much",NA,1,NA,direct-redcap
+sas_2_i13,"SAS2, question 13",I cannot think clearly during the game,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not At All | 2, A Little Bit | 3, Pretty Much | 4, Very Much",NA,1,NA,direct-redcap
+sas_2_i14,"SAS2, question 14",My muscles feel tight because I am nervous,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not At All | 2, A Little Bit | 3, Pretty Much | 4, Very Much",NA,1,NA,direct-redcap
+sas_2_i15,"SAS2, question 15",I have a hard time focusing on what my coach tells me to do,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not At All | 2, A Little Bit | 3, Pretty Much | 4, Very Much",NA,1,NA,direct-redcap
+sas2_scrdTotal,SAS2 total score,sum of all sas2 items (NA if sas2_percTotal < 1),s1_r1_e1,Integer,"[15,120]",NA,NA,1,NA,code-instruments
+sas2_scrdSom,SAS2 somatic anxiety subscore,"sum of sas2 items 2, 6, 10, 12, and 14 (NA if sas2_percSom < 1)",s1_r1_e1,Integer,"[5,20]",NA,NA,1,NA,code-instruments
+sas2_scrdWry,SAS2 worry subscore,"sum of sas2 items 3, 5, 8, 9, and 11 (NA if sas2_percWry < 1)",s1_r1_e1,Integer,"[5,20]",NA,NA,1,NA,code-instruments
+sas2_scrdDis,SAS2 concentration discruption subscore,"sum of sas2 items 1, 4, 7, 13, and 15 (NA if sas2_percDis < 1)",s1_r1_e1,Integer,"[5,20]",NA,NA,1,NA,code-instruments
+sas2_percTotal,SAS2 total percentage response,percentage of responses for all sas2 items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
+sas2_percSom,SAS2 somatic anxiety percentage response,percentage of responses for all sas2 somatic anxiety items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
+sas2_percWry,SAS2 worry percentage response,percentage of responses for all sas2 worry items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
+sas2_percDis,SAS2 concentration discruption percentage response,percentage of responses for all sas2 concentration disruption items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments

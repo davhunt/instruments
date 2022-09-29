@@ -1,0 +1,31 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+sssqpost_i1,"SSSQPOST, question 1: currently feeling",Dissatisfied,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpost_i2,"SSSQPOST, question 2: currently feeling",Alert,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpost_i3,"SSSQPOST, question 3: currently feeling",Depressed,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpost_i4,"SSSQPOST, question 4: currently feeling",Sad,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpost_i5,"SSSQPOST, question 5: currently feeling",Active,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpost_i6,"SSSQPOST, question 6: currently feeling",Impatient,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpost_i7,"SSSQPOST, question 7: currently feeling",Annoyed,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpost_i8,"SSSQPOST, question 8: currently feeling",Angry,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpost_i9,"SSSQPOST, question 9: currently feeling",Irritated,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpost_i10,"SSSQPOST, question 10: currently feeling",Grouchy,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpost_i11,"SSSQPOST, question 11: recent thoughts",I was committed to attaining my performance goals.,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpost_i12,"SSSQPOST, question 12: recent thoughts",I wanted to succeed on the task.,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpost_i13,"SSSQPOST, question 13: recent thoughts",I was motivated to do the task.,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpost_i14,"SSSQPOST, question 14: recent thoughts",I tried to figure myself out.,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpost_i15,"SSSQPOST, question 15: recent thoughts",I reflected about myself.,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpost_i16,"SSSQPOST, question 16: recent thoughts",I daydreamed about myself.,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpost_i17,"SSSQPOST, question 17: recent thoughts",I felt confident about my abilities.,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpost_i18,"SSSQPOST, question 18: recent thoughts",I felt self-conscious.,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpost_i19,"SSSQPOST, question 19: recent thoughts",I was worried about what other people would think of me.,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpost_i20,"SSSQPOST, question 20: recent thoughts",I was concerned about the impression I was making.,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpost_i21,"SSSQPOST, question 21: recent thoughts",I performed proficiently on the task.,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpost_i22,"SSSQPOST, question 22: recent thoughts","Generally, I felt in control of things.",s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpost_i23,"SSSQPOST, question 23: recent thoughts",I thought about how others have done on this task.,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpost_i24,"SSSQPOST, question 24: recent thoughts",I thought about how I would feel if I were told how I performed.,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5",NA,1,NA,direct-redcap
+sssqpost_scrdEng,SSSQPOST engagement subscore,"average of all sssqpost items 2, 5, 11, 12, 13, 17, 21, and 22 (NA if sssqpost_percEng < 0.8)",s1_r1_e1,Real,"[1,5]",NA,NA,1,NA,code-instruments
+sssqpost_scrdDis,SSSQPOST distress subscore,"average of all sssqpost items 1, 3, 4, 6, 7, 8, 9, and 10 (NA if sssqpost_percDis < 0.8)",s1_r1_e1,Real,"[1,5]",NA,NA,1,NA,code-instruments
+sssqpost_scrdWry,SSSQPOST worry subscore,"average of all sssqpost items 14, 15, 16, 18, 19, 20, 23, and 24 (NA if sssqpost_percWry < 0.8)",s1_r1_e1,Real,"[1,5]",NA,NA,1,NA,code-instruments
+sssqpost_percEng,SSSQPOST engagement percentage complete,percentage of response for sssqpost engagement items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
+sssqpost_percDis,SSSQPOST distress percentage complete,percentage of response for sssqpost distress items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
+sssqpost_percWry,SSSQPOST worry percentage complete,percentage of response for sssqpost worry items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
