@@ -3,13 +3,13 @@
 
 ### Versions
 ##### texi_b
-At the request of the original author, the word "sometimes" was removed from several items.  The NDCLab updated our own copy of the instrument as we were responsible for updating the Spanish translation. Details of which items were changed is available in the .csv file detailing the Spanish translations (in this subfolder).
+At the request of the original author, the word "sometimes" was removed from several items.  The NDCLab updated our own copy of the instrument as we were responsible for updating the Spanish translation. Details of which items were changed is available in the .csv file detailing the Spanish translations (in this subfolder); changes were performed by the original translation team.
 | Audience | Language |
 | :--  | :--  |
 | self report | English; Spanish US/LatAM; Spanish Spain  |
 | other report | English; Spanish US/LatAM; Spanish Spain |
 
-### texi(_a)
+##### texi(_a)
 This is the original version of the ADEXI used by the NDCLab, draw directly from the then-current version available from [the author](https://chexi.se/).  Prior to translation by members of the NDCLab, several clarifying modifications were made; these are recorded in the 'modifications' subfolder for English and were notified to the team at the Karolinska Institutet.  It includes the English, Spanish US/LatAM, and European Spanish self reports. This version of the TEXI is now deprecated.
 
 

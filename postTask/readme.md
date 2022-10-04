@@ -6,16 +6,16 @@ This repo contains modifiable (.docx) and PDF versions of generic post-task ques
 ###### Nonsocial Condition
 > You completed the arrow task twice. Please complete the survey below about the SECOND time that you completed the task.
 
-### postTaskA
+###### postTaskA
 Questions about the participant's experience, especially geared toward computer tasks with a focus on accuracy and speed.
 
-### postTaskB
+###### postTaskB
 Questions about the participant's experience, specific to the putt-putt-dataset golf-putting task.
 
-### postTaskC
+###### postTaskC
 Questions about the participant's experience, generic to any task.  This is a very short version.
 
-### postTaskD
+###### postTaskD
 Questions about the participant's experience, generic to any task.  This is a longer version.
 
 

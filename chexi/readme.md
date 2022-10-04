@@ -1,7 +1,7 @@
 ## CHEXI (Childhood Executive Function Inventory)
 
 ### Versions
-The CHEXI questionnaire is currently on the original release. The parent-and-teacher report is available in both English and Spanish US/LatAme.
+The CHEXI questionnaire is currently on the original release. The parent-and-teacher report is available in both English and Spanish US/LatAm.
 
 
 ### Scoring Script

@@ -1,10 +1,10 @@
 ## (B)PSQI ((Brief) Pittsburgh Sleep Quality Index)
 
 ### Versions
-#####Short Version
+##### Short Version
 Only the English self report is available.
 
-#####Full Version
+##### Full Version
 Only the English self report is available.
 
 
