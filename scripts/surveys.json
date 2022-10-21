@@ -164,6 +164,18 @@
             "score_type": "sum"
         }
     },
+    "bfnep": {
+        "total": {
+            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+            "score_type": "sum"
+        }
+    },
+    "bfnepes": {
+        "total": {
+            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+            "score_type": "sum"
+        }
+    },
     "bmis": {
         "Val": {
             "questions": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
@@ -306,6 +318,78 @@
         }
     },
     "edshvs": {
+        "EdsEver": {
+            "questions": [1, 2, 3, 4, 5],
+            "criteria": [1, 2, 3, 4, 5],
+            "score_type": "count"
+        },
+        "EdsFreq": {
+            "questions": [1, 2, 3, 4, 5],
+            "score_type": "sum"
+        },
+        "EdsChron": {
+            "questions": [1, 2, 3, 4, 5],
+            "score_type": "row.replace({0: 0, 1: 0.5, 2: 3, 3: 36, 4: 104, 5: 260}).sum()"
+        },
+        "HvsEver": {
+            "questions": [8, 9, 10, 11, 12, 13],
+            "criteria": [1, 2, 3, 4],
+            "score_type": "count"
+        },
+        "HvsFreq": {
+            "questions": [8, 9, 10, 11, 12, 13],
+            "score_type": "sum"
+        }
+    },
+    "edshvsc": {
+        "EdsEver": {
+            "questions": [1, 2, 3, 4, 5],
+            "criteria": [1, 2, 3, 4, 5],
+            "score_type": "count"
+        },
+        "EdsFreq": {
+            "questions": [1, 2, 3, 4, 5],
+            "score_type": "sum"
+        },
+        "EdsChron": {
+            "questions": [1, 2, 3, 4, 5],
+            "score_type": "row.replace({0: 0, 1: 0.5, 2: 3, 3: 36, 4: 104, 5: 260}).sum()"
+        },
+        "HvsEver": {
+            "questions": [8, 9, 10, 11, 12, 13],
+            "criteria": [1, 2, 3, 4],
+            "score_type": "count"
+        },
+        "HvsFreq": {
+            "questions": [8, 9, 10, 11, 12, 13],
+            "score_type": "sum"
+        }
+    },
+    "edshvsp": {
+        "EdsEver": {
+            "questions": [1, 2, 3, 4, 5],
+            "criteria": [1, 2, 3, 4, 5],
+            "score_type": "count"
+        },
+        "EdsFreq": {
+            "questions": [1, 2, 3, 4, 5],
+            "score_type": "sum"
+        },
+        "EdsChron": {
+            "questions": [1, 2, 3, 4, 5],
+            "score_type": "row.replace({0: 0, 1: 0.5, 2: 3, 3: 36, 4: 104, 5: 260}).sum()"
+        },
+        "HvsEver": {
+            "questions": [8, 9, 10, 11, 12, 13],
+            "criteria": [1, 2, 3, 4],
+            "score_type": "count"
+        },
+        "HvsFreq": {
+            "questions": [8, 9, 10, 11, 12, 13],
+            "score_type": "sum"
+        }
+    },
+    "edshvspes": {
         "EdsEver": {
             "questions": [1, 2, 3, 4, 5],
             "criteria": [1, 2, 3, 4, 5],
@@ -697,6 +781,72 @@
             "threshold": 0.6
         }
     },
+    "rpeq": {
+        "Ov": {
+            "questions": [1, 2, 3],
+            "score_type": "avg"
+            "threshold": 0.8
+        },
+        "Rel": {
+            "questions": [4, 5, 6],
+            "score_type": "avg"
+            "threshold": 0.8
+        },
+        "Rep": {
+            "questions": [7, 8, 9],
+            "score_type": "avg"
+            "threshold": 0.8
+        },
+        "Pro": {
+            "questions": [10, 11, 12, 13, 14],
+            "score_type": "avg"
+            "threshold": 0.8
+        }
+    },
+    "rpeqp": {
+        "Ov": {
+            "questions": [1, 2, 3],
+            "score_type": "avg"
+            "threshold": 0.8
+        },
+        "Rel": {
+            "questions": [4, 5, 6],
+            "score_type": "avg"
+            "threshold": 0.8
+        },
+        "Rep": {
+            "questions": [7, 8, 9],
+            "score_type": "avg"
+            "threshold": 0.8
+        },
+        "Pro": {
+            "questions": [10, 11, 12, 13, 14],
+            "score_type": "avg"
+            "threshold": 0.8
+        }
+    },
+    "rpeqpes": {
+        "Ov": {
+            "questions": [1, 2, 3],
+            "score_type": "avg"
+            "threshold": 0.8
+        },
+        "Rel": {
+            "questions": [4, 5, 6],
+            "score_type": "avg"
+            "threshold": 0.8
+        },
+        "Rep": {
+            "questions": [7, 8, 9],
+            "score_type": "avg"
+            "threshold": 0.8
+        },
+        "Pro": {
+            "questions": [10, 11, 12, 13, 14],
+            "score_type": "avg"
+            "threshold": 0.8
+        }
+    },
     "rvq": {
         "total": {
             "questions": [1, 2, 3, 4, 5, 6, 7],
@@ -908,9 +1058,13 @@
             "score_type": "avg",
             "threshold": 1.0
         },
-        "Total": {
+        "score17": {
             "questions": [1, 2, 3, 4, 5, 6, 7, 8, 49, 50],
-            "products": ["score1", "score2", "score3", "score4", "score5", "score6", "score7", "score8", "score9", "score10", "score11", "score12", "score13", "score14", "score15", "score16"],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "Total": {
+            "products": ["score1", "score2", "score3", "score4", "score5", "score6", "score7", "score8", "score9", "score10", "score11", "score12", "score13", "score14", "score15", "score16", "score17"],
             "hide": true,
             "score_type": "sum",
             "threshold": 1.0
@@ -997,9 +1151,13 @@
             "score_type": "avg",
             "threshold": 1.0
         },
-        "Total": {
+        "score17": {
             "questions": [1, 2, 3, 4, 5, 6, 7, 8, 49, 50],
-            "products": ["score1", "score2", "score3", "score4", "score5", "score6", "score7", "score8", "score9", "score10", "score11", "score12", "score13", "score14", "score15", "score16"],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "Total": {
+            "products": ["score1", "score2", "score3", "score4", "score5", "score6", "score7", "score8", "score9", "score10", "score11", "score12", "score13", "score14", "score15", "score16", "score17"],
             "hide": true,
             "score_type": "sum",
             "threshold": 1.0
@@ -1086,9 +1244,13 @@
             "score_type": "avg",
             "threshold": 1.0
         },
+        "score17": {
+            "questions": [, 2, 3, 4, 5, 6, 7, 8, 49, 50],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
         "Total": {
-            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 49, 50],
-            "products": ["score1", "score2", "score3", "score4", "score5", "score6", "score7", "score8", "score9", "score10", "score11", "score12", "score13", "score14", "score15", "score16"],
+            "products": ["score1", "score2", "score3", "score4", "score5", "score6", "score7", "score8", "score9", "score10", "score11", "score12", "score13", "score14", "score15", "score16", "score17"],
             "hide": true,
             "score_type": "sum",
             "threshold": 1.0

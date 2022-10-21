@@ -51,6 +51,10 @@ The following software iterations are planned for development. Each iteration is
 * Modification of perc calculations for instruments with products to provide transparent percentage across all questions (not across products)
 * Addition of flag to "hide" certain scores from the output (e.g., the interim products for AQ10).
 
+### 0.07
+* Addition of BFNEP(ES), CDI2(P)(ES), EDSHVS(C/P), EISB(P)(ES), LSAS(P)(ES), PDS(F/M), RPEQ(P)(ES), SCARED(P), SPAIC, SPAIP(ES)
+* Addition of remaining data dictionaries for all active-use questionnaires.
+
 ### 0.1
 
 * TBD
