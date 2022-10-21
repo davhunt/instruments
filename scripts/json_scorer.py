@@ -20,7 +20,7 @@ def score_tracker(output_data, scrd_columns, tracker):
     """
     tracker_df = pd.read_csv(tracker, index_col="id")
 
-    for index, row in file_df.iterrows():
+    for _, row in output_data.iterrows():
         id = row.name
         # check if id exists in tracker
         if id not in tracker_df.index:
@@ -28,14 +28,14 @@ def score_tracker(output_data, scrd_columns, tracker):
             continue
         for col in scrd_columns:
             try:
-                val = file_df.loc[id, key]
+                val = output_data.loc[id, col]
                 if val >= 10:
                     continue
-                tracker_df.loc[id, key] = 11 if val != "NA" else 19
+                tracker_df.loc[id, col] = "1" if val != "NA" else "0"
             except Exception as e_msg:
-                tracker_df.loc[id, key] = 0
+                tracker_df.loc[id, col] = 0
 
-    tracker_df.to_csv(data_tracker_file)
+    tracker_df.to_csv(tracker)
     print("Success: data tracker updated.")
 
 
