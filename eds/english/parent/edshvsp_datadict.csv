@@ -14,7 +14,7 @@ edshvsp_i10,"HVS (parent report), question 3",Feel that they always have to be v
 edshvsp_i11,"HVS (parent report), question 4",Carefully watch what they say and how they say it?,s1_r1_e1,Integer,"4, 3, 2, 1, 0","4, Very often | 3, Fairly often | 2, Not too often | 1, Hardly ever | 0, Never",NA,1,NA,direct-redcap
 edshvsp_i12,"HVS (parent report), question 5",Carefully observe what happens around them?,s1_r1_e1,Integer,"4, 3, 2, 1, 0","4, Very often | 3, Fairly often | 2, Not too often | 1, Hardly ever | 0, Never",NA,1,NA,direct-redcap
 edshvsp_i13,"HVS (parent report), question 6",Try to avoid certain social situations and places?,s1_r1_e1,Integer,"4, 3, 2, 1, 0","4, Very often | 3, Fairly often | 2, Not too often | 1, Hardly ever | 0, Never",NA,1,NA,direct-redcap
-edshvsp_scrdEdsEver,EDS (parent report) ever/never score,count of edshvs items 1-5 that are >0 (NA if edshvs_percEdsEver < 1),s1_r1_e1,Integer,"[0,5]",NA,NA,1,NA,code-instruments
+edshvsp_scrdEdsEver,EDS (parent report) ever/never score,count of edshvsp items 1-5 that are >0 (NA if edshvsp_percEdsEver < 1),s1_r1_e1,Integer,"[0,5]",NA,NA,1,NA,code-instruments
 edshvsp_scrdEdsFreq,EDS (parent report) frequency score,sum of edshvsp items 1-5 (NA if edshvsp_percEdsFreq < 1),s1_r1_e1,Integer,"[0,25]",NA,NA,1,NA,code-instruments
 edshvsp_scrdEdsChron,EDS (parent report) chronicity score,"sum of weighted responses to edshvsp items 1-5: 0≡0, 1≡0.5, 2≡3, 3≡36, 4≡104, 5≡260 (NA if edshvsp_scrdEdsChron < 1)",s1_r1_e1,Real,"[0,1300]",NA,NA,1,NA,code-instruments
 edshvsp_scrdHvsEver,HVS (parent report) ever/never score,count of edshvsp items 8-13 that are >0 (NA if edshvsp_percHvsEver < 1),s1_r1_e1,Integer,"[0,5]",NA,NA,1,NA,code-instruments
