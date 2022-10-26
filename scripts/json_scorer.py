@@ -29,8 +29,6 @@ def score_tracker(output_data, scrd_columns, tracker):
         for col in scrd_columns:
             try:
                 val = output_data.loc[id, col]
-                if val >= 10:
-                    continue
                 tracker_df.loc[id, col] = "1" if val != "NA" else "0"
             except Exception as e_msg:
                 tracker_df.loc[id, col] = 0
