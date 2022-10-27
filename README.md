@@ -54,6 +54,7 @@ The following software iterations are planned for development. Each iteration is
 ### 0.07
 * Addition of BFNEP(ES), CDI2(P)(ES), EDSHVS(C/P), EISB(P)(ES), LSAS(P)(ES), PDS(F/M), RPEQ(P)(ES), SCARED(P), SPAIC, SPAIP(ES)
 * Addition of remaining data dictionaries for all active-use questionnaires.
+* Modification of scoring script to look at "complete" column in raw data (as opposed to "timestamp").
 
 ### 0.1
 
