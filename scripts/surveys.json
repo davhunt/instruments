@@ -784,66 +784,66 @@
     "rpeq": {
         "Ov": {
             "questions": [1, 2, 3],
-            "score_type": "avg"
+            "score_type": "avg",
             "threshold": 0.8
         },
         "Rel": {
             "questions": [4, 5, 6],
-            "score_type": "avg"
+            "score_type": "avg",
             "threshold": 0.8
         },
         "Rep": {
             "questions": [7, 8, 9],
-            "score_type": "avg"
+            "score_type": "avg",
             "threshold": 0.8
         },
         "Pro": {
             "questions": [10, 11, 12, 13, 14],
-            "score_type": "avg"
+            "score_type": "avg",
             "threshold": 0.8
         }
     },
     "rpeqp": {
         "Ov": {
             "questions": [1, 2, 3],
-            "score_type": "avg"
+            "score_type": "avg",
             "threshold": 0.8
         },
         "Rel": {
             "questions": [4, 5, 6],
-            "score_type": "avg"
+            "score_type": "avg",
             "threshold": 0.8
         },
         "Rep": {
             "questions": [7, 8, 9],
-            "score_type": "avg"
+            "score_type": "avg",
             "threshold": 0.8
         },
         "Pro": {
             "questions": [10, 11, 12, 13, 14],
-            "score_type": "avg"
+            "score_type": "avg",
             "threshold": 0.8
         }
     },
     "rpeqpes": {
         "Ov": {
             "questions": [1, 2, 3],
-            "score_type": "avg"
+            "score_type": "avg",
             "threshold": 0.8
         },
         "Rel": {
             "questions": [4, 5, 6],
-            "score_type": "avg"
+            "score_type": "avg",
             "threshold": 0.8
         },
         "Rep": {
             "questions": [7, 8, 9],
-            "score_type": "avg"
+            "score_type": "avg",
             "threshold": 0.8
         },
         "Pro": {
             "questions": [10, 11, 12, 13, 14],
-            "score_type": "avg"
+            "score_type": "avg",
             "threshold": 0.8
         }
     },
@@ -1245,7 +1245,7 @@
             "threshold": 1.0
         },
         "score17": {
-            "questions": [, 2, 3, 4, 5, 6, 7, 8, 49, 50],
+            "questions": [2, 3, 4, 5, 6, 7, 8, 49, 50],
             "score_type": "sum",
             "threshold": 1.0
         },
