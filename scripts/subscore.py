@@ -254,7 +254,8 @@ class Subscore:
         # Filter data based on selected questions
         data = self._select_questions(data)
         data = self._reverse_score(data)
-        num_of_questions = len(self.questions)
+        # hot fix: default to 0 if None
+        num_of_questions = 0 if self.questions is None else len(self.questions)
         combined_data = data
 
         # Filter prev_products based on contents of products
