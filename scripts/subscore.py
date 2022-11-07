@@ -284,6 +284,7 @@ class Subscore:
 
             score.loc[index, self._perc_column(sre)] = perc
             # Calculate score and assign column if percentage complete is past threshold
+            score_row_set = row_set.drop(perc_row_set.keys())
             score.loc[index, self._scored_column(sre)] = self._score_type(
-                row_set.filter(regex=rf"{self.SCORED}")) if self._valid_thresh(perc) else np.NaN
+                score_row_set) if self._valid_thresh(perc) else np.NaN
         return score
