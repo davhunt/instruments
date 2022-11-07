@@ -260,7 +260,7 @@ class Subscore:
 
         # Filter prev_products based on contents of products
         for product in self.products:
-            product = product[0].capitalize() + product[1:]
+            product = product[0].capitalize() + product[1:] + self.DELIM
             combined_data = pd.concat([combined_data, prev_products.filter(regex=rf"{product}")], axis=1)
 
         unique_cols = []
