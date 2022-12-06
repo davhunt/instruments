@@ -9,3 +9,8 @@ Thumbs.db
 
 # Metadata
 __pycache__/
+
+# HPC
+*.out
+hpc/process.sub
+*.simg
