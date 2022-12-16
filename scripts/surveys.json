@@ -504,6 +504,27 @@
             "threshold": 0.8
         }
     },
+    "esi": {
+        "Total": {
+            "questions": null,
+            "score_type": "sum",
+            "threshold": 1.0
+        }
+    },
+    "esip": {
+        "Total": {
+            "questions": null,
+            "score_type": "sum",
+            "threshold": 1.0
+        }
+    },
+    "esipes": {
+        "Total": {
+            "questions": null,
+            "score_type": "sum",
+            "threshold": 1.0
+        }
+    },
     "hsps": {
         "total": {
             "questions": null,
@@ -779,6 +800,20 @@
             "questions": [1, 2, 3, 4, 5],
             "score_type": "avg",
             "threshold": 0.6
+        }
+    },
+    "pscei": {
+        "Total": {
+            "questions": null,
+            "score_type": "sum",
+            "threshold": 1.0
+        }
+    },
+    "psceies": {
+        "Total": {
+            "questions": null,
+            "score_type": "sum",
+            "threshold": 1.0
         }
     },
     "rpeq": {

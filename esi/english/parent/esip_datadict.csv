@@ -1,0 +1,12 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+esip_i1,"ESI (parent report), question 1","When my child makes a mistake, they feel upset.",s1_r1_e1,Integer,"1, 2, 3","1, not at all | 2, somewhat | 3, a lot",NA,1,NA,direct-redcap
+esip_i2,"ESI (parent report), question 2","When my child makes a mistake, their stomach feels sick.",s1_r1_e1,Integer,"1, 2, 3","1, not at all | 2, somewhat | 3, a lot",NA,1,NA,direct-redcap
+esip_i3,"ESI (parent report), question 3","When my child makes a mistake, they always want to fix it.",s1_r1_e1,Integer,"1, 2, 3","1, not at all | 2, somewhat | 3, a lot",NA,1,NA,direct-redcap
+esip_i4,"ESI (parent report), question 4","When someone notices that my child made a mistake, my child feels upset.",s1_r1_e1,Integer,"1, 2, 3","1, not at all | 2, somewhat | 3, a lot",NA,1,NA,direct-redcap
+esip_i5,"ESI (parent report), question 5",My child is afraid of making mistakes in front of other people.,s1_r1_e1,Integer,"1, 2, 3","1, not at all | 2, somewhat | 3, a lot",NA,1,NA,direct-redcap
+esip_i6,"ESI (parent report), question 6",My child likes to do things perfectly.,s1_r1_e1,Integer,"1, 2, 3","1, not at all | 2, somewhat | 3, a lot",NA,1,NA,direct-redcap
+esip_i7,"ESI (parent report), question 7",My child feels upset when other people do not like what they have done.,s1_r1_e1,Integer,"1, 2, 3","1, not at all | 2, somewhat | 3, a lot",NA,1,NA,direct-redcap
+esip_i8,"ESI (parent report), question 8","When my child makes a mistake, they feel anxious.",s1_r1_e1,Integer,"1, 2, 3","1, not at all | 2, somewhat | 3, a lot",NA,1,NA,direct-redcap
+esip_i9,"ESI (parent report), question 9","When my child makes a mistake, they start sweating or blushing.",s1_r1_e1,Integer,"1, 2, 3","1, not at all | 2, somewhat | 3, a lot",NA,1,NA,direct-redcap
+esip_scrdTotal,ESI (parent report) total score,sum of all esip items (NA if esip_percTotal < 1),s1_r1_e1,Integer,"[9,36]",NA,NA,1,NA,code-instruments
+esip_percTotal,ESI (parent report) percentage response,percentage of response for esip items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments

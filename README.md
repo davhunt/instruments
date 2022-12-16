@@ -52,7 +52,7 @@ The following software iterations are planned for development. Each iteration is
 * Addition of flag to "hide" certain scores from the output (e.g., the interim products for AQ10).
 
 ### 0.07
-* Addition of BFNEP(ES), CDI2(P)(ES), EDSHVS(C/P(ES)), EISB(P)(ES), LSASCA/P(ES), PDS(F/M), RPEQ(P)(ES), SCARED(P), SPAIC, SPAIP(ES)
+* Addition of BFNEP(ES), CDI2(P)(ES), EDSHVS(C/P(ES)), EISB(P)(ES), LSASCA/P(ES), PDS(F/M), RPEQ(P)(ES), SCARED(P), SPAIC, SPAIP(ES), ESI(P)(ES), PSCEI(ES)
 * Addition of remaining data dictionaries for all active-use questionnaires.
 * Modification of scoring script to look at "complete" column in raw data (as opposed to "timestamp").
 
