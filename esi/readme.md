@@ -1,7 +1,7 @@
 ## ESI (Error Sensitivity Index)
 
 ### Versions
-The ESI questionnaire is currently on the original release. 
+The ESI questionnaire is currently on the original release.
 | Audience | Language |
 | :--  | :--  |
 | self report | English  |
@@ -18,3 +18,5 @@ The translation of the ESI parent-report into Spanish for US/Latin America was p
 
 ### References
 > Chong, L. J., & Meyer, A. (2019). Understanding the Link between Anxiety and a Neural Marker of Anxiety (The Error-Related Negativity) in 5 to 7 Year-Old Children. Developmental neuropsychology, 44(1), 71–87. [[link]](https://pubmed.ncbi.nlm.nih.gov/30407088/)
+
+With the approval of one of the above-cited authors, the NDCLab updated the English parent report to use "they/their" in place of "he/she."
