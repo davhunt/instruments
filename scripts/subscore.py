@@ -233,6 +233,8 @@ class Subscore:
         # Filter based on selected questions
         data = self._select_questions(data)
         data = self._reverse_score(data)
+        if data.empty:
+            return data
         unique_cols = []
         unique_cols.append(self._perc_column(sre))
         unique_cols.append(self._scored_column(sre))
