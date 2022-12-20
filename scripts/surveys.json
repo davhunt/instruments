@@ -1058,13 +1058,9 @@
             "score_type": "avg",
             "threshold": 1.0
         },
-        "score17": {
-            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 49, 50],
-            "score_type": "sum",
-            "threshold": 1.0
-        },
         "Total": {
-            "products": ["score1", "score2", "score3", "score4", "score5", "score6", "score7", "score8", "score9", "score10", "score11", "score12", "score13", "score14", "score15", "score16", "score17"],
+            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 49, 50],
+            "products": ["score1", "score2", "score3", "score4", "score5", "score6", "score7", "score8", "score9", "score10", "score11", "score12", "score13", "score14", "score15", "score16"],
             "hide": true,
             "score_type": "sum",
             "threshold": 1.0
@@ -1151,13 +1147,9 @@
             "score_type": "avg",
             "threshold": 1.0
         },
-        "score17": {
-            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 49, 50],
-            "score_type": "sum",
-            "threshold": 1.0
-        },
         "Total": {
-            "products": ["score1", "score2", "score3", "score4", "score5", "score6", "score7", "score8", "score9", "score10", "score11", "score12", "score13", "score14", "score15", "score16", "score17"],
+            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 49, 50],
+            "products": ["score1", "score2", "score3", "score4", "score5", "score6", "score7", "score8", "score9", "score10", "score11", "score12", "score13", "score14", "score15", "score16"],
             "hide": true,
             "score_type": "sum",
             "threshold": 1.0
@@ -1244,13 +1236,9 @@
             "score_type": "avg",
             "threshold": 1.0
         },
-        "score17": {
-            "questions": [2, 3, 4, 5, 6, 7, 8, 49, 50],
-            "score_type": "sum",
-            "threshold": 1.0
-        },
         "Total": {
-            "products": ["score1", "score2", "score3", "score4", "score5", "score6", "score7", "score8", "score9", "score10", "score11", "score12", "score13", "score14", "score15", "score16", "score17"],
+            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 49, 50],
+            "products": ["score1", "score2", "score3", "score4", "score5", "score6", "score7", "score8", "score9", "score10", "score11", "score12", "score13", "score14", "score15", "score16"],
             "hide": true,
             "score_type": "sum",
             "threshold": 1.0
