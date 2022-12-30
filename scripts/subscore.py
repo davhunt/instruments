@@ -200,7 +200,7 @@ class Subscore:
 
     def perc_complete(self, row):
         # Get total questions: all questions if no selection, else length of selection
-        total_quest = row.shape[0]
+        total_quest = len(self.questions)
         # Get total answered questions
         answered = row.count()
 
