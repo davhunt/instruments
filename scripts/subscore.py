@@ -265,6 +265,9 @@ class Subscore:
             product = product[0].capitalize() + product[1:] + self.DELIM
             combined_data = pd.concat([combined_data, prev_products.filter(regex=rf"{product}")], axis=1)
 
+        if combined_data.empty:
+            return combined_data
+        
         unique_cols = []
         unique_cols.append(self._perc_column(sre))
         unique_cols.append(self._scored_column(sre))
