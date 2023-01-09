@@ -200,7 +200,7 @@ class Subscore:
 
     def perc_complete(self, row):
         # Get total questions: all questions if no selection, else length of selection
-        total_quest = row.shape[0]
+        total_quest = len(self.questions)
         # Get total answered questions
         answered = row.count()
 
@@ -233,6 +233,8 @@ class Subscore:
         # Filter based on selected questions
         data = self._select_questions(data)
         data = self._reverse_score(data)
+        if data.empty:
+            return data
         unique_cols = []
         unique_cols.append(self._perc_column(sre))
         unique_cols.append(self._scored_column(sre))
@@ -263,6 +265,9 @@ class Subscore:
             product = product[0].capitalize() + product[1:] + self.DELIM
             combined_data = pd.concat([combined_data, prev_products.filter(regex=rf"{product}")], axis=1)
 
+        if combined_data.empty:
+            return combined_data
+        
         unique_cols = []
         unique_cols.append(self._perc_column(sre))
         unique_cols.append(self._scored_column(sre))

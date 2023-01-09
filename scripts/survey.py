@@ -170,7 +170,7 @@ class Survey:
                             single_score = sub_obj.gen_data(ver_surv, sre, ver_surv_data.filter(regex=rf"{sre}$"))
                             ver_scores = pd.concat([ver_scores, single_score], axis=1)
                         else:
-                            single_score = sub_obj.gen_data_for_products(ver_surv, sre, ver_surv_data.filter(regex=rf"{sre}$"), ver_scores)
+                            single_score = sub_obj.gen_data_for_products(ver_surv, sre, ver_surv_data.filter(regex=rf"{sre}$"), ver_scores.filter(regex=rf"{sre}$"))
                             if sub_obj.hide != None:
                                 if sub_obj.hide == True:
                                     for product in sub_obj.products:
