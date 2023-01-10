@@ -24,6 +24,7 @@ Below is a list of instruments contained in this repository.
 | eisb | Ethnic Identity Scale-Brief | [Douglass and Umaña-Taylor (2015)](https://psycnet.apa.org/record/2015-06974-003) |
 | epepq15 | Extended Post-Event Processing Questionnaire, 15-Item | [Wong (2015)](https://pubmed.ncbi.nlm.nih.gov/24841332/) |
 | erq | Emotion Regulation Questionnaire | [Gross and John (2003)](https://pubmed.ncbi.nlm.nih.gov/12916575/) |
+| esi | Error Sensitivity Index | [Chong and Meyer (2019)](https://pubmed.ncbi.nlm.nih.gov/30407088/) |
 | hsps | Highly Sensitive Person Scale | Aron (1996) |
 | hvs | Heightened Vigilance Scale | [Williams et al. (1997)](https://pubmed.ncbi.nlm.nih.gov/22013026/) |
 | idea | Inventory of the Dimensions of Emerging Adulthood | [Reifman et al. (2007)](https://jyd.pitt.edu/ojs/jyd/article/view/359) |
@@ -39,6 +40,7 @@ Below is a list of instruments contained in this repository.
 | pints | Persistent and Intrusive Negative Thoughts Scale | [Magson et al. (2019)](https://psycnet.apa.org/fulltext/2019-41000-001) |
 | postTask | Post-Task Questionnaires | NDCLab |
 | ppie | Pre- and Post-Interaction Evaluation | NDCLab |
+| pscei | Parent Sensitivity to Child Error Index | [Chong and Meyer (2019)](https://pubmed.ncbi.nlm.nih.gov/30407088/) |
 | psqi | Pittsburgh Sleep Quality Index | full: [Buysse et al. (1989)](https://pubmed.ncbi.nlm.nih.gov/2748771/); short: [Sancho-Domingo et al. (2021)](https://pubmed.ncbi.nlm.nih.gov/33119375/) |
 | pttfq | Post-Task Thoughts and Feelings Questionnaire | NDCLab |
 | rmbi | Retrospective Measure of Behavioral Inhibition | [Gladstone and Parker (2005)](https://pubmed.ncbi.nlm.nih.gov/15922458/) |

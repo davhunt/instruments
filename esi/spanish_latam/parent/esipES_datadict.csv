@@ -1,0 +1,12 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+esipes_i1,"ESI (parent report, Spanish), question 1","Cuando mi niño/a comete un error, él/ella se siente disgustado/a.",s1_r1_e1,Integer,"1, 2, 3","1, Para nada | 2, Un poco | 3, Mucho",NA,1,NA,direct-redcap
+esipes_i2,"ESI (parent report, Spanish), question 2","Cuando mi niño/a comete un error, él/ella se siente mal del estómago.",s1_r1_e1,Integer,"1, 2, 3","1, Para nada | 2, Un poco | 3, Mucho",NA,1,NA,direct-redcap
+esipes_i3,"ESI (parent report, Spanish), question 3","Cuando mi niño/a comete un error, él/ella siempre quiere arreglarlo.",s1_r1_e1,Integer,"1, 2, 3","1, Para nada | 2, Un poco | 3, Mucho",NA,1,NA,direct-redcap
+esipes_i4,"ESI (parent report, Spanish), question 4","Cuando alguien nota que mi niño/a cometió un error, mi niño/a se siente disgustado/a.",s1_r1_e1,Integer,"1, 2, 3","1, Para nada | 2, Un poco | 3, Mucho",NA,1,NA,direct-redcap
+esipes_i5,"ESI (parent report, Spanish), question 5",Mi niño/a tiene miedo a cometer errores frente a otras personas.,s1_r1_e1,Integer,"1, 2, 3","1, Para nada | 2, Un poco | 3, Mucho",NA,1,NA,direct-redcap
+esipes_i6,"ESI (parent report, Spanish), question 6",A mi niño/a le gusta hacer las cosas perfectamente.,s1_r1_e1,Integer,"1, 2, 3","1, Para nada | 2, Un poco | 3, Mucho",NA,1,NA,direct-redcap
+esipes_i7,"ESI (parent report, Spanish), question 7",Mi niño/a se siente disgustado/a cuando a otras personas no les gusta lo que él/ella hizo.,s1_r1_e1,Integer,"1, 2, 3","1, Para nada | 2, Un poco | 3, Mucho",NA,1,NA,direct-redcap
+esipes_i8,"ESI (parent report, Spanish), question 8","Cuando mi niño/a comete un error, se siente ansioso/a.",s1_r1_e1,Integer,"1, 2, 3","1, Para nada | 2, Un poco | 3, Mucho",NA,1,NA,direct-redcap
+esipes_i9,"ESI (parent report, Spanish), question 9","Cuando mi niño/a comete un error, comienza a sudar o sonrrojarse.",s1_r1_e1,Integer,"1, 2, 3","1, Para nada | 2, Un poco | 3, Mucho",NA,1,NA,direct-redcap
+esipes_scrdTotal,"ESI (parent report, Spanish) total score",sum of all esipes items (NA if esipes_percTotal < 1),s1_r1_e1,Integer,"[9,36]",NA,NA,1,NA,code-instruments
+esipes_percTotal,"ESI (parent report, Spanish) percentage response",percentage of response for esipes items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
