@@ -52,9 +52,12 @@ The following software iterations are planned for development. Each iteration is
 * Addition of flag to "hide" certain scores from the output (e.g., the interim products for AQ10).
 
 ### 0.07
-* Addition of BFNEP(ES), CDI2(P)(ES), EDSHVS(C/P(ES)), EISB(P)(ES), LSASCA/P(ES), PDS(F/M), RPEQ(P)(ES), SCARED(P), SPAIC, SPAIP(ES), ESI(P)(ES), PSCEI(ES)
+* Addition of BFNEP(ES), CDI2(P)(ES), EDSHVS(C/P(ES)), EISB(P)(ES), LSASCA/P(ES), PDS(F/M), RPEQ(P)(ES), SCARED(P), SPAI(C/P(ES)), ESI(P)(ES), PSCEI(ES)
 * Addition of remaining data dictionaries for all active-use questionnaires.
 * Modification of scoring script to look at "complete" column in raw data (as opposed to "timestamp").
+* Bugfix to ensure correct scoring when subscore includes both direct question responses and products.
+* Feature to allow a user to leave out questions from input data (e.g. half of a 2-in-1 questionnaires) and still output the subscores that are possible with the questions included.
+* Bugfix to ensure correct percentage response, based on the number of questions in surveys.json and handled for each sre.
 
 ### 0.1
 
@@ -81,8 +84,8 @@ This `main` branch contains completed releases for this project. For all work-in
 ## Contributors to the Scoring Script
 | Name | Role |
 | ---  | ---  |
-| Farukh Saidmuratov, Brandon Lopez, Osmany Pujol | collaborated on original script |
-| Jess Alexander, Ana Lopez-Nuñez  | testing and organization of initial releases |
+| Farukh Saidmuratov, Brandon Lopez, Osmany Pujol | code development |
+| Jess Alexander, Ana Lopez-Nuñez  | testing and organization |
 | George A. Buzzell  | guidance and resources |
 
 Learn more about us [here](https://www.ndclab.com/people).
