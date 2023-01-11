@@ -1,6 +1,7 @@
 ## PPIE (Pre- and Post-Interaction Evaluation)
 
-This repo contains modifiable (.docx) and PDF versions of pre- and post-interaction questionnaires used by the NDCLab, along with the associated REDCap import .zip and survey PDF files.
+These are self-report questionnaires, designed by the NDCLab, relating to thoughts and feelings before and after a social interaction. They are currently only available in English.
+
 
 ### Scoring Script
 The pre- and post-interaction questionnaires are **not** included in the repository scoring script.

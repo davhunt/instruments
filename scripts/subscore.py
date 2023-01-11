@@ -200,7 +200,7 @@ class Subscore:
 
     def perc_complete(self, row):
         # Get total questions: all questions if no selection, else length of selection
-        total_quest = row.shape[0]
+        total_quest = len(self.questions)
         # Get total answered questions
         answered = row.count()
 
@@ -233,6 +233,8 @@ class Subscore:
         # Filter based on selected questions
         data = self._select_questions(data)
         data = self._reverse_score(data)
+        if data.empty:
+            return data
         unique_cols = []
         unique_cols.append(self._perc_column(sre))
         unique_cols.append(self._scored_column(sre))
@@ -254,14 +256,18 @@ class Subscore:
         # Filter data based on selected questions
         data = self._select_questions(data)
         data = self._reverse_score(data)
-        num_of_questions = len(self.questions)
+        # hot fix: default to 0 if None
+        num_of_questions = 0 if self.questions is None else len(self.questions)
         combined_data = data
 
         # Filter prev_products based on contents of products
         for product in self.products:
-            product = product[0].capitalize() + product[1:]
+            product = product[0].capitalize() + product[1:] + self.DELIM
             combined_data = pd.concat([combined_data, prev_products.filter(regex=rf"{product}")], axis=1)
 
+        if combined_data.empty:
+            return combined_data
+        
         unique_cols = []
         unique_cols.append(self._perc_column(sre))
         unique_cols.append(self._scored_column(sre))
@@ -275,7 +281,7 @@ class Subscore:
             # Calculate percentage complete of row and assign to column
             perc = 0
             if num_of_questions != 0:
-                perc_for_questions = self.perc_complete(perc_row_set[:num_of_questions])
+                perc_for_questions = self.perc_complete(row_set[:num_of_questions])
                 perc_for_products = self.perc_complete_for_products(perc_row_set[num_of_questions:])
                 perc = self.perc_for_Q_and_P(perc_for_questions, perc_for_products)
             else:
@@ -283,6 +289,7 @@ class Subscore:
 
             score.loc[index, self._perc_column(sre)] = perc
             # Calculate score and assign column if percentage complete is past threshold
+            score_row_set = row_set.drop(perc_row_set.keys())
             score.loc[index, self._scored_column(sre)] = self._score_type(
-                row_set.filter(regex=rf"{self.SCORED}")) if self._valid_thresh(perc) else np.NaN
+                score_row_set) if self._valid_thresh(perc) else np.NaN
         return score

@@ -1,11 +1,13 @@
 ## initState (Initial State (Pre-Task) Questionnaire)
 
-This repo contains modifiable (.docx) and PDF versions of generic pre-task questionnaires used by the NDCLab, along with the associated REDCap import .zip and survey PDF.
+These are generic pre-task, self-report questionnaires used by the NDCLab. They are currently only available in English.
 
-### initStateA
+
+### Versions
+##### initStateA
 Five questions relating to the participant's current levels of sleep, sickness, caffeine, and hunger.
 
-### initStateB
+##### initStateB
 Contains all the questions of initStateA, plus several questions about current levels of anxiety and a prediction of how many errors the participant expects to make during the task.
 
 

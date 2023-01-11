@@ -6,10 +6,12 @@ A home for all surveys, questionnaires, and inventories used by the NDCLab, with
 
 ## Background & Design
 Each instrument used by the lab exists in the repo as a folder, containing (as applicable):
-* the published instrument (in English and any other languages used for lab research)
+* the published instrument
 * a REDCap import .zip for the instrument
 * a PDF of the instrument exported from REDCap, showing survey title and header information
-* any translations completed by the NDCLab
+* any translations completed by the NDCLab or borrowed from elsewhere
+* a data dictionary, with details of all items and scores produced
+* an accompanying readme file with additional details
 
 Additionally, this repo holds the scoring script for all scorable instruments. For more information on development and planning, consult [CONTRIBUTING.md](https://github.com/NDCLab/instruments/blob/main/CONTRIBUTING.md).
 
@@ -49,6 +51,14 @@ The following software iterations are planned for development. Each iteration is
 * Modification of perc calculations for instruments with products to provide transparent percentage across all questions (not across products)
 * Addition of flag to "hide" certain scores from the output (e.g., the interim products for AQ10).
 
+### 0.07
+* Addition of BFNEP(ES), CDI2(P)(ES), EDSHVS(C/P(ES)), EISB(P)(ES), LSASCA/P(ES), PDS(F/M), RPEQ(P)(ES), SCARED(P), SPAI(C/P(ES)), ESI(P)(ES), PSCEI(ES)
+* Addition of remaining data dictionaries for all active-use questionnaires.
+* Modification of scoring script to look at "complete" column in raw data (as opposed to "timestamp").
+* Bugfix to ensure correct scoring when subscore includes both direct question responses and products.
+* Feature to allow a user to leave out questions from input data (e.g. half of a 2-in-1 questionnaires) and still output the subscores that are possible with the questions included.
+* Bugfix to ensure correct percentage response, based on the number of questions in surveys.json and handled for each sre.
+
 ### 0.1
 
 * TBD
@@ -74,8 +84,8 @@ This `main` branch contains completed releases for this project. For all work-in
 ## Contributors to the Scoring Script
 | Name | Role |
 | ---  | ---  |
-| Farukh Saidmuratov, Brandon Lopez, Osmany Pujol | collaborated on original script |
-| Jess Alexander, Ana Lopez-Nuñez  | testing and organization of initial releases |
+| Farukh Saidmuratov, Brandon Lopez, Osmany Pujol | code development |
+| Jess Alexander, Ana Lopez-Nuñez  | testing and organization |
 | George A. Buzzell  | guidance and resources |
 
 Learn more about us [here](https://www.ndclab.com/people).

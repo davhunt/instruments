@@ -72,14 +72,16 @@ class Survey:
     def _filter(self):
         if len(self.subscores) == 0:
             raise TypeError("Subscores for %s is empty. Skipping."%(self.name))
+            
         # keep only survey data containing survey name
         self.data = self.data.filter(regex=rf"^{self.name}")
+
         # quit processing if survey data is not available 
         if(self.data.empty):
             raise RuntimeError("Data does not contain %s survey data. Skipping."%(self.name))
 
         # Drop rows with incomplete values in timestamp (indicating no data)
-        timestamp_col = self.data.filter(regex=rf"_{Subscore.TIME_LABEL}").columns
+        timestamp_col = self.data.filter(regex=rf"_{Subscore.COMP_LABEL}").columns
         self.data.dropna(subset=timestamp_col, how='all', inplace=True)
         if(self.data.empty):
             raise RuntimeError("Survey %s does not contain any values. Skipping."%(self.name))
@@ -90,7 +92,7 @@ class Survey:
         ver_reg = rf"{self.name}_[a-z]*_"
 
         # get timestamp column of all versions
-        timestamp_col = self.data.filter(regex=rf"_{Subscore.TIME_LABEL}").columns
+        timestamp_col = self.data.filter(regex=rf"_{Subscore.COMP_LABEL}").columns
         # extract potential versions using timestamp
         for ver in timestamp_col:
             surv_res = re.search(surv_reg, ver)
@@ -112,7 +114,7 @@ class Survey:
         # init regex
         sre_reg = rf"s[0-9]+_r[0-9]+_e[0-9]+"
         # get timestamp columns of the version feautured in data
-        timestamp_col = data.filter(regex=rf"_{Subscore.TIME_LABEL}").columns
+        timestamp_col = data.filter(regex=rf"_{Subscore.COMP_LABEL}").columns
         # init list of extracted unique sre that will be returned
         sre_list = []
         # extract unsorted sre_list using timestamp columns
@@ -168,7 +170,7 @@ class Survey:
                             single_score = sub_obj.gen_data(ver_surv, sre, ver_surv_data.filter(regex=rf"{sre}$"))
                             ver_scores = pd.concat([ver_scores, single_score], axis=1)
                         else:
-                            single_score = sub_obj.gen_data_for_products(ver_surv, sre, ver_surv_data.filter(regex=rf"{sre}$"), ver_scores)
+                            single_score = sub_obj.gen_data_for_products(ver_surv, sre, ver_surv_data.filter(regex=rf"{sre}$"), ver_scores.filter(regex=rf"{sre}$"))
                             if sub_obj.hide != None:
                                 if sub_obj.hide == True:
                                     for product in sub_obj.products:

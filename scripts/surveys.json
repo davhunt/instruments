@@ -164,6 +164,18 @@
             "score_type": "sum"
         }
     },
+    "bfnep": {
+        "total": {
+            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+            "score_type": "sum"
+        }
+    },
+    "bfnepes": {
+        "total": {
+            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+            "score_type": "sum"
+        }
+    },
     "bmis": {
         "Val": {
             "questions": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
@@ -208,6 +220,97 @@
             "products": ["Slp", "Sd", "Hse"]
         }
     },
+    "cdi2": {
+        "Total": {
+            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28],
+            "rev_questions": [2, 6, 7, 9, 10, 12, 14, 15, 17, 20, 23, 24, 26, 27],
+            "answers": [0, 1, 2],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "Mood": {
+          "questions": [1, 9, 10, 15, 16, 17, 18, 26, 27],
+          "rev_questions": [9, 10, 15, 17, 26, 27],
+          "answers": [0, 1, 2],
+          "score_type": "sum",
+          "threshold": 1.0
+        },
+        "Est": {
+            "questions": [2, 6, 7, 8, 13, 24],
+            "rev_questions": [2, 6, 7, 24],
+            "answers": [0, 1, 2],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "Emo": {
+            "questions": [1, 2, 6, 7, 8, 9, 10, 13, 15, 16, 17, 18, 24, 26, 27],
+            "rev_questions": [2, 6, 7, 9, 10, 15, 17, 24, 26, 27],
+            "answers": [0, 1, 2],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "Inef": {
+            "questions": [3, 4, 12, 14, 20, 22, 23, 28],
+            "rev_questions": [12, 14, 20, 23],
+            "answers": [0, 1, 2],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "Int": {
+            "questions": [5, 11, 19, 21, 25],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "Fun": {
+            "questions": [3, 4, 5, 11, 12, 14, 19, 20, 21, 22, 23, 25, 28],
+            "rev_questions": [12, 14, 20, 23],
+            "answers": [0, 1, 2],
+            "score_type": "sum",
+            "threshold": 1.0
+        }
+    },
+    "cdi2p": {
+        "Total": {
+            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17],
+            "rev_questions": [2, 7, 13, 14, 16],
+            "answers": [0, 1, 2, 3],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "Emo": {
+          "questions": [1, 3, 4, 5, 6, 8, 10, 11, 12],
+          "score_type": "sum",
+          "threshold": 1.0
+        },
+        "Fun": {
+            "questions": [2, 7, 9, 13, 14, 15, 16, 17],
+            "rev_questions": [2, 7, 13, 14, 16],
+            "answers": [0, 1, 2, 3],
+            "score_type": "sum",
+            "threshold": 1.0
+        }
+    },
+    "cdi2pes": {
+        "Total": {
+            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17],
+            "rev_questions": [2, 7, 13, 14, 16],
+            "answers": [0, 1, 2, 3],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "Emo": {
+          "questions": [1, 3, 4, 5, 6, 8, 10, 11, 12],
+          "score_type": "sum",
+          "threshold": 1.0
+        },
+        "Fun": {
+            "questions": [2, 7, 9, 13, 14, 15, 16, 17],
+            "rev_questions": [2, 7, 13, 14, 16],
+            "answers": [0, 1, 2, 3],
+            "score_type": "sum",
+            "threshold": 1.0
+        }
+    },
     "covid": {
         "total": {
             "questions": [1, 2, 3, 4, 5, 6],
@@ -236,6 +339,135 @@
         "HvsFreq": {
             "questions": [8, 9, 10, 11, 12, 13],
             "score_type": "sum"
+        }
+    },
+    "edshvsc": {
+        "EdsEver": {
+            "questions": [1, 2, 3, 4, 5],
+            "criteria": [1, 2, 3, 4, 5],
+            "score_type": "count"
+        },
+        "EdsFreq": {
+            "questions": [1, 2, 3, 4, 5],
+            "score_type": "sum"
+        },
+        "EdsChron": {
+            "questions": [1, 2, 3, 4, 5],
+            "score_type": "row.replace({0: 0, 1: 0.5, 2: 3, 3: 36, 4: 104, 5: 260}).sum()"
+        },
+        "HvsEver": {
+            "questions": [8, 9, 10, 11, 12, 13],
+            "criteria": [1, 2, 3, 4],
+            "score_type": "count"
+        },
+        "HvsFreq": {
+            "questions": [8, 9, 10, 11, 12, 13],
+            "score_type": "sum"
+        }
+    },
+    "edshvsp": {
+        "EdsEver": {
+            "questions": [1, 2, 3, 4, 5],
+            "criteria": [1, 2, 3, 4, 5],
+            "score_type": "count"
+        },
+        "EdsFreq": {
+            "questions": [1, 2, 3, 4, 5],
+            "score_type": "sum"
+        },
+        "EdsChron": {
+            "questions": [1, 2, 3, 4, 5],
+            "score_type": "row.replace({0: 0, 1: 0.5, 2: 3, 3: 36, 4: 104, 5: 260}).sum()"
+        },
+        "HvsEver": {
+            "questions": [8, 9, 10, 11, 12, 13],
+            "criteria": [1, 2, 3, 4],
+            "score_type": "count"
+        },
+        "HvsFreq": {
+            "questions": [8, 9, 10, 11, 12, 13],
+            "score_type": "sum"
+        }
+    },
+    "edshvspes": {
+        "EdsEver": {
+            "questions": [1, 2, 3, 4, 5],
+            "criteria": [1, 2, 3, 4, 5],
+            "score_type": "count"
+        },
+        "EdsFreq": {
+            "questions": [1, 2, 3, 4, 5],
+            "score_type": "sum"
+        },
+        "EdsChron": {
+            "questions": [1, 2, 3, 4, 5],
+            "score_type": "row.replace({0: 0, 1: 0.5, 2: 3, 3: 36, 4: 104, 5: 260}).sum()"
+        },
+        "HvsEver": {
+            "questions": [8, 9, 10, 11, 12, 13],
+            "criteria": [1, 2, 3, 4],
+            "score_type": "count"
+        },
+        "HvsFreq": {
+            "questions": [8, 9, 10, 11, 12, 13],
+            "score_type": "sum"
+        }
+    },
+    "eisb": {
+        "Ex": {
+            "questions": [2, 3, 7],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Re": {
+          "questions": [1, 6, 9],
+          "score_type": "avg",
+          "threshold": 0.8
+        },
+        "Af": {
+            "questions": [4, 5, 8],
+            "rev_questions": [4, 5, 8],
+            "answers": [1, 2, 3, 4],
+            "score_type": "avg",
+            "threshold": 0.8
+        }
+    },
+    "eisbp": {
+        "Ex": {
+            "questions": [2, 3, 7],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Re": {
+          "questions": [1, 6, 9],
+          "score_type": "avg",
+          "threshold": 0.8
+        },
+        "Af": {
+            "questions": [4, 5, 8],
+            "rev_questions": [4, 5, 8],
+            "answers": [1, 2, 3, 4],
+            "score_type": "avg",
+            "threshold": 0.8
+        }
+    },
+    "eisbpes": {
+        "Ex": {
+            "questions": [2, 3, 7],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Re": {
+          "questions": [1, 6, 9],
+          "score_type": "avg",
+          "threshold": 0.8
+        },
+        "Af": {
+            "questions": [4, 5, 8],
+            "rev_questions": [4, 5, 8],
+            "answers": [1, 2, 3, 4],
+            "score_type": "avg",
+            "threshold": 0.8
         }
     },
     "epepq15": {
@@ -270,6 +502,27 @@
             "questions": [2, 4, 6, 9],
             "score_type": "avg",
             "threshold": 0.8
+        }
+    },
+    "esi": {
+        "Total": {
+            "questions": null,
+            "score_type": "sum",
+            "threshold": 1.0
+        }
+    },
+    "esip": {
+        "Total": {
+            "questions": null,
+            "score_type": "sum",
+            "threshold": 1.0
+        }
+    },
+    "esipes": {
+        "Total": {
+            "questions": null,
+            "score_type": "sum",
+            "threshold": 1.0
         }
     },
     "hsps": {
@@ -365,6 +618,117 @@
             "threshold": 1.0
         }
     },
+    "lsasca": {
+        "Total": {
+            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "TotAnx": {
+          "questions": [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43, 45, 47],
+          "score_type": "sum",
+          "threshold": 1.0
+        },
+        "AnxInt": {
+          "questions": [1, 7, 11, 15, 17, 23, 33, 35, 37, 39, 43, 45],
+          "score_type": "sum",
+          "threshold": 1.0
+        },
+        "AnxPer": {
+          "questions": [3, 5, 9, 13, 19, 21, 25, 27, 29, 31, 41, 47],
+          "score_type": "sum",
+          "threshold": 1.0
+        },
+        "TotAvo": {
+          "questions": [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48],
+          "score_type": "sum",
+          "threshold": 1.0
+        },
+        "AvoInt": {
+          "questions": [2, 8, 12, 16, 18, 24, 34, 36, 38, 40, 44, 46],
+          "score_type": "sum",
+          "threshold": 1.0
+        },
+        "AvoPer": {
+          "questions": [4, 6, 10, 14, 20, 22, 26, 28, 30, 32, 42, 48],
+          "score_type": "sum",
+          "threshold": 1.0
+        }
+    },
+    "lsasp": {
+        "Total": {
+            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "TotAnx": {
+          "questions": [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43, 45, 47],
+          "score_type": "sum",
+          "threshold": 1.0
+        },
+        "AnxInt": {
+          "questions": [1, 7, 11, 15, 17, 23, 33, 35, 37, 39, 43, 45],
+          "score_type": "sum",
+          "threshold": 1.0
+        },
+        "AnxPer": {
+          "questions": [3, 5, 9, 13, 19, 21, 25, 27, 29, 31, 41, 47],
+          "score_type": "sum",
+          "threshold": 1.0
+        },
+        "TotAvo": {
+          "questions": [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48],
+          "score_type": "sum",
+          "threshold": 1.0
+        },
+        "AvoInt": {
+          "questions": [2, 8, 12, 16, 18, 24, 34, 36, 38, 40, 44, 46],
+          "score_type": "sum",
+          "threshold": 1.0
+        },
+        "AvoPer": {
+          "questions": [4, 6, 10, 14, 20, 22, 26, 28, 30, 32, 42, 48],
+          "score_type": "sum",
+          "threshold": 1.0
+        }
+    },
+    "lsaspes": {
+        "Total": {
+            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "TotAnx": {
+          "questions": [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43, 45, 47],
+          "score_type": "sum",
+          "threshold": 1.0
+        },
+        "AnxInt": {
+          "questions": [1, 7, 11, 15, 17, 23, 33, 35, 37, 39, 43, 45],
+          "score_type": "sum",
+          "threshold": 1.0
+        },
+        "AnxPer": {
+          "questions": [3, 5, 9, 13, 19, 21, 25, 27, 29, 31, 41, 47],
+          "score_type": "sum",
+          "threshold": 1.0
+        },
+        "TotAvo": {
+          "questions": [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48],
+          "score_type": "sum",
+          "threshold": 1.0
+        },
+        "AvoInt": {
+          "questions": [2, 8, 12, 16, 18, 24, 34, 36, 38, 40, 44, 46],
+          "score_type": "sum",
+          "threshold": 1.0
+        },
+        "AvoPer": {
+          "questions": [4, 6, 10, 14, 20, 22, 26, 28, 30, 32, 42, 48],
+          "score_type": "sum",
+          "threshold": 1.0
+        }
+    },
     "masi": {
         "Total": {
             "questions": null,
@@ -411,6 +775,20 @@
             "score_type": "sum"
         }
     },
+    "pdsf": {
+        "Total": {
+            "questions": [1, 2, 3, 4, 5],
+            "score_type": "avg",
+            "threshold": 0.8
+        }
+    },
+    "pdsm": {
+        "Total": {
+            "questions": [1, 2, 3, 4, 5],
+            "score_type": "avg",
+            "threshold": 0.8
+        }
+    },
     "phq8": {
         "total": {
             "questions": null,
@@ -422,6 +800,86 @@
             "questions": [1, 2, 3, 4, 5],
             "score_type": "avg",
             "threshold": 0.6
+        }
+    },
+    "pscei": {
+        "Total": {
+            "questions": null,
+            "score_type": "sum",
+            "threshold": 1.0
+        }
+    },
+    "psceies": {
+        "Total": {
+            "questions": null,
+            "score_type": "sum",
+            "threshold": 1.0
+        }
+    },
+    "rpeq": {
+        "Ov": {
+            "questions": [1, 2, 3],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Rel": {
+            "questions": [4, 5, 6],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Rep": {
+            "questions": [7, 8, 9],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Pro": {
+            "questions": [10, 11, 12, 13, 14],
+            "score_type": "avg",
+            "threshold": 0.8
+        }
+    },
+    "rpeqp": {
+        "Ov": {
+            "questions": [1, 2, 3],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Rel": {
+            "questions": [4, 5, 6],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Rep": {
+            "questions": [7, 8, 9],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Pro": {
+            "questions": [10, 11, 12, 13, 14],
+            "score_type": "avg",
+            "threshold": 0.8
+        }
+    },
+    "rpeqpes": {
+        "Ov": {
+            "questions": [1, 2, 3],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Rel": {
+            "questions": [4, 5, 6],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Rep": {
+            "questions": [7, 8, 9],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Pro": {
+            "questions": [10, 11, 12, 13, 14],
+            "score_type": "avg",
+            "threshold": 0.8
         }
     },
     "rvq": {
@@ -486,6 +944,337 @@
         },
         "Soc": {
             "questions": [3, 10, 27, 34, 41, 42, 43],
+            "score_type": "sum",
+            "threshold": 1.0
+        }
+    },
+    "scared": {
+        "Total": {
+            "questions": null,
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "Pan": {
+            "questions": [1, 6, 9, 12, 15, 18, 19, 22, 24, 27, 30, 34, 38],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "GA": {
+            "questions": [5, 7, 14, 21, 23, 28, 33, 35, 37],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "Sep": {
+            "questions": [4, 8, 13, 16, 20, 25, 29, 31],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "SA": {
+            "questions": [3, 10, 26, 32, 39, 40, 41],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "Avo": {
+            "questions": [2, 11, 17, 36],
+            "score_type": "sum",
+            "threshold": 1.0
+        }
+    },
+    "scaredp": {
+        "Total": {
+            "questions": null,
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "Pan": {
+            "questions": [1, 6, 9, 12, 15, 18, 19, 22, 24, 27, 30, 34, 38],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "GA": {
+            "questions": [5, 7, 14, 21, 23, 28, 33, 35, 37],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "Sep": {
+            "questions": [4, 8, 13, 16, 20, 25, 29, 31],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "SA": {
+            "questions": [3, 10, 26, 32, 39, 40, 41],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "Avo": {
+            "questions": [2, 11, 17, 36],
+            "score_type": "sum",
+            "threshold": 1.0
+        }
+    },
+    "spaic": {
+        "score1": {
+            "questions": [9, 10, 11],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score2": {
+            "questions": [12, 13, 14],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score3": {
+            "questions": [15, 16, 17],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score4": {
+            "questions": [18, 19, 20],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score5": {
+            "questions": [21, 22, 23],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score6": {
+            "questions": [24, 25, 26],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score7": {
+            "questions": [27, 28, 29],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score8": {
+            "questions": [30, 31, 32],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score9": {
+            "questions": [33, 34, 35],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score10": {
+            "questions": [36, 37, 38],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score11": {
+            "questions": [39, 40, 41],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score12": {
+            "questions": [42, 43, 44],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score13": {
+            "questions": [45, 46, 47, 48],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score14": {
+            "questions": [51, 52, 53],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score15": {
+            "questions": [54, 55, 56, 57, 58],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score16": {
+            "questions": [59, 60, 61, 62, 63],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "Total": {
+            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 49, 50],
+            "products": ["score1", "score2", "score3", "score4", "score5", "score6", "score7", "score8", "score9", "score10", "score11", "score12", "score13", "score14", "score15", "score16"],
+            "hide": true,
+            "score_type": "sum",
+            "threshold": 1.0
+        }
+    },
+    "spaip": {
+        "score1": {
+            "questions": [9, 10, 11],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score2": {
+            "questions": [12, 13, 14],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score3": {
+            "questions": [15, 16, 17],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score4": {
+            "questions": [18, 19, 20],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score5": {
+            "questions": [21, 22, 23],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score6": {
+            "questions": [24, 25, 26],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score7": {
+            "questions": [27, 28, 29],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score8": {
+            "questions": [30, 31, 32],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score9": {
+            "questions": [33, 34, 35],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score10": {
+            "questions": [36, 37, 38],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score11": {
+            "questions": [39, 40, 41],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score12": {
+            "questions": [42, 43, 44],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score13": {
+            "questions": [45, 46, 47, 48],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score14": {
+            "questions": [51, 52, 53],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score15": {
+            "questions": [54, 55, 56, 57, 58],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score16": {
+            "questions": [59, 60, 61, 62, 63],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "Total": {
+            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 49, 50],
+            "products": ["score1", "score2", "score3", "score4", "score5", "score6", "score7", "score8", "score9", "score10", "score11", "score12", "score13", "score14", "score15", "score16"],
+            "hide": true,
+            "score_type": "sum",
+            "threshold": 1.0
+        }
+    },
+    "spaipes": {
+        "score1": {
+            "questions": [9, 10, 11],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score2": {
+            "questions": [12, 13, 14],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score3": {
+            "questions": [15, 16, 17],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score4": {
+            "questions": [18, 19, 20],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score5": {
+            "questions": [21, 22, 23],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score6": {
+            "questions": [24, 25, 26],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score7": {
+            "questions": [27, 28, 29],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score8": {
+            "questions": [30, 31, 32],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score9": {
+            "questions": [33, 34, 35],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score10": {
+            "questions": [36, 37, 38],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score11": {
+            "questions": [39, 40, 41],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score12": {
+            "questions": [42, 43, 44],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score13": {
+            "questions": [45, 46, 47, 48],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score14": {
+            "questions": [51, 52, 53],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score15": {
+            "questions": [54, 55, 56, 57, 58],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "score16": {
+            "questions": [59, 60, 61, 62, 63],
+            "score_type": "avg",
+            "threshold": 1.0
+        },
+        "Total": {
+            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 49, 50],
+            "products": ["score1", "score2", "score3", "score4", "score5", "score6", "score7", "score8", "score9", "score10", "score11", "score12", "score13", "score14", "score15", "score16"],
+            "hide": true,
             "score_type": "sum",
             "threshold": 1.0
         }
