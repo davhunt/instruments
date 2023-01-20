@@ -1,0 +1,6 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+initstatec_i1,Prediction of game performance,How well do you think you will do playing the game?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not well at all | 2,  | 3,  | 4, Very well",NA,1,NA,direct-redcap
+initstatec_i2,Self-assessment: current anxiety,How anxious or nervous are you right now?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, Very much",NA,1,NA,direct-redcap
+initstatec_i3,Self-assessment: current confidence,How calm and confident are you right now?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, Very much",NA,1,NA,direct-redcap
+initstatec_i4,Self-assessment: current worry of judgment,How much are you worrying about being judged negatively?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, Very much",NA,1,NA,direct-redcap
+initstatec_i5,Self-assessment: current worry of performance,How much are you thinking about performing well?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, Very much",NA,1,NA,direct-redcap

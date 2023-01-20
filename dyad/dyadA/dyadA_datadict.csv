@@ -1,0 +1,2 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+dyadai_i1,"Self-assessment of ""get-to-know-each-other"" interaction",How well do you think you did talking and interacting with the other person?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not well at all | 2,  | 3,  | 4, Very well",NA,1,NA,direct-redcap
