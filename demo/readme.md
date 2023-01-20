@@ -1,6 +1,10 @@
 ## DEMO (Demographics)
 
 ### Versions
+##### demo_d
+This version, designed to be answered by the parent of an adolescent participant, is a full re-vamp for the launch off the THRIVE study. It is available in both English and Spanish for the US/LatAm.
+
+
 ##### demo_c
 This version reduces the number of questions in demo_b and separates one English language history question into two more granular questions.
 
@@ -11,6 +15,7 @@ This version reduces the number of questions in demo_b and separates one English
 **Added variables:** engflu
 
 Only the English self report is available.
+
 
 ##### demo_b
 The following were added in this revision:
