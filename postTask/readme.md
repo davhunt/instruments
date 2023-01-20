@@ -18,6 +18,12 @@ Questions about the participant's experience, generic to any task.  This is a ve
 ###### postTaskD
 Questions about the participant's experience, generic to any task.  This is a longer version.
 
+###### postTaskE
+Ten questions about the participant's experience, generic to any "game" task.
+
+###### postTaskF
+Ten questions about the participant's experience with a "speech" task.
+
 
 ### Scoring Script
 The postTask questionnaires are **not** included in the repository scoring script.
