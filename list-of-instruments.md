@@ -17,11 +17,13 @@ Below is a list of instruments contained in this repository.
 | bmis | Brief Mood Introspection Scale | [Mayer and Gaschke (1998)](https://pubmed.ncbi.nlm.nih.gov/3418484) |
 | briefA | Behavior Rating Inventory of Executive Function Adult | [Roth et al. (2005)](https://www.parinc.com/Products/Pkey/25) |
 | bstad | Brief Screener for Tobacco, Alcohol, and other Drugs | [Kelly et al. (2014)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4006430/) |
+| casi | Child Anxiety Sensitivity Index | [Silverman et al. (1991)](https://www.tandfonline.com/doi/abs/10.1207/S15374424JCCP2002_7) |
 | cdi2 | Child Dpression Inventory II | [Kovacs (2014)](https://pubmed.ncbi.nlm.nih.gov/23355496/) |) |
 | chexi | Childhood Executive Functioning Inventory | [Catale et al. (2013)](https://pubmed.ncbi.nlm.nih.gov/23355496/) |
 | consent | Consent Template | NDCLab |
 | covid | COVID Impacts Questionnaire | [Conway et al. (2020)](https://doi.org/10.31234/osf.io/z2x9a) |
 | csisb | Classification of Suicidal Ideation and Suicidal Behavior | [Hamilton et al. (2011)](https://pubmed.ncbi.nlm.nih.gov/21749974/) |
+| cyber | Cyber Bully Questionnaire | [ABCD](https://abcdstudy.org/) |
 | demo | Demographics | NDCLab |
 | eds | Everyday Discrimination Scale | [Williams et al. (1997)](https://pubmed.ncbi.nlm.nih.gov/22013026/) |
 | eisb | Ethnic Identity Scale-Brief | [Douglass and Umaña-Taylor (2015)](https://psycnet.apa.org/record/2015-06974-003) |
