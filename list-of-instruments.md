@@ -25,6 +25,7 @@ Below is a list of instruments contained in this repository.
 | csisb | Classification of Suicidal Ideation and Suicidal Behavior | [Hamilton et al. (2011)](https://pubmed.ncbi.nlm.nih.gov/21749974/) |
 | cyber | Cyber Bully Questionnaire | [ABCD](https://abcdstudy.org/) |
 | demo | Demographics | NDCLab |
+| dyad | Dyad Interactions | NDCLab |
 | eds | Everyday Discrimination Scale | [Williams et al. (1997)](https://pubmed.ncbi.nlm.nih.gov/22013026/) |
 | eisb | Ethnic Identity Scale-Brief | [Douglass and Umaña-Taylor (2015)](https://psycnet.apa.org/record/2015-06974-003) |
 | epepq15 | Extended Post-Event Processing Questionnaire, 15-Item | [Wong (2015)](https://pubmed.ncbi.nlm.nih.gov/24841332/) |
