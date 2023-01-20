@@ -16,6 +16,7 @@ Below is a list of instruments contained in this repository.
 | bfne | Brief Fear of Negative Evaluation-II | [Carleton et al. (2007)](https://psycnet.apa.org/record/2007-01810-010) |
 | bmis | Brief Mood Introspection Scale | [Mayer and Gaschke (1998)](https://pubmed.ncbi.nlm.nih.gov/3418484) |
 | briefA | Behavior Rating Inventory of Executive Function Adult | [Roth et al. (2005)](https://www.parinc.com/Products/Pkey/25) |
+| bstad | Brief Screener for Tobacco, Alcohol, and other Drugs | [Kelly et al. (2014)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4006430/) |
 | cdi2 | Child Dpression Inventory II | [Kovacs (2014)](https://pubmed.ncbi.nlm.nih.gov/23355496/) |) |
 | chexi | Childhood Executive Functioning Inventory | [Catale et al. (2013)](https://pubmed.ncbi.nlm.nih.gov/23355496/) |
 | consent | Consent Template | NDCLab |

@@ -60,7 +60,7 @@ The following software iterations are planned for development. Each iteration is
 * Bugfix to ensure correct percentage response, based on the number of questions in surveys.json and handled for each sre.
 
 ### 0.08
-* Addition of ABQ, ATS
+* Addition of ABQ, ATS, BSTAD
 
 ### 0.1
 
