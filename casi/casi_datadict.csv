@@ -1,0 +1,21 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+casi_i1,"CASI, question 1",I don't want other people to know when I feel afraid,s1_r1_e1,Integer,"1, 2, 3","1, none | 2, some | 3, a lot",NA,1,NA,direct-redcap
+casi_i2,"CASI, question 2",When I cannot keep my mind on my schoolwork I worry that I might be going crazy,s1_r1_e1,Integer,"1, 2, 3","1, none | 2, some | 3, a lot",NA,1,NA,direct-redcap
+casi_i3,"CASI, question 3",It scares me when I feel `shaky',s1_r1_e1,Integer,"1, 2, 3","1, none | 2, some | 3, a lot",NA,1,NA,direct-redcap
+casi_i4,"CASI, question 4",It scares me when I feel like I am going to faint,s1_r1_e1,Integer,"1, 2, 3","1, none | 2, some | 3, a lot",NA,1,NA,direct-redcap
+casi_i5,"CASI, question 5",It is important for me to stay in control of my feelings,s1_r1_e1,Integer,"1, 2, 3","1, none | 2, some | 3, a lot",NA,1,NA,direct-redcap
+casi_i6,"CASI, question 6",It scares me when my heart beats fast,s1_r1_e1,Integer,"1, 2, 3","1, none | 2, some | 3, a lot",NA,1,NA,direct-redcap
+casi_i7,"CASI, question 7",It embarrasses me when my stomach growls (makes noise),s1_r1_e1,Integer,"1, 2, 3","1, none | 2, some | 3, a lot",NA,1,NA,direct-redcap
+casi_i8,"CASI, question 8",It scares me when I feel like I am going to throw up,s1_r1_e1,Integer,"1, 2, 3","1, none | 2, some | 3, a lot",NA,1,NA,direct-redcap
+casi_i9,"CASI, question 9","When I notice that my heart is beating fast, I worry that there might be something wrong with me",s1_r1_e1,Integer,"1, 2, 3","1, none | 2, some | 3, a lot",NA,1,NA,direct-redcap
+casi_i10,"CASI, question 10",It scares me when I have trouble getting my breath,s1_r1_e1,Integer,"1, 2, 3","1, none | 2, some | 3, a lot",NA,1,NA,direct-redcap
+casi_i11,"CASI, question 11","When my stomach hurts, I worry that I might be really sick",s1_r1_e1,Integer,"1, 2, 3","1, none | 2, some | 3, a lot",NA,1,NA,direct-redcap
+casi_i12,"CASI, question 12",It scares me when I can't keep my mind on my schoolwork,s1_r1_e1,Integer,"1, 2, 3","1, none | 2, some | 3, a lot",NA,1,NA,direct-redcap
+casi_i13,"CASI, question 13",Other kids can tell when I feel shaky,s1_r1_e1,Integer,"1, 2, 3","1, none | 2, some | 3, a lot",NA,1,NA,direct-redcap
+casi_i14,"CASI, question 14",Unusual feelings in my body scare me,s1_r1_e1,Integer,"1, 2, 3","1, none | 2, some | 3, a lot",NA,1,NA,direct-redcap
+casi_i15,"CASI, question 15","When I am afraid, I worry that I might be crazy",s1_r1_e1,Integer,"1, 2, 3","1, none | 2, some | 3, a lot",NA,1,NA,direct-redcap
+casi_i16,"CASI, question 16",It scares me when I feel nervous,s1_r1_e1,Integer,"1, 2, 3","1, none | 2, some | 3, a lot",NA,1,NA,direct-redcap
+casi_i17,"CASI, question 17",I don't like to let my feelings show,s1_r1_e1,Integer,"1, 2, 3","1, none | 2, some | 3, a lot",NA,1,NA,direct-redcap
+casi_i18,"CASI, question 18",Funny feelings in my body scare me,s1_r1_e1,Integer,"1, 2, 3","1, none | 2, some | 3, a lot",NA,1,NA,direct-redcap
+casi_scrdTotal,CASI total score,sum of all casi items (NA if casi_percTotal < 1),s1_r1_e1,Integer,"[18,54]",NA,NA,1,NA,code-instruments
+casi_percTotal,CASI total percentage response,percentage response for all casi items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
