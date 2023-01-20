@@ -59,6 +59,9 @@ The following software iterations are planned for development. Each iteration is
 * Feature to allow a user to leave out questions from input data (e.g. half of a 2-in-1 questionnaires) and still output the subscores that are possible with the questions included.
 * Bugfix to ensure correct percentage response, based on the number of questions in surveys.json and handled for each sre.
 
+### 0.08
+* Addition of ABQ, ATS
+
 ### 0.1
 
 * TBD

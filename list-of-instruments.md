@@ -4,12 +4,14 @@ Below is a list of instruments contained in this repository.
 
 | Acronym | Name | Reference |
 | :-- | :-- | :-- |
+| abq | Attention Bias Questionnaire | [Azriel et al. (2022)](https://pubmed.ncbi.nlm.nih.gov/35297127/) |
 | adexi | Adult Executive Functioning Inventory | [Holst and Thorell (2016)](https://pubmed.ncbi.nlm.nih.gov/28497641/) |
 | adis | Anxiety Disorders Interview Schedule | Silverman and Albano (1996) |
 | ambi | Adult Measure of Behavioral Inhibition | [Gladstone and Parker (2005)](https://pubmed.ncbi.nlm.nih.gov/15922458/) |
 | aq10 | Autism Spectrum Quotient | [Allison et al. (2012)](https://pubmed.ncbi.nlm.nih.gov/22265366/) |
 | ari | Affective Reactivity Index | [Stringaris et al. (2012)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3484687/) |
 | asr | Adult Self-Report | [Achenbach and Rescorla (2003)](https://link.springer.com/referenceworkentry/10.1007/978-0-387-79948-3_1529) |
+| ats | Attitudes Toward Self Scale | [Carver et al. (1988)](https://psycnet.apa.org/record/1989-29513-001) |
 | baars4 | Barkley Adult ADHD Rating Scale-IV | [Barkley (2011)](https://www.guilford.com/books/Barkley-Adult-ADHD-Rating-Scale-IV-BAARS-IV/Russell-Barkley/9781609182038) |
 | bfne | Brief Fear of Negative Evaluation-II | [Carleton et al. (2007)](https://psycnet.apa.org/record/2007-01810-010) |
 | bmis | Brief Mood Introspection Scale | [Mayer and Gaschke (1998)](https://pubmed.ncbi.nlm.nih.gov/3418484) |
