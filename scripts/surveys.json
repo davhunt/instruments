@@ -637,6 +637,18 @@
             "threshold": 0.8
         }
     },
+    "erqca": {
+        "CogRea": {
+            "questions": [1, 3, 5, 7, 8, 10],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "ExpSup": {
+            "questions": [2, 4, 6, 9],
+            "score_type": "sum",
+            "threshold": 1.0
+        }
+    },
     "esi": {
         "Total": {
             "questions": null,
