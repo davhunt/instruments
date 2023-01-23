@@ -364,6 +364,92 @@
             "score_type": "sum"
         }
     },
+    "eatq": {
+        "AC": {
+            "questions": [3, 5, 14, 17, 36, 38, 46],
+            "rev_questions": [3, 14, 46],
+            "answers": [1, 2, 3, 4, 5],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Aff": {
+            "questions": [12, 13, 18, 24, 43, 51],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Agg": {
+            "questions": [2, 11, 19, 25, 32, 41, 42],
+            "rev_questions": [42],
+            "answers": [1, 2, 3, 4, 5],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Att": {
+            "questions": [15, 22, 35, 39, 49, 60],
+            "rev_questions": [22, 35, 49],
+            "answers": [1, 2, 3, 4, 5],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "DM": {
+            "questions": [7, 10, 26, 33, 52],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Fear": {
+            "questions": [1, 30, 48, 53, 55, 61],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Frus": {
+            "questions": [20, 21, 31, 45, 57, 58],
+            "score_type": "avg",
+            "threshold": 0.8
+        }
+    },
+    "eatqes": {
+        "AC": {
+            "questions": [3, 5, 14, 17, 36, 38, 46],
+            "rev_questions": [3, 14, 46],
+            "answers": [1, 2, 3, 4, 5],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Aff": {
+            "questions": [12, 13, 18, 24, 43, 51],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Agg": {
+            "questions": [2, 11, 19, 25, 32, 41, 42],
+            "rev_questions": [42],
+            "answers": [1, 2, 3, 4, 5],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Att": {
+            "questions": [15, 22, 35, 39, 49, 60],
+            "rev_questions": [22, 35, 49],
+            "answers": [1, 2, 3, 4, 5],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "DM": {
+            "questions": [7, 10, 26, 33, 52],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Fear": {
+            "questions": [1, 30, 48, 53, 55, 61],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Frus": {
+            "questions": [20, 21, 31, 45, 57, 58],
+            "score_type": "avg",
+            "threshold": 0.8
+        }
+    },
     "edshvs": {
         "EdsEver": {
             "questions": [1, 2, 3, 4, 5],
