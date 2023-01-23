@@ -1,0 +1,11 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+posttaskf_i1,"postTaskF, question 1",How many mistakes do you think you made during your speech?,s1_r1_e1,Integer,"[0,inf]",,NA,1,NA,direct-redcap
+posttaskf_i2,"postTaskF, question 2",How well do you think you did giving a speech?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not well at all | 2,  | 3,  | 4, Very well",NA,1,NA,direct-redcap
+posttaskf_i3,"postTaskF, question 3",How hard did you try?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, Very much",NA,1,NA,direct-redcap
+posttaskf_i4,"postTaskF, question 4",How much did it bother you when you made a mistake?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, Very much",NA,1,NA,direct-redcap
+posttaskf_i5,"postTaskF, question 5",How anxious or nervous were you during the speech?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, Very much",NA,1,NA,direct-redcap
+posttaskf_i6,"postTaskF, question 6",How calm and confident were you during the speech?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, Very much",NA,1,NA,direct-redcap
+posttaskf_i7,"postTaskF, question 7",How much did you worry about being judged negatively?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, Very much",NA,1,NA,direct-redcap
+posttaskf_i8,"postTaskF, question 8",How much did you think about performing well?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, Very much",NA,1,NA,direct-redcap
+posttaskf_i9,"postTaskF, question 9",Your own ability,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, Very much",NA,1,NA,direct-redcap
+posttaskf_i10,"postTaskF, question 10",Difficulty of the speech,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, Very much",NA,1,NA,direct-redcap
