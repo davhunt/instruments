@@ -1,0 +1,9 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+identity_sexor,Sexual orientation,Would you describe yourself as:,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, Heterosexual (straight) | 2, Gay or lesbian | 3, Bisexual | 4, Other | 5, Unsure",NA,1,NA,direct-redcap
+identity_sexoroth,"If ""Other"" selected for ""identity_sexor"", detail","If Other, please explain:",s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+identity_gender,Gender identity,What is your current gender identity?,s1_r1_e1,Integer,"1, 2, 3, 999","1, Boy | 2, Girl | 3, Another gender | 999, I don't understand the question",NA,1,NA,direct-redcap
+identity_feelboy,"Ranking on ""feeling like a boy""",How much do you feel like a boy?,s1_r1_e1,Integer,"0, 1, 2, 3, 4","4, Totally | 3, Mostly | 2, Somewhat | 1, A little | 0, Not at all",NA,1,NA,direct-redcap
+identity_feelgrl,"Ranking on ""feeling like a girl""",How much do you feel like a girl?,s1_r1_e1,Integer,"0, 1, 2, 3, 4","4, Totally | 3, Mostly | 2, Somewhat | 1, A little | 0, Not at all",NA,1,NA,direct-redcap
+identity_attrgrl,Attraction to girls,I am attracted to girls.,s1_r1_e1,Integer,"0, 1, 2, 3","0, Not at all | 1, A little | 2, A lot | 3, I don't know",NA,1,NA,direct-redcap
+identity_attrboy,Attraction to boys,I am attracted to boys.,s1_r1_e1,Integer,"0, 1, 2, 3","0, Not at all | 1, A little | 2, A lot | 3, I don't know",NA,1,NA,direct-redcap
+identity_attrnon,Attraction to nonbinary individuals,I am attracted to people who are another gender (e.g. nonbinary).,s1_r1_e1,Integer,"0, 1, 2, 3","0, Not at all | 1, A little | 2, A lot | 3, I don't know",NA,1,NA,direct-redcap
