@@ -903,6 +903,18 @@
             "score_type": "sum"
         }
     },
+    "mss": {
+        "SDS": {
+            "questions": [1, 2, 4, 7, 10, 11, 13, 14],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "NSDS": {
+            "questions": [3, 5, 6, 8, 9, 12],
+            "score_type": "avg",
+            "threshold": 0.8
+        }
+    },
     "panasnow": {
         "PA": {
             "questions": [1, 3, 5, 9, 10, 12, 14, 16, 17, 19],

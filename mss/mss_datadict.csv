@@ -1,0 +1,19 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+mss_i1,"MSS, question 1",It sparks my creativity,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all Important | 2, Somewhat Important | 3, Moderately Important | 4, Very Important",NA,1,NA,direct-redcap
+mss_i2,"MSS, question 2",I enjoy the quiet,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all Important | 2, Somewhat Important | 3, Moderately Important | 4, Very Important",NA,1,NA,direct-redcap
+mss_i3,"MSS, question 3",I feel anxious when I'm with others,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all Important | 2, Somewhat Important | 3, Moderately Important | 4, Very Important",NA,1,NA,direct-redcap
+mss_i4,"MSS, question 4",Being alone helps me get in touch with my spirituality,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all Important | 2, Somewhat Important | 3, Moderately Important | 4, Very Important",NA,1,NA,direct-redcap
+mss_i5,"MSS, question 5",I don't feel liked when I'm with others,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all Important | 2, Somewhat Important | 3, Moderately Important | 4, Very Important",NA,1,NA,direct-redcap
+mss_i6,"MSS, question 6",I can't be myself around others,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all Important | 2, Somewhat Important | 3, Moderately Important | 4, Very Important",NA,1,NA,direct-redcap
+mss_i7,"MSS, question 7",It helps me stay in touch with my feelings,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all Important | 2, Somewhat Important | 3, Moderately Important | 4, Very Important",NA,1,NA,direct-redcap
+mss_i8,"MSS, question 8",I regret things I say or do when I'm with others,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all Important | 2, Somewhat Important | 3, Moderately Important | 4, Very Important",NA,1,NA,direct-redcap
+mss_i9,"MSS, question 9",I feel uncomfortable when I'm with others,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all Important | 2, Somewhat Important | 3, Moderately Important | 4, Very Important",NA,1,NA,direct-redcap
+mss_i10,"MSS, question 10",I value the privacy,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all Important | 2, Somewhat Important | 3, Moderately Important | 4, Very Important",NA,1,NA,direct-redcap
+mss_i11,"MSS, question 11",I can engage in activities that really interest me,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all Important | 2, Somewhat Important | 3, Moderately Important | 4, Very Important",NA,1,NA,direct-redcap
+mss_i12,"MSS, question 12",I feel like I don't belong when I'm with others,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all Important | 2, Somewhat Important | 3, Moderately Important | 4, Very Important",NA,1,NA,direct-redcap
+mss_i13,"MSS, question 13",It helps me gain insight into why I do the things I do,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all Important | 2, Somewhat Important | 3, Moderately Important | 4, Very Important",NA,1,NA,direct-redcap
+mss_i14,"MSS, question 14",I feel energized when I spend time with myself,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all Important | 2, Somewhat Important | 3, Moderately Important | 4, Very Important",NA,1,NA,direct-redcap
+mss_scrdSDS,MSS self-determined solitude subscore,"average of mss items 1, 2, 4, 7, 10, 11, 13, and 14 (NA if erq_percSDS < 0.8)",s1_r1_e1,Real,"[1,4]",NA,NA,1,NA,code-instruments
+mss_scrdNSDS,MSS non-self-determined solitude subscore,"average of mss items 3, 5, 6, 8, 9, and 12 (NA if erq_percNSDS < 0.8)",s1_r1_e1,Real,"[1,4]",NA,NA,1,NA,code-instruments
+mss_percSDS,MSS self-determined solitude percentage response,percentage of response for mss self-determined solitude items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
+mss_percNSDS,MSS non-self-determined solitude percentage response,percentage of response for mss non-self-determined solitude items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments

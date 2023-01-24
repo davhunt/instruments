@@ -44,6 +44,7 @@ Below is a list of instruments contained in this repository.
 | ius | Intolerance of Uncertainty Scale | [Carleton et al. (2007)](https://pubmed.ncbi.nlm.nih.gov/16647833/) |
 | lsas | Liebowitz Social Anxiety Scale | [Masia-Warner et al. (2003)](https://pubmed.ncbi.nlm.nih.gov/12960707/) |
 | masi | Multidimensional Acculturative Stress Inventory | [Rodriguez et al. (2002)](https://pubmed.ncbi.nlm.nih.gov/12501570/), [Castillo et al. (2015)](https://pubmed.ncbi.nlm.nih.gov/25730163/) |
+| mss | Motivation for Solitude Scale | [Thomas and Azmitia (2019)](https://pubmed.ncbi.nlm.nih.gov/30472399/) |
 | panas | Positive and Negative Affect Schedule | [Watson et al. (1988)](https://pubmed.ncbi.nlm.nih.gov/3397865/) |
 | pds | Pubertal Development Scale | [Carskadon and Acebo (1993)](https://pubmed.ncbi.nlm.nih.gov/8323929/) |
 | phq8 | Patient Health Questionnaire | [Kroenke et al. (2009)](https://pubmed.ncbi.nlm.nih.gov/18752852/) |
