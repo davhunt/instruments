@@ -32,6 +32,7 @@ Below is a list of instruments contained in this repository.
 | epepq15 | Extended Post-Event Processing Questionnaire, 15-Item | [Wong (2015)](https://pubmed.ncbi.nlm.nih.gov/24841332/) |
 | erq | Emotion Regulation Questionnaire | adults: [Gross and John (2003)](https://pubmed.ncbi.nlm.nih.gov/12916575/); child/adolescent: [Gullone and Taffe (2012)](https://pubmed.ncbi.nlm.nih.gov/12916575/) |
 | esi | Error Sensitivity Index | [Chong and Meyer (2019)](https://pubmed.ncbi.nlm.nih.gov/30407088/) |
+| fpe | Fear of Positive Evaluation Scale | [Weeks et al. (2008)](https://pubmed.ncbi.nlm.nih.gov/17884328/) |
 | hsps | Highly Sensitive Person Scale | Aron (1996) |
 | hvs | Heightened Vigilance Scale | [Williams et al. (1997)](https://pubmed.ncbi.nlm.nih.gov/22013026/) |
 | idea | Inventory of the Dimensions of Emerging Adulthood | [Reifman et al. (2007)](https://jyd.pitt.edu/ojs/jyd/article/view/359) |
