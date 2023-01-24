@@ -1,0 +1,28 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+yssm_mftv,Weekday: time spent on tv and movies,"Watching or streaming TV shows or movies?
+(Such as Hulu, Netflix or Amazon, not including videos on YouTube.)",s1_r1_e1,Time,"[0:00,23:59]",hh:mm,NA,1,NA,direct-redcap
+yssm_mfvideos,Weekday: time spent streaming videos,"Watching or streaming videos or live stream (such as YouTube, Twitch)?",s1_r1_e1,Time,"[0:00,23:59]",hh:mm,NA,1,NA,direct-redcap
+yssm_mfspgame,Weekday: time spent on single-player video games,"Playing single-player video games on a computer, console, phone or other device (Xbox, Play Station, iPad, AppleTV)?",s1_r1_e1,Time,"[0:00,23:59]",hh:mm,NA,1,NA,direct-redcap
+yssm_mfmpgame,Weekday: time spent on multi-player video games,"Playing multiplayer video games on a computer, console, phone, or other device (Xbox, Play Station, iPad, AppleTV) where you can interact with others in the game?",s1_r1_e1,Time,"[0:00,23:59]",hh:mm,NA,1,NA,direct-redcap
+yssm_mftext,Weekday: time spent texting,"Texting on a cell phone, tablet, computer, iPod, or other electronic device (e.g., GChat, Whatsapp, Kik etc.)?",s1_r1_e1,Time,"[0:00,23:59]",hh:mm,NA,1,NA,direct-redcap
+yssm_mfsocmed,Weekday: time spent scrolling social media,"Visiting social media apps or websites (e.g., Snapchat, Facebook, Twitter, Instagram, TikTok, etc.? (Do not include time spent editing photos, videos, or creating content to post on social media.)",s1_r1_e1,Time,"[0:00,23:59]",hh:mm,NA,1,NA,direct-redcap
+yssm_mfcontent,Weekday: time spent curating social media,"Editing photos, videos, or creating content to post on social media.",s1_r1_e1,Time,"[0:00,23:59]",hh:mm,NA,1,NA,direct-redcap
+yssm_mfvidchat,Weekday: time spent video-chatting,"Video chatting (Zoom, FaceTime, VRchat, Skype, etc.)",s1_r1_e1,Time,"[0:00,23:59]",hh:mm,NA,1,NA,direct-redcap
+yssm_mfgoogle,Weekday: time spent internet browsing,"Searching or browsing the internet (e.g., using Google) that is NOT for school.",s1_r1_e1,Time,"[0:00,23:59]",hh:mm,NA,1,NA,direct-redcap
+yssm_sstv,Weekend day: time spent on tv and movies,"Watching or streaming TV shows or movies?
+(Such as Hulu, Netflix or Amazon, not including videos on YouTube.)",s1_r1_e1,Time,"[0:00,23:59]",hh:mm,NA,1,NA,direct-redcap
+yssm_ssvideos,Weekend day: time spent streaming videos,"Watching or streaming videos or live stream (such as YouTube, Twitch)?",s1_r1_e1,Time,"[0:00,23:59]",hh:mm,NA,1,NA,direct-redcap
+yssm_ssspgame,Weekend day: time spent on single-player video games,"Playing single-player video games on a computer, console, phone or other device (Xbox, Play Station, iPad, AppleTV)?",s1_r1_e1,Time,"[0:00,23:59]",hh:mm,NA,1,NA,direct-redcap
+yssm_ssmpgame,Weekend day: time spent on multi-player video games,"Playing multiplayer video games on a computer, console, phone, or other device (Xbox, Play Station, iPad, AppleTV) where you can interact with others in the game?",s1_r1_e1,Time,"[0:00,23:59]",hh:mm,NA,1,NA,direct-redcap
+yssm_sstext,Weekend day: time spent texting,"Texting on a cell phone, tablet, computer, iPod, or other electronic device (e.g., GChat, Whatsapp, Kik etc.)?",s1_r1_e1,Time,"[0:00,23:59]",hh:mm,NA,1,NA,direct-redcap
+yssm_sssocmed,Weekend day: time spent scrolling social media,"Visiting social media apps or websites (e.g., Snapchat, Facebook, Twitter, Instagram, TikTok, etc.? (Do not include time spent editing photos, videos, or creating content to post on social media.)",s1_r1_e1,Time,"[0:00,23:59]",hh:mm,NA,1,NA,direct-redcap
+yssm_sscontent,Weekend day: time spent curating social media,"Editing photos, videos, or creating content to post on social media.",s1_r1_e1,Time,"[0:00,23:59]",hh:mm,NA,1,NA,direct-redcap
+yssm_ssvidchat,Weekend day: time spent video-chatting,"Video chatting (Zoom, FaceTime, VRchat, Skype, etc.)",s1_r1_e1,Time,"[0:00,23:59]",hh:mm,NA,1,NA,direct-redcap
+yssm_ssgoogle,Weekend day: time spent internet browsing,"Searching or browsing the internet (e.g., using Google) that is NOT for school.",s1_r1_e1,Time,"[0:00,23:59]",hh:mm,NA,1,NA,direct-redcap
+yssm_socmedia,Existence of social media account,Do you have at least one social media account?,s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+yssm_accounts,Social media accounts: detail,"Which social media apps or websites do you have an account on?
+Select all that are applicable:",s1_r1_e1,Integer,"1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11","1, Multiplayer Videogame Online Chatting | 2, YouTube | 3, Reddit | 4, Facebook | 5, Instagram | 6, Snapchat | 7, Twitter | 8, Pinterest | 9, Tumblr | 10, TikTok | 11, Other",NA,1,NA,direct-redcap
+yssm_otheracct,"If ""other"" for yssm_accounts, detail","If Other, please specify:",s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+yssm_mostused,Most-used social media,Which social media app or website do you use the most?,s1_r1_e1,Integer,"1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11","1, Multiplayer Videogame Online Chatting | 2, YouTube | 3, Reddit | 4, Facebook | 5, Instagram | 6, Snapchat | 7, Twitter | 8, Pinterest | 9, Tumblr | 10, TikTok | 11, [yssm_otheracct_s1_r1_e1]",NA,1,NA,direct-redcap
+yssm_publicacct,Account privacy on most-used social media,"On [yssm_mostused_s1_r1_e1], is your account public or private?",s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+yssm_secretacct,Existence of secret social media,Do you have a social media account that you keep secret from your parents?,s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
