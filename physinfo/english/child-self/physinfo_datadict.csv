@@ -1,0 +1,4 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+physinfo_hand,Handedness,Which hand do you use most?,s1_r1_e1,Integer,"1, 2, 3","1, left hand | 2, right hand | 3, use both the same amount",NA,1,NA,direct-redcap
+physinfo_vision,Vision corrective aids,"For your vision, do you wear any necessary corrective aids (glasses, contacts)?",s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+physinfo_vzaidnow,Current status of vision corrective aids,Are you wearing them now?,s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap

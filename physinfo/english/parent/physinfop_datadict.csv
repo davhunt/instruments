@@ -1,0 +1,3 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+physinfop_height,Child's height,What is your child's height?,s1_r1_e1,Char,NA,in feet and inches,NA,1,NA,direct-redcap
+physinfop_weight,Child's weight,What is your child's weight?,s1_r1_e1,Real,NA,in pounds,NA,1,NA,direct-redcap
