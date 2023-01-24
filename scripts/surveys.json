@@ -1665,5 +1665,26 @@
             "score_type": "avg",
             "threshold": 0.8
         }
+    },
+    "tsis": {
+        "SIP": {
+            "questions": [1, 3, 6, 9, 14, 17, 19],
+            "score_type": "sum",
+            "threshold": 1
+        },
+        "SS": {
+            "questions": [4, 7, 10, 12, 15, 18, 20],
+            "rev_questions": [4, 12, 15, 20],
+            "answers": [1, 2, 3, 4, 5, 6, 7],
+            "score_type": "sum",
+            "threshold": 1
+        },
+        "SA": {
+            "questions": [2, 5, 8, 11, 13, 16, 21],
+            "rev_questions": [2, 5, 8, 11, 13, 16, 21],
+            "answers": [1, 2, 3, 4, 5, 6, 7],
+            "score_type": "sum",
+            "threshold": 1
+        }
     }
 }
