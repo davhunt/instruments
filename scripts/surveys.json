@@ -670,6 +670,60 @@
             "threshold": 1.0
         }
     },
+    "fasap": {
+        "Acc": {
+            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "Part": {
+            "questions": [1, 2, 3, 4, 5],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "Mod": {
+            "questions": [6, 7, 8, 9],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "Dis": {
+            "questions": [10],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "Cons": {
+            "questions": [11, 12, 13],
+            "score_type": "sum",
+            "threshold": 1.0
+        }
+    },
+    "fasapes": {
+        "Acc": {
+            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "Part": {
+            "questions": [1, 2, 3, 4, 5],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "Mod": {
+            "questions": [6, 7, 8, 9],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "Dis": {
+            "questions": [10],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "Cons": {
+            "questions": [11, 12, 13],
+            "score_type": "sum",
+            "threshold": 1.0
+        }
+    },
     "fpe": {
         "Total": {
             "questions": [1, 2, 3, 4, 6, 7, 8, 9],
