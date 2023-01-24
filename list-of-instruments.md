@@ -39,6 +39,7 @@ Below is a list of instruments contained in this repository.
 | ierq | Interpersonal Emotion Regulation Questionnaire | [Hofmann et al. (2016)](https://link.springer.com/article/10.1007/s10608-016-9756-2) |
 | identity | Sexuality and Gender Identity | NDCLab |
 | info-health | Information and Health Form | NDCLab |
+| infosht | Information Form | NDCLab |
 | initState | Pre-Task Questionnaires | NDCLab |
 | ius | Intolerance of Uncertainty Scale | [Carleton et al. (2007)](https://pubmed.ncbi.nlm.nih.gov/16647833/) |
 | lsas | Liebowitz Social Anxiety Scale | [Masia-Warner et al. (2003)](https://pubmed.ncbi.nlm.nih.gov/12960707/) |

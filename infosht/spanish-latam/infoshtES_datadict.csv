@@ -1,0 +1,58 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+infoshtes_fname,Child: first name,Primer nombre del niño/a,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+infoshtes_mname,Child: middle name,Segundo nombre del niño/a,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+infoshtes_lname,Child: last name,Apellido del niño/a,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+infoshtes_cellok,Child: approval to contact by phone,Podemos contactar al niño/a por teléfono celular?,s1_r1_e1,Logical,"0, 1","1, Sí | 0, No",NA,1,NA,direct-redcap
+infoshtes_cellph,Child: phone,Teléfono celular del niño/a,s1_r1_e1,Integer,"[1000000,9999999999]",phone number,NA,1,NA,direct-redcap
+infoshtes_emailok,Child: approval to contact by e-mail,Podemos contactar al niño/a por correo electrónico?,s1_r1_e1,Logical,"0, 1","1, Sí | 0, No",NA,1,NA,direct-redcap
+infoshtes_email,Child: e-mail,Dirección de correo electrónico del niño/a,s1_r1_e1,Char,e-mail address,e-mail,NA,1,NA,direct-redcap
+infoshtes_dob,Child: date of birth,Fecha de nacimiento del niño/a,s1_r1_e1,Integer,yyyy-mm-dd,yyyy-mm-dd,NA,1,NA,direct-redcap
+infoshtes_pob,Child: place of birth,Ciudad de nacimiento del niño/a,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+infoshtes_twoadd,Child: specification of more than one residence,El niño/a tiene más de una dirección de hogar?,s1_r1_e1,Logical,"0, 1","1, Sí | 0, No",NA,1,NA,direct-redcap
+infoshtes_street1,Child's primary address: street,Dirección de hogar primario del niño/a (Calle),s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+infoshtes_city1,Child's primary address: city,Dirección de hogar primario del niño/a (Ciudad),s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+infoshtes_state1,Child's primary address: state,Dirección de hogar primario del niño/a (Estado),s1_r1_e1,Char,NA,US state abbreviation,NA,1,NA,direct-redcap
+infoshtes_zip1,Child's primary address: zip,Dirección de hogar primario del niño/a (Código postal),s1_r1_e1,Integer,"[00000,99999]",US zip code,NA,1,NA,direct-redcap
+infoshtes_add1time,Child's primary address: duration,Cuántos años ha vivido el niño/a en su dirección de hogar primario?,s1_r1_e1,Integer,"[0,18]",years,NA,1,NA,direct-redcap
+infoshtes_street2,Child's secondary address: street,Dirección de hogar secundario del niño/a (Calle),s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+infoshtes_city2,Child's secondary address: city,Dirección de hogar secundario del niño/a (Ciudad),s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+infoshtes_state2,Child's secondary address: state,Dirección de hogar secundario del niño/a (Estado),s1_r1_e1,Char,NA,US state abbreviation,NA,1,NA,direct-redcap
+infoshtes_zip2,Child's secondary address: zip,Dirección de hogar secundario del niño/a (Código postal),s1_r1_e1,Integer,"[00000,99999]",US zip code,NA,1,NA,direct-redcap
+infoshtes_add2time,Child's secondary address: duration,Cuántos años ha vivido el niño/a en su dirección de hogar secundario?,s1_r1_e1,Integer,"[0,18]",years,NA,1,NA,direct-redcap
+infoshtes_school,Child's school: name and address,Nombre y dirección de la escuela del niño/a,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+infoshtes_schltime,Child's school: duration,Cuántos años ha asistido el niño/a a esta escuela?,s1_r1_e1,Integer,"[0,18]",years,NA,1,NA,direct-redcap
+infoshtes_p1fname,Respondent: first name,Primer nombre,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+infoshtes_p1lname,Respondent: last name,Apellido,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+infoshtes_p1phone,Respondent: home phone,Teléfono de casa,s1_r1_e1,Integer,"[1000000,9999999999]",phone number,NA,1,NA,direct-redcap
+infoshtes_p1cell,Respondent: cell phone,Teléfono celular,s1_r1_e1,Integer,"[1000000,9999999999]",phone number,NA,1,NA,direct-redcap
+infoshtes_p1work,Respondent: work phone,Teléfono de trabajo,s1_r1_e1,Integer,"[1000000,9999999999]",phone number,NA,1,NA,direct-redcap
+infoshtes_p1email,Respondent: e-mail,Dirección de correo electrónico,s1_r1_e1,Char,e-mail address,e-mail,NA,1,NA,direct-redcap
+infoshtes_p1rel,Respondent: relationship to child,Cuál es su relación con el niño/a,s1_r1_e1,Integer,"1, 2, 3, 4, 5, 6, 7","0, madre biológica | 1, padre biológico | 2, madre adoptiva | 3, padre adoptivo | 4, madrastra | 5, padrastro | 6, padre o madre de crianza temporal | 7, otra",NA,1,NA,direct-redcap
+infoshtes_p1reloth,"Respondent: detail on ""other"" relationship to child",Por favor especifique:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+infoshtes_p1ftlive,Respondent: full-time caregiver,El niño/a vive con usted todo el tiempo?,s1_r1_e1,Logical,"0, 1","1, Sí | 0, No",NA,1,NA,direct-redcap
+infoshtes_p1contact,Respondent: frequency of contact with child (if not full-time caregiver),Cuál es la frecuencia de contacto entre usted y el niño/a?,s1_r1_e1,Integer,"1, 2, 3, 4, 5","0, no hay contacto | 1, 1-2 días al mes | 2, 3-4 días al mes | 3, 5-9 días al mes | 4, 10 o más días al mes | 5, no es regular (por ejemplo, sólo en vacaciones o una vez al año)",NA,1,NA,direct-redcap
+infoshtes_p1nonreg,Respondent: frequency of contact with child (if not with child on a regular basis),Cuántos días al año?,s1_r1_e1,Integer,"[1,365]",days,NA,1,NA,direct-redcap
+infoshtes_p2exist,Second guardian: existence,El niño/a tiene un segundo padre/guardián?,s1_r1_e1,Logical,"0, 1","1, Sí | 0, No",NA,1,NA,direct-redcap
+infoshtes_p2cntctok,Second guardian: approval to contact,Podemos contactar a esta persona sobre el niño/a?,s1_r1_e1,Logical,"0, 1","1, Sí | 0, No",NA,1,NA,direct-redcap
+infoshtes_p2name,Second Guardian: full name,"Padre/guardián 2, nombre completo:",s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+infoshtes_p2phone,Second Guardian: home phone,"Padre/guardián 2, teléfono de casa:",s1_r1_e1,Integer,"[1000000,9999999999]",phone number,NA,1,NA,direct-redcap
+infoshtes_p2cell,Second Guardian: cell phone,"Padre/guardián 2, teléfono celular:",s1_r1_e1,Integer,"[1000000,9999999999]",phone number,NA,1,NA,direct-redcap
+infoshtes_p2work,Second Guardian: work phone,"Padre/guardián 2, teléfono de trabajo",s1_r1_e1,Integer,"[1000000,9999999999]",phone number,NA,1,NA,direct-redcap
+infoshtes_p2email,Second Guardian: e-mail,"Padre/guardián 2, dirección de correo electrónico:",s1_r1_e1,Char,e-mail address,e-mail,NA,1,NA,direct-redcap
+infoshtes_p2rel,Second Guardian: relationship to child,Cuál es la relación del padre/guardián 2 con el niño/a,s1_r1_e1,Integer,"1, 2, 3, 4, 5, 6, 7","0, madre biológica | 1, padre biológico | 2, madre adoptiva | 3, padre adoptivo | 4, madrastra | 5, padrastro | 6, padre o madre de crianza temporal | 7, otra",NA,1,NA,direct-redcap
+infoshtes_p2reloth,"Second Guardian: detail on ""other"" relationship to child",Por favor especifique:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+infoshtes_p2ftlive,Second Guardian: full-time caregiver,El niño/a vive con el padre/guardián 2 todo el tiempo?,s1_r1_e1,Logical,"0, 1","1, Sí | 0, No",NA,1,NA,direct-redcap
+infoshtes_p2contact,Second Guardian: frequency of contact with child (if not full-time caregiver),Cuál es la frecuencia de contacto entre el niño/a y el padre/guardián 2?,s1_r1_e1,Integer,"1, 2, 3, 4, 5","0, no hay contacto | 1, 1-2 días al mes | 2, 3-4 días al mes | 3, 5-9 días al mes | 4, 10 o más días al mes | 5, no es regular (por ejemplo, sólo en vacaciones o una vez al año)",NA,1,NA,direct-redcap
+infoshtes_p2nonreg,Second Guardian: frequency of contact with child (if not with child on a regular basis),Cuántos días al año?,s1_r1_e1,Integer,"[1,365]",days,NA,1,NA,direct-redcap
+infoshtes_loc1name,Alternate contact 1: name,1. Nombre de la persona:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+infoshtes_loc1add,Alternate contact 1: address,Dirección:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+infoshtes_loc1phone,Alternate contact 1: phone,Número de teléfono:,s1_r1_e1,Integer,"[1000000,9999999999]",phone number,NA,1,NA,direct-redcap
+infoshtes_loc1rel,Alternate contact 1: relationship,Relación:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+infoshtes_loc2name,Alternate contact 2: name,2. Nombre de la persona:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+infoshtes_loc2add,Alternate contact 2: address,Dirección:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+infoshtes_loc2phone,Alternate contact 2: phone,Número de teléfono:,s1_r1_e1,Integer,"[1000000,9999999999]",phone number,NA,1,NA,direct-redcap
+infoshtes_loc2rel,Alternate contact 2: relationship,Relación:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+infoshtes_loc3name,Alternate contact 3: name,3. Nombre de la persona:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+infoshtes_loc3add,Alternate contact 3: address,Dirección:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+infoshtes_loc3phone,Alternate contact 3: phone,Número de teléfono:,s1_r1_e1,Integer,"[1000000,9999999999]",phone number,NA,1,NA,direct-redcap
+infoshtes_loc3rel,Alternate contact 3: relationship,Relación:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
