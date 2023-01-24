@@ -76,4 +76,5 @@ Below is a list of instruments contained in this repository.
 | tai | Test Anxiety Inventory | Spielberger et al. (1980) |
 | texi | Teenage Executive Functioning Inventory | [Thorell et al. (2020)](https://pubmed.ncbi.nlm.nih.gov/32090688/) |
 | thq | Trauma History Questionnaire | [Hooper et al. (2011)](https://psycnet.apa.org/record/2011-10871-005) |
+| txrx | Treatments and Medications | NDCLab |
 | yssm | Youth Screen & Social Media Usage | NDCLab (and ABCD study) |

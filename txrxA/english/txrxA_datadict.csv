@@ -1,0 +1,73 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+txrxa_any,Yes/no: child received treatment for emotional/psychological disorder,"Has the child ever (now or in the past) received treatment for any emotional or psychological problem? Problems may include but are not limited to Anxiety, Depression, Substance Abuse, Eating Disorder, ADHD, and Autism.",s1_r1_e1,Integer,"0, 1, 999","1, Yes | 0, No | 999, Don't know",NA,1,NA,direct-redcap
+txrxa_recentmeds,Yes/no: child medication past two weeks,Has the child taken any medications (prescription or over-the-counter) within the past two weeks?,s1_r1_e1,Integer,"0, 1, 999","1, Yes | 0, No | 999, Don't know",NA,1,NA,direct-redcap
+txrxa_tx1prob,Treatment 1: problem,Problem:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_tx1desc,Treatment 1: treatment/medication,Type of treatment and/or medication:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_tx1start,Treatment 1: start date,Start Date:,s1_r1_e1,Char,NA,month and year,NA,1,NA,direct-redcap
+txrxa_tx1end,Treatment 1: end date,End Date:,s1_r1_e1,Char,NA,month and year,NA,1,NA,direct-redcap
+txrxa_tx2prob,Treatment 2: problem,Problem:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_tx2desc,Treatment 2: treatment/medication,Type of treatment and/or medication:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_tx2start,Treatment 2: start date,Start Date:,s1_r1_e1,Char,NA,month and year,NA,1,NA,direct-redcap
+txrxa_tx2end,Treatment 2: end date,End Date:,s1_r1_e1,Char,NA,month and year,NA,1,NA,direct-redcap
+txrxa_tx3prob,Treatment 3: problem,Problem:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_tx3desc,Treatment 3: treatment/medication,Type of treatment and/or medication:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_tx3start,Treatment 3: start date,Start Date:,s1_r1_e1,Char,NA,month and year,NA,1,NA,direct-redcap
+txrxa_tx3end,Treatment 3: end date,End Date:,s1_r1_e1,Char,NA,month and year,NA,1,NA,direct-redcap
+txrxa_tx4prob,Treatment 4: problem,Problem:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_tx4desc,Treatment 4: treatment/medication,Type of treatment and/or medication:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_tx4start,Treatment 4: start date,Start Date:,s1_r1_e1,Char,NA,month and year,NA,1,NA,direct-redcap
+txrxa_tx4end,Treatment 4: end date,End Date:,s1_r1_e1,Char,NA,month and year,NA,1,NA,direct-redcap
+txrxa_tx5prob,Treatment 5: problem,Problem:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_tx5desc,Treatment 5: treatment/medication,Type of treatment and/or medication:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_tx5start,Treatment 5: start date,Start Date:,s1_r1_e1,Char,NA,month and year,NA,1,NA,direct-redcap
+txrxa_tx5end,Treatment 5: end date,End Date:,s1_r1_e1,Char,NA,month and year,NA,1,NA,direct-redcap
+txrxa_tx6prob,Treatment 6: problem,Problem:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_tx6desc,Treatment 6: treatment/medication,Type of treatment and/or medication:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_tx6start,Treatment 6: start date,Start Date:,s1_r1_e1,Char,NA,month and year,NA,1,NA,direct-redcap
+txrxa_tx6end,Treatment 6: end date,End Date:,s1_r1_e1,Char,NA,month and year,NA,1,NA,direct-redcap
+txrxa_tx7prob,Treatment 7: problem,Problem:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_tx7desc,Treatment 7: treatment/medication,Type of treatment and/or medication:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_tx7start,Treatment 7: start date,Start Date:,s1_r1_e1,Char,NA,month and year,NA,1,NA,direct-redcap
+txrxa_tx7end,Treatment 7: end date,End Date:,s1_r1_e1,Char,NA,month and year,NA,1,NA,direct-redcap
+txrxa_tx8prob,Treatment 8: problem,Problem:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_tx8desc,Treatment 8: treatment/medication,Type of treatment and/or medication:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_tx8start,Treatment 8: start date,Start Date:,s1_r1_e1,Char,NA,month and year,NA,1,NA,direct-redcap
+txrxa_tx8end,Treatment 8: end date,End Date:,s1_r1_e1,Char,NA,month and year,NA,1,NA,direct-redcap
+txrxa_tx9prob,Treatment 9: problem,Problem:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_tx9desc,Treatment 9: treatment/medication,Type of treatment and/or medication:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_tx9start,Treatment 9: start date,Start Date:,s1_r1_e1,Char,NA,month and year,NA,1,NA,direct-redcap
+txrxa_tx9end,Treatment 9: end date,End Date:,s1_r1_e1,Char,NA,month and year,NA,1,NA,direct-redcap
+txrxa_tx10prob,Treatment 10: problem,Problem:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_tx10desc,Treatment 10: treatment/medication,Type of treatment and/or medication:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_tx10start,Treatment 10: start date,Start Date:,s1_r1_e1,Char,NA,month and year,NA,1,NA,direct-redcap
+txrxa_tx10end,Treatment 10: end date,End Date:,s1_r1_e1,Char,NA,month and year,NA,1,NA,direct-redcap
+txrxa_rx1name,Medication 1: name,Medication name:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_rx1why,Medication 1: reason,Reason for taking medication:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_rx124,Medication 1: taken within past 24 hours yes/no,Taken within the last 24 hours?,s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+txrxa_rx2name,Medication 2: name,Medication name:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_rx2why,Medication 2: reason,Reason for taking medication:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_rx224,Medication 2: taken within past 24 hours yes/no,Taken within the last 24 hours?,s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+txrxa_rx3name,Medication 3: name,Medication name:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_rx3why,Medication 3: reason,Reason for taking medication:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_rx324,Medication 3: taken within past 24 hours yes/no,Taken within the last 24 hours?,s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+txrxa_rx4name,Medication 4: name,Medication name:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_rx4why,Medication 4: reason,Reason for taking medication:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_rx424,Medication 4: taken within past 24 hours yes/no,Taken within the last 24 hours?,s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+txrxa_rx5name,Medication 5: name,Medication name:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_rx5why,Medication 5: reason,Reason for taking medication:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_rx524,Medication 5: taken within past 24 hours yes/no,Taken within the last 24 hours?,s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+txrxa_rx6name,Medication 6: name,Medication name:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_rx6why,Medication 6: reason,Reason for taking medication:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_rx624,Medication 6: taken within past 24 hours yes/no,Taken within the last 24 hours?,s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+txrxa_rx7name,Medication 7: name,Medication name:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_rx7why,Medication 7: reason,Reason for taking medication:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_rx724,Medication 7: taken within past 24 hours yes/no,Taken within the last 24 hours?,s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+txrxa_rx8name,Medication 8: name,Medication name:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_rx8why,Medication 8: reason,Reason for taking medication:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_rx824,Medication 8: taken within past 24 hours yes/no,Taken within the last 24 hours?,s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+txrxa_rx9name,Medication 9: name,Medication name:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_rx9why,Medication 9: reason,Reason for taking medication:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_rx924,Medication 9: taken within past 24 hours yes/no,Taken within the last 24 hours?,s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+txrxa_rx10name,Medication 10: name,Medication name:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_rx10why,Medication 10: reason,Reason for taking medication:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+txrxa_rx1024,Medication 10: taken within past 24 hours yes/no,Taken within the last 24 hours?,s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
