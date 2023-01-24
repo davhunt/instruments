@@ -10,10 +10,10 @@ ats_i8,"ATS, question 8","If I notice one fault of mine, it makes me think about
 ats_i9,"ATS, question 9",I get unhappy with anything less than what I expected of myself.,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, I agree a lot | 2, I agree a little | 3, I'm in the middle--I neither agree nor disagree | 4, I DISagree a little | 5, I DISagree a lot",NA,1,NA,direct-redcap
 ats_i10,"ATS, question 10",A single failure can change me from feeling OK to seeing only the bad in myself.,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, I agree a lot | 2, I agree a little | 3, I'm in the middle--I neither agree nor disagree | 4, I DISagree a little | 5, I DISagree a lot",NA,1,NA,direct-redcap
 ats_scrdTotal,ATS total score,"sum of ats items 1*, 2*, 3*, 4*, 5, 6*, 7*, 8*, 9*, and 10* after asterisked items are reversed (NA if ats_percTotal < 1)",s1_r1_e1,Integer,"[10,50]",NA,NA,1,NA,code-instruments
-ats_scrdStd,ATS high standards subscore,"sum of ats items 1*, 4*, and 7* (NA if ats_percStd < 1)",s1_r1_e1,Integer,"[10,50]",NA,NA,2,NA,code-instruments
-ats_scrdGen,ATS generalization subscore,"sum of ats items 2*, 5, 8*, and 10* (NA if ats_percGen < 1)",s1_r1_e1,Integer,"[10,50]",NA,NA,3,NA,code-instruments
-ats_scrdCrit,ATS self-criticism subscore,"sum of ats items 3*, 6*, and 9* (NA if ats_percCrit < 1)",s1_r1_e1,Integer,"[10,50]",NA,NA,4,NA,code-instruments
-ats_percTotal,ATS total percentage response,percentage of response for all ats items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,5,NA,code-instruments
-ats_percStd,ATS high standards percentage response,percentage of response for ats high standards items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,6,NA,code-instruments
-ats_percGen,ATS generalization percentage response,percentage of response for ats generalization items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,7,NA,code-instruments
-ats_percCrit,ATS self-criticism percentage response,percentage of response for ats self-criticism items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,8,NA,code-instruments
+ats_scrdStd,ATS high standards subscore,"sum of ats items 1*, 4*, and 7* (NA if ats_percStd < 1)",s1_r1_e1,Integer,"[10,50]",NA,NA,1,NA,code-instruments
+ats_scrdGen,ATS generalization subscore,"sum of ats items 2*, 5, 8*, and 10* (NA if ats_percGen < 1)",s1_r1_e1,Integer,"[10,50]",NA,NA,1,NA,code-instruments
+ats_scrdCrit,ATS self-criticism subscore,"sum of ats items 3*, 6*, and 9* (NA if ats_percCrit < 1)",s1_r1_e1,Integer,"[10,50]",NA,NA,1,NA,code-instruments
+ats_percTotal,ATS total percentage response,percentage of response for all ats items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
+ats_percStd,ATS high standards percentage response,percentage of response for ats high standards items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
+ats_percGen,ATS generalization percentage response,percentage of response for ats generalization items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
+ats_percCrit,ATS self-criticism percentage response,percentage of response for ats self-criticism items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
