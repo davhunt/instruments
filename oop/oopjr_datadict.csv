@@ -1,0 +1,13 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+oopjr_i1,"OOPjr, question 1",I do not like to be friends with anyone who is not perfect,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, Not at all | 2,  | 3,  | 4,  | 5, Extremely",NA,1,NA,direct-redcap
+oopjr_i2,"OOPjr, question 2","If other kids aren't perfect, I don't like them",s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, Not at all | 2,  | 3,  | 4,  | 5, Extremely",NA,1,NA,direct-redcap
+oopjr_i3,"OOPjr, question 3",People who want to be my friend need to be perfect,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, Not at all | 2,  | 3,  | 4,  | 5, Extremely",NA,1,NA,direct-redcap
+oopjr_i4,"OOPjr, question 4",It is important that people I am close to are perfect,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, Not at all | 2,  | 3,  | 4,  | 5, Extremely",NA,1,NA,direct-redcap
+oopjr_i5,"OOPjr, question 5",I need my family members to be perfect,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, Not at all | 2,  | 3,  | 4,  | 5, Extremely",NA,1,NA,direct-redcap
+oopjr_i6,"OOPjr, question 6",Everything that others do must be perfect,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, Not at all | 2,  | 3,  | 4,  | 5, Extremely",NA,1,NA,direct-redcap
+oopjr_i7,"OOPjr, question 7",I get upset when other kids aren't perfect,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, Not at all | 2,  | 3,  | 4,  | 5, Extremely",NA,1,NA,direct-redcap
+oopjr_i8,"OOPjr, question 8",I need my friends to be perfect,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, Not at all | 2,  | 3,  | 4,  | 5, Extremely",NA,1,NA,direct-redcap
+oopjr_i9,"OOPjr, question 9",I think less of my classmates if they make mistakes,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, Not at all | 2,  | 3,  | 4,  | 5, Extremely",NA,1,NA,direct-redcap
+oopjr_i10,"OOPjr, question 10","I expect my friends to be the best, not second best",s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, Not at all | 2,  | 3,  | 4,  | 5, Extremely",NA,1,NA,direct-redcap
+oopjr_scrdTotal,OOPjr total score,sum of all oopjr items(NA if oopjr_percTotal < 1),s1_r1_e1,Integer,"[10,50]",NA,NA,1,NA,code-instruments
+oopjr_percTotal,OOPjr percentage complete,percentage of response for all oopjr items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
