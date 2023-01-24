@@ -9,7 +9,7 @@ The LSAS questionnaires are currently on the original release.
 
 
 ### Scoring Script
-The child self report and parental reports of the LSAS are included in the repository scoring script. Threshold for scoring is 100%.
+The child self report and parental reports of the LSAS are included in the repository scoring script. Threshold for scoring is 100%. See data dictionary for further details.
 
 
 ### Translations
