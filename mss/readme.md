@@ -1,7 +1,7 @@
 ## MSS (Motivation for Solitude Scale)
 
 ### Versions
-The MSS questionnaire is currently on the original release. The NDCLab uses the short form.
+The MSS questionnaire is currently on the original release. The NDCLab uses the short form. Only the English self report is available.
 
 
 ### Scoring Script
