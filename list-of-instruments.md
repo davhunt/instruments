@@ -63,6 +63,7 @@ Below is a list of instruments contained in this repository.
 | rtq | Repetitive Thinking Questionnaire | [McEvoy et al. (2010)](https://pubmed.ncbi.nlm.nih.gov/20409676/) |
 | rvq | Relational Victimization Questionnaire | [Dempsey and Storch (2008)](https://psycnet.apa.org/record/2008-03763-004) |
 | sas2 | Sport Anxiety Scale-2 | [Smith et al. (2006)](https://psycnet.apa.org/record/2006-22413-004) |
+| sassy | Self-report of Ambiguous Social Situations for Youth | [Gonzalez et al. (2017)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5521277/) |
 | scaared | Screen for Adult Anxiety Related Disorders | [Angulo et al. (2017)](https://pubmed.ncbi.nlm.nih.gov/28359032/) |
 | scared | Screen for Child Anxiety Related Disorders | [Birmaher et al. (1999)](https://pubmed.ncbi.nlm.nih.gov/10517055/) |
 | sias6 | Social Interaction Anxiety Scale | [Peters et al. (2012)](https://pubmed.ncbi.nlm.nih.gov/21744971/) |
