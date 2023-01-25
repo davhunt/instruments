@@ -68,6 +68,7 @@ Below is a list of instruments contained in this repository.
 | scared | Screen for Child Anxiety Related Disorders | [Birmaher et al. (1999)](https://pubmed.ncbi.nlm.nih.gov/10517055/) |
 | sias6 | Social Interaction Anxiety Scale | [Peters et al. (2012)](https://pubmed.ncbi.nlm.nih.gov/21744971/) |
 | sics | Social Interaction and Communication Skills Checklist | (unconfirmed) |
+| socrew | Youth Social Reward Survey | NDCLab |
 | spai | Social Phobia and Anxiety Inventory | [Beidel et al. (1995)](https://psycnet.apa.org/record/1995-27642-001) |
 | sps6 | Social Phobia Scale | [Peters et al. (2012)](https://pubmed.ncbi.nlm.nih.gov/21744971/) |
 | srq | Social Reward Questionnaire | [Foulkes et al. (2014)](https://pubmed.ncbi.nlm.nih.gov/24653711/) |

@@ -1,0 +1,21 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+socrew_i1,"SOCREW, question 1",How much do you LIKE feeling connected to them?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, A lot",NA,1,NA,direct-redcap
+socrew_i2,"SOCREW, question 2",How much do you like feeling LIKE a part of the group?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, A lot",NA,1,NA,direct-redcap
+socrew_i3,"SOCREW, question 3",How much do you LIKE when they include you in activities?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, A lot",NA,1,NA,direct-redcap
+socrew_i4,"SOCREW, question 4",How much do you LIKE spending time with them?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, A lot",NA,1,NA,direct-redcap
+socrew_i5,"SOCREW, question 5",How much do you WANT to feel connected to them?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, A lot",NA,1,NA,direct-redcap
+socrew_i6,"SOCREW, question 6",How much do you WANT to feel like a part of the group?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, A lot",NA,1,NA,direct-redcap
+socrew_i7,"SOCREW, question 7",How much do you WANT them to include you in activities?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, A lot",NA,1,NA,direct-redcap
+socrew_i8,"SOCREW, question 8",How much do you WANT to spend time with them?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, A lot",NA,1,NA,direct-redcap
+socrew_i9,"SOCREW, question 9",How much EFFORT do you put in to feel connected to them?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, A lot",NA,1,NA,direct-redcap
+socrew_i10,"SOCREW, question 10",How much EFFORT do you put in to feel like a part of the group?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, A lot",NA,1,NA,direct-redcap
+socrew_i11,"SOCREW, question 11",How much EFFORT do you put in so they will include you in activities?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, A lot",NA,1,NA,direct-redcap
+socrew_i12,"SOCREW, question 12",How much EFFORT do you put in to spend time with them?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, A lot",NA,1,NA,direct-redcap
+socrew_scrdTotal,SOCREW total score,average of all socrew items (NA if socrew_percTotal < 0.8),s1_r1_e1,Real,"[1,4]",NA,NA,1,NA,code-instruments
+socrew_scrdLike,SOCREW desire to be liked subscore,"average of socrew items 1, 2, 3, and 4 (NA if socrew_percLike < 0.8)",s1_r1_e1,Real,"[1,4]",NA,NA,1,NA,code-instruments
+socrew_scrdWant,SOCREW desire to be included subscore,"average of socrew items 5, 6, 7, and 8 (NA if socrew_percWant < 0.8)",s1_r1_e1,Real,"[1,4]",NA,NA,1,NA,code-instruments
+socrew_scrdEff,SOCREW effort subscore,"average of socrew items 9, 10, 11, and 12 (NA if socrew_percEff < 0.8)",s1_r1_e1,Real,"[1,4]",NA,NA,1,NA,code-instruments
+socrew_percTotal,SOCREW percentage complete,percentage of response for all socrew items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
+socrew_percLike,SOCREW desire to be liked percentage complete,percentage of response for socrew desire to be liked items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
+socrew_percWant,SOCREW desire to be included percentage complete,percentage of response for socrew desire to be included items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
+socrew_percEff,SOCREW effort percentage complete,percentage of response for socrew effort items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments

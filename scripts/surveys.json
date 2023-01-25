@@ -1291,6 +1291,28 @@
             "threshold": 1.0
         }
     },
+    "socrew": {
+        "Total": {
+            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Like": {
+            "questions": [1, 2, 3, 4],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Want": {
+            "questions": [5, 6, 7, 8],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Eff": {
+            "questions": [9, 10, 11, 12],
+            "score_type": "avg",
+            "threshold": 0.8
+        }
+    },
     "spaic": {
         "score1": {
             "questions": [9, 10, 11],
