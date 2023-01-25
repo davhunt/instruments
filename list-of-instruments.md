@@ -80,4 +80,5 @@ Below is a list of instruments contained in this repository.
 | thq | Trauma History Questionnaire | [Hooper et al. (2011)](https://psycnet.apa.org/record/2011-10871-005) |
 | tsis | Tromsø Social Intelligence Scale | [Silvera et al. (2001)](https://psycnet.apa.org/doiLanding?doi=10.1037%2Ft25706-000) |
 | txrx | Treatments and Medications | NDCLab |
+| via | Vancouver Index of Acculturation | [Ryder et al. (2000)](https://pubmed.ncbi.nlm.nih.gov/10909877/) |
 | yssm | Youth Screen & Social Media Usage | NDCLab (and ABCD study) |

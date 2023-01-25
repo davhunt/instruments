@@ -1,0 +1,23 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+via_i0,Initial question so that VIA only presented to participants who identify as having a heritage culture,Do you have a heritage culture (other than American)?,s1_r1_e1,Logical,"0,1","1, Yes | 0, No",NA,1,NA,direct-redcap
+via_culture,Specification of heritage culture,Your heritage culture (other than American) is:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+via_i1,"VIA, question 1",I often participate in my heritage cultural traditions.,s1_r1_e1,Integer,"1, 2, 3, 4, 5, 6, 7, 8, 9","1, Disagree | 2,  | 3,  | 4,  | 5,  | 6,  | 7,  | 8,  | 9, Agree",NA,1,NA,direct-redcap
+via_i2,"VIA, question 2",I often participate in mainstream American cultural traditions.,s1_r1_e1,Integer,"1, 2, 3, 4, 5, 6, 7, 8, 9","1, Disagree | 2,  | 3,  | 4,  | 5,  | 6,  | 7,  | 8,  | 9, Agree",NA,1,NA,direct-redcap
+via_i3,"VIA, question 3",I enjoy social activities with people from the same heritage culture as myself.,s1_r1_e1,Integer,"1, 2, 3, 4, 5, 6, 7, 8, 9","1, Disagree | 2,  | 3,  | 4,  | 5,  | 6,  | 7,  | 8,  | 9, Agree",NA,1,NA,direct-redcap
+via_i4,"VIA, question 4",I am comfortable interacting with people of the same heritage culture as myself.,s1_r1_e1,Integer,"1, 2, 3, 4, 5, 6, 7, 8, 9","1, Disagree | 2,  | 3,  | 4,  | 5,  | 6,  | 7,  | 8,  | 9, Agree",NA,1,NA,direct-redcap
+via_i5,"VIA, question 5",I am comfortable interacting with typical American people.,s1_r1_e1,Integer,"1, 2, 3, 4, 5, 6, 7, 8, 9","1, Disagree | 2,  | 3,  | 4,  | 5,  | 6,  | 7,  | 8,  | 9, Agree",NA,1,NA,direct-redcap
+via_i6,"VIA, question 6","I enjoy entertainment (e.g. movies, music) from my heritage culture.",s1_r1_e1,Integer,"1, 2, 3, 4, 5, 6, 7, 8, 9","1, Disagree | 2,  | 3,  | 4,  | 5,  | 6,  | 7,  | 8,  | 9, Agree",NA,1,NA,direct-redcap
+via_i7,"VIA, question 7","I enjoy typical American entertainment (e.g. movies, music).",s1_r1_e1,Integer,"1, 2, 3, 4, 5, 6, 7, 8, 9","1, Disagree | 2,  | 3,  | 4,  | 5,  | 6,  | 7,  | 8,  | 9, Agree",NA,1,NA,direct-redcap
+via_i8,"VIA, question 8",I often behave in ways that are typical of my heritage culture.,s1_r1_e1,Integer,"1, 2, 3, 4, 5, 6, 7, 8, 9","1, Disagree | 2,  | 3,  | 4,  | 5,  | 6,  | 7,  | 8,  | 9, Agree",NA,1,NA,direct-redcap
+via_i9,"VIA, question 9",I often behave in ways that are typically American.,s1_r1_e1,Integer,"1, 2, 3, 4, 5, 6, 7, 8, 9","1, Disagree | 2,  | 3,  | 4,  | 5,  | 6,  | 7,  | 8,  | 9, Agree",NA,1,NA,direct-redcap
+via_i10,"VIA, question 10",It is important for me to maintain or develop the practices of my heritage culture.,s1_r1_e1,Integer,"1, 2, 3, 4, 5, 6, 7, 8, 9","1, Disagree | 2,  | 3,  | 4,  | 5,  | 6,  | 7,  | 8,  | 9, Agree",NA,1,NA,direct-redcap
+via_i11,"VIA, question 11",It is important for me to maintain or develop American mainstream cultural practices.,s1_r1_e1,Integer,"1, 2, 3, 4, 5, 6, 7, 8, 9","1, Disagree | 2,  | 3,  | 4,  | 5,  | 6,  | 7,  | 8,  | 9, Agree",NA,1,NA,direct-redcap
+via_i12,"VIA, question 12",I believe in the values of my heritage culture.,s1_r1_e1,Integer,"1, 2, 3, 4, 5, 6, 7, 8, 9","1, Disagree | 2,  | 3,  | 4,  | 5,  | 6,  | 7,  | 8,  | 9, Agree",NA,1,NA,direct-redcap
+via_i13,"VIA, question 13",I believe in mainstream American values.,s1_r1_e1,Integer,"1, 2, 3, 4, 5, 6, 7, 8, 9","1, Disagree | 2,  | 3,  | 4,  | 5,  | 6,  | 7,  | 8,  | 9, Agree",NA,1,NA,direct-redcap
+via_i14,"VIA, question 14",I am interested in having friends from my heritage culture.,s1_r1_e1,Integer,"1, 2, 3, 4, 5, 6, 7, 8, 9","1, Disagree | 2,  | 3,  | 4,  | 5,  | 6,  | 7,  | 8,  | 9, Agree",NA,1,NA,direct-redcap
+via_i15,"VIA, question 15",I am interested in having typical American friends.,s1_r1_e1,Integer,"1, 2, 3, 4, 5, 6, 7, 8, 9","1, Disagree | 2,  | 3,  | 4,  | 5,  | 6,  | 7,  | 8,  | 9, Agree",NA,1,NA,direct-redcap
+via_i16,"VIA, question 16",I enjoy social activities with typical American people.,s1_r1_e1,Integer,"1, 2, 3, 4, 5, 6, 7, 8, 9","1, Disagree | 2,  | 3,  | 4,  | 5,  | 6,  | 7,  | 8,  | 9, Agree",NA,1,NA,direct-redcap
+via_scrdHer,VIA heritage subscore,"average of via items 1, 3, 4, 6, 8, 10, 12, and 14 (NA if via_percHer < 0.8)",s1_r1_e1,Real,"[1,9]",NA,NA,1,NA,code-instruments
+via_scrdMain,VIA mainstream subscore,"average of via items 2, 5, 7, 9, 11, 13, 15, and 16 (NA if via_percMain < 0.8)",s1_r1_e1,Real,"[1,9]",NA,NA,1,NA,code-instruments
+via_percHer,VIA heritage percentage response,percentage of response for via heritage items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
+via_percMain,VIA mainstream percentage response,percentage of response for via mainstream items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
