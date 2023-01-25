@@ -1,7 +1,7 @@
 ## YSSM (Youth Screen & Social Media Usage)
 
 ### Versions
-The YSSM questionnaires are currently on the original release. The NDCLab version is based on the [ABCD youth questionnaire](https://nda.nih.gov/data_structure.html?short_name=abcd_stq01) and the [ABCD parent questionnaire](https://nda.nih.gov/data_structure.html?short_name=stq01).
+The YSSM questionnaires are currently on the original release. The NDCLab versions are based on the [ABCD youth questionnaire](https://nda.nih.gov/data_structure.html?short_name=abcd_stq01) and the [ABCD parent questionnaire](https://nda.nih.gov/data_structure.html?short_name=stq01), both extracted from the NIMH Data Archive in January 2023.
 | Audience | Language |
 | :--  | :--  |
 | child self report | English  |
