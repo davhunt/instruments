@@ -1037,6 +1037,27 @@
             "score_type": "sum"
         }
     },
+    "pbs": {
+        "Total": {
+            "questions": [1, 2, 3],
+            "score_type": "avg",
+            "threshold": 0.8
+        }
+    },
+    "pbsp": {
+        "Total": {
+            "questions": [1, 2, 3],
+            "score_type": "avg",
+            "threshold": 0.8
+        }
+    },
+    "pbspes": {
+        "Total": {
+            "questions": [1, 2, 3],
+            "score_type": "avg",
+            "threshold": 0.8
+        }
+    },
     "pdsf": {
         "Total": {
             "questions": [1, 2, 3, 4, 5],

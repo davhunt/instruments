@@ -49,6 +49,7 @@ Below is a list of instruments contained in this repository.
 | oci | Obsessive-Compulsive Inventory | [Foa et al. (2002)](https://pubmed.ncbi.nlm.nih.gov/12501574/) |
 | oop | Other-Oriented Perfectionism | [Hewitt et al. (2022)](https://pubmed.ncbi.nlm.nih.gov/35572033/) |
 | panas | Positive and Negative Affect Schedule | [Watson et al. (1988)](https://pubmed.ncbi.nlm.nih.gov/3397865/) |
+| pbs | Prosocial Behavior Survey | NDCLab (and ABCD study) |
 | pds | Pubertal Development Scale | [Carskadon and Acebo (1993)](https://pubmed.ncbi.nlm.nih.gov/8323929/) |
 | phq8 | Patient Health Questionnaire | [Kroenke et al. (2009)](https://pubmed.ncbi.nlm.nih.gov/18752852/) |
 | physinfo | Physical Information | NDCLab |
