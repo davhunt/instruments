@@ -76,6 +76,7 @@ Below is a list of instruments contained in this repository.
 | sssq | Short Stress State Questionnaire | [Helton and Näsall (2015)](https://psycnet.apa.org/record/2014-09900-001) |
 | stai5 | State-Trait Anxiety Inventory, Short Version | [Zsido et al. (2020)](https://pubmed.ncbi.nlm.nih.gov/32563747/) |
 | stop | 'STOP' screen for in-person sessions | NDCLab |
+| swcq | Self-Worth Contingency Questionnaire | [Burwell and Shirk (2006)](https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1532-7795.2006.00503.x) |
 | tai | Test Anxiety Inventory | Spielberger et al. (1980) |
 | texi | Teenage Executive Functioning Inventory | [Thorell et al. (2020)](https://pubmed.ncbi.nlm.nih.gov/32090688/) |
 | thq | Trauma History Questionnaire | [Hooper et al. (2011)](https://psycnet.apa.org/record/2011-10871-005) |

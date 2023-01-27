@@ -1705,6 +1705,42 @@
             "score_type": "sum"
         }
     },
+    "swcq": {
+        "score1": {
+            "questions": [1, 5, 9, 13, 17, 21, 25, 29],
+            "rev_questions": [5, 9, 21, 29],
+            "answers": [1, 2, 3, 4, 5, 6],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "score2": {
+            "questions": [2, 6, 10, 14, 18, 22, 26, 30],
+            "rev_questions": [18, 22, 26, 30],
+            "answers": [1, 2, 3, 4, 5, 6],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "score3": {
+            "questions": [3, 7, 11, 15, 19, 23, 27, 31],
+            "rev_questions": [3, 15, 23, 27],
+            "answers": [1, 2, 3, 4, 5, 6],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "score4": {
+            "questions": [4, 8, 12, 16, 20, 24, 28, 32],
+            "rev_questions": [4, 8, 12, 32],
+            "answers": [1, 2, 3, 4, 5, 6],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "Total": {
+            "products": ["score1", "score2", "score3", "score4"],
+            "hide": true,
+            "score_type": "avg",
+            "threshold": 1.0
+        }
+    },
     "tai": {
         "other": {
             "questions": [3, 10, 17, 25, 32, 41, 46, 47],
