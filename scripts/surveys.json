@@ -1065,7 +1065,35 @@
             "threshold": 0.8
         }
     },
+    "pdsfp": {
+        "Total": {
+            "questions": [1, 2, 3, 4, 5],
+            "score_type": "avg",
+            "threshold": 0.8
+        }
+    },
+    "pdsfpes": {
+        "Total": {
+            "questions": [1, 2, 3, 4, 5],
+            "score_type": "avg",
+            "threshold": 0.8
+        }
+    },
     "pdsm": {
+        "Total": {
+            "questions": [1, 2, 3, 4, 5],
+            "score_type": "avg",
+            "threshold": 0.8
+        }
+    },
+    "pdsmp": {
+        "Total": {
+            "questions": [1, 2, 3, 4, 5],
+            "score_type": "avg",
+            "threshold": 0.8
+        }
+    },
+    "pdsmpes": {
         "Total": {
             "questions": [1, 2, 3, 4, 5],
             "score_type": "avg",

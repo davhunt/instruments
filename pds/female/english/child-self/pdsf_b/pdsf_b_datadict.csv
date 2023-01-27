@@ -1,0 +1,22 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+pdsf_b_i1,"PDS (female, version B), question 1",Would you say your growth in height... ,s1_r1_e1,Integer,"NA, 1, 2, 3, 4","1, Has not yet begun to spurt (""spurt"" means more growth than usual) | 2, Has barely started | 3, Is definitely underway | 4, Seems completed | NA, I don't know",NA,1,NA,direct-redcap
+pdsf_b_i2,"PDS (female, version B), question 2","And how about the growth of body hair (""body hair"" means underarm and pubic hair)? Would you say that your body hair...",s1_r1_e1,Integer,"NA, 1, 2, 3, 4","1, Has not yet started growing | 2, Has barely started growing | 3, Is definitely underway | 4, Seems completed | NA, I don't know",NA,1,NA,direct-redcap
+pdsf_b_i3,"PDS (female, version B), question 3","Have you noticed any skin changes, especially pimples?",s1_r1_e1,Integer,"NA, 1, 2, 3, 4","1, Not yet started showing changes | 2, Have barely started showing changes | 3, Skin changes are definitely underway | 4, Skin changes seem completed | NA, I don't know",NA,1,NA,direct-redcap
+pdsf_b_i4,"PDS (female, version B), question 4",Have your breasts begun to grow?,s1_r1_e1,Integer,"NA, 1, 2, 3, 4","1, Not yet started growing | 2, Has barely started changing | 3, Breast growth is definitely underway | 4, Breast growth seems completed | NA, I don't know",NA,1,NA,direct-redcap
+pdsf_b_i5,"PDS (female, version B), question 5",Have you begun to menstruate or get your period?,s1_r1_e1,Integer,"0, 1, 4","4, Yes | 0, No | NA, I don't know",NA,1,NA,direct-redcap
+pdsf_b_i6,"PDS (female, version B), question 6","How old were you when you started to menstruate?
+
+(If you don't know, please choose ""don't know"" in what follows below.)",s1_r1_e1,Integer,"[0,20]",NA,NA,1,NA,direct-redcap
+pdsf_b_i6dk,"PDS (female, version B), question 6: don't know option",Selected if participant does not know the answer to question 6,s1_r1_e1,Integer,999,"999, I don't know",NA,1,NA,direct-redcap
+pdsf_b_i7,"PDS (female, version B), question 7",What was the date of the first day of your last period?,s1_r1_e1,Date,yyyy-mm-dd,yyyy-mm-dd,NA,1,NA,direct-redcap
+pdsf_b_i7dk,"PDS (female, version B), question 7: don't know option",Selected if participant does not know the answer to question 7,s1_r1_e1,Integer,999,"999, I don't know",NA,1,NA,direct-redcap
+pdsf_b_i8,"PDS (female, version B), question 8","On average, how many days are there between the first day of your period and the first day of your next period?
+
+(If you don't know, please choose ""don't know"" in what follows below.)",s1_r1_e1,Integer,"[17,50]",NA,NA,1,NA,direct-redcap
+pdsf_b_i8dk,"PDS (female, version B), question 8: don't know option",Selected if participant does not know the answer to question 8,s1_r1_e1,Integer,999,"999, I don't know",NA,1,NA,direct-redcap
+pdsf_b_i9,"PDS (female, version B), question 9",Is your menstrual cycle regular?,s1_r1_e1,Integer,"0, 1, 999","1, Yes | 0, No | 999, Don't know",NA,1,NA,direct-redcap
+pdsf_b_i10,"PDS (female, version B), question 10","Are you currently using hormonal birth control (eg. the pill, hormone patch, hormone injection)?",s1_r1_e1,Integer,"0, 1, 999","1, Yes | 0, No | 999, Don't know",NA,1,NA,direct-redcap
+pdsf_b_i11,"PDS (female, version B), question 11","Do you experience premenstrual symptoms, such as irritability, fatigue, etc., which start before a period and stop within a few days of bleeding?",s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2, Mild | 3, Moderate | 4, Severe",NA,1,NA,direct-redcap
+pdsf_b_i12,"PDS (female, version B), question 12","Do your premenstrual symptoms interfere with your relationships with family and friends, productivity, and/or social life activities?",s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2, Mild | 3, Moderate | 4, Severe",NA,1,NA,direct-redcap
+pdsf_b_scrdTotal,"PDS (female, version B), total score",average of pdsf_b items 1-5 (NA if pdsf_b_percTotal < 0.8),s1_r1_e1,Real,"[1,4]",NA,NA,1,NA,code-instruments
+pdsf_b_percTotal,"PDS (female, version B), percentage response",percentage of response for pdsf_b items 1-5 (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
