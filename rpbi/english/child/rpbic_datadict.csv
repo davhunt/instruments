@@ -1,0 +1,35 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+rpbic_i1,"RPBI (child report), question 1",Makes me feel better after talking over my worries with them.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbic_i2,"RPBI (child report), question 2",Tells me of all the things they have done for me.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbic_i3,"RPBI (child report), question 3",Believes in having a lot of rules and sticking to them.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbic_i4,"RPBI (child report), question 4",Smiles at me very often.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbic_i5,"RPBI (child report), question 5","Says, if I really cared for them, I would not do things that cause them to worry.",s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbic_i6,"RPBI (child report), question 6",Insists that I must do exactly as I am told.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbic_i7,"RPBI (child report), question 7",Is able to make me feel better when I am upset.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbic_i8,"RPBI (child report), question 8",Is always telling me how I should behave.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbic_i9,"RPBI (child report), question 9",Is very strict with me.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbic_i10,"RPBI (child report), question 10",Enjoys doing things with me.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbic_i11,"RPBI (child report), question 11",Would like to be able to tell me what to do all the time.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbic_i12,"RPBI (child report), question 12",Gives hard punishment.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbic_i13,"RPBI (child report), question 13",Cheers me up when I am sad.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbic_i14,"RPBI (child report), question 14",Wants to control whatever I do.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbic_i15,"RPBI (child report), question 15",Is easy with me.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbic_i16,"RPBI (child report), question 16",Gives me a lot of care and attention.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbic_i17,"RPBI (child report), question 17",Is always trying to change me.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbic_i18,"RPBI (child report), question 18",Lets me off easy when I do something wrong.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbic_i19,"RPBI (child report), question 19",Makes me feel like the most important person in their life.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbic_i20,"RPBI (child report), question 20",Only keeps rules when it suits them.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbic_i21,"RPBI (child report), question 21",Gives me as much freedom as I want.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbic_i22,"RPBI (child report), question 22",Believes in showing their love for me.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbic_i23,"RPBI (child report), question 23",Is less friendly with me if I do not see things their way.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbic_i24,"RPBI (child report), question 24",Lets me go any place I please without asking.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbic_i25,"RPBI (child report), question 25",Often praises me.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbic_i26,"RPBI (child report), question 26",Will avoid looking at me when I have disappointed them.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbic_i27,"RPBI (child report), question 27",Lets me go out any evening I want.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbic_i28,"RPBI (child report), question 28",Is easy to talk to.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbic_i29,"RPBI (child report), question 29","If I hurt their feelings, stops talking to me until I please them again.",s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbic_i30,"RPBI (child report), question 30",Lets me do anything I like to do.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbic_scrdAcc,RPBI (child version) acceptance subscore,"sum of rpbic items 1, 4, 7, 10, 13, 16, 19, 22, 25, and 28 (NA if rpbic_percAcc < 1)",s1_r1_e1,Integer,"[0,20]",NA,NA,1,NA,code-instruments
+rpbic_scrdPsyC,RPBI (child version) psychological control subscore,"sum of rpbic items 2, 5, 8, 11, 14, 17, 20, 23, 26, and 29 (NA if rpbic_percPsyC < 1)",s1_r1_e1,Integer,"[0,20]",NA,NA,1,NA,code-instruments
+rpbic_percAcc,RPBI (child version) acceptance percentage response,percentage of response for rpbic acceptance items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
+rpbic_percPsyC,RPBI (child version) psychological control percentage response,percentage of response for rpbic psychological control items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments

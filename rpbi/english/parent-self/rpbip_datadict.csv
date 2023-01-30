@@ -1,0 +1,35 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+rpbip_i1,"RPBI (parent self report), question 1",I make my child feel better after talking over his/her worries with me.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbip_i2,"RPBI (parent self report), question 2",I tell my child of all the things I have done for him/her.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbip_i3,"RPBI (parent self report), question 3",I believe in having a lot of rules and sticking to them.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbip_i4,"RPBI (parent self report), question 4",I smile at my child very often.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbip_i5,"RPBI (parent self report), question 5","If my child really cared for me, he/she would not do things that cause me to worry.",s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbip_i6,"RPBI (parent self report), question 6",I insist that my child must do exactly as he/she is told.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbip_i7,"RPBI (parent self report), question 7",I am able to make my child feel better when he/she is upset.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbip_i8,"RPBI (parent self report), question 8",I am always telling my child how he/she should behave.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbip_i9,"RPBI (parent self report), question 9",I am very strict with my child.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbip_i10,"RPBI (parent self report), question 10",I enjoy doing things with my child.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbip_i11,"RPBI (parent self report), question 11",I would like to be able to tell my child what to do all the time.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbip_i12,"RPBI (parent self report), question 12",I give hard punishment.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbip_i13,"RPBI (parent self report), question 13",I cheer my child up when he/she is sad.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbip_i14,"RPBI (parent self report), question 14",I want to control whatever my child does.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbip_i15,"RPBI (parent self report), question 15",I am easy with my child.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbip_i16,"RPBI (parent self report), question 16",I give my child a lot of care and attention.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbip_i17,"RPBI (parent self report), question 17",I am always trying to change my child.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbip_i18,"RPBI (parent self report), question 18",I let my child off easy when he/she does something wrong.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbip_i19,"RPBI (parent self report), question 19",I make my child feel like the most important person in my life.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbip_i20,"RPBI (parent self report), question 20",I only keep rules when it suits me.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbip_i21,"RPBI (parent self report), question 21",I give my child as much freedom as he/she wants.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbip_i22,"RPBI (parent self report), question 22",I believe in showing my love for my child.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbip_i23,"RPBI (parent self report), question 23","I am less friendly with my child, if my child does not see things my way.",s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbip_i24,"RPBI (parent self report), question 24",I let my child go any place he/she pleases without asking.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbip_i25,"RPBI (parent self report), question 25",I often praise my child.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbip_i26,"RPBI (parent self report), question 26",I will avoid looking at my child when he/she has disappointed me.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbip_i27,"RPBI (parent self report), question 27",I let my child go out any evening he/she wants.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbip_i28,"RPBI (parent self report), question 28",I am easy to talk to.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbip_i29,"RPBI (parent self report), question 29","If my child hurts my feelings, I stop talking to my child until he/she pleases me again.",s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbip_i30,"RPBI (parent self report), question 30",I let my child do anything he/she likes to do.,s1_r1_e1,Integer,"0, 1, 2","0, not like | 1, somewhat like | 2, a lot like",NA,1,NA,direct-redcap
+rpbip_scrdAcc,RPBI (parent self report) acceptance subscore,"sum of rpbip items 1, 4, 7, 10, 13, 16, 19, 22, 25, and 28 (NA if rpbip_percAcc < 1)",s1_r1_e1,Integer,"[0,20]",NA,NA,1,NA,code-instruments
+rpbip_scrdPsyC,RPBI (parent self report) psychological control subscore,"sum of rpbip items 2, 5, 8, 11, 14, 17, 20, 23, 26, and 29 (NA if rpbip_percPsyC < 1)",s1_r1_e1,Integer,"[0,20]",NA,NA,1,NA,code-instruments
+rpbip_percAcc,RPBI (parent self report) acceptance percentage response,percentage of response for rpbip acceptance items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
+rpbip_percPsyC,RPBI (parent self report) psychological control percentage response,percentage of response for rpbip psychological control items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
