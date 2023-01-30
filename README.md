@@ -60,7 +60,7 @@ The following software iterations are planned for development. Each iteration is
 * Bugfix to ensure correct percentage response, based on the number of questions in surveys.json and handled for each sre.
 
 ### 0.08
-* Addition of ABQ, ATS, BSTAD, CASI, CYBER, DEMO_D, DYADA/B, EATQ(ES), ERQCA, FASAP(ES), FPE, IDENTITYA, INFOSHT(ES), INITSTATEC/D, MSS, OCIC, OOPJR, PBS/P(ES), PDSF(P)(ES)_B, PDSMP(ES), PHYSINFO/P(ES), POSTTASKE/F, RPBIC/P(ES), SASSY, SCAREDPES, SOCREW, SWCQ, TSIS, TXRXA(ES), VIA, YSSM/P(ES)
+* Addition of ABQ, ATS, BSTAD, CASI, CYBER, DEMO_D, DYADA/B, EATQ(ES), ERQCA, FASAP(ES), FPE, IDENTITYA, INFOSHT(ES), INITSTATEC/D, MSS, OCIC, OOPJR, PBS/P(ES), PDSF(P)(ES)_B, PDSMP(ES), PHYSINFO/P(ES), POSTTASKE/F, RPBIC/P(ES), RSRI/P(ES), SASSY, SCAREDPES, SOCREW, SWCQ, TSIS, TXRXA(ES), VIA, YSSM/P(ES)
 
 ### 0.1
 

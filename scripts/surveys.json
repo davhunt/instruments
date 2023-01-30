@@ -1229,6 +1229,57 @@
             "threshold": 0.8
         }
     },
+    "rsri": {
+        "Total": {
+            "questions": null
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "SocSch": {
+            "questions": [15, 17, 18, 19, 20, 21, 22, 23, 24, 25, 28, 30]
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Fear": {
+            "questions": [1, 2, 3, 4, 5, 6, 7, 10, 12, 16, 26, 27]
+            "score_type": "avg",
+            "threshold": 0.8
+        }
+    },
+    "rsrip": {
+        "Total": {
+            "questions": null
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "SocSch": {
+            "questions": [15, 17, 18, 19, 20, 21, 22, 23, 24, 25, 28, 30]
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Fear": {
+            "questions": [1, 2, 3, 4, 5, 6, 7, 10, 12, 16, 26, 27]
+            "score_type": "avg",
+            "threshold": 0.8
+        }
+    },
+    "rsripes": {
+        "Total": {
+            "questions": null
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "SocSch": {
+            "questions": [15, 17, 18, 19, 20, 21, 22, 23, 24, 25, 28, 30]
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Fear": {
+            "questions": [1, 2, 3, 4, 5, 6, 7, 10, 12, 16, 26, 27]
+            "score_type": "avg",
+            "threshold": 0.8
+        }
+    },
     "rvq": {
         "total": {
             "questions": [1, 2, 3, 4, 5, 6, 7],

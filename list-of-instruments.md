@@ -62,6 +62,7 @@ Below is a list of instruments contained in this repository.
 | rmbi | Retrospective Measure of Behavioral Inhibition | [Gladstone and Parker (2005)](https://pubmed.ncbi.nlm.nih.gov/15922458/) |
 | rpbi | Report of Parent Behavior Inventory | [Schaefer (1965)](https://psycnet.apa.org/record/1965-12269-001) |
 | rpeq | Revised Peer Experiences Questionnaires | [Prinstein et al. (2001)](https://pubmed.ncbi.nlm.nih.gov/11708236/) |
+| rsri | Retrospective Self-Report of Inhibition | [Reznick et al. (1992)](https://www.cambridge.org/core/journals/development-and-psychopathology/article/abs/retrospective-and-concurrent-selfreport-of-behavioral-inhibition-and-their-relation-to-adult-mental-health/0082E88707065192BC16A35DE5AFC9E3) |
 | rtq | Repetitive Thinking Questionnaire | [McEvoy et al. (2010)](https://pubmed.ncbi.nlm.nih.gov/20409676/) |
 | rvq | Relational Victimization Questionnaire | [Dempsey and Storch (2008)](https://psycnet.apa.org/record/2008-03763-004) |
 | sas2 | Sport Anxiety Scale-2 | [Smith et al. (2006)](https://psycnet.apa.org/record/2006-22413-004) |
