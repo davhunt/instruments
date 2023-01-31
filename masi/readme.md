@@ -1,10 +1,11 @@
 ## MASI (Multidimensional Acculturative Stress Inventory)
 
-This questionnaire only pertains to participants who identify as being multicultural; therefore, only participants who have selected a non-White ethnic/racial identification in the demographics survey should be presented with this questionnaire.
-
-
 ### Versions
-The MASI questionnaire is currently on the original release. Only the English self report is available.
+##### masi_b
+This version includes an additional item (i0) explicitly asking whether the participant has a heritage culture; the remaining questions are only displayed for participants who answer in the affirmative.  Only the English self-report is available.
+
+##### masi(_a)
+This is the original version used by the NDCLab. It only included the English self report and was limited to participants who selected a non-White ethnic/racial identification in the demographics survey. This version is now deprecated.
 
 
 ### Scoring Script
