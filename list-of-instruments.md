@@ -37,8 +37,8 @@ Below is a list of instruments contained in this repository.
 | hsps | Highly Sensitive Person Scale | Aron (1996) |
 | hvs | Heightened Vigilance Scale | [Williams et al. (1997)](https://pubmed.ncbi.nlm.nih.gov/22013026/) |
 | idea | Inventory of the Dimensions of Emerging Adulthood | [Reifman et al. (2007)](https://jyd.pitt.edu/ojs/jyd/article/view/359) |
-| ierq | Interpersonal Emotion Regulation Questionnaire | [Hofmann et al. (2016)](https://link.springer.com/article/10.1007/s10608-016-9756-2) |
 | identity | Sexuality and Gender Identity | NDCLab |
+| ierq | Interpersonal Emotion Regulation Questionnaire | [Hofmann et al. (2016)](https://link.springer.com/article/10.1007/s10608-016-9756-2) |
 | info-health | Information and Health Form | NDCLab |
 | infosht | Information Form | NDCLab |
 | initState | Pre-Task Questionnaires | NDCLab |
