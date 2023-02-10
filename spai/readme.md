@@ -1,7 +1,7 @@
 ## SPAI (Social Phobia and Anxiety Inventory)
 
 ### Versions
-The SPAI questionnaires are currently on the original release.  "Circle the number" has been replaced with "select the option" for online use.
+The SPAI questionnaires are currently on the original release.  "Circle the number" has been replaced with "select the option" for online use. In order to optimize the respondent experience in REDCap, standalone questions (1-8, 22, and 23) are presented with radio buttons rather than as a matrix.
 | Audience | Language |
 | :--  | :--  |
 | child self report | English  |
