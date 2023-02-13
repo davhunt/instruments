@@ -18,7 +18,8 @@ Below is a list of instruments contained in this repository.
 | briefA | Behavior Rating Inventory of Executive Function Adult | [Roth et al. (2005)](https://www.parinc.com/Products/Pkey/25) |
 | bstad | Brief Screener for Tobacco, Alcohol, and other Drugs | [Kelly et al. (2014)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4006430/) |
 | casi | Child Anxiety Sensitivity Index | [Silverman et al. (1991)](https://www.tandfonline.com/doi/abs/10.1207/S15374424JCCP2002_7) |
-| cdi2 | Child Dpression Inventory II | [Kovacs (2014)](https://pubmed.ncbi.nlm.nih.gov/23355496/) |) |
+| cbcl | Child Behavior Checklist | [Achenbach (1999)](https://psycnet.apa.org/record/1999-02767-014) |
+| cdi2 | Child Depression Inventory II | [Kovacs (2014)](https://pubmed.ncbi.nlm.nih.gov/23355496/) |) |
 | chexi | Childhood Executive Functioning Inventory | [Catale et al. (2013)](https://pubmed.ncbi.nlm.nih.gov/23355496/) |
 | consent | Consent Template | NDCLab |
 | covid | COVID Impacts Questionnaire | [Conway et al. (2020)](https://doi.org/10.31234/osf.io/z2x9a) |
