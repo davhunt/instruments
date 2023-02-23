@@ -1,7 +1,7 @@
 ## FPE (Fear of Positive Evaluation Scale)
 
 ### Versions
-The FPE questionnaires are currently on the original release. The instructions from the original self-report instrument were modified for online data collection.  The parent report was created from the self-report. The midpoint response header ("Somewhat True") was placed on response option 4 in order to approximate the format of the questionnaire as presented in the Weeks et al. (2008) paper, and due to the inability to center across response options 4 and 5 within the REDCap interface.
+The FPE questionnaires are currently on the original release. The instructions from the original self-report instrument were modified for online data collection.  The parent report was created from the self-report. The midpoint response header ("Somewhat True") was placed on response option 4 in order to approximate the format of the questionnaire as presented in the Weeks et al. (2008) paper, and due to the inability to center across response options 4 and 5 within the REDCap interface. (In direct correspondence, Dr. Richard Heimberg indicated that he had no concern that the non-centering would have any significant effect on scores.)
 | Audience | Language |
 | :--  | :--  |
 | self report | English |
