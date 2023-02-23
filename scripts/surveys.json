@@ -731,6 +731,20 @@
             "threshold": 1.0
         }
     },
+    "fpep": {
+        "Total": {
+            "questions": [1, 2, 3, 4, 6, 7, 8, 9],
+            "score_type": "sum",
+            "threshold": 1.0
+        }
+    },
+    "fpepes": {
+        "Total": {
+            "questions": [1, 2, 3, 4, 6, 7, 8, 9],
+            "score_type": "sum",
+            "threshold": 1.0
+        }
+    },
     "hsps": {
         "total": {
             "questions": null,
