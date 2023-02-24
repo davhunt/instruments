@@ -1,7 +1,7 @@
 ## VIA (Vancouver Index of Acculturation)
 
 ### Versions
-The VIA questionnaire is currently on the original release. Only the English self report is available. The NDCLab version was extracted from the NIMH Data Archive, ["Youth Vancouver Index of Acculturation" questionnaire](https://nda.nih.gov/data_structure.html?short_name=vancouver_identity_accult01) in January 2023.
+The VIA questionnaire is currently on the original release. Only the English self report is available. The NDCLab version was extracted from the NIMH Data Archive, ["Youth Vancouver Index of Acculturation" questionnaire](https://nda.nih.gov/data_structure.html?short_name=vancouver_identity_accult01) in January 2023, to which an initial yes/no question ("Do you have a heritage culture?") was added for survey flow.
 
 
 ### Scoring Script
