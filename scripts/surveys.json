@@ -364,6 +364,58 @@
             "score_type": "sum"
         }
     },
+    "dersp": {
+        "Cat": {
+            "questions": [3, 11, 12, 13, 15, 17, 19, 22, 23, 26, 28, 29],
+            "rev_questions": [17, 19],
+            "answers": [1, 2, 3, 4, 5],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Neg": {
+            "questions": [8, 9, 16, 18, 20, 24, 25],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Att": {
+            "questions": [1, 2, 4, 5, 6, 7],
+            "rev_questions": [1, 2, 4, 5, 6, 7],
+            "answers": [1, 2, 3, 4, 5],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Dis": {
+            "questions": [10, 14, 21, 27],
+            "score_type": "avg",
+            "threshold": 0.8
+        }
+    },
+    "derspes": {
+        "Cat": {
+            "questions": [3, 11, 12, 13, 15, 17, 19, 22, 23, 26, 28, 29],
+            "rev_questions": [17, 19],
+            "answers": [1, 2, 3, 4, 5],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Neg": {
+            "questions": [8, 9, 16, 18, 20, 24, 25],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Att": {
+            "questions": [1, 2, 4, 5, 6, 7],
+            "rev_questions": [1, 2, 4, 5, 6, 7],
+            "answers": [1, 2, 3, 4, 5],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Dis": {
+            "questions": [10, 14, 21, 27],
+            "score_type": "avg",
+            "threshold": 0.8
+        }
+    },
     "eatq": {
         "AC": {
             "questions": [3, 5, 14, 17, 36, 38, 46],
