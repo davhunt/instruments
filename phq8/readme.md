@@ -1,11 +1,18 @@
 ## PHQ-8 (Patient Health Questionnaire)
 
 ### Versions
-The PHQ-8 questionnaire is currently on the original release. This is a modification of the original PHQ-9 in which the question relating to self-harm has been deleted. Only the English self report is available.
+The PHQ-8 questionnaire is currently on the original release. This is a modification of the original PHQ-9 in which the question relating to self-harm has been deleted.
+| Audience | Language |
+| :--  | :--  |
+| self report | English; Spanish |
 
 
 ### Scoring Script
 The PHQ-8 is included in the repository scoring script. Threshold for scoring is 100%. See data dictionary for further details.
+
+
+### Translations
+The translation of the PHQ8 self-report into Spanish was extracted from the [Oncology Nursing Society](https://www.ons.org/sites/default/files/2017-06/PatientHealthQuestionnaire9_Spanish_0.pdf) in February 2023. Please report any issues with the ADEXI translations by posting an issue in this GitHub repository.
 
 
 ### References
