@@ -1,0 +1,5 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+selfnowa_i1,"selfnowA, question 1","Compared to others my age, my ability to do things in front of others is:",s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, far below average | 2, below average | 3, average | 4, above average | 5, far above average",NA,1,NA,direct-redcap
+selfnowa_i2,"selfnowA, question 2","Compared to others my age, my ability to talk and interact with others is:",s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, far below average | 2, below average | 3, average | 4, above average | 5, far above average",NA,1,NA,direct-redcap
+selfnowa_i3,"selfnowA, question 3","Compared to others my age, how much others like me is:",s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, far below average | 2, below average | 3, average | 4, above average | 5, far above average",NA,1,NA,direct-redcap
+selfnowa_i4,"selfnowA, question 4",Which figure reflects how you feel about yourself right now?,s1_r1_e1,Integer,"1, 2, 3, 4, 5, 6, 7, 8, 9","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9",NA,1,NA,direct-redcap

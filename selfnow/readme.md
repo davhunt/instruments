@@ -5,7 +5,7 @@ These are generic self-report questionnaires used by the NDCLab. They are curren
 
 ### Versions
 ###### selfnowA
-Questions about the participant's perspective on themself.
+Questions about the participant's perspective on themself. (Note: The original intention with question #4 was to have the nine SAM images as possible response options. However, when the survey is constructed this way, it only displays properly on PC, not on iPad. For this reason, the survey was re-designed with the single image that would display as expected across all media.)
 
 
 ### Scoring Script
