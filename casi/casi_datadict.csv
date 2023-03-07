@@ -1,7 +1,7 @@
 ﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
 casi_i1,"CASI, question 1",I don't want other people to know when I feel afraid,s1_r1_e1,Integer,"1, 2, 3","1, none | 2, some | 3, a lot",NA,1,NA,direct-redcap
 casi_i2,"CASI, question 2",When I cannot keep my mind on my schoolwork I worry that I might be going crazy,s1_r1_e1,Integer,"1, 2, 3","1, none | 2, some | 3, a lot",NA,1,NA,direct-redcap
-casi_i3,"CASI, question 3",It scares me when I feel `shaky',s1_r1_e1,Integer,"1, 2, 3","1, none | 2, some | 3, a lot",NA,1,NA,direct-redcap
+casi_i3,"CASI, question 3",It scares me when I feel 'shaky',s1_r1_e1,Integer,"1, 2, 3","1, none | 2, some | 3, a lot",NA,1,NA,direct-redcap
 casi_i4,"CASI, question 4",It scares me when I feel like I am going to faint,s1_r1_e1,Integer,"1, 2, 3","1, none | 2, some | 3, a lot",NA,1,NA,direct-redcap
 casi_i5,"CASI, question 5",It is important for me to stay in control of my feelings,s1_r1_e1,Integer,"1, 2, 3","1, none | 2, some | 3, a lot",NA,1,NA,direct-redcap
 casi_i6,"CASI, question 6",It scares me when my heart beats fast,s1_r1_e1,Integer,"1, 2, 3","1, none | 2, some | 3, a lot",NA,1,NA,direct-redcap
