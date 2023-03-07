@@ -41,7 +41,6 @@ Below is a list of instruments contained in this repository.
 | idea | Inventory of the Dimensions of Emerging Adulthood | [Reifman et al. (2007)](https://jyd.pitt.edu/ojs/jyd/article/view/359) |
 | identity | Sexuality and Gender Identity | NDCLab |
 | ierq | Interpersonal Emotion Regulation Questionnaire | [Hofmann et al. (2016)](https://link.springer.com/article/10.1007/s10608-016-9756-2) |
-| info-health | Information and Health Form | NDCLab |
 | infosht | Information Form | NDCLab |
 | initState | Pre-Task Questionnaires | NDCLab |
 | ius | Intolerance of Uncertainty Scale | [Carleton et al. (2007)](https://pubmed.ncbi.nlm.nih.gov/16647833/) |
