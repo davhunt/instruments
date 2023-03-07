@@ -63,7 +63,7 @@ Below is a list of instruments contained in this repository.
 | pttfq | Post-Task Thoughts and Feelings Questionnaire | NDCLab |
 | rmbi | Retrospective Measure of Behavioral Inhibition | [Gladstone and Parker (2005)](https://pubmed.ncbi.nlm.nih.gov/15922458/) |
 | rpbi | Report of Parent Behavior Inventory | [Schaefer (1965)](https://psycnet.apa.org/record/1965-12269-001) |
-| rpeq | Revised Peer Experiences Questionnaires | [Prinstein et al. (2001)](https://pubmed.ncbi.nlm.nih.gov/11708236/) |
+| rpeq | Revised Peer Experiences Questionnaire | [Prinstein et al. (2001)](https://pubmed.ncbi.nlm.nih.gov/11708236/) |
 | rsri | Retrospective Self-Report of Inhibition | [Reznick et al. (1992)](https://www.cambridge.org/core/journals/development-and-psychopathology/article/abs/retrospective-and-concurrent-selfreport-of-behavioral-inhibition-and-their-relation-to-adult-mental-health/0082E88707065192BC16A35DE5AFC9E3) |
 | rtq | Repetitive Thinking Questionnaire | [McEvoy et al. (2010)](https://pubmed.ncbi.nlm.nih.gov/20409676/) |
 | rvq | Relational Victimization Questionnaire | [Dempsey and Storch (2008)](https://psycnet.apa.org/record/2008-03763-004) |
@@ -71,6 +71,7 @@ Below is a list of instruments contained in this repository.
 | sassy | Self-report of Ambiguous Social Situations for Youth | [Gonzalez et al. (2017)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5521277/) |
 | scaared | Screen for Adult Anxiety Related Disorders | [Angulo et al. (2017)](https://pubmed.ncbi.nlm.nih.gov/28359032/) |
 | scared | Screen for Child Anxiety Related Disorders | [Birmaher et al. (1997)](https://pubmed.ncbi.nlm.nih.gov/9100430/) |
+| selfnow | Self-Assessment Questionnaires | NDCLab |
 | sias6 | Social Interaction Anxiety Scale | [Peters et al. (2012)](https://pubmed.ncbi.nlm.nih.gov/21744971/) |
 | sics | Social Interaction and Communication Skills Checklist | (unconfirmed) |
 | socrew | Youth Social Reward Survey | NDCLab |
