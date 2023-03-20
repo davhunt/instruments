@@ -31,7 +31,7 @@ rsri_i29,"RSRI, question 29",Were your feelings easily hurt?,s1_r1_e1,Integer,"1
 rsri_i30,"RSRI, question 30",Did you tell your friends or family members when you were angry with them?,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, always | 2, often | 3, sometimes | 4, rarely | 5, never",NA,1,NA,direct-redcap
 rsri_scrdTotal,RSRI total score,average of all rsri items (NA if rsri_percTotal < 0.8),s1_r1_e1,Real,"[1,5]",NA,NA,1,NA,code-instruments
 rsri_scrdSocSch,RSRI social/school subscore,"average of rsri items 15, 17, 18, 19, 20, 21, 22, 23, 24, 25, 28, and 30 (NA if rsri_percSocSch < 0.8)",s1_r1_e1,Real,"[1,5]",NA,NA,1,NA,code-instruments
-rsri_scrdFear,RSRI fear/illness subscore,"average of rsri items 1, 2, 3, 4, 5, 6, 7, 10, 12, 16, 26, and 27 (NA if rsri_percfear < 0.8)",s1_r1_e1,Real,"[1,5]",NA,NA,1,NA,code-instruments
+rsri_scrdFear,RSRI fear/illness subscore,"average of rsri items 1, 2, 3, 4, 5, 6, 7, 10, 12, 16, 26, and 27 (NA if rsri_percFear < 0.8)",s1_r1_e1,Real,"[1,5]",NA,NA,1,NA,code-instruments
 rsri_percTotal,RSRI percentage response,percentage of response for all rsri items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
 rsri_percSocSch,RSRI social/school subscore percentage response,percentage of response for rsri social/school items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
 rsri_percFear,RSRI fear/illness subscore percentage response,percentage of response for rsri fear/illness items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments

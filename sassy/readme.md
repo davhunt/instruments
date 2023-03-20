@@ -5,7 +5,7 @@ The SASSY questionnaire is currently on the original release. Only the English s
 
 
 ### Scoring Script
-The SASSY questionnaire is included in the repository scoring script. Threshold for scoring is 80%. See data dictionaries for further details.
+The SASSY questionnaire is included in the repository scoring script. Threshold for scoring is 100%. See data dictionaries for further details.
 
 
 ### References

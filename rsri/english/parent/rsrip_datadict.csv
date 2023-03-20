@@ -31,7 +31,7 @@ rsrip_i29,"RSRI (parent report), question 29",Were the child’s feelings easily
 rsrip_i30,"RSRI (parent report), question 30",Did the child tell their friends or family members when they were angry with them?,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, always | 2, often | 3, sometimes | 4, rarely | 5, never",NA,1,NA,direct-redcap
 rsrip_scrdTotal,"RSRI (parent report), total score",average of all rsrip items (NA if rsrip_percTotal < 0.8),s1_r1_e1,Real,"[1,5]",NA,NA,1,NA,code-instruments
 rsrip_scrdSocSch,"RSRI (parent report), social/school subscore","average of rsrip items 15, 17, 18, 19, 20, 21, 22, 23, 24, 25, 28, and 30 (NA if rsrip_percSocSch < 0.8)",s1_r1_e1,Real,"[1,5]",NA,NA,1,NA,code-instruments
-rsrip_scrdFear,"RSRI (parent report), fear/illness subscore","average of rsrip items 1, 2, 3, 4, 5,, 6, 7, 10, 12, 16, 26, and 27 (NA if rsrip_percfear < 0.8)",s1_r1_e1,Real,"[1,5]",NA,NA,1,NA,code-instruments
+rsrip_scrdFear,"RSRI (parent report), fear/illness subscore","average of rsrip items 1, 2, 3, 4, 5, 6, 7, 10, 12, 16, 26, and 27 (NA if rsrip_percFear < 0.8)",s1_r1_e1,Real,"[1,5]",NA,NA,1,NA,code-instruments
 rsrip_percTotal,"RSRI (parent report), percentage response",percentage of response for all rsrip items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
 rsrip_percSocSch,"RSRI (parent report), social/school subscore percentage response",percentage of response for rsrip social/school items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
 rsrip_percFear,"RSRI (parent report), fear/illness subscore percentage response",percentage of response for rsrip fear/illness items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
