@@ -13,7 +13,7 @@ The ERQ questionnaires are included in the repository scoring script. Threshold 
 
 
 ### Translations
-The US/LatAm Spanish translation used by NDCLab is based on a [European Spanish translation](https://psycnet.apa.org/record/2013-38005-002), which was adapted for local use by members of the NDCLab in 2023. Included is a .csv file providing transparency on the translation process. Please report any issues with the ERQ translation by posting an issue in this GitHub repository.
+The US/LatAm Spanish translation used by NDCLab is based on a [European Spanish translation](https://psycnet.apa.org/record/2013-38005-002), which was adapted for local use by members of the NDCLab in 2023. Included is a .csv file providing transparency on the localization process. Please report any issues with the ERQ translation by posting an issue in this GitHub repository.
 
 
 ### References

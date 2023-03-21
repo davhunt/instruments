@@ -16,7 +16,7 @@ The SCAARED questionnaire is included in the repository scoring script. Threshol
 
 
 ### Translations
-The US/LatAm Spanish translation used by NDCLab is based on a [European Spanish translation](https://pubmed.ncbi.nlm.nih.gov/33643088/), which was adapted for local use by members of the NDCLab in 2023. Included is a .csv file providing transparency on the translation process. Please report any issues with the SCAARED translation by posting an issue in this GitHub repository.
+The US/LatAm Spanish translation used by NDCLab is based on a [European Spanish translation](https://pubmed.ncbi.nlm.nih.gov/33643088/), which was adapted for local use by members of the NDCLab in 2023. Included is a .csv file providing transparency on the localization process. Please report any issues with the SCAARED translation by posting an issue in this GitHub repository.
 
 
 ### References

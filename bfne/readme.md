@@ -17,7 +17,7 @@ The BFNE questionnaire is included in the repository scoring script. Threshold f
 
 
 ### Translations
-The translation of the parent report into Spanish for US/Latin America was performed by members of the NDCLab in 2022.  Included is a .csv file providing transparency on the translation process. Please report any issues with the BFNE translation by posting an issue in this GitHub repository.
+The translation of the parent report into Spanish for US/Latin America was performed by members of the NDCLab in 2022.  Included is a .csv file providing transparency on the translation process. The translation of the self report is based on a [European Spanish translation](https://www.researchgate.net/publication/228680069_Propiedades_psicometricas_de_la_Escala_de_Miedo_a_la_Evaluacion_Negativa_version_breve_BFNE_en_muestra_clinica#:~:text=El%20BFNE%20est%C3%A1%20formado%20por,IV%2DTR%20(2000).), which was adapted for local use by members of the NDCLab in 2023. Included is a .csv file providing transparency on the localization process. Please report any issues with the BFNE translations by posting an issue in this GitHub repository.
 
 
 ### References
