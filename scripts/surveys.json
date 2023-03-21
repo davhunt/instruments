@@ -1452,6 +1452,33 @@
             "threshold": 1.0
         }
     },
+ "scaaredes": {
+        "total": {
+            "questions": null,
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "PaSo": {
+            "questions": [1, 2, 6, 9, 11, 12, 15, 17, 18, 19, 22, 25, 28, 32, 36, 38, 40],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "GA": {
+            "questions": [5, 7, 8, 14, 21, 23, 24, 29, 31, 35, 37, 39, 44],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "Sep": {
+            "questions": [4, 13, 16, 20, 26, 30, 33],
+            "score_type": "sum",
+            "threshold": 1.0
+        },
+        "Soc": {
+            "questions": [3, 10, 27, 34, 41, 42, 43],
+            "score_type": "sum",
+            "threshold": 1.0
+        }
+    },
     "scared": {
         "Total": {
             "questions": null,
