@@ -13,7 +13,7 @@ RPBI subscores for "Acceptance" and 'Psychological Control" are included for the
 
 
 ### Translations
-The Spanish US/LatAm version of the parental report was translated by members of the [FIU CAPP program](https://capp.fiu.edu/).
+The Spanish US/LatAm version of the parental report was translated by members of the [FIU CAPP program](https://capp.fiu.edu/) and updated by members of the NDCLab in 2023. Included is a .csv file providing transparency on the revision process. Please report any issues with the RPBI translation by posting an issue in this GitHub repository.
 
 
 ### References
