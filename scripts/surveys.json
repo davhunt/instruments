@@ -1234,6 +1234,24 @@
             "threshold": 1.0
         }
     },
+   "pss": {
+        "Total": {
+            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+            "rev_questions": [4, 5, 7, 8],
+            "answers": [0, 1, 2, 3, 4],
+            "score_type": "sum",
+            "threshold": 1.0
+        }
+    },
+   "psses": {
+        "Total": {
+            "questions": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+            "rev_questions": [4, 5, 7, 8],
+            "answers": [0, 1, 2, 3, 4],
+            "score_type": "sum",
+            "threshold": 1.0
+        }
+    },
     "rpbic": {
         "Acc": {
             "questions": [1, 4, 7, 10, 13, 16, 19, 22, 25, 28],
