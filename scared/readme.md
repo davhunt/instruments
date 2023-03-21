@@ -5,7 +5,7 @@ The SCARED questionnaires are currently on the original release. The instruction
 | Audience | Language |
 | :--  | :--  |
 | child self report | English  |
-| parent report | English |
+| parent report | English, Spanish US/LatAm |
 
 
 ### Scoring Script
@@ -13,8 +13,7 @@ The child self report and parental reports of the SCARED questionnaire are inclu
 
 
 ### Translations
-The Spanish translation is of unknown origin.
-
+The original Spanish translation of the parent report is of unknown origin, but was updated by members of the NDCLab in 2023. Included is a .csv file providing transparency on the revision process. Please report any issues with the SCARED translation by posting an issue in this GitHub repository.
 
 ### References
 > Birmaher, B., Khetarpal, S., Brent, D., Cully, M., Balach, L., Kaufman, J., & Neer, S. M. (1997). The Screen for Child Anxiety Related Emotional Disorders (SCARED): scale construction and psychometric characteristics. Journal of the American Academy of Child and Adolescent Psychiatry, 36(4), 545–553. [[link]](https://pubmed.ncbi.nlm.nih.gov/9100430/)
