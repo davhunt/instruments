@@ -105,6 +105,7 @@ class Subscore:
     def _select_questions(self, data):
         # If there is no selection, return data with all questions
         if self.questions is None:
+            self.questions = range(len(data.axes[1]))
             return data
         # if list is empty return empty dataframe
         if self.questions == []:
