@@ -5,8 +5,8 @@
 The survey instructions were corrected and modified for online use, changing "Please complete the survey below. Thank you!" to "Please select the option that best corresponds to how much you agree with each item."
 | Audience | Language |
 | :--  | :--  |
-| self report | English |
-| parent report | English; Spanish US/LatAM |
+| self report | English; Spanish US/LatAm |
+| parent report | English; Spanish US/LatAm |
 
 ##### bfne(_a)
 This is the original version used by the NDCLab. It only included the English self report. It is now deprecated.
