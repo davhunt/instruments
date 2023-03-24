@@ -1,0 +1,8 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+pintes_i1,"PINTS (Spanish version), question 1",Me quedo despierto en la cama durante la noche pensando en cosas,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, nunca | 2, | 3, | 4, | 5, casi siempre",NA,1,NA,direct-redcap
+pintes_i2,"PINTS (Spanish version), question 2","Cuando tengo un problema, no lo puedo sacar de mi cabeza",s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, nunca | 2, | 3, | 4, | 5, casi siempre",NA,1,NA,direct-redcap
+pintes_i3,"PINTS (Spanish version), question 3","Cuando algo me molesta, pienso en ello una y otra vez",s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, nunca | 2, | 3, | 4, | 5, casi siempre",NA,1,NA,direct-redcap
+pintes_i4,"PINTS (Spanish version), question 4",Me quedo atrapado pensando en cosas,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, nunca | 2, | 3, | 4, | 5, casi siempre",NA,1,NA,direct-redcap
+pintes_i5,"PINTS (Spanish version), question 5","Cuando algo difícil está por venir, pienso en ello todo el tiempo",s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, nunca | 2, | 3, | 4, | 5, casi siempre",NA,1,NA,direct-redcap
+pintes_scrdTotal,PINTS (Spanish version) total score,average of all pintses items (NA if pintses_percTotal < 0.6),s1_r1_e1,Real,"[1,5]",NA,NA,1,NA,code-instruments
+pintes_percTotal,PINTS (Spanish version) percentage response,percentage of response for pintses items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
