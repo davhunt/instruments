@@ -2,7 +2,10 @@
 
 ### Versions
 ##### masi_b
-This version includes an additional item (i0) explicitly asking whether the participant has a heritage culture; the remaining questions are only displayed for participants who answer in the affirmative.  Only the English self-report is available.
+This version includes an additional item (i0) explicitly asking whether the participant has a heritage culture; the remaining questions are only displayed for participants who answer in the affirmative.
+| Audience | Language |
+| :--  | :--  |
+| self report | English; Spanish US/LatAm |
 
 ##### masi(_a)
 This is the original version used by the NDCLab. It only included the English self report and was limited to participants who selected a non-White ethnic/racial identification in the demographics survey. This version is now deprecated.
@@ -10,6 +13,10 @@ This is the original version used by the NDCLab. It only included the English se
 
 ### Scoring Script
 The MASI questionnaire is included in the repository scoring script. Threshold for scoring is 100%. See data dictionary for further details.
+
+
+### Translations
+The translation of the self report into Spanish for US/Latin America was performed by members of the NDCLab in 2023.  Included is a .csv file providing transparency on the translation process. Please report any issues with the MASI translation by posting an issue in this GitHub repository.
 
 
 ### References
