@@ -12,7 +12,7 @@ The PHQ-8 is included in the repository scoring script. Threshold for scoring is
 
 
 ### Translations
-The translation of the PHQ8 self-report into Spanish was extracted from the [Oncology Nursing Society](https://www.ons.org/sites/default/files/2017-06/PatientHealthQuestionnaire9_Spanish_0.pdf) in February 2023. Please report any issues with the ADEXI translations by posting an issue in this GitHub repository.
+The translation of the PHQ8 self-report into Spanish was extracted from the [Oncology Nursing Society](https://www.ons.org/sites/default/files/2017-06/PatientHealthQuestionnaire9_Spanish_0.pdf) in February 2023. For consistency across NDCLab questionnaires, the orthography of adjectival endings was adjusted. Additionally, the last question was reworded as a statement. Please report any issues with the PHQ8 translations by posting an issue in this GitHub repository.
 
 
 ### References
