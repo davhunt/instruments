@@ -1220,6 +1220,13 @@
             "threshold": 0.6
         }
     },
+   "pintses": {
+        "total": {
+            "questions": [1, 2, 3, 4, 5],
+            "score_type": "avg",
+            "threshold": 0.6
+        }
+    },
     "pscei": {
         "Total": {
             "questions": null,
@@ -2083,6 +2090,18 @@
         }
     },
     "via": {
+        "Her": {
+            "questions": [1, 3, 5, 7, 9, 11, 13, 15,],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Main": {
+            "questions": [2, 4, 6, 8, 10, 12, 14, 16],
+            "score_type": "avg",
+            "threshold": 0.8
+        }
+    }
+   "viaes": {
         "Her": {
             "questions": [1, 3, 5, 7, 9, 11, 13, 15,],
             "score_type": "avg",
