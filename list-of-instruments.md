@@ -61,6 +61,7 @@ Below is a list of instruments contained in this repository.
 | psqi | Pittsburgh Sleep Quality Index | full: [Buysse et al. (1989)](https://pubmed.ncbi.nlm.nih.gov/2748771/); short: [Sancho-Domingo et al. (2021)](https://pubmed.ncbi.nlm.nih.gov/33119375/) |
 | pttfq | Post-Task Thoughts and Feelings Questionnaire | NDCLab |
 | pss | Perceived Stress Scale | [Cohen et al. (1983)](https://psycnet.apa.org/record/1984-24885-001) |
+| rcads | Revised Child Anxiety and Depression Scale | [Ebesutani et al. (2012)](https://pubmed.ncbi.nlm.nih.gov/22329531/) |
 | rmbi | Retrospective Measure of Behavioral Inhibition | [Gladstone and Parker (2005)](https://pubmed.ncbi.nlm.nih.gov/15922458/) |
 | rpbi | Report of Parent Behavior Inventory | [Schaefer (1965)](https://psycnet.apa.org/record/1965-12269-001) |
 | rpeq | Revised Peer Experiences Questionnaire | [Prinstein et al. (2001)](https://pubmed.ncbi.nlm.nih.gov/11708236/) |
