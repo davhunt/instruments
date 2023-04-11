@@ -1188,44 +1188,38 @@
             "threshold": 0.8
         }
     },
-    "pdsf": {
-        "Total": {
+    "pds": {
+        "Fem": {
             "questions": [1, 2, 3, 4, 5],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Mal": {
+            "questions": [1, 2, 3, 7, 8],
             "score_type": "avg",
             "threshold": 0.8
         }
     },
-    "pdsfp": {
-        "Total": {
+    "pdsp": {
+        "Fem": {
             "questions": [1, 2, 3, 4, 5],
+            "score_type": "avg",
+            "threshold": 0.8
+        },
+        "Mal": {
+            "questions": [1, 2, 3, 7, 8],
             "score_type": "avg",
             "threshold": 0.8
         }
     },
-    "pdsfpes": {
-        "Total": {
+    "pdspes": {
+        "Fem": {
             "questions": [1, 2, 3, 4, 5],
             "score_type": "avg",
             "threshold": 0.8
-        }
-    },
-    "pdsm": {
-        "Total": {
-            "questions": [1, 2, 3, 4, 5],
-            "score_type": "avg",
-            "threshold": 0.8
-        }
-    },
-    "pdsmp": {
-        "Total": {
-            "questions": [1, 2, 3, 4, 5],
-            "score_type": "avg",
-            "threshold": 0.8
-        }
-    },
-    "pdsmpes": {
-        "Total": {
-            "questions": [1, 2, 3, 4, 5],
+        },
+        "Mal": {
+            "questions": [1, 2, 3, 7, 8],
             "score_type": "avg",
             "threshold": 0.8
         }
