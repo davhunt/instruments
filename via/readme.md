@@ -12,7 +12,7 @@ The VIA questionnaire is included in the repository scoring script. Threshold fo
 
 
 ### Translations
-The Spanish US/LatAm version of the self report is drawn directly from the ABCD study.  The initial question added was translated by members of the NDCLab as part of the MASI.
+The Spanish US/LatAm version of the self report is drawn directly from the ABCD study.  The initial question added was translated by members of the NDCLab as part of the MASI.  The translation for this question was, however, designed to align with the existing language in the VIA.
 
 
 ### References

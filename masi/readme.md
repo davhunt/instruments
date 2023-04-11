@@ -2,7 +2,7 @@
 
 ### Versions
 ##### masi_b
-This version includes an additional item (i0) explicitly asking whether the participant has a heritage culture; the remaining questions are only displayed for participants who answer in the affirmative.
+This version includes an additional item (i0) explicitly asking whether the participant has a heritage culture (if so, which); the remaining questions are only displayed for participants who answer in the affirmative.
 | Audience | Language |
 | :--  | :--  |
 | self report | English; Spanish US/LatAm |
