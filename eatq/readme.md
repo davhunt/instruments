@@ -4,7 +4,6 @@
 The EATQ questionnaire is currently on the original release. The instructions were modified for online use and "Your son or daughter:" was updated to "Your child:" for greater inclusivity in parental respondents.
 Audience | Language |
 | :--  | :--  |
-| self report | English  |
 | parent report | English; Spanish US/LatAM |
 
 
