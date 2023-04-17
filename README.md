@@ -88,7 +88,7 @@ This `main` branch contains completed releases for this project. For all work-in
 | Name | Role |
 | ---  | ---  |
 | Farukh Saidmuratov, Brandon Lopez, Osmany Pujol | code development |
-| Jess Alexander, Ana Lopez-Nuñez  | testing and organization |
+| Jess Alexander, Ana Lopez-Nuñez, Ana García Morazzani, Lillian LaPlace  | testing and organization |
 | George A. Buzzell  | guidance and resources |
 
 Learn more about us [here](https://www.ndclab.com/people).
