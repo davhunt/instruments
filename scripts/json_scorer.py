@@ -27,11 +27,12 @@ def score_tracker(output_data, scrd_columns, tracker):
             print(id, "missing in tracker file, skipping")
             continue
         for col in scrd_columns:
-            try:
-                val = output_data.loc[id, col]
-                tracker_df.loc[id, col] = "1" if val != "NA" else "0"
-            except Exception as e_msg:
-                tracker_df.loc[id, col] = 0
+            if col in list(tracker_df.columns):
+                try:
+                    val = output_data.loc[id, col]
+                    tracker_df.loc[id, col] = "1" if val != "NA" else "0"
+                except Exception as e_msg:
+                    tracker_df.loc[id, col] = 0
 
     # leave NA as blank
     tracker_df = tracker_df.fillna('')
