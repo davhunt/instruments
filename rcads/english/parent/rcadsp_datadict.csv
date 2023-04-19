@@ -1,0 +1,32 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+rcadsp_i1,"RCADS (parent version), question 1",My child feels sad or empty,s1_r1_e1,Integer,"0, 1, 2, 3","0, Never | 1, Sometimes | 2, Often | 3, Always",NA,1,NA,direct-redcap
+rcadsp_i2,"RCADS (parent version), question 2",My child worries when he/she thinks he/she has done poorly at something,s1_r1_e1,Integer,"0, 1, 2, 3","0, Never | 1, Sometimes | 2, Often | 3, Always",NA,1,NA,direct-redcap
+rcadsp_i3,"RCADS (parent version), question 3",My child feels afraid of being alone at home,s1_r1_e1,Integer,"0, 1, 2, 3","0, Never | 1, Sometimes | 2, Often | 3, Always",NA,1,NA,direct-redcap
+rcadsp_i4,"RCADS (parent version), question 4",Nothing is much fun for my child anymore,s1_r1_e1,Integer,"0, 1, 2, 3","0, Never | 1, Sometimes | 2, Often | 3, Always",NA,1,NA,direct-redcap
+rcadsp_i5,"RCADS (parent version), question 5",My child worries that something awful will happen to someone in the family,s1_r1_e1,Integer,"0, 1, 2, 3","0, Never | 1, Sometimes | 2, Often | 3, Always",NA,1,NA,direct-redcap
+rcadsp_i6,"RCADS (parent version), question 6","My child is afraid of being in crowded places (like shopping centers, the movies, buses, busy playgrounds)",s1_r1_e1,Integer,"0, 1, 2, 3","0, Never | 1, Sometimes | 2, Often | 3, Always",NA,1,NA,direct-redcap
+rcadsp_i7,"RCADS (parent version), question 7",My child worries what other people think of him/her,s1_r1_e1,Integer,"0, 1, 2, 3","0, Never | 1, Sometimes | 2, Often | 3, Always",NA,1,NA,direct-redcap
+rcadsp_i8,"RCADS (parent version), question 8",My child has trouble sleeping,s1_r1_e1,Integer,"0, 1, 2, 3","0, Never | 1, Sometimes | 2, Often | 3, Always",NA,1,NA,direct-redcap
+rcadsp_i9,"RCADS (parent version), question 9",My child feels scared to sleep on his/her own,s1_r1_e1,Integer,"0, 1, 2, 3","0, Never | 1, Sometimes | 2, Often | 3, Always",NA,1,NA,direct-redcap
+rcadsp_i10,"RCADS (parent version), question 10",My child has problems with his/her appetite,s1_r1_e1,Integer,"0, 1, 2, 3","0, Never | 1, Sometimes | 2, Often | 3, Always",NA,1,NA,direct-redcap
+rcadsp_i11,"RCADS (parent version), question 11",My child suddenly becomes dizzy or faint when there is no reason for this,s1_r1_e1,Integer,"0, 1, 2, 3","0, Never | 1, Sometimes | 2, Often | 3, Always",NA,1,NA,direct-redcap
+rcadsp_i12,"RCADS (parent version), question 12","My child has to do somethings over and over again (like washing hands, cleaning, or putting things in a certain order)",s1_r1_e1,Integer,"0, 1, 2, 3","0, Never | 1, Sometimes | 2, Often | 3, Always",NA,1,NA,direct-redcap
+rcadsp_i13,"RCADS (parent version), question 13",My child has no energy for things,s1_r1_e1,Integer,"0, 1, 2, 3","0, Never | 1, Sometimes | 2, Often | 3, Always",NA,1,NA,direct-redcap
+rcadsp_i14,"RCADS (parent version), question 14",My child suddenly starts to tremble or shake when there is no reason for this,s1_r1_e1,Integer,"0, 1, 2, 3","0, Never | 1, Sometimes | 2, Often | 3, Always",NA,1,NA,direct-redcap
+rcadsp_i15,"RCADS (parent version), question 15",My child cannot think clearly,s1_r1_e1,Integer,"0, 1, 2, 3","0, Never | 1, Sometimes | 2, Often | 3, Always",NA,1,NA,direct-redcap
+rcadsp_i16,"RCADS (parent version), question 16",My child feels worthless,s1_r1_e1,Integer,"0, 1, 2, 3","0, Never | 1, Sometimes | 2, Often | 3, Always",NA,1,NA,direct-redcap
+rcadsp_i17,"RCADS (parent version), question 17",My child has to think of special thoughts (like numbers or words) to stop bad things from happening,s1_r1_e1,Integer,"0, 1, 2, 3","0, Never | 1, Sometimes | 2, Often | 3, Always",NA,1,NA,direct-redcap
+rcadsp_i18,"RCADS (parent version), question 18",My child thinks about death,s1_r1_e1,Integer,"0, 1, 2, 3","0, Never | 1, Sometimes | 2, Often | 3, Always",NA,1,NA,direct-redcap
+rcadsp_i19,"RCADS (parent version), question 19",My child feels like he/she does not want to move,s1_r1_e1,Integer,"0, 1, 2, 3","0, Never | 1, Sometimes | 2, Often | 3, Always",NA,1,NA,direct-redcap
+rcadsp_i20,"RCADS (parent version), question 20",My child worries that he/she will suddenly get a scared feeling when there is nothing to be afraid of,s1_r1_e1,Integer,"0, 1, 2, 3","0, Never | 1, Sometimes | 2, Often | 3, Always",NA,1,NA,direct-redcap
+rcadsp_i21,"RCADS (parent version), question 21",My child is tired a lot,s1_r1_e1,Integer,"0, 1, 2, 3","0, Never | 1, Sometimes | 2, Often | 3, Always",NA,1,NA,direct-redcap
+rcadsp_i22,"RCADS (parent version), question 22",My child feels afraid that he/she will make a fool of him/herself in front of people,s1_r1_e1,Integer,"0, 1, 2, 3","0, Never | 1, Sometimes | 2, Often | 3, Always",NA,1,NA,direct-redcap
+rcadsp_i23,"RCADS (parent version), question 23",My child has to do some things in just the right way to stop bad things from happening,s1_r1_e1,Integer,"0, 1, 2, 3","0, Never | 1, Sometimes | 2, Often | 3, Always",NA,1,NA,direct-redcap
+rcadsp_i24,"RCADS (parent version), question 24",My child feels restless,s1_r1_e1,Integer,"0, 1, 2, 3","0, Never | 1, Sometimes | 2, Often | 3, Always",NA,1,NA,direct-redcap
+rcadsp_i25,"RCADS (parent version), question 25",My child worries that something bad will happen to him/her,s1_r1_e1,Integer,"0, 1, 2, 3","0, Never | 1, Sometimes | 2, Often | 3, Always",NA,1,NA,direct-redcap
+rcadsp_scrdTotal,RCADS (parent version) total score,sum of all rcadsp items (NA if rcadsp_percTotal < 1),s1_r1_e1,Integer,"[0,75]",NA,NA,1,NA,code-instruments
+rcadsp_scrdAnx,RCADS (parent version) anxiety subscore,"sum of rcadsp items 2, 3, 5, 6, 7, 9, 11, 12, 14, 17, 18, 20, 22, 23, and 25 (NA if rcadsp_percAnx < 1) ",s1_r1_e1,Integer,"[0,45]",NA,NA,1,NA,code-instruments
+rcadsp_scrdDep,RCADS (parent version) depression subscore,"sum of rcadsp items 1, 4, 8, 10, 13, 15, 16, 19, 21, and 24 (NA if rcadsp_percDep < 1) ",s1_r1_e1,Integer,"[0,30]",NA,NA,1,NA,code-instruments
+rcadsp_percTotal,RCADS (parent version) percentage complete,percentage of response for all rcadsp items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
+rcadsp_percAnx,RCADS (parent version) anxiety subscore percentage complete,percentage of response for rcadsp anxiety items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
+rcadsp_percDep,RCADS (parent version) depression subscore percentage complete,percentage of response for rcadsp depression items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
