@@ -9,7 +9,7 @@ The CHEXI is **not** included in the repository scoring script.
 
 
 ### Translations
-The translation of the parent-and-teacher report into Spanish for US/Latin America was performed by members of the NDCLab in 2021.  Included is a .csv file providing transparency on the translation process. Please report any issues with the CHEXI translations by posting an issue in this GitHub repository.
+The translation of the parent-and-teacher report into Spanish for US/Latin America was performed by members of the NDCLab in 2021. Several missing accents were identified and corrected in April 2023. Included is a .csv file providing transparency on the translation process. Please report any issues with the CHEXI translations by posting an issue in this GitHub repository.
 
 
 ### References

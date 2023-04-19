@@ -3,7 +3,7 @@
 
 ### Versions
 ##### texi_b
-At the request of the original author, the word "sometimes" was removed from several items.  The NDCLab updated our own copy of the instrument as we were responsible for updating the Spanish translation. Details of which items were changed is available in the .csv file detailing the Spanish translations (in this subfolder); changes were performed by the original translation team.  When uploaded to REDCap, the instructions were modified for online data collection by deleting the last sentence (referring to "circling" a response).
+At the request of the original author, the word "sometimes" was removed from several items.  The NDCLab updated our own copy of the instrument as we were responsible for updating the Spanish translation. Details of which items were changed is available in the .csv file detailing the Spanish translations (in this subfolder); changes were performed by the original translation team.  Subsequently, several missing accents were identified in the other report; these were corrected in April 2023. When uploaded to REDCap, the instructions were modified for online data collection by deleting the last sentence (referring to "circling" a response).
 | Audience | Language |
 | :--  | :--  |
 | self report | English; Spanish US/LatAM; Spanish Spain  |
