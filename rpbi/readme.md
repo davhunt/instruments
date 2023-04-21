@@ -1,7 +1,7 @@
 ## RPBI (Report of Parent Behavior Inventory)
 
 ### Versions
-The RPBI questionnaires are currently on the original release.  "Circle" has been replaced with "select" for online use. Additionally, for the child report, "mother" was replaced with "caregiver."  Note that the "C" (for "child") and "P" (for "parent") modifiers are typically placed before the name of the measure (i.e., CRPBI and PRPBI); here, we have followed NDCLab convention and placed the modifers after the name of the measure.
+The RPBI questionnaires are currently on the original release.  "Circle" has been replaced with "select" for online use. Additionally, for the child report, "mother" was replaced with "caregiver."  Note that the "C" (for "child") and "P" (for "parent") modifiers are typically placed before the name of the measure (i.e., CRPBI and PRPBI); here, we have followed NDCLab convention and placed the modifers after the name of the measure, but used the standard nomenclature for the participan-facing survey title.
 | Audience | Language |
 | :--  | :--  |
 | child report | English  |
