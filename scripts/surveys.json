@@ -1076,27 +1076,6 @@
             "score_type": "sum"
         }
     },
-    "pbs": {
-        "Total": {
-            "questions": [1, 2, 3],
-            "score_type": "avg",
-            "threshold": 0.8
-        }
-    },
-    "pbsp": {
-        "Total": {
-            "questions": [1, 2, 3],
-            "score_type": "avg",
-            "threshold": 0.8
-        }
-    },
-    "pbspes": {
-        "Total": {
-            "questions": [1, 2, 3],
-            "score_type": "avg",
-            "threshold": 0.8
-        }
-    },
     "pds": {
         "Fem": {
             "questions": [1, 2, 3, 4, 5],
@@ -1157,6 +1136,27 @@
             "questions": [1, 2, 3, 4, 5],
             "score_type": "avg",
             "threshold": 0.6
+        }
+    },
+    "psb": {
+        "Total": {
+            "questions": [1, 2, 3],
+            "score_type": "avg",
+            "threshold": 0.8
+        }
+    },
+    "psbp": {
+        "Total": {
+            "questions": [1, 2, 3],
+            "score_type": "avg",
+            "threshold": 0.8
+        }
+    },
+    "psbpes": {
+        "Total": {
+            "questions": [1, 2, 3],
+            "score_type": "avg",
+            "threshold": 0.8
         }
     },
     "pscei": {

@@ -1,6 +1,0 @@
-﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
-pbs_i1,"PBS, question 1",I try to be nice to other people. I care about their feelings.,s1_r1_e1,Integer,"0, 1, 2","0, Not True | 1, Somewhat True | 2, Certainly True",NA,1,NA,direct-redcap
-pbs_i2,"PBS, question 2","I am helpful if someone is hurt, upset, or feeling sick.",s1_r1_e1,Integer,"0, 1, 2","0, Not True | 1, Somewhat True | 2, Certainly True",NA,1,NA,direct-redcap
-pbs_i3,"PBS, question 3","I often offer to help others (parents, teachers, children).",s1_r1_e1,Integer,"0, 1, 2","0, Not True | 1, Somewhat True | 2, Certainly True",NA,1,NA,direct-redcap
-pbs_scrdTotal,PBS total score,average of all pbs items (NA if pbs_percTotal < 0.8),s1_r1_e1,Real,"[0,2]",NA,NA,1,NA,code-instruments
-pbs_percTotal,PBS percentage complete,percentage of response for all pbs items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments

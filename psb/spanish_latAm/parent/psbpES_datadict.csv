@@ -1,0 +1,6 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+psbpes_i1,"PSB (parent version, Spanish), question 1",Mi niño/a tiene consideración por los sentimientos de los demás.,s1_r1_e1,Integer,"0, 1, 2","0, Falso | 1, Algo cierto | 2, Totalmente cierto",NA,1,NA,direct-redcap
+psbpes_i2,"PSB (parent version, Spanish), question 2","Mi niño/a ayuda cuando alguien se lastima, se molesta o se siente enfermo.",s1_r1_e1,Integer,"0, 1, 2","0, Falso | 1, Algo cierto | 2, Totalmente cierto",NA,1,NA,direct-redcap
+psbpes_i3,"PSB (parent version, Spanish), question 3","Mi niño/a con frecuencia se ofrece para ayudar a los demás (padres, maestros, otros niños).",s1_r1_e1,Integer,"0, 1, 2","0, Falso | 1, Algo cierto | 2, Totalmente cierto",NA,1,NA,direct-redcap
+psbpes_scrdTotal,"PSB (parent version, Spanish) total score",average of all psbpes items (NA if psbpes_percTotal < 0.8),s1_r1_e1,Real,"[0,2]",NA,NA,1,NA,code-instruments
+psbpes_percTotal,"PSB (parent version, Spanish) percentage complete",percentage of response for all psbpes items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments

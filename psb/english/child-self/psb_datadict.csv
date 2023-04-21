@@ -1,0 +1,6 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+psb_i1,"PSB, question 1",I try to be nice to other people. I care about their feelings.,s1_r1_e1,Integer,"0, 1, 2","0, Not True | 1, Somewhat True | 2, Certainly True",NA,1,NA,direct-redcap
+psb_i2,"PSB, question 2","I am helpful if someone is hurt, upset, or feeling sick.",s1_r1_e1,Integer,"0, 1, 2","0, Not True | 1, Somewhat True | 2, Certainly True",NA,1,NA,direct-redcap
+psb_i3,"PSB, question 3","I often offer to help others (parents, teachers, children).",s1_r1_e1,Integer,"0, 1, 2","0, Not True | 1, Somewhat True | 2, Certainly True",NA,1,NA,direct-redcap
+psb_scrdTotal,PSB total score,average of all psb items (NA if psb_percTotal < 0.8),s1_r1_e1,Real,"[0,2]",NA,NA,1,NA,code-instruments
+psb_percTotal,PSB percentage complete,percentage of response for all psb items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
