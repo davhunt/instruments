@@ -2,7 +2,7 @@
 
 ### Versions
 ##### adexi_b
-At the request of the original author, the word "sometimes" was removed from several items.  The NDCLab updated our own copy of the instrument as we were responsible for updating the Spanish translation. Subsequently, several missing accents were identified in the other report; these were corrected in April 2023. Details of which items were changed is available in the .csv file detailing the Spanish translation (in this subfolder).
+At the request of the original author, the word "sometimes" was removed from several items.  The NDCLab updated our own copy of the instrument as we were responsible for updating the Spanish translation. Subsequently, several missing accents were identified in the other report, as well as inconsistency in the formality of the instructions for the self report; these were corrected in April 2023. Details of which items were changed is available in the .csv file detailing the Spanish translation (in this subfolder). In the REDCap versions have been optimized for online data collection ("circle a number" > "select the option").
 | Audience | Language |
 | :--  | :--  |
 | self report | English; Spanish US/LatAM  |
