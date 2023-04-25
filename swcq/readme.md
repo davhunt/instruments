@@ -5,7 +5,7 @@ The SWCQ questionnaire is currently on the original release. Only the English se
 
 
 ### Scoring Script
-The SWCQ questionnaire is included in the repository scoring script. Threshold for scoring is 100%. See data dictionaries for further details.
+The SWCQ questionnaire is included in the repository scoring script. Threshold for scoring is 100%. Scoring instructions were received directly form the author in January 2023. See data dictionaries for further details.
 
 
 ### References
