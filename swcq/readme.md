@@ -1,11 +1,11 @@
 ## SWCQ (Self-Worth Contingency Questionnaire)
 
 ### Versions
-The SWCQ questionnaire is currently on the original release. Only the English self report is available.  The instructions in the original measure were modified for online data collection.
+The SWCQ questionnaire is currently on the original release. Only the English self report is available.  The questions were drawn directly from a version provided by the author in January 2023 (swcq.docx).  The instructions in the original paper form were modified for online data collection.
 
 
 ### Scoring Script
-The SWCQ questionnaire is included in the repository scoring script. Threshold for scoring is 100%. Scoring instructions were received directly form the author in January 2023. See data dictionaries for further details.
+The SWCQ questionnaire is included in the repository scoring script. Threshold for scoring is 100%. Scoring instructions were received directly form the author in January 2023 (swcq-scoring.doc). See data dictionaries for further details.
 
 
 ### References

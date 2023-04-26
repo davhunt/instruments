@@ -36,4 +36,12 @@ swcq_i34,SWCQ_ question 34,People's feelings about you:,s1_r1_e1,Integer,"1, 2, 
 swcq_i35,SWCQ_ question 35,Physical appearance:,s1_r1_e1,Integer,"1, 2, 3, 4","1, not at all important | 2, somewhat important | 3, very important | 4, extremely important",NA,1,NA,direct-redcap
 swcq_i36,SWCQ_ question 36,"Activities (such as music, dance, sports, or theater):",s1_r1_e1,Integer,"1, 2, 3, 4","1, not at all important | 2, somewhat important | 3, very important | 4, extremely important",NA,1,NA,direct-redcap
 swcq_scrdTotal,SWCQ total score,"average of the internal sums of items (1, 5*, 9*, 13, 17, 21*, 25, 29*), (2, 6, 10, 14, 18*, 22*, 26*, 30*), (3*, 7, 11, 15*, 19, 23*, 27*, 31), and (4*, 8*, 12*, 16, 20, 24, 28, 32*) after asterisked items are reversed (NA if swcq_percTotal < 1)",s1_r1_e1,Real,"[8,48]",NA,NA,1,NA,code-instruments
+swcq_scrdAca,SWCQ academic score,"sum of swcq items 1, 5*, 9*, 13, 17, 21*, 25, 29* after asterisked items are reversed (NA if swcq_percAca < 1)",s1_r1_e1,Integer,"[8,48]",NA,NA,1,NA,code-instruments
+swcq_scrdSoc,SWCQ social feedback score,"sum of swcq items 2, 6, 10, 14, 18*, 22*, 26*, 30* after asterisked items are reversed (NA if swcq_percSoc < 1)",s1_r1_e1,Integer,"[8,48]",NA,NA,1,NA,code-instruments
+swcq_scrdPhy,SWCQ physical appearance score,"sum of swcq items 3*, 7, 11, 15*, 19, 23*, 27*, 31 after asterisked items are reversed (NA if swcq_percPhy < 1)",s1_r1_e1,Integer,"[8,48]",NA,NA,1,NA,code-instruments
+swcq_scrdAct,SWCQ activities score,"sum of swcq items 4*, 8*, 12*, 16, 20, 24, 28, 32* after asterisked items are reversed (NA if swcq_percAct < 1)",s1_r1_e1,Integer,"[8,48]",NA,NA,1,NA,code-instruments
 swcq_percTotal,SWCQ percentage response,percentage of response for all swcq items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
+swcq_percAca,SWCQ academic percentage response,percentage of response for swcq academic items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
+swcq_percSoc,SWCQ social feedback percentage response,percentage of response for swcq social feedback items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
+swcq_percPhy,SWCQ physical appearance percentage response,percentage of response for swcq physical appearance items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
+swcq_percAct,SWCQ activities percentage response,percentage of response for swcq activities items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
