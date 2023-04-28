@@ -1,6 +1,6 @@
 ﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
-masies_b_i0,Initial question so that MASI only presented to participants who identify as having a heritage culture,Tiene alguna cultura de origen (además de la americana o estadounidense)?,s1_r1_e1,Logical,"0,1","1, Sí | 0, No",NA,1,NA,direct-redcap
-masies_b_culture,Specification of heritage culture,Nuestra cultura de origen (que no sea americana o estadounidense) es:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+masies_b_heritage,Initial question so that MASI only presented to participants who identify as having a heritage culture,Tiene alguna cultura de origen (además de la americana o estadounidense)?,s1_r1_e1,Logical,"0,1","1, Sí | 0, No",NA,1,NA,direct-redcap
+masies_b_which,Specification of heritage culture,Nuestra cultura de origen (que no sea americana o estadounidense) es:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
 masies_b_i1,"MASI (version b, Spanish), question 1",No hablo el idioma de herencia de mi familia o no lo hablo bien.,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, Muy en desacuerdo | 2, | 3, | 4, | 5, Muy de acuerdo",NA,1,NA,direct-redcap
 masies_b_i2,"MASI (version b, Spanish), question 2",Me siento incómodo/a al rededor de personas que sólo hablan el idioma de herencia de mi familia.,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, Muy en desacuerdo | 2, | 3, | 4, | 5, Muy de acuerdo",NA,1,NA,direct-redcap
 masies_b_i3,"MASI (version b, Spanish), question 3",Me siento presionado/a a aprender el idioma de herencia de mi familia.,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, Muy en desacuerdo | 2, | 3, | 4, | 5, Muy de acuerdo",NA,1,NA,direct-redcap

@@ -1,6 +1,6 @@
 ﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
-viaes_i0,Initial question so that VIA (Spanish version) only presented to participants who identify as having a heritage culture,Tiene alguna cultura de origen (además de la americana o estadounidense)?,s1_r1_e1,Logical,"0,1","1, Sí | 0, No",NA,1,NA,direct-redcap
-viaes_culture,Specification of heritage culture,Nuestra cultura de origen (que no sea americana o estadounidense) es:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+viaes_heritage,Initial question so that VIA (Spanish version) only presented to participants who identify as having a heritage culture,Tiene alguna cultura de origen (además de la americana o estadounidense)?,s1_r1_e1,Logical,"0,1","1, Sí | 0, No",NA,1,NA,direct-redcap
+viaes_which,Specification of heritage culture,Nuestra cultura de origen (que no sea americana o estadounidense) es:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
 viaes_i1,"VIA (Spanish version), question 1",Con frecuencia participo en las tradiciones de mi propia cultura.,s1_r1_e1,Integer,"1, 2, 3, 4, 5, 6, 7, 8, 9","1, en Desacuerdo | 2,  | 3,  | 4,  | 5,  | 6,  | 7,  | 8,  | 9, en Acuerdo",NA,1,NA,direct-redcap
 viaes_i2,"VIA (Spanish version), question 2",Con frecuencia participo en las tradiciones americanas/estadounidenses populares.,s1_r1_e1,Integer,"1, 2, 3, 4, 5, 6, 7, 8, 9","1, en Desacuerdo | 2,  | 3,  | 4,  | 5,  | 6,  | 7,  | 8,  | 9, en Acuerdo",NA,1,NA,direct-redcap
 viaes_i3,"VIA (Spanish version), question 3",Yo disfruto de actividades sociales con personas de mi misma cultura.,s1_r1_e1,Integer,"1, 2, 3, 4, 5, 6, 7, 8, 9","1, en Desacuerdo | 2,  | 3,  | 4,  | 5,  | 6,  | 7,  | 8,  | 9, en Acuerdo",NA,1,NA,direct-redcap

@@ -9,7 +9,7 @@ The YSSM questionnaires are currently on the original release. The NDCLab versio
 
 
 ### Scoring Script
-The YSSM questionnaires are **not** included in the repository scoring script.
+The YSSM questionnaires are **not** included in the repository scoring script. (Note: the questions in the parent version were numbered for simplicity although this is an unscored instrument.)
 
 
 ### Translations

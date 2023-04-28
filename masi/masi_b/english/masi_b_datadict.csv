@@ -1,6 +1,6 @@
 ﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
-masi_b_i0,Initial question so that MASI only presented to participants who identify as having a heritage culture,Do you have a heritage culture (other than mainstream American)?,s1_r1_e1,Logical,"0,1","1, Yes | 0, No",NA,1,NA,direct-redcap
-masi_b_culture,Specification of heritage culture,Your heritage culture (other than mainstream American) is:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+masi_b_heritage,Initial question so that MASI only presented to participants who identify as having a heritage culture,Do you have a heritage culture (other than mainstream American)?,s1_r1_e1,Logical,"0,1","1, Yes | 0, No",NA,1,NA,direct-redcap
+masi_b_which,Specification of heritage culture,Your heritage culture (other than mainstream American) is:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
 masi_b_i1,"MASI (version b), question 1",I don't speak my family's heritage language or don't speak it well.,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, strongly disagree | 2,  | 3,  | 4,  | 5, strongly agree",NA,1,NA,direct-redcap
 masi_b_i2,"MASI (version b), question 2",I feel uncomfortable being around people who only speak my family's heritage language.,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, strongly disagree | 2,  | 3,  | 4,  | 5, strongly agree",NA,1,NA,direct-redcap
 masi_b_i3,"MASI (version b), question 3",I feel pressure to learn my family's heritage language.,s1_r1_e1,Integer,"1, 2, 3, 4, 5","1, strongly disagree | 2,  | 3,  | 4,  | 5, strongly agree",NA,1,NA,direct-redcap

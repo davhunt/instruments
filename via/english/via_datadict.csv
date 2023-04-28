@@ -1,6 +1,6 @@
 ﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
-via_i0,Initial question so that VIA only presented to participants who identify as having a heritage culture,Do you have a heritage culture (other than mainstream American)?,s1_r1_e1,Logical,"0,1","1, Yes | 0, No",NA,1,NA,direct-redcap
-via_culture,Specification of heritage culture,Your heritage culture (other than mainstream American) is:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
+via_heritage,Initial question so that VIA only presented to participants who identify as having a heritage culture,Do you have a heritage culture (other than mainstream American)?,s1_r1_e1,Logical,"0,1","1, Yes | 0, No",NA,1,NA,direct-redcap
+via_which,Specification of heritage culture,Your heritage culture (other than mainstream American) is:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
 via_i1,"VIA, question 1",I often participate in my heritage cultural traditions.,s1_r1_e1,Integer,"1, 2, 3, 4, 5, 6, 7, 8, 9","1, Disagree | 2,  | 3,  | 4,  | 5,  | 6,  | 7,  | 8,  | 9, Agree",NA,1,NA,direct-redcap
 via_i2,"VIA, question 2",I often participate in mainstream American cultural traditions.,s1_r1_e1,Integer,"1, 2, 3, 4, 5, 6, 7, 8, 9","1, Disagree | 2,  | 3,  | 4,  | 5,  | 6,  | 7,  | 8,  | 9, Agree",NA,1,NA,direct-redcap
 via_i3,"VIA, question 3",I enjoy social activities with people from the same heritage culture as myself.,s1_r1_e1,Integer,"1, 2, 3, 4, 5, 6, 7, 8, 9","1, Disagree | 2,  | 3,  | 4,  | 5,  | 6,  | 7,  | 8,  | 9, Agree",NA,1,NA,direct-redcap
