@@ -1,7 +1,7 @@
 ## OCI (Obsessive-Compulsive Inventory)
 
 ### Versions
-The OCI questionnaire is currently on the original release. The NDCLab uses the child version form, which was modified for online data collection.
+The OCI questionnaire is currently on the original release. The NDCLab uses the child version form, which was modified for online data collection. Instructions were drawn from the appendix of the Foa et al. paper; bold/underline was added by NDCLab for improved usability.
 
 
 ### Scoring Script
