@@ -3,8 +3,9 @@
 ### Versions
 The SWCQ questionnaire is currently on the original release. Only the English self report is available.  The questions were drawn directly from a version provided by the author in January 2023 (swcq.docx).  The instructions in the original paper form were modified for online data collection.
 
+
 ### Notes
-In the event that any questions in i33-i36 are hidden for a specific project, the matrix header will need to be adjusted accordingly for logical presentation to participants.
+The language of the matrix header for questions i33-i36 was modified so that questions under the header can be hidden and the header will still make sense.
 
 
 ### Scoring Script
