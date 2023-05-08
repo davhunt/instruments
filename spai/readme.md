@@ -13,7 +13,7 @@ The child self report and parental reports of the SPAI are included in the repos
 
 
 ### Translations
-The Spanish US/LatAm version of the parental report was translated by members of the [FIU CAPP program](https://capp.fiu.edu/).
+The Spanish US/LatAm version of the parental report was translated by members of the [FIU CAPP program](https://capp.fiu.edu/). In may 2023, the Spanish header for questions i21-i23 was corrected.
 
 
 ### References
