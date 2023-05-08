@@ -14,7 +14,7 @@ The combined EDS+HVS questionnaires are included in the repository scoring scrip
 
 
 ### Translations
-The Spanish self report was borrowed from [University of Miami](https://elcentro.sonhs.miami.edu/research/measures-library/daily-discrimination-scale/index.html), then lightly adapted by members of the NDCLab to match the English version being used internally. The translation of the parent report into Spanish for US/Latin America was performed by members of the NDCLab in 2022.  Included is a .csv file providing transparency on the translation process. Please report any issues with the EDS/HVS translations by posting an issue in this GitHub repository.
+The Spanish self report was borrowed from [University of Miami](https://elcentro.sonhs.miami.edu/research/measures-library/daily-discrimination-scale/index.html), then lightly adapted by members of the NDCLab to match the English version being used internally. The translation of the parent report into Spanish for US/Latin America was performed by members of the NDCLab in 2022, with a typographical correction in May 2023.  Included is a .csv file providing transparency on the translation process. Please report any issues with the EDS/HVS translations by posting an issue in this GitHub repository.
 
 
 ### References
