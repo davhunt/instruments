@@ -1,7 +1,7 @@
 ## CASI (Child Anxiety Sensitivity Index)
 
 ### Versions
-The CASI questionnaire is currently on the original release. Only the English self report is available.
+The CASI questionnaire is currently on the original release. Only the English self report is available. Instructions were provided by the [FIU CAPP program](https://capp.fiu.edu/).
 
 
 ### Scoring Script
