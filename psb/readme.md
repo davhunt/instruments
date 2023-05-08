@@ -1,7 +1,7 @@
 ## PSB (Prosocial Behavior Survey)
 
 ### Versions
-The PSB questionnaires are currently on the original release. The NDCLab versions were extracted from the [ABCD youth questionnaire](https://nda.nih.gov/data_structure.html?short_name=abcd_psb01) and the [ABCD parent questionnaire](https://nda.nih.gov/data_structure.html?short_name=psb01), both extracted from the NIMH Data Archive in January 2023.
+The PSB questionnaires are currently on the original release. The NDCLab versions were extracted from the [ABCD youth questionnaire](https://nda.nih.gov/data_structure.html?short_name=abcd_psb01) and the [ABCD parent questionnaire](https://nda.nih.gov/data_structure.html?short_name=psb01), both extracted from the NIMH Data Archive in January 2023. Instructions for all versions were extracted from PDFs shared directly by researchers involved in the ABCD study.
 | Audience | Language |
 | :--  | :--  |
 | child self report | English  |
