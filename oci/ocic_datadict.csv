@@ -1,25 +1,25 @@
 ﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
-ocic_i1,"OCI (child version), question 1",Can't stop bad thoughts,s1_r1_e1,Integer,"0, 1, 2","0, never | 1,  | 2, always",NA,1,NA,direct-redcap
-ocic_i2,"OCI (child version), question 2",Compulsive washing,s1_r1_e1,Integer,"0, 1, 2","0, never | 1,  | 2, always",NA,1,NA,direct-redcap
-ocic_i3,"OCI (child version), question 3",Collect stuff that gets in way,s1_r1_e1,Integer,"0, 1, 2","0, never | 1,  | 2, always",NA,1,NA,direct-redcap
-ocic_i4,"OCI (child version), question 4",Checking things,s1_r1_e1,Integer,"0, 1, 2","0, never | 1,  | 2, always",NA,1,NA,direct-redcap
-ocic_i5,"OCI (child version), question 5",Doubting if did things,s1_r1_e1,Integer,"0, 1, 2","0, never | 1,  | 2, always",NA,1,NA,direct-redcap
-ocic_i6,"OCI (child version), question 6",Counting,s1_r1_e1,Integer,"0, 1, 2","0, never | 1,  | 2, always",NA,1,NA,direct-redcap
-ocic_i7,"OCI (child version), question 7",Collect things don't need,s1_r1_e1,Integer,"0, 1, 2","0, never | 1,  | 2, always",NA,1,NA,direct-redcap
-ocic_i8,"OCI (child version), question 8",Upset if things not in order,s1_r1_e1,Integer,"0, 1, 2","0, never | 1,  | 2, always",NA,1,NA,direct-redcap
-ocic_i9,"OCI (child version), question 9",Repeating,s1_r1_e1,Integer,"0, 1, 2","0, never | 1,  | 2, always",NA,1,NA,direct-redcap
-ocic_i10,"OCI (child version), question 10",Worry about cleanliness,s1_r1_e1,Integer,"0, 1, 2","0, never | 1,  | 2, always",NA,1,NA,direct-redcap
-ocic_i11,"OCI (child version), question 11",Upset by bad thoughts,s1_r1_e1,Integer,"0, 1, 2","0, never | 1,  | 2, always",NA,1,NA,direct-redcap
-ocic_i12,"OCI (child version), question 12",Repeating numbers,s1_r1_e1,Integer,"0, 1, 2","0, never | 1,  | 2, always",NA,1,NA,direct-redcap
-ocic_i13,"OCI (child version), question 13",Worry didn't finish things,s1_r1_e1,Integer,"0, 1, 2","0, never | 1,  | 2, always",NA,1,NA,direct-redcap
-ocic_i14,"OCI (child version), question 14",Upset by intrusive bad thoughts,s1_r1_e1,Integer,"0, 1, 2","0, never | 1,  | 2, always",NA,1,NA,direct-redcap
-ocic_i15,"OCI (child version), question 15","Checking doors, windows, etc.",s1_r1_e1,Integer,"0, 1, 2","0, never | 1,  | 2, always",NA,1,NA,direct-redcap
-ocic_i16,"OCI (child version), question 16",Difficulty discarding,s1_r1_e1,Integer,"0, 1, 2","0, never | 1,  | 2, always",NA,1,NA,direct-redcap
-ocic_i17,"OCI (child version), question 17",Upset if people move things,s1_r1_e1,Integer,"0, 1, 2","0, never | 1,  | 2, always",NA,1,NA,direct-redcap
-ocic_i18,"OCI (child version), question 18",Saying things in response to bad thoughts,s1_r1_e1,Integer,"0, 1, 2","0, never | 1,  | 2, always",NA,1,NA,direct-redcap
-ocic_i19,"OCI (child version), question 19",Need things certain way,s1_r1_e1,Integer,"0, 1, 2","0, never | 1,  | 2, always",NA,1,NA,direct-redcap
-ocic_i20,"OCI (child version), question 20","Doubting if did something ""right""",s1_r1_e1,Integer,"0, 1, 2","0, never | 1,  | 2, always",NA,1,NA,direct-redcap
-ocic_i21,"OCI (child version), question 21",Wash more than others,s1_r1_e1,Integer,"0, 1, 2","0, never | 1,  | 2, always",NA,1,NA,direct-redcap
+ocic_i1,"OCI (child version), question 1",Can't stop bad thoughts,s1_r1_e1,Integer,"0, 1, 2","0, never | 1, sometimes | 2, always",NA,1,NA,direct-redcap
+ocic_i2,"OCI (child version), question 2",Compulsive washing,s1_r1_e1,Integer,"0, 1, 2","0, never | 1, sometimes | 2, always",NA,1,NA,direct-redcap
+ocic_i3,"OCI (child version), question 3",Collect stuff that gets in way,s1_r1_e1,Integer,"0, 1, 2","0, never | 1, sometimes | 2, always",NA,1,NA,direct-redcap
+ocic_i4,"OCI (child version), question 4",Checking things,s1_r1_e1,Integer,"0, 1, 2","0, never | 1, sometimes | 2, always",NA,1,NA,direct-redcap
+ocic_i5,"OCI (child version), question 5",Doubting if did things,s1_r1_e1,Integer,"0, 1, 2","0, never | 1, sometimes | 2, always",NA,1,NA,direct-redcap
+ocic_i6,"OCI (child version), question 6",Counting,s1_r1_e1,Integer,"0, 1, 2","0, never | 1, sometimes | 2, always",NA,1,NA,direct-redcap
+ocic_i7,"OCI (child version), question 7",Collect things don't need,s1_r1_e1,Integer,"0, 1, 2","0, never | 1, sometimes | 2, always",NA,1,NA,direct-redcap
+ocic_i8,"OCI (child version), question 8",Upset if things not in order,s1_r1_e1,Integer,"0, 1, 2","0, never | 1, sometimes | 2, always",NA,1,NA,direct-redcap
+ocic_i9,"OCI (child version), question 9",Repeating,s1_r1_e1,Integer,"0, 1, 2","0, never | 1, sometimes | 2, always",NA,1,NA,direct-redcap
+ocic_i10,"OCI (child version), question 10",Worry about cleanliness,s1_r1_e1,Integer,"0, 1, 2","0, never | 1, sometimes | 2, always",NA,1,NA,direct-redcap
+ocic_i11,"OCI (child version), question 11",Upset by bad thoughts,s1_r1_e1,Integer,"0, 1, 2","0, never | 1, sometimes | 2, always",NA,1,NA,direct-redcap
+ocic_i12,"OCI (child version), question 12",Repeating numbers,s1_r1_e1,Integer,"0, 1, 2","0, never | 1, sometimes | 2, always",NA,1,NA,direct-redcap
+ocic_i13,"OCI (child version), question 13",Worry didn't finish things,s1_r1_e1,Integer,"0, 1, 2","0, never | 1, sometimes | 2, always",NA,1,NA,direct-redcap
+ocic_i14,"OCI (child version), question 14",Upset by intrusive bad thoughts,s1_r1_e1,Integer,"0, 1, 2","0, never | 1, sometimes | 2, always",NA,1,NA,direct-redcap
+ocic_i15,"OCI (child version), question 15","Checking doors, windows, etc.",s1_r1_e1,Integer,"0, 1, 2","0, never | 1, sometimes | 2, always",NA,1,NA,direct-redcap
+ocic_i16,"OCI (child version), question 16",Difficulty discarding,s1_r1_e1,Integer,"0, 1, 2","0, never | 1, sometimes | 2, always",NA,1,NA,direct-redcap
+ocic_i17,"OCI (child version), question 17",Upset if people move things,s1_r1_e1,Integer,"0, 1, 2","0, never | 1, sometimes | 2, always",NA,1,NA,direct-redcap
+ocic_i18,"OCI (child version), question 18",Saying things in response to bad thoughts,s1_r1_e1,Integer,"0, 1, 2","0, never | 1, sometimes | 2, always",NA,1,NA,direct-redcap
+ocic_i19,"OCI (child version), question 19",Need things certain way,s1_r1_e1,Integer,"0, 1, 2","0, never | 1, sometimes | 2, always",NA,1,NA,direct-redcap
+ocic_i20,"OCI (child version), question 20","Doubting if did something ""right""",s1_r1_e1,Integer,"0, 1, 2","0, never | 1, sometimes | 2, always",NA,1,NA,direct-redcap
+ocic_i21,"OCI (child version), question 21",Wash more than others,s1_r1_e1,Integer,"0, 1, 2","0, never | 1, sometimes | 2, always",NA,1,NA,direct-redcap
 ocic_scrdTotal,OCI (child version) total score,sum of all ocic items (NA if ocic_percTotal < 1),s1_r1_e1,Integer,"[0,42]",NA,NA,1,NA,code-instruments
 ocic_scrdDoubt,OCI (child version) doubting/checking subscore,"average of ocic items 4, 5, 13, 15, and 20 (NA if ocic_percDoubt < 0.8)",s1_r1_e1,Real,"[0,2]",NA,NA,1,NA,code-instruments
 ocic_scrdObs,OCI (child version) obsessing subscore,"average of ocic items 1, 11, 14, and 18 (NA if ocic_percObs < 0.8)",s1_r1_e1,Real,"[0,2]",NA,NA,1,NA,code-instruments
