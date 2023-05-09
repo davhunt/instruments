@@ -1,6 +1,6 @@
 ﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
-txrxa_any,Yes/no: child received treatment for emotional/psychological disorder,"Has the child ever (now or in the past) received treatment for any emotional or psychological problem? Problems may include but are not limited to Anxiety, Depression, Substance Abuse, Eating Disorder, ADHD, and Autism.",s1_r1_e1,Integer,"0, 1, 999","1, Yes | 0, No | 999, Don't know",NA,1,NA,direct-redcap
-txrxa_recentmeds,Yes/no: child medication past two weeks,Has the child taken any medications (prescription or over-the-counter) within the past two weeks?,s1_r1_e1,Integer,"0, 1, 999","1, Yes | 0, No | 999, Don't know",NA,1,NA,direct-redcap
+txrxa_any,Yes/no: child received treatment for emotional/psychological disorder,"Has the child ever (now or in the past) received treatment for any emotional or psychological problem? Problems may include but are not limited to Anxiety, Depression, Substance Abuse, Eating Disorder, ADHD, and Autism.",s1_r1_e1,Integer,"0, 1, 999, 77","1, Yes | 0, No | 999, Don't know | 77, Prefer not to answer",NA,1,NA,direct-redcap
+txrxa_recentmeds,Yes/no: child medication past two weeks,Has the child taken any medications (prescription or over-the-counter) within the past two weeks?,s1_r1_e1,Integer,"0, 1, 999, 77","1, Yes | 0, No | 999, Don't know | 77, Prefer not to answer",NA,1,NA,direct-redcap
 txrxa_tx1prob,Treatment 1: problem,Problem:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
 txrxa_tx1desc,Treatment 1: treatment/medication,Type of treatment and/or medication:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
 txrxa_tx1start,Treatment 1: start date,Start Date:,s1_r1_e1,Char,NA,month and year,NA,1,NA,direct-redcap
