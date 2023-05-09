@@ -2,13 +2,13 @@
 infosht_fname,Child: first name,Child's First Name:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
 infosht_mname,Child: middle name,Child's Middle Name:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
 infosht_lname,Child: last name,Child's Last Name:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
-infosht_cellok,Child: approval to contact by phone,Is it ok to contact the child by cell phone?,s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+infosht_cellok,Child: approval to contact by phone,Is it ok to contact the child by cell phone?,s1_r1_e1,Integer,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
 infosht_cellph,Child: phone,Child's Cell Phone:,s1_r1_e1,Integer,"[1000000,9999999999]",phone number,NA,1,NA,direct-redcap
-infosht_emailok,Child: approval to contact by e-mail,Is it ok to contact the child by e-mail?,s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+infosht_emailok,Child: approval to contact by e-mail,Is it ok to contact the child by e-mail?,s1_r1_e1,Integer,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
 infosht_email,Child: e-mail,Child's E-mail Address:,s1_r1_e1,Char,e-mail address,e-mail,NA,1,NA,direct-redcap
-infosht_dob,Child: date of birth,Child's Date of Birth:,s1_r1_e1,Integer,yyyy-mm-dd,yyyy-mm-dd,NA,1,NA,direct-redcap
+infosht_dob,Child: date of birth,Child's Date of Birth:,s1_r1_e1,Date (Y-M-D),yyyy-mm-dd,yyyy-mm-dd,NA,1,NA,direct-redcap
 infosht_pob,Child: place of birth,Child's City of Birth:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
-infosht_twoadd,Child: specification of more than one residence,Does the child have more than one home address?,s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+infosht_twoadd,Child: specification of more than one residence,Does the child have more than one home address?,s1_r1_e1,Integer,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
 infosht_street1,Child's primary address: street,Child's Primary Home Address (Street Address):,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
 infosht_city1,Child's primary address: city,Child's Primary Home Address (City):,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
 infosht_state1,Child's primary address: state,Child's Primary Home Address (State):,s1_r1_e1,Char,NA,US state abbreviation,NA,1,NA,direct-redcap
@@ -29,11 +29,11 @@ infosht_p1work,Respondent: work phone,Work Phone:,s1_r1_e1,Integer,"[1000000,999
 infosht_p1email,Respondent: e-mail,Email:,s1_r1_e1,Char,e-mail address,e-mail,NA,1,NA,direct-redcap
 infosht_p1rel,Respondent: relationship to child,What is your relationship to the child?,s1_r1_e1,Integer,"1, 2, 3, 4, 5, 6, 7","0, biological mother | 1, biological father | 2, adoptive mother | 3, adoptive father | 4, step-mother | 5, step-father | 6, foster parent | 7, other",NA,1,NA,direct-redcap
 infosht_p1reloth,"Respondent: detail on ""other"" relationship to child",Please specify:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
-infosht_p1ftlive,Respondent: full-time caregiver,Does the child live with you full-time?,s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+infosht_p1ftlive,Respondent: full-time caregiver,Does the child live with you full-time?,s1_r1_e1,Integer,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
 infosht_p1contact,Respondent: frequency of contact with child (if not full-time caregiver),What is the frequency of contact between you and the child?,s1_r1_e1,Integer,"1, 2, 3, 4, 5","0, no contact | 1, 1-2 days per month | 2, 3-4 days per month | 3, 5-9 days per month | 4, 10 or more days per month | 5, not on a regular basis (e.g. vacations only or one time per year)",NA,1,NA,direct-redcap
 infosht_p1nonreg,Respondent: frequency of contact with child (if not with child on a regular basis),How many days per year?,s1_r1_e1,Integer,"[1,365]",days,NA,1,NA,direct-redcap
-infosht_p2exist,Second guardian: existence,Does the child have a second parent/guardian?,s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
-infosht_p2cntctok,Second guardian: approval to contact,Is it ok to contact this person about the child?,s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+infosht_p2exist,Second guardian: existence,Does the child have a second parent/guardian?,s1_r1_e1,Integer,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+infosht_p2cntctok,Second guardian: approval to contact,Is it ok to contact this person about the child?,s1_r1_e1,Integer,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
 infosht_p2name,Second Guardian: full name,"Parent/Guardian 2, Full Name:",s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
 infosht_p2phone,Second Guardian: home phone,"Parent/Guardian 2, Home Phone:",s1_r1_e1,Integer,"[1000000,9999999999]",phone number,NA,1,NA,direct-redcap
 infosht_p2cell,Second Guardian: cell phone,"Parent/Guardian 2, Cell Phone:",s1_r1_e1,Integer,"[1000000,9999999999]",phone number,NA,1,NA,direct-redcap
@@ -41,7 +41,7 @@ infosht_p2work,Second Guardian: work phone,"Parent/Guardian 2, Work Phone:",s1_r
 infosht_p2email,Second Guardian: e-mail,"Parent/Guardian 2, Email:",s1_r1_e1,Char,e-mail address,e-mail,NA,1,NA,direct-redcap
 infosht_p2rel,Second Guardian: relationship to child,What is the relationship of Parent/Guardian 2 to the child?,s1_r1_e1,Integer,"1, 2, 3, 4, 5, 6, 7","0, biological mother | 1, biological father | 2, adoptive mother | 3, adoptive father | 4, step-mother | 5, step-father | 6, foster parent | 7, other",NA,1,NA,direct-redcap
 infosht_p2reloth,"Second Guardian: detail on ""other"" relationship to child",Please specify:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
-infosht_p2ftlive,Second Guardian: full-time caregiver,Does the child live full-time with Parent/Guardian 2?,s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+infosht_p2ftlive,Second Guardian: full-time caregiver,Does the child live full-time with Parent/Guardian 2?,s1_r1_e1,Integer,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
 infosht_p2contact,Second Guardian: frequency of contact with child (if not full-time caregiver),What is the frequency of contact between the child and Parent/Guardian 2?,s1_r1_e1,Integer,"1, 2, 3, 4, 5","0, no contact | 1, 1-2 days per month | 2, 3-4 days per month | 3, 5-9 days per month | 4, 10 or more days per month | 5, not on a regular basis (e.g. vacations only or one time per year)",NA,1,NA,direct-redcap
 infosht_p2nonreg,Second Guardian: frequency of contact with child (if not with child on a regular basis),How many days per year?,s1_r1_e1,Integer,"[1,365]",days,NA,1,NA,direct-redcap
 infosht_loc1name,Alternate contact 1: name,1. Name of Person:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
