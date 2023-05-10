@@ -1,6 +1,8 @@
 ﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
-yssmpes_i1,"YSSM (parent version, Spanish), question 1","En un DÍA DE SEMANA típico , ¿cuánto TIEMPO pasa su niño(a) usando una computadora, un teléfono celular, una tableta u otro dispositivo electrónico?",s1_r1_e1,Time,"[0:00,23:59]",hh:mm,NA,1,NA,direct-redcap
-yssmpes_i2,"YSSM (parent version, Spanish), question 2","En un típico DIA DE FIN DE SEMANA, ¿cuánto TIEMPO pasa su niño(a) usando una computadora, un teléfono celular, una tableta u otro dispositivo electrónico?",s1_r1_e1,Time,"[0:00,23:59]",hh:mm,NA,1,NA,direct-redcap
+yssmpes_i1h,"YSSM (parent version, Spanish), question 1 (hours)",Horas:,s1_r1_e1,Integer,"[0,24]",NA,NA,1,NA,direct-redcap
+yssmpes_i1m,"YSSM (parent version, Spanish), question 1 (minutes)",Minutos:,s1_r1_e1,Integer,"[0,60]",NA,NA,1,NA,direct-redcap
+yssmpes_i2h,"YSSM (parent version, Spanish), question 2 (hours)",Horas:,s1_r1_e1,Integer,"[0,24]",NA,NA,1,NA,direct-redcap
+yssmpes_i2m,"YSSM (parent version, Spanish), question 2 (minutes)",Minutos:,s1_r1_e1,Integer,"[0,60]",NA,NA,1,NA,direct-redcap
 yssmpes_i3,"YSSM (parent version, Spanish), question 3",Qué tipos de medios en pantalla usa su niño/a más (no incluye medios en pantalla utilizados para la escuela o tarea)?,s1_r1_e1,Integer,"1, 2, 3, 4, 5, 6, 7","1, Televisión | 2, Videojuegos | 3, Teléfono celular | 4, Tabla | 5, Videojuego portátil | 6, Computadora/laptop | 7, Otro",NA,1,NA,direct-redcap
 yssmpes_i3oth,"YSSM (parent version, Spanish), detail for ""other"" on question 3","Si otro, por favor especifique:",s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
 yssmpes_i4,"YSSM (parent version, Spanish), question 4",¿Está siguiendo a su niño/a o es amigo de él/ella en alguna red social (por ejemplo Facebook Instagram Snapchat)?,s1_r1_e1,Logical,"0, 1","1, Sí | 0, No",NA,1,NA,direct-redcap

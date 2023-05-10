@@ -1,6 +1,8 @@
 ﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
-yssmp_i1,"YSSM (parent version), question 1","On a typical WEEKDAY, how much TIME does your child spend on a computer, cellphone, tablet, or other electronic device?",s1_r1_e1,Time,"[0:00,23:59]",hh:mm,NA,1,NA,direct-redcap
-yssmp_i2,"YSSM (parent version), question 2","On a typical WEEKEND DAY, how much TIME does your child spend on a computer, cellphone, tablet, or other electronic device?",s1_r1_e1,Time,"[0:00,23:59]",hh:mm,NA,1,NA,direct-redcap
+yssmp_i1h,"YSSM (parent version), question 1 (hours)",Hours:,s1_r1_e1,Integer,"[0,24]",NA,NA,1,NA,direct-redcap
+yssmp_i1m,"YSSM (parent version), question 1 (minutes)",Minutes:,s1_r1_e1,Integer,"[0,60]",NA,NA,1,NA,direct-redcap
+yssmp_i2h,"YSSM (parent version), question 2 (hours)",Hours:,s1_r1_e1,Integer,"[0,24]",NA,NA,1,NA,direct-redcap
+yssmp_i2m,"YSSM (parent version), question 2 (minutes)",Minutes:,s1_r1_e1,Integer,"[0,60]",NA,NA,1,NA,direct-redcap
 yssmp_i3,"YSSM (parent version), question 3",What types of SCREEN MEDIA does your child use the most (not including screen media used for school or homework)?,s1_r1_e1,Integer,"1, 2, 3, 4, 5, 6, 7","1, Television | 2, Video games | 3, Cell phone | 4, Tablet | 5, Handheld video game device | 6, Computer/laptop | 7, Other",NA,1,NA,direct-redcap
 yssmp_i3oth,"YSSM (parent version), detail for ""other"" on question 3","If other, please specify:",s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
 yssmp_i4,"YSSM (parent version), question 4",Are you following or friends with your child on any social media sites (e.g. Facebook Instagram Snapchat)?,s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
