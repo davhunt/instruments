@@ -1,0 +1,11 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+posttaskg_i1,"postTaskG, question 1",How many mistakes do you think you made while reading out loud?,s1_r1_e1,Integer,"[0,inf]",,NA,1,NA,direct-redcap
+posttaskg_i2,"postTaskG, question 2",How well do you think you did reading out loud?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not well at all | 2,  | 3,  | 4, Very well",NA,1,NA,direct-redcap
+posttaskg_i3,"postTaskG, question 3",How hard did you try?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, Very much",NA,1,NA,direct-redcap
+posttaskg_i4,"postTaskG, question 4",How much did it bother you when you made a mistake?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, Very much",NA,1,NA,direct-redcap
+posttaskg_i5,"postTaskG, question 5",How anxious or nervous were you while reading?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, Very much",NA,1,NA,direct-redcap
+posttaskg_i6,"postTaskG, question 6",How calm and confident were you while reading?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, Very much",NA,1,NA,direct-redcap
+posttaskg_i7,"postTaskG, question 7",How much did you worry about being judged negatively?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, Very much",NA,1,NA,direct-redcap
+posttaskg_i8,"postTaskG, question 8",How much did you think about performing well?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, Very much",NA,1,NA,direct-redcap
+posttaskg_i9,"postTaskG, question 9",Your own ability,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, Very much",NA,1,NA,direct-redcap
+posttaskg_i10,"postTaskG, question 10",Difficulty of the text,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, Very much",NA,1,NA,direct-redcap

@@ -24,6 +24,9 @@ Ten questions about the participant's experience, generic to any "game" task.
 ###### postTaskF
 Ten questions about the participant's experience with a "speech" task.
 
+###### postTaskG
+Ten questions about the participant's experience with a "reading" task.
+
 
 ### Scoring Script
 The postTask questionnaires are **not** included in the repository scoring script.
