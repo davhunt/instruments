@@ -21,7 +21,7 @@ Adult version:
 > Gross, J. J., & John, O. P. (2003). Individual differences in two emotion regulation processes: implications for affect, relationships, and well-being. Journal of Personality and Social Psychology, 85(2), 348–362. [[link]](https://pubmed.ncbi.nlm.nih.gov/12916575/)
 
 Child/Adolescent version:
-> Gullone, E. & Taffe, J. (2012). The Emotion Regulation Questionnaire for Children and Adolescents (ERQ–CA): A Psychometric Evaluation. Psychological Assessment, 24(2), 409-417. [[link]](https://pubmed.ncbi.nlm.nih.gov/12916575/)
+> Gullone, E. & Taffe, J. (2012). The Emotion Regulation Questionnaire for Children and Adolescents (ERQ–CA): A Psychometric Evaluation. Psychological Assessment, 24(2), 409-417. [[link]](https://psycnet.apa.org/record/2011-24223-001)
 
 Spanish adult version:
 > Cabello, R., Salguero, J. M., Fernández-Berrocal, P., & Gross, J. J. (2013). A Spanish adaptation of the Emotion Regulation Questionnaire. European Journal of Psychological Assessment, 29(4), 234–240. [[link]](https://psycnet.apa.org/record/2013-38005-002)
