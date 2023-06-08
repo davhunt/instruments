@@ -2,7 +2,7 @@
 dyadb_i1,Other-assessment: game,How well do you think the other person did playing the game?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not well at all | 2,  | 3,  | 4, Very well",NA,1,NA,direct-redcap
 dyadb_i2,Other-assessment: speech,How well do you think the other person did giving a speech?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not well at all | 2,  | 3,  | 4, Very well",NA,1,NA,direct-redcap
 dyadb_i3,Other-assessment: interaction,How well did the other person do talking and interacting with you?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not well at all | 2,  | 3,  | 4, Very well",NA,1,NA,direct-redcap
-dyadb_i4,Self-assessment of desire for future interaction,How much would want to interact with the other person again?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, Very much",NA,1,NA,direct-redcap
+dyadb_i4,Self-assessment of desire for future interaction,How much would you want to interact with the other person again?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, Very much",NA,1,NA,direct-redcap
 dyadb_i5,Self-assessment of other-perception: game,How well do you think the other person would say you did playing the game?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not well at all | 2,  | 3,  | 4, Very well",NA,1,NA,direct-redcap
 dyadb_i6,Self-assessment of other-perception: speech,How well do you think the other person would say you did giving a speech?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not well at all | 2,  | 3,  | 4, Very well",NA,1,NA,direct-redcap
 dyadb_i7,Self-assessment of other-perception: interaction,How well do you think the other person would say you did talking and interacting with them?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not well at all | 2,  | 3,  | 4, Very well",NA,1,NA,direct-redcap

@@ -1,0 +1,66 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+csisblife_i1_s1_r1_e1,"CSISB LIFE, question 1","1. Wish to be Dead
+
+Subject endorses thoughts about a wish to be dead or not alive anymore, or wish to fall asleep and not wake up.
+
+""Have you thought about being dead or what it would be like to be dead?""
+
+""Have you wished you were dead or wished you could go to sleep and never wake up?"" 
+
+""Do you ever wish you weren't alive anymore?""
+",s1_r1_e1,Integer,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+csisblife_i1yes_s1_r1_e1,"CSISB LIFE, question 2",Describe:,s1_r1_e1,Text,NA,NA,NA,1,NA,direct-redcap
+csisblife_i2_s1_r1_e1,"CSISB LIFE, question 3","2. Non-Specific Active Suicidal Thoughts
+
+General, non-specific thoughts of wanting to end one's life/commit suicide (e.g., ""I've thought about killing myself"") without thoughts of ways to kill oneself/associated methods, intent, or plan during the assessment period.
+
+""Have you thought about doing something to make yourself not alive anymore?"" 
+
+""Have you had any thoughts about killing yourself?""
+",s1_r1_e1,Integer,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+csisblife_i2yes_s1_r1_e1,"CSISB LIFE, question 4",Describe:,s1_r1_e1,Text,NA,NA,NA,1,NA,direct-redcap
+csisblife_i3_s1_r1_e1,"CSISB LIFE, question 5","3. Active Suicidal Ideation with Any Methods (Not Plan) without Intent to Act
+
+Subject endorses thoughts of suicide and has thought of at least one method during the assessment period. This is different than a specific plan with time, place or method details worked out (e.g., thought of method to kill self but not a specific plan). Includes person who would say, ""I thought about taking an overdose but I never made a specific plan as to when, where or how I would actually do it...and I would never go through with it.""
+
+""Have you thought about how you would do that or how you would make yourself not alive anymore (kill yourself)? What did you think about?""
+",s1_r1_e1,Integer,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+csisblife_i3yes_s1_r1_e1,"CSISB LIFE, question 6",Describe:,s1_r1_e1,Text,NA,NA,NA,1,NA,direct-redcap
+csisblife_i4_s1_r1_e1,"CSISB LIFE, question 7","4. Active Suicidal Ideation with Some Intent to Act, without Specific Plan
+
+Active suicidal thoughts of killing oneself and subject reports having some intent to act on such thoughts, as opposed to ""I have the thoughts but I definitely will not do anything about them.""
+
+""When you thought about making yourself not alive anymore (or killing yourself), did you think that this was something you might actually do?""
+
+""This is different from (as opposed to) having the thoughts but knowing you wouldn't do anything about it.""
+",s1_r1_e1,Integer,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+csisblife_i4yes_s1_r1_e1,"CSISB LIFE, question 8",Describe:,s1_r1_e1,Text,NA,NA,NA,1,NA,direct-redcap
+csisblife_i5_s1_r1_e1,"CSISB LIFE, question 9","5. Active Suicidal Ideation with Specific Plan and Intent
+
+Thoughts of killing oneself with details of plan fully or partially worked out and subject has some intent to carry it out.
+
+""Have you ever decided how or when you would make yourself not alive anymore/kill yourself?"" 
+
+""Have you ever planned out (worked out the details of) how you would do it?""
+
+""What was your plan?""
+
+""When you made this plan (or worked out these details), was any part of you thinking about actually doing it?""
+",s1_r1_e1,Integer,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+csisblife_i5yes_s1_r1_e1,"CSISB LIFE, question 10",Describe:,s1_r1_e1,Text,NA,NA,NA,1,NA,direct-redcap
+csisblife_i6_s1_r1_e1,"CSISB LIFE, question 11",Did you ever do anything to try to kill yourself or make yourself not alive anymore?,s1_r1_e1,Integer,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+csisblife_i6yes_s1_r1_e1,"CSISB LIFE, question 12",What did you do?,s1_r1_e1,Text,NA,NA,NA,1,NA,direct-redcap
+csisblife_i7_s1_r1_e1,"CSISB LIFE, question 13",Total number of attempts:,s1_r1_e1,Text,NA,NA,NA,1,NA,direct-redcap
+csisblife_i8_s1_r1_e1,"CSISB LIFE, question 14",Did you ever hurt yourself on purpose?,s1_r1_e1,Integer,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+csisblife_i8yes_s1_r1_e1,"CSISB LIFE, question 15","<p>Why did you do that?</p> <p style=""padding-left: 40px;""><span style=""font-weight: normal;"">Probe questions can include:</span></p> <p style=""padding-left: 40px;"">1) <strong>Did you______ as a way to end your life?</strong></p> <p style=""padding-left: 40px;""><strong>2) Did you want to die (even a little) when you_____?</strong></p> <p style=""padding-left: 40px;""><strong>3) Were you trying to make yourself not alive anymore when you _____?</strong></p> <p style=""padding-left: 40px;""><strong>4) Did you think it was possible you could have died from_____?</strong></p> <p style=""padding-left: 40px;""><strong>5) Did you do it purely for other reasons, not at all to end your life or kill yourself (like to make yourself feel better, or get something else to happen)?</strong><strong> </strong><span style=""font-weight: normal;"">(Self-Injurious Behavior without suicidal intent)</span></p>",s1_r1_e1,Text,NA,NA,NA,1,NA,direct-redcap
+csisblife_i14_s1_r1_e1,"CSISB LIFE, question 16","<p>Has subject engaged in Non-Suicidal Self-Injurious Behavior?<br /><br /><span style=""font-weight: normal;"">Probe questions can include: </span>Did you ever hurt yourself on purpose? Why did you do that? Did you do it purely for other reasons, not at all to end your life or kill yourself (like to make yourself feel better, or get something else to happen)?</p>",s1_r1_e1,Integer,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+csisblife_i15_s1_r1_e1,"CSISB LIFE, question 17","Has subject engaged in Self-Injurious Behavior, intent unknown?",s1_r1_e1,Integer,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+csisblife_i16_s1_r1_e1,"CSISB LIFE, question 18",Has there been a time when you started to do something to make yourself not alive anymore (end your life or kill yourself) but someone or something stopped you before you actually did anything?,s1_r1_e1,Integer,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+csisblife_i16yes_s1_r1_e1,"CSISB LIFE, question 19",What did you do? ,s1_r1_e1,Text,NA,NA,NA,1,NA,direct-redcap
+csisblife_i17_s1_r1_e1,"CSISB LIFE, question 20",Total number of interrupted attempts:,s1_r1_e1,Text,NA,NA,NA,1,NA,direct-redcap
+csisblife_i18_s1_r1_e1,"CSISB LIFE, question 21",Has there been a time when you started to do something to make yourself not alive anymore (end your life or kill yourself) but you changed your mind (stopped yourself) before you actually did anything? ,s1_r1_e1,Integer,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+csisblife_i18yes_s1_r1_e1,"CSISB LIFE, question 22",What did you do? ,s1_r1_e1,Text,NA,NA,NA,1,NA,direct-redcap
+csisblife_i19_s1_r1_e1,"CSISB LIFE, question 23",Total number of aborted attempts:,s1_r1_e1,Text,NA,NA,NA,1,NA,direct-redcap
+csisblife_i20_s1_r1_e1,"CSISB LIFE, question 24","Have you done anything to get ready to make yourself not alive anymore (to end your life or kill yourself), like giving things away, writing a goodbye note, getting things you need to kill yourself? ",s1_r1_e1,Integer,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+csisblife_i20yes_s1_r1_e1,"CSISB LIFE, question 25",Describe:,s1_r1_e1,Text,NA,NA,NA,1,NA,direct-redcap
+csisblife_i21_s1_r1_e1,"CSISB LIFE, question 26","<div class=""rich-text-field-label""><p><span style=""text-decoration: underline;"">Suicidal Behavior:</span></p> <p><br />Suicidal behavior was present during the assessment period?</p></div>",s1_r1_e1,Integer,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
