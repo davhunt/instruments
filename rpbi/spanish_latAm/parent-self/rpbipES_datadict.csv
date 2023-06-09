@@ -7,7 +7,7 @@ rpbipes_i5,"RPBI (parent self report, Spanish), question 5","Si mi niño/a me re
 rpbipes_i6,"RPBI (parent self report, Spanish), question 6",Insisto en que mi niño/a debe hacer exactamente lo que le dicen.,s1_r1_e1,Integer,"0, 1, 2","0, No es como | 1, Un poco como | 2, Mucho como",NA,1,NA,direct-redcap
 rpbipes_i7,"RPBI (parent self report, Spanish), question 7",Puedo hacer que mi niño/a se sienta mejor cuando está molesto/a.,s1_r1_e1,Integer,"0, 1, 2","0, No es como | 1, Un poco como | 2, Mucho como",NA,1,NA,direct-redcap
 rpbipes_i8,"RPBI (parent self report, Spanish), question 8",Siempre le digo a mi niño/a cómo debe comportarse.,s1_r1_e1,Integer,"0, 1, 2","0, No es como | 1, Un poco como | 2, Mucho como",NA,1,NA,direct-redcap
-rpbipes_i9,"RPBI (parent self report, Spanish), question 9",Soy muy estricto/a con mi niño/a,s1_r1_e1,Integer,"0, 1, 2","0, No es como | 1, Un poco como | 2, Mucho como",NA,1,NA,direct-redcap
+rpbipes_i9,"RPBI (parent self report, Spanish), question 9",Soy muy estricto/a con mi niño/a.,s1_r1_e1,Integer,"0, 1, 2","0, No es como | 1, Un poco como | 2, Mucho como",NA,1,NA,direct-redcap
 rpbipes_i10,"RPBI (parent self report, Spanish), question 10",Me gusta hacer cosas con mi niño/a.,s1_r1_e1,Integer,"0, 1, 2","0, No es como | 1, Un poco como | 2, Mucho como",NA,1,NA,direct-redcap
 rpbipes_i11,"RPBI (parent self report, Spanish), question 11",Me gustaría poder decirle a mi niño/a qué hacer todo el tiempo.,s1_r1_e1,Integer,"0, 1, 2","0, No es como | 1, Un poco como | 2, Mucho como",NA,1,NA,direct-redcap
 rpbipes_i12,"RPBI (parent self report, Spanish), question 12",Doy castigos duros.,s1_r1_e1,Integer,"0, 1, 2","0, No es como | 1, Un poco como | 2, Mucho como",NA,1,NA,direct-redcap
@@ -17,7 +17,7 @@ rpbipes_i15,"RPBI (parent self report, Spanish), question 15",Soy suave con mi n
 rpbipes_i16,"RPBI (parent self report, Spanish), question 16",Le doy mucho cariño y atención a mi niño/a.,s1_r1_e1,Integer,"0, 1, 2","0, No es como | 1, Un poco como | 2, Mucho como",NA,1,NA,direct-redcap
 rpbipes_i17,"RPBI (parent self report, Spanish), question 17",Siempre estoy tratando de cambiar a mi niño/a.,s1_r1_e1,Integer,"0, 1, 2","0, No es como | 1, Un poco como | 2, Mucho como",NA,1,NA,direct-redcap
 rpbipes_i18,"RPBI (parent self report, Spanish), question 18",No soy duro/a con mi niño/a cuando hace algo mal.,s1_r1_e1,Integer,"0, 1, 2","0, No es como | 1, Un poco como | 2, Mucho como",NA,1,NA,direct-redcap
-rpbipes_i19,"RPBI (parent self report, Spanish), question 19",Hago a mi niño/a sentir como la persona más importante de mi vida,s1_r1_e1,Integer,"0, 1, 2","0, No es como | 1, Un poco como | 2, Mucho como",NA,1,NA,direct-redcap
+rpbipes_i19,"RPBI (parent self report, Spanish), question 19",Hago a mi niño/a sentir como la persona más importante de mi vida.,s1_r1_e1,Integer,"0, 1, 2","0, No es como | 1, Un poco como | 2, Mucho como",NA,1,NA,direct-redcap
 rpbipes_i20,"RPBI (parent self report, Spanish), question 20",Sólo aplico las reglas cuando me conviene.,s1_r1_e1,Integer,"0, 1, 2","0, No es como | 1, Un poco como | 2, Mucho como",NA,1,NA,direct-redcap
 rpbipes_i21,"RPBI (parent self report, Spanish), question 21",Le doy a mi niño/a tanta libertad como quiera.,s1_r1_e1,Integer,"0, 1, 2","0, No es como | 1, Un poco como | 2, Mucho como",NA,1,NA,direct-redcap
 rpbipes_i22,"RPBI (parent self report, Spanish), question 22",Creo en demostrar mi amor por mi niño/a.,s1_r1_e1,Integer,"0, 1, 2","0, No es como | 1, Un poco como | 2, Mucho como",NA,1,NA,direct-redcap
