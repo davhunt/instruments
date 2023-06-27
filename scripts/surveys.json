@@ -2040,6 +2040,7 @@
             "threshold": 1.0
         },
         "Total": {
+            "questions": [],
             "products": ["Aca", "Soc", "Phy", "Act"],
             "hide": false,
             "score_type": "avg",
