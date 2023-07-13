@@ -4,6 +4,8 @@ import pandas as pd
 
 import sys
 import os
+import re
+import math
 
 
 def score_tracker(output_data, scrd_columns, tracker):
