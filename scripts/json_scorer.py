@@ -22,8 +22,15 @@ def score_tracker(output_data, scrd_columns, tracker):
     """
     tracker_df = pd.read_csv(tracker, index_col="id")
 
-    for _, row in output_data.iterrows():
-        id = row.name
+    for index, row in output_data.iterrows():
+        if (isinstance(index, float) or isinstance(index, int)) and not math.isnan(index):
+            id = int(row.name)
+        else:
+            print("skipping nan value: ", str(index))
+            continue
+        # map parent data to child for thrive
+        if (str(id).startswith('308') or str(id).startswith('309')) and len(str(id)) == 7:
+            id = int('300' + str(id)[3:])
         # check if id exists in tracker
         if id not in tracker_df.index:
             print(id, "missing in tracker file, skipping")
@@ -62,7 +69,15 @@ def json_score(input_path, survey_dat, output_path=None, tracker=None):
             survey_dat = json.load(infile)
 
     # Iterate through survey names and generate data
-    all_surveys = pd.read_csv(input_path, index_col="record_id")
+
+    # for bbsRA REDcap get thrive IDs from 'bbsratrk_acthrive_s1_r1_e1' column
+    if 'ThrivebbsRA' in input_path:
+        for column in pd.read_csv(input_path).columns:
+            if column.startswith('bbsratrk_acthrive'):
+                all_surveys = pd.read_csv(input_path, index_col=column)
+                break
+    else:
+        all_surveys = pd.read_csv(input_path, index_col="record_id")
     scrd_columns = []
     for name, subscores in survey_dat.items():
         # Try to score, continue if fails
