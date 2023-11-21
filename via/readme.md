@@ -1,7 +1,7 @@
 ## VIA (Vancouver Index of Acculturation)
 
 ### Versions
-The VIA questionnaire is currently on the original release. The NDCLab version was extracted from the NIMH Data Archive, ["Vancouver Index of Acculturation" questionnaire](https://nda.nih.gov/data_structure.html?short_name=abcd_via01) in January 2023, to which an initial yes/no question ("Do you have a heritage culture?") was added for survey flow.
+The VIA questionnaire is currently on the original release. The NDCLab version was extracted from the NIMH Data Archive, ["Vancouver Index of Acculturation" questionnaire](https://nda.nih.gov/data_structure.html?short_name=abcd_via01) in January 2023, to which an initial yes/no question ("Do you have a heritage culture?") was added for survey flow. In November 2023, instructions were added to explain what is meant by "heritage culture", as a majority of youth participants in the THRIVE study indicated that they did not understand the term.
 | Audience | Language |
 | :--  | :--  |
 | self report | English; Spanish US/LatAM |
