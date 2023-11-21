@@ -19,6 +19,9 @@ Five questions pertaining to participant state prior to giving a speech.
 ##### initStateE
 Five questions pertaining to participant state prior to reading out loud.
 
+##### initStateE
+Five questions pertaining to participant state prior to performing an "activity" (can be used for any task).
+
 
 ### Scoring Script
 The initState questionnaires are **not** included in the repository scoring script.
