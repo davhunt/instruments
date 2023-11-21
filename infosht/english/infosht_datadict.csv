@@ -6,7 +6,9 @@ infosht_cellok,Child: approval to contact by phone,Is it ok to contact the child
 infosht_cellph,Child: phone,Child's Cell Phone:,s1_r1_e1,Integer,"[1000000,9999999999]",phone number,NA,1,NA,direct-redcap
 infosht_emailok,Child: approval to contact by e-mail,Is it ok to contact the child by e-mail?,s1_r1_e1,Integer,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
 infosht_email,Child: e-mail,Child's E-mail Address:,s1_r1_e1,Char,e-mail address,e-mail,NA,1,NA,direct-redcap
-infosht_dob,Child: date of birth,Child's Date of Birth:,s1_r1_e1,Date (Y-M-D),yyyy-mm-dd,yyyy-mm-dd,NA,1,NA,direct-redcap
+infosht_dobmonth,Child: date of birth (month),Child's Date of Birth (Month),s1_r1_e1,Integer,"1, 12",Month,NA,1,NA,direct-redcap
+infosht_dobday,Child: date of birth (day),Child's Date of Birth (Day),s1_r1_e1,Integer,"1, 31",Day of month,NA,1,NA,direct-redcap
+infosht_dobyear,Child: date of birth (year),Child's Date of Birth (Year),s1_r1_e1,Integer,"1900, 2500",Year,NA,1,NA,direct-redcap
 infosht_pob,Child: place of birth,Child's City of Birth:,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
 infosht_twoadd,Child: specification of more than one residence,Does the child have more than one home address?,s1_r1_e1,Integer,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
 infosht_street1,Child's primary address: street,Child's Primary Home Address (Street Address):,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap

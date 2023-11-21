@@ -6,7 +6,9 @@ infoshtes_cellok,Child: approval to contact by phone,Podemos contactar al niño/
 infoshtes_cellph,Child: phone,Teléfono celular del niño/a,s1_r1_e1,Integer,"[1000000,9999999999]",phone number,NA,1,NA,direct-redcap
 infoshtes_emailok,Child: approval to contact by e-mail,Podemos contactar al niño/a por correo electrónico?,s1_r1_e1,Integer,"0, 1","1, Sí | 0, No",NA,1,NA,direct-redcap
 infoshtes_email,Child: e-mail,Dirección de correo electrónico del niño/a,s1_r1_e1,Char,e-mail address,e-mail,NA,1,NA,direct-redcap
-infoshtes_dob,Child: date of birth,Fecha de nacimiento del niño/a,s1_r1_e1,Date (Y-M-D),yyyy-mm-dd,yyyy-mm-dd,NA,1,NA,direct-redcap
+infoshtes_dobmonth,Child: date of birth (month),Fecha de nacimiento del niño/a (Mes),s1_r1_e1,Integer,"1, 12",Month,NA,1,NA,direct-redcap
+infoshtes_dobday,Child: date of birth (day),Fecha de nacimiento del niño/a (Día),s1_r1_e1,Integer,"1, 31",Day of month,NA,1,NA,direct-redcap
+infoshtes_dobyear,Child: date of birth (year),Fecha de nacimiento del niño/a (Año),s1_r1_e1,Integer,"1900, 2500",Year,NA,1,NA,direct-redcap
 infoshtes_pob,Child: place of birth,Ciudad de nacimiento del niño/a,s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap
 infoshtes_twoadd,Child: specification of more than one residence,El niño/a tiene más de una dirección de hogar?,s1_r1_e1,Integer,"0, 1","1, Sí | 0, No",NA,1,NA,direct-redcap
 infoshtes_street1,Child's primary address: street,Dirección de hogar primario del niño/a (Calle),s1_r1_e1,Char,NA,NA,NA,1,NA,direct-redcap

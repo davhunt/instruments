@@ -1,0 +1,10 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+posttaskh_i1,"posttaskh, question 1",How well do you think you did on the activity?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not well at all | 2,  | 3,  | 4, Very well",NA,1,NA,direct-redcap
+posttaskh_i2,"posttaskh, question 2",How hard did you try?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, Very much",NA,1,NA,direct-redcap
+posttaskh_i3,"posttaskh, question 3",How much did it bother you when you made a mistake?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, Very much",NA,1,NA,direct-redcap
+posttaskh_i4,"posttaskh, question 4",How anxious or nervous were you during the activity?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, Very much",NA,1,NA,direct-redcap
+posttaskh_i5,"posttaskh, question 5",How calm and confident were you during the activity?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, Very much",NA,1,NA,direct-redcap
+posttaskh_i6,"posttaskh, question 6",How much did you worry about being judged negatively?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, Very much",NA,1,NA,direct-redcap
+posttaskh_i7,"posttaskh, question 7",How much did you think about performing well?,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, Very much",NA,1,NA,direct-redcap
+posttaskh_i8,"posttaskh, question 8",Your own ability,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, Very much",NA,1,NA,direct-redcap
+posttaskh_i9,"posttaskh, question 9",Difficulty of the activity,s1_r1_e1,Integer,"1, 2, 3, 4","1, Not at all | 2,  | 3,  | 4, Very much",NA,1,NA,direct-redcap

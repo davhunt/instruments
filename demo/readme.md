@@ -2,7 +2,9 @@
 
 ### Versions
 ##### demo_d
-This version, designed to be answered by the parent of an adolescent participant, is a full re-vamp for the launch off the THRIVE study. It is available in both English and Spanish for the US/LatAm.
+This version, designed to be answered by the parent of an adolescent participant, is a full re-vamp for the launch of the THRIVE study. It is available in both English and Spanish for the US/LatAm.
+
+*Note: on 2023-11-17, the variables demo_d_iepnow, demo_d_iepever, and demo_d_gdrepeat were modified. demo_d_iepnow and demo_d_iepever now include "or 504 Plan?" at the end of both questions. demo_d_gdrepeat now includes "Kindergarten" as a response option. These changes were mirrored in the Spanish version.
 
 
 ##### demo_c
