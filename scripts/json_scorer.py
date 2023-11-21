@@ -22,16 +22,21 @@ def score_tracker(output_data, scrd_columns, tracker):
 
     for _, row in output_data.iterrows():
         id = row.name
+        project_id = str(id)[0:2]
+        # map parent data to child
+        if (str(id).startswith(project_id+'8') or str(id).startswith(project_id+'9')):
+            id = int(project_id+'0' + str(id)[3:])
         # check if id exists in tracker
         if id not in tracker_df.index:
             print(id, "missing in tracker file, skipping")
             continue
         for col in scrd_columns:
-            try:
-                val = output_data.loc[id, col]
-                tracker_df.loc[id, col] = "1" if val != "NA" else "0"
-            except Exception as e_msg:
-                tracker_df.loc[id, col] = 0
+            if col in list(tracker_df.columns):
+                try:
+                    val = output_data.loc[id, col]
+                    tracker_df.loc[id, col] = "1" if val != "NA" else "0"
+                except Exception as e_msg:
+                    tracker_df.loc[id, col] = 0
 
     # leave NA as blank
     tracker_df = tracker_df.fillna('')
@@ -59,7 +64,8 @@ def json_score(input_path, survey_dat, output_path=None, tracker=None):
             survey_dat = json.load(infile)
 
     # Iterate through survey names and generate data
-    all_surveys = pd.read_csv(input_path, index_col="record_id")
+    #all_surveys = pd.read_csv(input_path, index_col="record_id")
+    all_surveys = pd.read_csv(input_path, index_col=id_col)
     scrd_columns = []
     for name, subscores in survey_dat.items():
         # Try to score, continue if fails
@@ -86,8 +92,9 @@ if __name__ == "__main__":
     input_file =  sys.argv[1]
     json_data = sys.argv[2]
     out_path = sys.argv[3]
-    if len(sys.argv) == 5:
-        tracker = sys.argv[4]
+    id_col = sys.argv[4]
+    if len(sys.argv) == 6:
+        tracker = sys.argv[5]
     else:
         tracker = None
     json_score(input_file, json_data, out_path, tracker)
