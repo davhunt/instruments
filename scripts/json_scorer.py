@@ -38,11 +38,15 @@ def score_tracker(output_data, scrd_columns, tracker):
                 except Exception as e_msg:
                     tracker_df.loc[id, col] = 0
 
+    data_tracker_filename = os.path.splitext(tracker)[0]
+    tracker_df_no_blank_columns = tracker_df.loc[:, tracker_df.notnull().any(axis=0)]
+    tracker_df_no_blank_columns = tracker_df_no_blank_columns.fillna("NA")
+    tracker_df_no_blank_columns.to_csv(data_tracker_filename + "_viewable.csv")
+
     # leave NA as blank
     tracker_df = tracker_df.fillna('')
     tracker_df.to_csv(tracker)
     print("Success: data tracker updated.")
-
 
 
 def json_score(input_path, survey_dat, output_path=None, tracker=None):
