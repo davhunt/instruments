@@ -24,7 +24,7 @@ def score_tracker(output_data, scrd_columns, tracker):
         id = row.name
         project_id = str(id)[0:2]
         # map parent data to child
-        if (str(id).startswith(project_id+'8') or str(id).startswith(project_id+'9')) and len(id) == 7:
+        if (str(id).startswith(project_id+'8') or str(id).startswith(project_id+'9')) and len(str(id)) == 7:
             id = int(project_id+'0' + str(id)[3:])
         # check if id exists in tracker
         if id not in tracker_df.index:
