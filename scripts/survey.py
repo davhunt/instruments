@@ -51,7 +51,6 @@ class Survey:
     DELIM = Subscore.DELIM
 
     def __init__(self, name, file_name, id_col, subscores):
-    #def __init__(self, name, file_name, subscores):
         self.name = name
         self.file_name = file_name
         self.id_col = id_col
