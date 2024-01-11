@@ -50,9 +50,11 @@ class Survey:
     """
     DELIM = Subscore.DELIM
 
-    def __init__(self, name, file_name, subscores):
+    def __init__(self, name, file_name, id_col, subscores):
+    #def __init__(self, name, file_name, subscores):
         self.name = name
         self.file_name = file_name
+        self.id_col = id_col
         self.subscores = subscores
 
         # init and filter data
@@ -66,7 +68,7 @@ class Survey:
 
     def _load_data(self):
         # load filename into dataframe
-        file = pd.read_csv(self.file_name, index_col="record_id")
+        file = pd.read_csv(self.file_name, index_col=self.id_col)
         return file
         
     def _filter(self):
@@ -74,7 +76,7 @@ class Survey:
             raise TypeError("Subscores for %s is empty. Skipping."%(self.name))
             
         # keep only survey data containing survey name
-        self.data = self.data.filter(regex=rf"^{self.name}")
+        self.data = self.data.filter(regex=rf"^{self.name}_") # don't count "es" columns twice
 
         # quit processing if survey data is not available 
         if(self.data.empty):
@@ -88,8 +90,8 @@ class Survey:
     
     def _extract_versions(self):
         # init regex
-        surv_reg = rf"{self.name}"
-        ver_reg = rf"{self.name}_[a-z]*_"
+        surv_reg = rf"{self.name}_"
+        ver_reg = rf"{self.name}_[a-z]_"
 
         # get timestamp column of all versions
         timestamp_col = self.data.filter(regex=rf"_{Subscore.COMP_LABEL}").columns
@@ -101,8 +103,8 @@ class Survey:
                 if ver_res.group(0)[:-1] not in self.versions:
                     self.versions.append(ver_res.group(0)[:-1])
             elif surv_res is not None:
-                if surv_res.group(0) not in self.versions:
-                    self.versions.append(surv_res.group(0))
+                if surv_res.group(0)[:-1] not in self.versions:
+                    self.versions.append(surv_res.group(0)[:-1])
         self.versions.sort()
         
                     

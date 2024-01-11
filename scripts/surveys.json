@@ -689,7 +689,7 @@
             "score_type": "sum",
             "threshold": 1.0
         },
-        "Dis": {
+        "Dist": {
             "questions": [10],
             "score_type": "sum",
             "threshold": 1.0
@@ -716,7 +716,7 @@
             "score_type": "sum",
             "threshold": 1.0
         },
-        "Dis": {
+        "Dist": {
             "questions": [10],
             "score_type": "sum",
             "threshold": 1.0
